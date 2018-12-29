@@ -5,7 +5,7 @@ We often want to know how *efficient* an algorithm is, usually in terms of time.
 - Is this algorithm fast enough for our purposes?
 
 For a gross estimate (or empirical verification), we can implement and algorithm and time it, using a stopwatch or using code like this:
-```
+```java
 long before = System.currentTimeMillis();
 // Run the algorithm to be timed
 System.out.println((System.currentTimeMillis() - before) + " msec elapsed");
