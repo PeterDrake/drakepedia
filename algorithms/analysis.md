@@ -135,7 +135,7 @@ public static boolean linearSearch(int key, int[] a) {
     return false;
 }
 ```
-The number of times the loop runs depends not just on ![n](https://latex.codecogs.com/svg.latex?n) (the length of the array `a`) but on the *contents* of `a`. In a situation like this, we must clarify whether a statement is about best-case, average, or worst-case performance.
+The number of times the loop runs depends not just on ![n](https://latex.codecogs.com/svg.latex?n) (the length of the array `a`) but also on the *contents* of `a`. In a situation like this, we must clarify whether a statement is about best-case, average, or worst-case performance.
 
 Suppose `key` is present in `a` at exactly one place. In the best case, `key` is at index 0, so the loop only runs once. We can say that this algorithm takes constant time in the best case.
 
