@@ -47,7 +47,7 @@ If we know what orders two functions are in, it's easy to compare them. For exam
 
 Clearly, ![g of n](https://latex.codecogs.com/svg.latex?g(n)) is larger for large ![n](https://latex.codecogs.com/svg.latex?n). We would therefore prefer an algorithm whose running time is ![f of n](https://latex.codecogs.com/svg.latex?f(n)), because it takes less time on large inputs.
 
-The table below summarizes the most commonly-occurring orders, with preferable (smaller) orders at the bottom.
+The table below summarizes the most commonly occurring orders, with preferable (smaller) orders at the bottom.
 
 Order | Nickname
 --|--
@@ -60,13 +60,21 @@ Order | Nickname
 ![order 1](https://latex.codecogs.com/svg.latex?1) | constant
 
 ### Related Notations
+There are several related asymptotic notations referring to unions of multiple orders. For example, the set ![big o of n](https://latex.codecogs.com/svg.latex?O(n)), pronounced "big O of ![n](https://latex.codecogs.com/svg.latex?n)", is the union of ![order n](https://latex.codecogs.com/svg.latex?\Theta(n)) and all lower orders. If we say that a function is in ![big o of n](https://latex.codecogs.com/svg.latex?O(n)), we mean that it is in ![order n](https://latex.codecogs.com/svg.latex?\Theta(n)) or some lower order.
+
+The related notations are summarized in the table below. Note that ![big omega](https://latex.codecogs.com/svg.latex?\Omega(n)) and ![little omega](https://latex.codecogs.com/svg.latex?\omega(n)) are the upper- and lower-case versions of the Greek letter omega.
+
+Notation | Idea | Combines | ![f](https://latex.codecogs.com/svg.latex?f) grows
+-|-|-|-
+![f is in little omega of g](https://latex.codecogs.com/svg.latex?f\in&space;\omega(g)) | ![big theta of f is greater than big theta of g](https://latex.codecogs.com/svg.latex?\Theta(f)>\Theta(g)) | orders higher than ![order g](https://latex.codecogs.com/svg.latex?\Theta(g)) | much more quickly than ![g](https://latex.codecogs.com/svg.latex?g)
+
 ## Analyzing Algorithms
 ### Non-Recursive Algorithms
 ### Best-Case, Average-Case, Worst-Case, and Amortized Analysis
 ### Recursive Algorithms
 ## Additional Resources
 ### Online
-- [Video lecture](https://www.youtube.com/watch?v=w7-6h64HSQ8) of this material
+- Short [video lecture](https://www.youtube.com/watch?v=w7-6h64HSQ8) on asymptotic notation
 - OpenDSA, [Chapter 8](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/AnalChap.html)
 - Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 4.1](https://introcs.cs.princeton.edu/java/41analysis/)
 - Sedgewick and Wayne, *Algorithms, 4th Edition* booksite, [Section 1.4](https://algs4.cs.princeton.edu/14analysis/)
@@ -75,6 +83,10 @@ Order | Nickname
 - Sedgewick and Wayne, *Algorithms, 4th Edition*, Section 1.4
 - Cormen *et al.*, *Introduction to Algorithms, 3rd Edition*, Chapters 3-4
 ## Questions
-1. :star::star::star: Read the definition of ![tilde](https://latex.codecogs.com/svg.latex?\sim) notation on the Sedgewick & Wayne booksite. Given two functions ![f of n](https://latex.codecogs.com/svg.latex?f(n)) and ![g of n](https://latex.codecogs.com/svg.latex?g(n)), what is the relationship between the statements ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)) and ![f of n is a member of big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n)))? In other words, does one statement imply the other, vice versa, neither, or both?
+1. TODO Cases where other asymptotic notations are or are not sufficient to determine which algorithm is faster
+1. TODO Deceptive big O result due to constant > 1
+1. :star::star::star: Read the definition of ![tilde](https://latex.codecogs.com/svg.latex?\sim) notation on the Sedgewick & Wayne booksite. Given two functions ![f of n](https://latex.codecogs.com/svg.latex?f(n)) and ![g of n](https://latex.codecogs.com/svg.latex?g(n)), what is the relationship between the statements ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)) and ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n)))? In other words, does one statement imply the other, vice versa, neither, or both?
 ## Answers
-1. ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)) implies ![f of n is a member of big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n))), but not vice versa. For example, if ![f of n equals n](https://latex.codecogs.com/svg.latex?f(n)=n) and ![g of n equals 2n](https://latex.codecogs.com/svg.latex?g(n)=2n), then ![f of n is a member of big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n))) but it is not true that ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)). The ![tilde](https://latex.codecogs.com/svg.latex?\sim) notation ignores lower-order terms just like ![big theta](https://latex.codecogs.com/svg.latex?\Theta) notation does, but it does not ignore constant factors.
+1.
+1.
+1. ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)) implies ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n))), but not vice versa. For example, if ![f of n equals n](https://latex.codecogs.com/svg.latex?f(n)=n) and ![g of n equals 2n](https://latex.codecogs.com/svg.latex?g(n)=2n), then ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n))) but it is not true that ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)). The ![tilde](https://latex.codecogs.com/svg.latex?\sim) notation ignores lower-order terms just like ![big theta](https://latex.codecogs.com/svg.latex?\Theta) notation does, but it does not ignore constant factors.
