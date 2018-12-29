@@ -1,0 +1,42 @@
+# Command Line
+## Overview
+While I generally prefer to work in an integrated development environment like IntelliJ IDEA, it's certainly possible to
+develop Java programs from the command line.
+
+You must first have the [Java Development Kit](https://www.oracle.com/technetwork/java/javase/downloads/index.html) installed
+on your machine. You can verify that this is working by typing `java -version` on your command line. This should produce output
+something like that shown below.
+```
+java version "11.0.1" 2018-10-16 LTS
+Java(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS)
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)
+```
+The simple program below should be saved in a file called `Hello.java`. You can use any simple text editor, such as [Emacs]
+(https://www.gnu.org/software/emacs/) (which comes pre-installed on most *nix-based systems, including Mac OS X),
+[vim](https://www.vim.org/) (ditto), or [Sublime Text](https://www.sublimetext.com/). Be careful not to use a word processor
+such as Microsoft Word, Notepad, or TextEdit, which will add extraneous formatting information to the file. Note that Java is
+case-sensitive and insists that the name of the class match the name of the file.
+```
+public class Hello {
+
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+
+}
+```
+To compile the file, run this command:
+```
+javac Hello.java
+```
+This creates a compiled class file called `Hello.class`. To run the file:
+```
+java Hello
+```
+## Additional Resources
+### Online
+- Oracle's *Essentials of the Java Programming Language*, [Lesson 1](https://www.oracle.com/technetwork/java/compile-136656.html)
+- Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 1.1](https://introcs.cs.princeton.edu/java/11hello/)
+### Print
+- Sedgewick and Wayne, *Introduction to Programming in Java*, Section 1.1
+- Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Secions 2.1-2.2
