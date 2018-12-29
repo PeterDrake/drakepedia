@@ -6,7 +6,7 @@ computer science courses. If you're looking for the [musician's fansite](http://
 I have three purposes in creating this repository:
 1. To keep my own notes and useful links organized.
 1. To provide a place where I can direct students' frequently-asked questions.
-1. To provide a bank of questions and answers, which both serves as study guide and makes exam creation easier. Answers are
+1. To provide a bank of questions and answers, which both serves as a study guide and makes exam creation easier. Answers are
 provided, but there should be so many questions that memorizing all of the answers is untenable.
 
 I list additional online and print resources where applicable, trying to list the most valuable ones first. In general, print
