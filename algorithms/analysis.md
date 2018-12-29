@@ -23,6 +23,7 @@ For these reasons, we turn to mathematical analysis tools such as asymptotic not
 ## Analyzing Algorithms
 ## Additional Resources
 ### Online
+- [Video lecture](https://www.youtube.com/watch?v=w7-6h64HSQ8) of this material
 - OpenDSA, [Chapter 8](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/AnalChap.html)
 - Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 4.1](https://introcs.cs.princeton.edu/java/41analysis/)
 - Sedgewick and Wayne, *Algorithms, 4th Edition* booksite, [Section 1.4](https://algs4.cs.princeton.edu/14analysis/)
