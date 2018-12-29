@@ -21,13 +21,13 @@ There are a number of problems with this plan:
 For these reasons, we turn to mathematical analysis tools such as asymptotic notation.
 ## Asymptotic Notation
 ### Running Time Functions
-We can express the time taken by an algorithm as a function, such as ![3 n squared plus 2](https://latex.codecogs.com/svg.latex?3n^2&plus;2), where ![n](https://latex.codecogs.com/svg.latex?n) is the size of the input. Running the algorithm on larger inputs therefore takes more time.
+We can express the time taken by an algorithm as a function, such as ![3 n squared plus 2](https://latex.codecogs.com/svg.latex?3n^2+2), where ![n](https://latex.codecogs.com/svg.latex?n) is the size of the input. Running the algorithm on larger inputs therefore takes more time.
 
 In most cases it will be clear from context what ![n](https://latex.codecogs.com/svg.latex?n) means: the length of the array being sorted, the number of items stored in the data structure, etc. Running time functions usually take only one argument, but there are exceptions. Significantly, we express the running time for a graph algorithm in terms of ![v](https://latex.codecogs.com/svg.latex?v) (the number of vertices in the graph) and ![e](https://latex.codecogs.com/svg.latex?e) (the number of edges in the graph).
 ### Orders
 Given the running time functions for two algorithms, which algorithm is faster? This question appears to open a huge can of mathematical worms, but there is a huge shortcut: asymptotic notation. This concerns what happens as ![n](https://latex.codecogs.com/svg.latex?n) becomes large.
 
-Functions can be grouped into orders. An order is a set of functions. For example, ![big theta of n squared](https://latex.codecogs.com/svg.latex?\Theta(n^2)), pronounced "big theta of ![n squared](https://latex.codecogs.com/svg.latex?n^2)" or "order ![n squared](https://latex.codecogs.com/svg.latex?n^2)", is the set of functions that grow about like ![n squared](https://latex.codecogs.com/svg.latex?n^2). This set includes functions such as ![n squared](https://latex.codecogs.com/svg.latex?n^2), ![3 n squared plus 2](https://latex.codecogs.com/svg.latex?3n^2&plus;2), and ![5 n squared + 2 n + 12](https://latex.codecogs.com/svg.latex?5n^2&plus;2n&plus;12).
+Functions can be grouped into orders. An order is a set of functions. For example, ![big theta of n squared](https://latex.codecogs.com/svg.latex?\Theta(n^2)), pronounced "big theta of ![n squared](https://latex.codecogs.com/svg.latex?n^2)" or "order ![n squared](https://latex.codecogs.com/svg.latex?n^2)", is the set of functions that grow about like ![n squared](https://latex.codecogs.com/svg.latex?n^2). This set includes functions such as ![n squared](https://latex.codecogs.com/svg.latex?n^2), ![3 n squared plus 2](https://latex.codecogs.com/svg.latex?3n^2+2), and ![5 n squared plus 2 n plus 12](https://latex.codecogs.com/svg.latex?5n^2+2n+12).
 
 Orders are useful for two reasons:
 - It is often relatively easy to tell which order a function is in.
@@ -37,7 +37,7 @@ To tell what order a function is in, we take advantage of two rules:
 1. Adding or subtracting a term from a lower order doesn't matter.
 1. Multiplying by a positive constant factor doesn't matter.
 
-For example, the first rule tells us that ![5 n squared + 2 n + 12](https://latex.codecogs.com/svg.latex?5n^2&plus;2n&plus;12) is in the same order as ![5 n squared](https://latex.codecogs.com/svg.latex?5n^2), because the lower-order terms ![2 n](https://latex.codecogs.com/svg.latex?2n) and ![12](https://latex.codecogs.com/svg.latex?12) don't matter. When ![n](https://latex.codecogs.com/svg.latex?n) is large, these terms will be vanishingly small compared to ![5 n squared](https://latex.codecogs.com/svg.latex?5n^2).
+For example, the first rule tells us that ![5 n squared + 2 n + 12](https://latex.codecogs.com/svg.latex?5n^2+2n+12) is in the same order as ![5 n squared](https://latex.codecogs.com/svg.latex?5n^2), because the lower-order terms ![2 n](https://latex.codecogs.com/svg.latex?2n) and ![12](https://latex.codecogs.com/svg.latex?12) don't matter. When ![n](https://latex.codecogs.com/svg.latex?n) is large, these terms will be vanishingly small compared to ![5 n squared](https://latex.codecogs.com/svg.latex?5n^2).
 
 The second rule tells us that ![5 n squared](https://latex.codecogs.com/svg.latex?5n^2) is in ![order n squared](https://latex.codecogs.com/svg.latex?\Theta(n^2)), because the constant factor ![5](https://latex.codecogs.com/svg.latex?5) doesn't matter. Ignoring the constant factor means that our analysis doesn't depend on details like the speed of the hardware: if an algorithm takes time in ![order n squared](https://latex.codecogs.com/svg.latex?\Theta(n^2)), that won't change if we run it on a machine that is twice as fast.
 
@@ -104,18 +104,18 @@ Line | Cost | Times | Total
 `sum = 0;` | ![b](https://latex.codecogs.com/svg.latex?b) | 1 | ![b](https://latex.codecogs.com/svg.latex?b)
 `int i;` | ![c](https://latex.codecogs.com/svg.latex?c) | 1 | ![c](https://latex.codecogs.com/svg.latex?c)
 `i = 1;` | ![d](https://latex.codecogs.com/svg.latex?d) | 1 | ![d](https://latex.codecogs.com/svg.latex?d)
-`while (i <= n)` | ![e](https://latex.codecogs.com/svg.latex?e) | ![n plus 1](https://latex.codecogs.com/svg.latex?n+1) | ![e n plus e](https://latex.codecogs.com/svg.latex?en&plus;e)
-`sum += 1;` | ![f](https://latex.codecogs.com/svg.latex?f) | ![n plus 1](https://latex.codecogs.com/svg.latex?n+1) | ![f n plus f](https://latex.codecogs.com/svg.latex?fn&plus;f)
-`i++;` | ![g](https://latex.codecogs.com/svg.latex?g) | ![n plus 1](https://latex.codecogs.com/svg.latex?n+1) | ![g n plus g](https://latex.codecogs.com/svg.latex?gn&plus;g)
+`while (i <= n)` | ![e](https://latex.codecogs.com/svg.latex?e) | ![n plus 1](https://latex.codecogs.com/svg.latex?n+1) | ![e n plus e](https://latex.codecogs.com/svg.latex?en+e)
+`sum += 1;` | ![f](https://latex.codecogs.com/svg.latex?f) | ![n plus 1](https://latex.codecogs.com/svg.latex?n+1) | ![f n plus f](https://latex.codecogs.com/svg.latex?fn+f)
+`i++;` | ![g](https://latex.codecogs.com/svg.latex?g) | ![n plus 1](https://latex.codecogs.com/svg.latex?n+1) | ![g n plus g](https://latex.codecogs.com/svg.latex?gn+g)
 `return sum;` | ![h](https://latex.codecogs.com/svg.latex?h) | 1 | ![h](https://latex.codecogs.com/svg.latex?h)
 
 This adds up to:
 
-![a plus b plus c plus d plus e n plus e plus f n plus f plus g n plus g plus h](https://latex.codecogs.com/svg.latex?a&plus;b&plus;c&plus;d&plus;en&plus;e&plus;fn&plus;f&plus;gn&plus;g&plus;h)
+![a plus b plus c plus d plus e n plus e plus f n plus f plus g n plus g plus h](https://latex.codecogs.com/svg.latex?a+b+c+d+en+e+fn+f+gn+g+h)
 
 Since lower order terms don't matter, this in the same order as
 
-![e n plus f n plus g n, which is equal to the sum of e, f, ang g multiplied by n](https://latex.codecogs.com/svg.latex?en&plus;fn&plus;gn=(e&plus;f&plus;g)n)
+![e n plus f n plus g n, which is equal to the sum of e, f, ang g multiplied by n](https://latex.codecogs.com/svg.latex?en+fn+gn=(e+f+g)n)
 
 which is in ![order n](https://latex.codecogs.com/svg.latex?\Theta(n)).
 
@@ -124,6 +124,27 @@ This technique works, but with practice we can often simply find the step that, 
 One subtlety to watch out for: one line of code may involve multiple steps, especially if it includes a method call.
 
 ### Best-Case, Average-Case, Worst-Case, and Amortized Analysis
+Consider this method:
+```java
+public static boolean linearSearch(int key, int[] a) {
+    for (int i = 0; i < a.length; i++) {
+        if (a[i] == key) {
+            return true;
+        }
+    }
+    return false;
+}
+```
+The number of times the loop runs depends not just on ![n](https://latex.codecogs.com/svg.latex?n) (the length of the array `a`) but on the *contents* of `a`. In a situation like this, we must clarify whether a statement is about best-case, average-case, or worst-case performance.
+
+Suppose `key` is present in `a` at exactly one place. In the best case, `key` is at index 0, so the loop only runs once. We can say that this algorithm takes constant time in the best case.
+
+In the worst case, `key` is in the last position (index ![n minus 1](https://latex.codecogs.com/svg.latex?n-1)), so the algorithm takes linear time.
+
+Average case analysis can be a bit trickier, because we have to make additional assumptions about how likely various possibilities are. For this algorithm, let's assume that `key` is equally likely to be at any position in the array. The average number of passes through the loop is therefore
+
+![n](https://latex.codecogs.com/svg.latex?\frac{1}{n}\sum_{i=1}^n{i}=\frac{n+1}{2}\in\Theta(n))
+
 ### Recursive Algorithms
 ## Additional Resources
 ### Online
@@ -138,9 +159,11 @@ One subtlety to watch out for: one line of code may involve multiple steps, espe
 ## Questions
 1. TODO Cases where other asymptotic notations are or are not sufficient to determine which algorithm is faster
 1. TODO Deceptive big O result due to constant > 1
+1. TODO Analyze linear search when key is not present.
 1. TODO Calculus definition
 1. :star::star::star: Read the definition of ![tilde](https://latex.codecogs.com/svg.latex?\sim) notation on the Sedgewick & Wayne booksite. Given two functions ![f of n](https://latex.codecogs.com/svg.latex?f(n)) and ![g of n](https://latex.codecogs.com/svg.latex?g(n)), what is the relationship between the statements ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)) and ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n)))? In other words, does one statement imply the other, vice versa, neither, or both?
 ## Answers
+1.
 1.
 1.
 1.
