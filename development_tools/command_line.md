@@ -16,7 +16,7 @@ The simple program below should be saved in a file called `Hello.java`. You can 
 [Vim](https://www.vim.org/) (ditto), or [Sublime Text](https://www.sublimetext.com/). Be careful not to use a word processor
 such as Microsoft Word, Notepad, or TextEdit, which will add extraneous formatting information to the file. Note that Java is
 case-sensitive and insists that the name of the class match the name of the file.
-```
+```java
 public class Hello {
 
     public static void main(String[] args) {
