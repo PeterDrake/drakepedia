@@ -11,9 +11,9 @@ java version "11.0.1" 2018-10-16 LTS
 Java(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS)
 Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)
 ```
-The simple program below should be saved in a file called `Hello.java`. You can use any simple text editor, such as [Emacs]
-(https://www.gnu.org/software/emacs/) (which comes pre-installed on most *nix-based systems, including Mac OS X),
-[vim](https://www.vim.org/) (ditto), or [Sublime Text](https://www.sublimetext.com/). Be careful not to use a word processor
+The simple program below should be saved in a file called `Hello.java`. You can use any simple text editor, such as
+[Emacs](https://www.gnu.org/software/emacs/) (which comes pre-installed on most \*nix-based systems, including Mac OS X),
+[Vim](https://www.vim.org/) (ditto), or [Sublime Text](https://www.sublimetext.com/). Be careful not to use a word processor
 such as Microsoft Word, Notepad, or TextEdit, which will add extraneous formatting information to the file. Note that Java is
 case-sensitive and insists that the name of the class match the name of the file.
 ```
@@ -40,3 +40,11 @@ java Hello
 ### Print
 - Sedgewick and Wayne, *Introduction to Programming in Java*, Section 1.1
 - Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Secions 2.1-2.2
+## Questions
+1. :star: What command is used to *compile* a Java program from the command line?
+1. :star: What command is used to *run* a Java program from the command line?
+1. :star::star: A Java program begins with the line `public class Dog {`. What must the file containing this program be called?
+## Answers
+1. `javac`
+1. `java`
+1. `Dog.java`
