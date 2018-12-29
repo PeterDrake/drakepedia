@@ -4,7 +4,7 @@ We often want to know how *efficient* an algorithm is, usually in terms of time.
 - Which of these two algorithms is faster?
 - Is this algorithm fast enough for our purposes?
 
-A gross way to determine how much time an algorithm takes is to implement it and time it, using a stopwatch or using code like this:
+For a gross estimate (or empirical verification), we can implement and algorithm and time it, using a stopwatch or using code like this:
 ```
 long before = System.currentTimeMillis();
 // Run the algorithm to be timed
