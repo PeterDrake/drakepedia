@@ -123,7 +123,7 @@ This technique works, but with practice we can often simply find the step that, 
 
 One subtlety to watch out for: one line of code may involve multiple steps, especially if it includes a method call.
 
-### Best-Case, Average-Case, Worst-Case, and Amortized Analysis
+### Best-Case, Average, Worst-Case, and Amortized Analysis
 Consider this method:
 ```java
 public static boolean linearSearch(int key, int[] a) {
@@ -135,7 +135,7 @@ public static boolean linearSearch(int key, int[] a) {
     return false;
 }
 ```
-The number of times the loop runs depends not just on ![n](https://latex.codecogs.com/svg.latex?n) (the length of the array `a`) but on the *contents* of `a`. In a situation like this, we must clarify whether a statement is about best-case, average-case, or worst-case performance.
+The number of times the loop runs depends not just on ![n](https://latex.codecogs.com/svg.latex?n) (the length of the array `a`) but on the *contents* of `a`. In a situation like this, we must clarify whether a statement is about best-case, average, or worst-case performance.
 
 Suppose `key` is present in `a` at exactly one place. In the best case, `key` is at index 0, so the loop only runs once. We can say that this algorithm takes constant time in the best case.
 
@@ -144,6 +144,10 @@ In the worst case, `key` is in the last position (index ![n minus 1](https://lat
 Average case analysis can be a bit trickier, because we have to make additional assumptions about how likely various possibilities are. For this algorithm, let's assume that `key` is equally likely to be at any position in the array. The average number of passes through the loop is therefore
 
 ![n](https://latex.codecogs.com/svg.latex?\frac{1}{n}\sum_{i=1}^n{i}=\frac{n+1}{2}\in\Theta(n))
+
+The best-case running time of an algorithm is always at least as good as its average running time, which in turn is at least as good as its worst-case running time.
+
+On some occasions we will do amortized analysis, which asks, "What's the average behavior over the worst possible sequence of operations?" For almost all algorithms, this is exactly the same as worst-case analysis, because the worst possible sequence of operations is just the worst individual operation over and over again. For some data structures (notably resizable arrays) the worst operation *can't* happen over and over again, so the amortized result may be better. Amortized running time is always at least as good as worst-case and at least as bad as average.
 
 ### Recursive Algorithms
 ## Additional Resources
