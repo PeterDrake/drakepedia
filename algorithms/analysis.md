@@ -21,10 +21,47 @@ There are a number of problems with this plan:
 For these reasons, we turn to mathematical analysis tools such as asymptotic notation.
 ## Asymptotic Notation
 ### Running Time Functions
+We can express the time taken by an algorithm as a function, such as ![3 n squared plus 2](https://latex.codecogs.com/svg.latex?3n^2&plus;2), where ![n](https://latex.codecogs.com/svg.latex?n) is the size of the input. Running the algorithm on larger inputs therefore takes more time.
+
+In most cases it will be clear from context what ![n](https://latex.codecogs.com/svg.latex?n) means: the length of the array being sorted, the number of items stored in the data structure, etc. Running time functions usually take only one argument, but there are exceptions. Significantly, we express the running time for a graph algorithm in terms of ![v](https://latex.codecogs.com/svg.latex?v) (the number of vertices in the graph) and ![e](https://latex.codecogs.com/svg.latex?e) (the number of edges in the graph).
 ### Orders
+Given the running time functions for two algorithms, which algorithm is faster? This question appears to open a huge can of mathematical worms, but there is a huge shortcut: asymptotic notation. This concerns what happens as ![n](https://latex.codecogs.com/svg.latex?n) becomes large.
+
+Functions can be grouped into orders. An order is a set of functions. For example, ![big theta of n squared](https://latex.codecogs.com/svg.latex?\Theta(n^2)), pronounced "big theta of ![n squared](https://latex.codecogs.com/svg.latex?n^2)" or "order ![n squared](https://latex.codecogs.com/svg.latex?n^2)", is the set of functions that grow about like ![n squared](https://latex.codecogs.com/svg.latex?n^2). This set includes functions such as ![n squared](https://latex.codecogs.com/svg.latex?n^2), ![3 n squared plus 2](https://latex.codecogs.com/svg.latex?3n^2&plus;2), and ![5 n squared + 2 n + 12](https://latex.codecogs.com/svg.latex?5n^2&plus;2n&plus;12).
+
+Orders are useful for two reasons:
+- It is often relatively easy to tell which order a function is in.
+- That is often enough information to tell which one grows more quickly.
+
+To tell what order a function is in, we take advantage of two rules:
+1. Adding or subtracting a term from a lower order doesn't matter.
+1. Multiplying by a positive constant factor doesn't matter.
+
+For example, the first rule tells us that ![5 n squared + 2 n + 12](https://latex.codecogs.com/svg.latex?5n^2&plus;2n&plus;12) is in the same order as ![5 n squared](https://latex.codecogs.com/svg.latex?5n^2), because the lower-order terms ![2 n](https://latex.codecogs.com/svg.latex?2n) and ![12](https://latex.codecogs.com/svg.latex?12) don't matter. When ![n](https://latex.codecogs.com/svg.latex?n) is large, these terms will be vanishingly small compared to ![5 n squared](https://latex.codecogs.com/svg.latex?5n^2).
+
+The second rule tells us that ![5 n squared](https://latex.codecogs.com/svg.latex?5n^2) is in ![order n squared](https://latex.codecogs.com/svg.latex?\Theta(n^2)), because the constant factor ![5](https://latex.codecogs.com/svg.latex?5) doesn't matter. Ignoring the constant factor means that our analysis doesn't depend on details like the speed of the hardware: if an algorithm takes time in ![order n squared](https://latex.codecogs.com/svg.latex?\Theta(n^2)), that won't change if we run it on a machine that is twice as fast.
+
+If we know what orders two functions are in, it's easy to compare them. For example, suppose:
+
+![f of n is in order n squared and g of n is in order n cubed](https://latex.codecogs.com/svg.latex?\begin{aligned}f(n)\in\Theta(n^2)\\\\g(n)\in\Theta(n^3)\end{aligned})
+
+Clearly, ![g of n](https://latex.codecogs.com/svg.latex?g(n)) is larger for large ![n](https://latex.codecogs.com/svg.latex?n). We would therefore prefer an algorithm whose running time is ![f of n](https://latex.codecogs.com/svg.latex?f(n)), because it takes less time on large inputs.
+
+The table below summarizes the most commonly-occurring orders, with preferable (smaller) orders at the bottom.
+
+Order | Nickname
+--|--
+![order 2 to the n](https://latex.codecogs.com/svg.latex?2^n) | exponential
+![order n cubed](https://latex.codecogs.com/svg.latex?n^3) | cubic
+![order n squared](https://latex.codecogs.com/svg.latex?n^2) | quadratic
+![order n log n](https://latex.codecogs.com/svg.latex?n\log&space;n) | linearithmic
+![order n](https://latex.codecogs.com/svg.latex?n) | linear
+![order log n](https://latex.codecogs.com/svg.latex?\log&space;n) | logarithmic
+![order 1](https://latex.codecogs.com/svg.latex?1) | constant
+
 ### Related Notations
 ## Analyzing Algorithms
-### Iterative Algorithms
+### Non-Recursive Algorithms
 ### Best-Case, Average-Case, Worst-Case, and Amortized Analysis
 ### Recursive Algorithms
 ## Additional Resources
