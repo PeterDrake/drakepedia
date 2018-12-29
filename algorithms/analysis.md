@@ -62,14 +62,67 @@ Order | Nickname
 ### Related Notations
 There are several related asymptotic notations referring to unions of multiple orders. For example, the set ![big o of n](https://latex.codecogs.com/svg.latex?O(n)), pronounced "big O of ![n](https://latex.codecogs.com/svg.latex?n)", is the union of ![order n](https://latex.codecogs.com/svg.latex?\Theta(n)) and all lower orders. If we say that a function is in ![big o of n](https://latex.codecogs.com/svg.latex?O(n)), we mean that it is in ![order n](https://latex.codecogs.com/svg.latex?\Theta(n)) or some lower order.
 
-The related notations are summarized in the table below. Note that ![big omega](https://latex.codecogs.com/svg.latex?\Omega(n)) and ![little omega](https://latex.codecogs.com/svg.latex?\omega(n)) are the upper- and lower-case versions of the Greek letter omega.
+The related notations are summarized in the table below. ![big omega](https://latex.codecogs.com/svg.latex?\Omega) and ![little omega](https://latex.codecogs.com/svg.latex?\omega) are the upper- and lower-case versions of the Greek letter omega. Phrasing such as "much more" or "about like" is meant to emphasize that there is a constant factor of "wiggle room" within a given order.
 
-Notation | Idea | Combines | ![f](https://latex.codecogs.com/svg.latex?f) grows
+Notation | Idea | Combines | ![f](https://latex.codecogs.com/svg.latex?f) Grows
 -|-|-|-
 ![f is in little omega of g](https://latex.codecogs.com/svg.latex?f\in&space;\omega(g)) | ![big theta of f is greater than big theta of g](https://latex.codecogs.com/svg.latex?\Theta(f)>\Theta(g)) | orders higher than ![order g](https://latex.codecogs.com/svg.latex?\Theta(g)) | much more quickly than ![g](https://latex.codecogs.com/svg.latex?g)
+![f is in big omega of g](https://latex.codecogs.com/svg.latex?f\in&space;\Omega(g)) | ![big theta of f is greater than or equal to big theta of g](https://latex.codecogs.com/svg.latex?\Theta(f)\geq\Theta(g)) | ![order g](https://latex.codecogs.com/svg.latex?\Theta(g)) and higher orders | like ![g](https://latex.codecogs.com/svg.latex?g) or much more quickly
+![f is in big theta of g](https://latex.codecogs.com/svg.latex?f\in&space;\Theta(g)) | ![big theta of f equals big theta of g](https://latex.codecogs.com/svg.latex?\Theta(f)=\Theta(g)) | ![order g](https://latex.codecogs.com/svg.latex?\Theta(g)) | about like ![g](https://latex.codecogs.com/svg.latex?g)
+![f is in big o of g](https://latex.codecogs.com/svg.latex?f\in&space;O(g)) | ![big theta of f is less than or equal to big theta of g](https://latex.codecogs.com/svg.latex?\Theta(f)\leq\Theta(g)) | ![order g](https://latex.codecogs.com/svg.latex?\Theta(g)) and lower orders | like ![g](https://latex.codecogs.com/svg.latex?g) or much more slowly
+![f is in little o of g](https://latex.codecogs.com/svg.latex?f\in&space;o(g)) | ![big theta of f is less than or equal to big theta of g](https://latex.codecogs.com/svg.latex?\Theta(f)<\Theta(g)) | orders lower than ![order g](https://latex.codecogs.com/svg.latex?\Theta(g)) | much more slowly than ![g](https://latex.codecogs.com/svg.latex?g)
 
 ## Analyzing Algorithms
 ### Non-Recursive Algorithms
+Any operation whose time doesn't depend on the size of its input takes constant time. This includes assignments and operations on primitive numbers (which are of bounded size).
+
+To analyze an non-recursive algorithm, ask of each step:
+- How long does this step take?
+- How many times is this step executed?
+
+Multiplying these two values gives the total time cost of that step. The time for the entire algorithm is the sum of these costs.
+
+For example, consider this method:
+```java
+public static int sum(int n) {
+    int sum;
+    sum = 0;
+    int i;
+    i = 1;
+    while (i <= n) {
+        sum += i;
+        i++;
+    }
+    return sum;
+}
+```
+Analyzing this line-by-line, we assign a lettered constant for the amount of time taken by each step. We don't know exactly how long each step takes and, because we only need to know the order of the result, we don't care.
+
+Line | Cost | Times | Total
+-|-|-|-
+`int sum;` | ![a](https://latex.codecogs.com/svg.latex?a) | 1 | ![a](https://latex.codecogs.com/svg.latex?a)
+`sum = 0;` | ![b](https://latex.codecogs.com/svg.latex?b) | 1 | ![b](https://latex.codecogs.com/svg.latex?b)
+`int i;` | ![c](https://latex.codecogs.com/svg.latex?c) | 1 | ![c](https://latex.codecogs.com/svg.latex?c)
+`i = 1;` | ![d](https://latex.codecogs.com/svg.latex?d) | 1 | ![d](https://latex.codecogs.com/svg.latex?d)
+`while (i <= n);` | ![e](https://latex.codecogs.com/svg.latex?e) | ![n plus 1](https://latex.codecogs.com/svg.latex?n+1) | ![e n plus e](https://latex.codecogs.com/svg.latex?en&plus;e)
+`sum += 1;` | ![f](https://latex.codecogs.com/svg.latex?f) | ![n plus 1](https://latex.codecogs.com/svg.latex?n+1) | ![f n plus f](https://latex.codecogs.com/svg.latex?fn&plus;f)
+`i++;` | ![g](https://latex.codecogs.com/svg.latex?g) | ![n plus 1](https://latex.codecogs.com/svg.latex?n+1) | ![g n plus g](https://latex.codecogs.com/svg.latex?gn&plus;g)
+`return sum;` | ![h](https://latex.codecogs.com/svg.latex?h) | 1 | ![h](https://latex.codecogs.com/svg.latex?h)
+
+This adds up to:
+
+![a plus b plus c plus d plus e n plus e plus f n plus f plus g n plus g plus h](https://latex.codecogs.com/svg.latex?a&plus;b&plus;c&plus;d&plus;en&plus;e&plus;fn&plus;f&plus;gn&plus;g&plus;h)
+
+Since lower order terms don't matter, this in the same order as
+
+![e n plus f n plus g n, which is equal to the sum of e, f, ang g multiplied by n](https://latex.codecogs.com/svg.latex?en&plus;fn&plus;gn=(e&plus;f&plus;g)n)
+
+which is in ![order n](https://latex.codecogs.com/svg.latex?\Theta(n)).
+
+This technique works, but with practice we can often simply find the step that, taking into account how many times it runs, is the most expensive. All other steps are in the same order or lower orders, so they don't matter.
+
+One subtlety to watch out for: one line of code may involve multiple steps, especially if it includes a method call.
+
 ### Best-Case, Average-Case, Worst-Case, and Amortized Analysis
 ### Recursive Algorithms
 ## Additional Resources
@@ -85,8 +138,10 @@ Notation | Idea | Combines | ![f](https://latex.codecogs.com/svg.latex?f) grows
 ## Questions
 1. TODO Cases where other asymptotic notations are or are not sufficient to determine which algorithm is faster
 1. TODO Deceptive big O result due to constant > 1
+1. TODO Calculus definition
 1. :star::star::star: Read the definition of ![tilde](https://latex.codecogs.com/svg.latex?\sim) notation on the Sedgewick & Wayne booksite. Given two functions ![f of n](https://latex.codecogs.com/svg.latex?f(n)) and ![g of n](https://latex.codecogs.com/svg.latex?g(n)), what is the relationship between the statements ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)) and ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n)))? In other words, does one statement imply the other, vice versa, neither, or both?
 ## Answers
+1.
 1.
 1.
 1. ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)) implies ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n))), but not vice versa. For example, if ![f of n equals n](https://latex.codecogs.com/svg.latex?f(n)=n) and ![g of n equals 2n](https://latex.codecogs.com/svg.latex?g(n)=2n), then ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n))) but it is not true that ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)). The ![tilde](https://latex.codecogs.com/svg.latex?\sim) notation ignores lower-order terms just like ![big theta](https://latex.codecogs.com/svg.latex?\Theta) notation does, but it does not ignore constant factors.
