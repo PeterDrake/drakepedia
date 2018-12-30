@@ -84,7 +84,7 @@ Multiplying these two values gives the total time cost of that step. The time fo
 
 For example, consider this method:
 ```java
-public static int sum(int n) {
+static int sum(int n) {
     int sum;
     sum = 0;
     int i;
@@ -126,7 +126,7 @@ One subtlety to watch out for: one line of code may involve multiple steps, espe
 ### Best-Case, Average, Worst-Case, and Amortized Analysis
 Consider this method:
 ```java
-public static boolean linearSearch(int key, int[] a) {
+static boolean linearSearch(int key, int[] a) {
     for (int i = 0; i < a.length; i++) {
         if (a[i] == key) {
             return true;
@@ -150,6 +150,35 @@ The best-case running time of an algorithm is always at least as good as its ave
 On some occasions we will do amortized analysis, which asks, "What's the average behavior over the worst possible sequence of operations?" For almost all algorithms, this is exactly the same as worst-case analysis, because the worst possible sequence of operations is just the worst individual operation over and over again. For some data structures (notably resizable arrays) the worst operation *can't* happen over and over again, so the amortized result may be better. Amortized running time is always at least as good as worst-case and at least as bad as average.
 
 ### Recursive Algorithms
+Here is a recursive algorithm for summing the numbers in an array, implemented as two methods:
+```java
+static double sum(double[] a) {
+    return sum(a, 0);
+}
+
+static double sum(double[] a, int i) {
+    if (i == a.length - 1) {
+        return a[i];
+    }
+    return a[i] + sum(a, i + 1);
+}
+```
+What is the order of its running time? The non-recursive method does nothing but call the other one and return the result, so it is the second method we must examine. Our normal technique doesn't work because it's not clear how long the recursive call takes.
+
+To analyze a recursive algorithm, we first write a special equation called a recurrence relation. For this algorithm, the reurrence relation is:
+
+![t of n is 1 if n equals 1, or 1 plus t of n minus one otherwise](https://latex.codecogs.com/svg.latex?T(n)=\begin{cases}1\textrm{&space;if&space;}n=1\\\\1+T(n-1)\textrm{&space;otherwise}\end{cases})
+
+The upper part says that the time to process ![n](https://latex.codecogs.com/svg.latex?n) numbers is constant in the base case where ![n is 1](https://latex.codecogs.com/svg.latex?n=1). It won't matter what the constant is, so we choose ![1](https://latex.codecogs.com/svg.latex?1) for simplicity.
+
+The lower part says that, in the recursive case, the time is a constant plus the time to process ![n minus 1](https://latex.codecogs.com/svg.latex?n-1) elements.
+
+To get to an order, we need to solve the recurrence relation, that is, find an equivalent closed form equation that doesn't have ![t of n](https://latex.codecogs.com/svg.latex?T(n)) on the right side. In this case the solution is:
+
+![t of n equals n](https://latex.codecogs.com/svg.latex?T(n)=n)
+
+
+
 ## Additional Resources
 ### Online
 - Short [video lecture](https://www.youtube.com/watch?v=w7-6h64HSQ8) on asymptotic notation
@@ -164,9 +193,11 @@ On some occasions we will do amortized analysis, which asks, "What's the average
 1. TODO Cases where other asymptotic notations are or are not sufficient to determine which algorithm is faster
 1. TODO Deceptive big O result due to constant > 1
 1. TODO Analyze linear search when key is not present.
+1. TODO Best case is not small n
 1. TODO Calculus definition
 1. :star::star::star: Read the definition of ![tilde](https://latex.codecogs.com/svg.latex?\sim) notation on the Sedgewick & Wayne booksite. Given two functions ![f of n](https://latex.codecogs.com/svg.latex?f(n)) and ![g of n](https://latex.codecogs.com/svg.latex?g(n)), what is the relationship between the statements ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)) and ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n)))? In other words, does one statement imply the other, vice versa, neither, or both?
 ## Answers
+1.
 1.
 1.
 1.
