@@ -12,7 +12,7 @@ System.out.println((System.currentTimeMillis() - before) + " msec elapsed");
 ```
 (`System.currentTimeMillis()` returns the number of milliseconds since [the beginning of 1970](https://en.wikipedia.org/wiki/Unix_time).)
 
-There are a number of problems with this plan:
+There are a number of problems with this approach:
 - The result may be affected by the programming language used, the speed of the physical machine, or other processes running on that machine. The last issue can be ameliorated by shutting down other programs such as web browsers, but a modern system often has dozens of processes running even when there are no other user programs running.
 - Implementing an algorithm is difficult and time-consuming. We would prefer to know the result beforehand.
 - The result is likely to depend on the size of the input. For example, it takes longer to sort a million numbers than ten.
@@ -21,13 +21,25 @@ There are a number of problems with this plan:
 For these reasons, we turn to mathematical analysis tools such as asymptotic notation.
 ## Asymptotic Notation
 ### Running Time Functions
-We can express the time taken by an algorithm as a function, such as ![3 n squared plus 2](https://latex.codecogs.com/svg.latex?3n^2+2), where ![n](https://latex.codecogs.com/svg.latex?n) is the size of the input. Running the algorithm on larger inputs therefore takes more time.
+We can express the time taken by an algorithm as a function, such as ![3 n squared plus 2](https://latex.codecogs.com/svg.latex?3n^2+2), where ![n](https://latex.codecogs.com/svg.latex?n) is the size of the input. Running an algorithm on larger inputs generally takes more time.
 
 In most cases it will be clear from context what ![n](https://latex.codecogs.com/svg.latex?n) means: the length of the array being sorted, the number of items stored in the data structure, etc. Running time functions usually take only one argument, but there are exceptions. Significantly, we express the running time for a graph algorithm in terms of ![v](https://latex.codecogs.com/svg.latex?v) (the number of vertices in the graph) and ![e](https://latex.codecogs.com/svg.latex?e) (the number of edges in the graph).
 ### Orders
 Given the running time functions for two algorithms, which algorithm is faster? This question appears to open a huge can of mathematical worms, but there is a huge shortcut: asymptotic notation. This concerns what happens as ![n](https://latex.codecogs.com/svg.latex?n) becomes large.
 
 Functions can be grouped into orders. An order is a set of functions. For example, ![big theta of n squared](https://latex.codecogs.com/svg.latex?\Theta(n^2)), pronounced "big theta of ![n squared](https://latex.codecogs.com/svg.latex?n^2)" or "order ![n squared](https://latex.codecogs.com/svg.latex?n^2)", is the set of functions that grow about like ![n squared](https://latex.codecogs.com/svg.latex?n^2). This set includes functions such as ![n squared](https://latex.codecogs.com/svg.latex?n^2), ![3 n squared plus 2](https://latex.codecogs.com/svg.latex?3n^2+2), and ![5 n squared plus 2 n plus 12](https://latex.codecogs.com/svg.latex?5n^2+2n+12).
+
+The table below summarizes the most commonly occurring orders.
+
+Order | Nickname
+--|--
+![order 2 to the n](https://latex.codecogs.com/svg.latex?2^n) | exponential
+![order n cubed](https://latex.codecogs.com/svg.latex?n^3) | cubic
+![order n squared](https://latex.codecogs.com/svg.latex?n^2) | quadratic
+![order n log n](https://latex.codecogs.com/svg.latex?n\log&space;n) | linearithmic
+![order n](https://latex.codecogs.com/svg.latex?n) | linear
+![order log n](https://latex.codecogs.com/svg.latex?\log&space;n) | logarithmic
+![order 1](https://latex.codecogs.com/svg.latex?1) | constant
 
 Orders are useful for two reasons:
 - It is often relatively easy to tell which order a function is in.
@@ -39,25 +51,13 @@ To tell what order a function is in, we take advantage of two rules:
 
 For example, the first rule tells us that ![5 n squared + 2 n + 12](https://latex.codecogs.com/svg.latex?5n^2+2n+12) is in the same order as ![5 n squared](https://latex.codecogs.com/svg.latex?5n^2), because the lower-order terms ![2 n](https://latex.codecogs.com/svg.latex?2n) and ![12](https://latex.codecogs.com/svg.latex?12) don't matter. When ![n](https://latex.codecogs.com/svg.latex?n) is large, these terms will be vanishingly small compared to ![5 n squared](https://latex.codecogs.com/svg.latex?5n^2).
 
-The second rule tells us that ![5 n squared](https://latex.codecogs.com/svg.latex?5n^2) is in ![order n squared](https://latex.codecogs.com/svg.latex?\Theta(n^2)), because the constant factor ![5](https://latex.codecogs.com/svg.latex?5) doesn't matter. Ignoring the constant factor means that our analysis doesn't depend on details like the speed of the hardware: if an algorithm takes time in ![order n squared](https://latex.codecogs.com/svg.latex?\Theta(n^2)), that won't change if we run it on a machine that is twice as fast.
+The second rule tells us that ![5 n squared](https://latex.codecogs.com/svg.latex?5n^2) is in ![order n squared](https://latex.codecogs.com/svg.latex?\Theta(n^2)), because the constant factor ![5](https://latex.codecogs.com/svg.latex?5) doesn't matter. Ignoring the constant factor means that our analysis doesn't depend on details like the speed of the hardware; if an algorithm takes time in ![order n squared](https://latex.codecogs.com/svg.latex?\Theta(n^2)), that won't change if we run it on a machine that is twice as fast.
 
 If we know what orders two functions are in, it's easy to compare them. For example, suppose:
 
 ![f of n is in order n squared and g of n is in order n cubed](https://latex.codecogs.com/svg.latex?\begin{aligned}f(n)\in\Theta(n^2)\\\\g(n)\in\Theta(n^3)\end{aligned})
 
 Clearly, ![g of n](https://latex.codecogs.com/svg.latex?g(n)) is larger for large ![n](https://latex.codecogs.com/svg.latex?n). We would therefore prefer an algorithm whose running time is ![f of n](https://latex.codecogs.com/svg.latex?f(n)), because it takes less time on large inputs.
-
-The table below summarizes the most commonly occurring orders, with preferable (smaller) orders at the bottom.
-
-Order | Nickname
---|--
-![order 2 to the n](https://latex.codecogs.com/svg.latex?2^n) | exponential
-![order n cubed](https://latex.codecogs.com/svg.latex?n^3) | cubic
-![order n squared](https://latex.codecogs.com/svg.latex?n^2) | quadratic
-![order n log n](https://latex.codecogs.com/svg.latex?n\log&space;n) | linearithmic
-![order n](https://latex.codecogs.com/svg.latex?n) | linear
-![order log n](https://latex.codecogs.com/svg.latex?\log&space;n) | logarithmic
-![order 1](https://latex.codecogs.com/svg.latex?1) | constant
 
 ### Related Notations
 There are several related asymptotic notations referring to unions of multiple orders. For example, the set ![big o of n](https://latex.codecogs.com/svg.latex?O(n)), pronounced "big O of ![n](https://latex.codecogs.com/svg.latex?n)", is the union of ![order n](https://latex.codecogs.com/svg.latex?\Theta(n)) and all lower orders. If we say that a function is in ![big o of n](https://latex.codecogs.com/svg.latex?O(n)), we mean that it is in ![order n](https://latex.codecogs.com/svg.latex?\Theta(n)) or some lower order.
@@ -76,7 +76,7 @@ Notation | Idea | Combines | ![f](https://latex.codecogs.com/svg.latex?f) Grows
 ### Non-Recursive Algorithms
 Any operation whose time doesn't depend on the size of its input takes constant time. This includes assignments and operations on primitive numbers (which are of bounded size).
 
-To analyze an non-recursive algorithm, ask of each step:
+To analyze a non-recursive algorithm, ask of each step:
 - How long does this step take?
 - How many times is this step executed?
 
@@ -149,6 +149,15 @@ The best-case running time of an algorithm is always at least as good as its ave
 
 On some occasions we will do amortized analysis, which asks, "What's the average behavior over the worst possible sequence of operations?" For almost all algorithms, this is exactly the same as worst-case analysis, because the worst possible sequence of operations is just the worst individual operation over and over again. For some data structures (notably resizable arrays) the worst operation *can't* happen over and over again, so the amortized result may be better. Amortized running time is always at least as good as worst-case and at least as bad as average.
 
+In summary:
+
+Analysis | Question Answered
+-|-
+Worst-case | How long will this take for the worst individual operation?
+Amortized | How long will this take per operation for the worst sequence of operations?
+Average | How long will this take per operation over a typical sequence of operations?
+Best-case | How long will this take for the best individual operation?
+
 ### Recursive Algorithms
 Here is a recursive algorithm for summing the numbers in an array, implemented as two methods:
 ```java
@@ -177,11 +186,11 @@ To get to an order, we need to solve the recurrence relation, that is, find an e
 
 ![t of n equals n](https://latex.codecogs.com/svg.latex?T(n)=n)
 
-This can be verified by substituting the solution into the right side in both parts of the recurrence relation.
+This can be verified by substituting the solution into the recurrence relation.
 
 Solving recurrence relations is an advanced topic, but fortunately a few specific cases cover most of the recursive algorithms you'll encounter. They are summarized in the table below, which omits the base case lines as they don't affect the order of the solutions.
 
-Recurrence | Solution
+Recurrence | Solution Order
 -|-
 ![t of n equals n plus t of n minus 1](https://latex.codecogs.com/svg.latex?T(n)=n+T(n-1)) | ![order n squared](https://latex.codecogs.com/svg.latex?\Theta(n^2))
 ![t of n equals n plus 2 times t of n over 2](https://latex.codecogs.com/svg.latex?T(n)=n+2T(n/2)) | ![order n log n](https://latex.codecogs.com/svg.latex?\Theta(n\log&space;n))
@@ -200,15 +209,18 @@ Recurrence | Solution
 - Sedgewick and Wayne, *Algorithms, 4th Edition*, Section 1.4
 - Cormen *et al.*, *Introduction to Algorithms, 3rd Edition*, Chapters 3-4
 ## Questions
-1. :star::star: What's wrong with the following statement? "Since ![n cubed](https://latex.codecogs.com/svg.latex?n^3) grows more quickly than ![n squared](https://latex.codecogs.com/svg.latex?n^2), an algorithm with cubic running time is faster than one with quadratic running time."
+1. :star::star: What's wrong with the following statement?
+   > Since ![n cubed](https://latex.codecogs.com/svg.latex?n^3) grows more quickly than ![n squared](https://latex.codecogs.com/svg.latex?n^2), an algorithm with cubic running time is faster than one with quadratic running time.
 1. :star::star: Suppose we know that ![f of n is in big o of n squared](https://latex.codecogs.com/svg.latex?f(n)\in&space;O(n^2)), ![g of n is in big o of n cubed](https://latex.codecogs.com/svg.latex?g(n)\in&space;O(n^3)), and ![h of n is in big omega of n cubed](https://latex.codecogs.com/svg.latex?h(n)\in&space;\Omega(n^3)).
    1. What can we conclude about the relationship between ![the order of f of n](https://latex.codecogs.com/svg.latex?\Theta(f(n))) and ![the order of g of n](https://latex.codecogs.com/svg.latex?\Theta(g(n)))?
    1. What can we conclude about the relationship between ![the order of f of n](https://latex.codecogs.com/svg.latex?\Theta(f(n))) and ![the order of h of n](https://latex.codecogs.com/svg.latex?\Theta(h(n)))?
    1. What can we conclude about the relationship between ![the order of g of n](https://latex.codecogs.com/svg.latex?\Theta(g(n))) and ![the order of h of n](https://latex.codecogs.com/svg.latex?h(\Theta(n)))?
 1. :star::star: Suppose we know that ![f of n is in big o of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;g(n)). Can we conclude that ![f of n is less than g of n](https://latex.codecogs.com/svg.latex?f(n)<g(n)) for small values of ![n](https://latex.codecogs.com/svg.latex?n)? What about for large values?
 1. :star::star: What is the order of the running time of the `linearSearch` algorithm above when `key` is not present in `a`?
-1. TODO Best case is not small n
-1. TODO Calculus definition
+1. :star::star: What's wrong with the following statement?
+   > The best case for the algorithm I'm analyzing occurs when ![n equals 1](https://latex.codecogs.com/svg.latex?n=1).
+1. :star::star::star: What statement in asymptotic notation is equivalent to the following?
+   > There exists some ![c greater than 0](https://latex.codecogs.com/svg.latex?c>0) and some ![n sub zero greater than or equal to 0](https://latex.codecogs.com/svg.latex?n_0\geq&space;0) such that, for all ![n greater than n sub zero](https://latex.codecogs.com/svg.latex?n>n_0), ![f of n is less than or equal to c times g of n](https://latex.codecogs.com/svg.latex?f(n)\leq&space;cg(n)).
 1. :star::star::star: Read the definition of ![tilde](https://latex.codecogs.com/svg.latex?\sim) notation on the Sedgewick & Wayne booksite. Given two functions ![f(n)](https://latex.codecogs.com/svg.latex?f(n)) and ![g of n](https://latex.codecogs.com/svg.latex?g(n)), what is the relationship between the statements ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)) and ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n)))? In other words, does one statement imply the other, vice versa, neither, or both?
 ## Answers
 1. If the running time grows quickly, then it is very large for large values of ![n](https://latex.codecogs.com/svg.latex?n). To have a large running time is to be slow.
@@ -218,6 +230,6 @@ Recurrence | Solution
    1. Either ![the order of g of n](https://latex.codecogs.com/svg.latex?\Theta(g(n))) is a lower order than ![the order of h of n](https://latex.codecogs.com/svg.latex?\Theta(h(n))) or they are both the same order, namely ![order n cubes](https://latex.codecogs.com/svg.latex?\Theta(n^3)).
 1. No. Asymptotic notation says nothing about small values of ![n](https://latex.codecogs.com/svg.latex?n). For large values, we know that ![f of n](https://latex.codecogs.com/svg.latex?f(n)) exceeds ![g of n](https://latex.codecogs.com/svg.latex?g(n)) by no more than a constant factor, but it might be that ![f of n equals 10 n](https://latex.codecogs.com/svg.latex?f(n)=10n) and ![g of n equals n](https://latex.codecogs.com/svg.latex?g(n)=n).
 1. Linear.
-1.
-1.
+1. Best-case, average, amortized, and worst-case analysis must apply for all values of ![n](https://latex.codecogs.com/svg.latex?n). If they differ, they must do so between different inputs of each size. For example, a sorting algorithm might have a best case when the array is already sorted and a worst case when it is already sorted in reverse order.
+1. ![f of n is in big o of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;g(n))
 1. ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)) implies ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n))), but not vice versa. For example, if ![f of n equals n](https://latex.codecogs.com/svg.latex?f(n)=n) and ![g of n equals 2n](https://latex.codecogs.com/svg.latex?g(n)=2n), then ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n))) but it is not true that ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)). The ![tilde](https://latex.codecogs.com/svg.latex?\sim) notation ignores lower-order terms just like ![big theta](https://latex.codecogs.com/svg.latex?\Theta) notation does, but it does not ignore constant factors.
