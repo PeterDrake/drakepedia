@@ -214,8 +214,8 @@ Recurrence | Solution Order
 1. :star::star: Suppose we know that ![f of n is in big o of n squared](https://latex.codecogs.com/svg.latex?f(n)\in&space;O(n^2)), ![g of n is in big o of n cubed](https://latex.codecogs.com/svg.latex?g(n)\in&space;O(n^3)), and ![h of n is in big omega of n cubed](https://latex.codecogs.com/svg.latex?h(n)\in&space;\Omega(n^3)).
    1. What can we conclude about the relationship between ![the order of f of n](https://latex.codecogs.com/svg.latex?\Theta(f(n))) and ![the order of g of n](https://latex.codecogs.com/svg.latex?\Theta(g(n)))?
    1. What can we conclude about the relationship between ![the order of f of n](https://latex.codecogs.com/svg.latex?\Theta(f(n))) and ![the order of h of n](https://latex.codecogs.com/svg.latex?\Theta(h(n)))?
-   1. What can we conclude about the relationship between ![the order of g of n](https://latex.codecogs.com/svg.latex?\Theta(g(n))) and ![the order of h of n](https://latex.codecogs.com/svg.latex?h(\Theta(n)))?
-1. :star::star: Suppose we know that ![f of n is in big o of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;g(n)). Can we conclude that ![f of n is less than g of n](https://latex.codecogs.com/svg.latex?f(n)<g(n)) for small values of ![n](https://latex.codecogs.com/svg.latex?n)? What about for large values?
+   1. What can we conclude about the relationship between ![the order of g of n](https://latex.codecogs.com/svg.latex?\Theta(g(n))) and ![the order of h of n](https://latex.codecogs.com/svg.latex?\Theta(h(n)))?
+1. :star::star: Suppose we know that ![f of n is in big o of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;O(g(n))). Can we conclude that ![f of n is less than g of n](https://latex.codecogs.com/svg.latex?f(n)<g(n)) for small values of ![n](https://latex.codecogs.com/svg.latex?n)? What about for large values?
 1. :star::star: What is the order of the running time of the `linearSearch` algorithm above when `key` is not present in `a`?
 1. :star::star: What's wrong with the following statement?
    > The best case for the algorithm I'm analyzing occurs when ![n equals 1](https://latex.codecogs.com/svg.latex?n=1).
