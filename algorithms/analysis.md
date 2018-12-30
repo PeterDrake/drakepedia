@@ -4,7 +4,7 @@ We often want to know how *efficient* an algorithm is, usually in terms of time.
 - Which of these two algorithms is faster?
 - Is this algorithm fast enough for our purposes?
 
-For a gross estimate (or empirical verification), we can implement and algorithm and time it, using a stopwatch or using code like this:
+For a gross estimate (or empirical verification), we can implement an algorithm and time it, using a stopwatch or using code like this:
 ```java
 long before = System.currentTimeMillis();
 // Run the algorithm to be timed
@@ -200,6 +200,7 @@ Recurrence | Solution
 - Sedgewick and Wayne, *Algorithms, 4th Edition*, Section 1.4
 - Cormen *et al.*, *Introduction to Algorithms, 3rd Edition*, Chapters 3-4
 ## Questions
+1. What's wrong with the following statement? "Since ![n cubed](https://latex.codecogs.com/svg.latex?n^3) grows more quickly than ![n squared](https://latex.codecogs.com/svg.latex?n^2), an algorithm with cubic running time is faster than one with quadratic running time."
 1. TODO Cases where other asymptotic notations are or are not sufficient to determine which algorithm is faster
 1. TODO Deceptive big O result due to constant > 1
 1. TODO Analyze linear search when key is not present.
@@ -207,6 +208,7 @@ Recurrence | Solution
 1. TODO Calculus definition
 1. :star::star::star: Read the definition of ![tilde](https://latex.codecogs.com/svg.latex?\sim) notation on the Sedgewick & Wayne booksite. Given two functions ![f of n](https://latex.codecogs.com/svg.latex?f(n)) and ![g of n](https://latex.codecogs.com/svg.latex?g(n)), what is the relationship between the statements ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)) and ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n)))? In other words, does one statement imply the other, vice versa, neither, or both?
 ## Answers
+1. If the running time grows quickly, then it is very large for large values of ![n](https://latex.codecogs.com/svg.latex?n). To have a large running time is to be slow.
 1.
 1.
 1.
