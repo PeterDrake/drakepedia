@@ -200,16 +200,22 @@ Recurrence | Solution
 - Sedgewick and Wayne, *Algorithms, 4th Edition*, Section 1.4
 - Cormen *et al.*, *Introduction to Algorithms, 3rd Edition*, Chapters 3-4
 ## Questions
-1. What's wrong with the following statement? "Since ![n cubed](https://latex.codecogs.com/svg.latex?n^3) grows more quickly than ![n squared](https://latex.codecogs.com/svg.latex?n^2), an algorithm with cubic running time is faster than one with quadratic running time."
-1. TODO Cases where other asymptotic notations are or are not sufficient to determine which algorithm is faster
+1. :star::star: What's wrong with the following statement? "Since ![n cubed](https://latex.codecogs.com/svg.latex?n^3) grows more quickly than ![n squared](https://latex.codecogs.com/svg.latex?n^2), an algorithm with cubic running time is faster than one with quadratic running time."
+1. :star::star: Suppose we know that ![f of n is in big o of n squared](https://latex.codecogs.com/svg.latex?f(n)\in&space;O(n^2)), ![g of n is in big o of n cubed](https://latex.codecogs.com/svg.latex?g(n)\in&space;O(n^3)), and ![h of n is in big omega of n cubed](https://latex.codecogs.com/svg.latex?h(n)\in&space;\Omega(n^3)).
+   1. What can we conclude about the relationship between ![the order of f of n](https://latex.codecogs.com/svg.latex?\Theta(f(n))) and ![the order of g of n](https://latex.codecogs.com/svg.latex?\Theta(g(n)))?
+   1. What can we conclude about the relationship between ![the order of f of n](https://latex.codecogs.com/svg.latex?\Theta(f(n))) and ![the order of h of n](https://latex.codecogs.com/svg.latex?\Theta(h(n)))?
+   1. What can we conclude about the relationship between ![the order of g of n](https://latex.codecogs.com/svg.latex?\Theta(g(n))) and ![the order of h of n](https://latex.codecogs.com/svg.latex?h(\Theta(n)))?
 1. TODO Deceptive big O result due to constant > 1
 1. TODO Analyze linear search when key is not present.
 1. TODO Best case is not small n
 1. TODO Calculus definition
-1. :star::star::star: Read the definition of ![tilde](https://latex.codecogs.com/svg.latex?\sim) notation on the Sedgewick & Wayne booksite. Given two functions ![f of n](https://latex.codecogs.com/svg.latex?f(n)) and ![g of n](https://latex.codecogs.com/svg.latex?g(n)), what is the relationship between the statements ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)) and ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n)))? In other words, does one statement imply the other, vice versa, neither, or both?
+1. :star::star::star: Read the definition of ![tilde](https://latex.codecogs.com/svg.latex?\sim) notation on the Sedgewick & Wayne booksite. Given two functions ![f(n)](https://latex.codecogs.com/svg.latex?f(n)) and ![g of n](https://latex.codecogs.com/svg.latex?g(n)), what is the relationship between the statements ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)) and ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n)))? In other words, does one statement imply the other, vice versa, neither, or both?
 ## Answers
 1. If the running time grows quickly, then it is very large for large values of ![n](https://latex.codecogs.com/svg.latex?n). To have a large running time is to be slow.
 1.
+   1. Nothing.
+   1. ![the order of f of n](https://latex.codecogs.com/svg.latex?\Theta(f(n))) is a lower order than ![the order of h of n](https://latex.codecogs.com/svg.latex?\Theta(h(n))).
+   1. Either ![the order of g of n](https://latex.codecogs.com/svg.latex?\Theta(g(n))) is a lower order than ![the order of h of n](https://latex.codecogs.com/svg.latex?\Theta(h(n))) or they are both the same order, namely ![order n cubes](https://latex.codecogs.com/svg.latex?\Theta(n^3))
 1.
 1.
 1.
