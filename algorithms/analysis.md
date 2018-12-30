@@ -141,9 +141,9 @@ Suppose `key` is present in `a` at exactly one place. In the best case, `key` is
 
 In the worst case, `key` is in the last position (index ![n minus 1](https://latex.codecogs.com/svg.latex?n-1)), so the algorithm takes linear time.
 
-Average case analysis can be a bit trickier, because we have to make additional assumptions about how likely various possibilities are. For this algorithm, let's assume that `key` is equally likely to be at any position in the array. The average number of passes through the loop is therefore
+Average case analysis can be a bit trickier, because we have to make additional assumptions about how likely various possibilities are. For this algorithm, let's assume that `key` is equally likely to be at any position in the array. The average number of passes through the loop is therefore:
 
-![n](https://latex.codecogs.com/svg.latex?\frac{1}{n}\sum_{i=1}^n{i}=\frac{n+1}{2}\in\Theta(n))
+![1 over n times the sum of the numbers 1 through n, which equals n plus 1 over 2, which is in order n](https://latex.codecogs.com/svg.latex?\frac{1}{n}\sum_{i=1}^n{i}=\frac{n+1}{2}\in\Theta(n))
 
 The best-case running time of an algorithm is always at least as good as its average running time, which in turn is at least as good as its worst-case running time.
 
