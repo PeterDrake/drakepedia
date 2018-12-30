@@ -205,8 +205,8 @@ Recurrence | Solution
    1. What can we conclude about the relationship between ![the order of f of n](https://latex.codecogs.com/svg.latex?\Theta(f(n))) and ![the order of g of n](https://latex.codecogs.com/svg.latex?\Theta(g(n)))?
    1. What can we conclude about the relationship between ![the order of f of n](https://latex.codecogs.com/svg.latex?\Theta(f(n))) and ![the order of h of n](https://latex.codecogs.com/svg.latex?\Theta(h(n)))?
    1. What can we conclude about the relationship between ![the order of g of n](https://latex.codecogs.com/svg.latex?\Theta(g(n))) and ![the order of h of n](https://latex.codecogs.com/svg.latex?h(\Theta(n)))?
-1. TODO Deceptive big O result due to constant > 1
-1. TODO Analyze linear search when key is not present.
+1. :star::star: Suppose we know that ![f of n is in big o of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;g(n)). Can we conclude that ![f of n is less than g of n](https://latex.codecogs.com/svg.latex?f(n)<g(n)) for small values of ![n](https://latex.codecogs.com/svg.latex?n)? What about for large values?
+1. :star::star: What is the order of the running time of the `linearSearch` algorithm above when `key` is not present in `a`?
 1. TODO Best case is not small n
 1. TODO Calculus definition
 1. :star::star::star: Read the definition of ![tilde](https://latex.codecogs.com/svg.latex?\sim) notation on the Sedgewick & Wayne booksite. Given two functions ![f(n)](https://latex.codecogs.com/svg.latex?f(n)) and ![g of n](https://latex.codecogs.com/svg.latex?g(n)), what is the relationship between the statements ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)) and ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n)))? In other words, does one statement imply the other, vice versa, neither, or both?
@@ -215,9 +215,9 @@ Recurrence | Solution
 1.
    1. Nothing.
    1. ![the order of f of n](https://latex.codecogs.com/svg.latex?\Theta(f(n))) is a lower order than ![the order of h of n](https://latex.codecogs.com/svg.latex?\Theta(h(n))).
-   1. Either ![the order of g of n](https://latex.codecogs.com/svg.latex?\Theta(g(n))) is a lower order than ![the order of h of n](https://latex.codecogs.com/svg.latex?\Theta(h(n))) or they are both the same order, namely ![order n cubes](https://latex.codecogs.com/svg.latex?\Theta(n^3))
-1.
-1.
+   1. Either ![the order of g of n](https://latex.codecogs.com/svg.latex?\Theta(g(n))) is a lower order than ![the order of h of n](https://latex.codecogs.com/svg.latex?\Theta(h(n))) or they are both the same order, namely ![order n cubes](https://latex.codecogs.com/svg.latex?\Theta(n^3)).
+1. No. Asymptotic notation says nothing about small values of ![n](https://latex.codecogs.com/svg.latex?n). For large values, we know that ![f of n](https://latex.codecogs.com/svg.latex?f(n)) exceeds ![g of n](https://latex.codecogs.com/svg.latex?g(n)) by no more than a constant factor, but it might be that ![f of n equals 10 n](https://latex.codecogs.com/svg.latex?f(n)=10n) and ![g of n equals n](https://latex.codecogs.com/svg.latex?g(n)=n).
+1. Linear.
 1.
 1.
 1. ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)) implies ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n))), but not vice versa. For example, if ![f of n equals n](https://latex.codecogs.com/svg.latex?f(n)=n) and ![g of n equals 2n](https://latex.codecogs.com/svg.latex?g(n)=2n), then ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n))) but it is not true that ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)). The ![tilde](https://latex.codecogs.com/svg.latex?\sim) notation ignores lower-order terms just like ![big theta](https://latex.codecogs.com/svg.latex?\Theta) notation does, but it does not ignore constant factors.
