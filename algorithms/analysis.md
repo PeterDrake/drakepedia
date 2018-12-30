@@ -177,7 +177,17 @@ To get to an order, we need to solve the recurrence relation, that is, find an e
 
 ![t of n equals n](https://latex.codecogs.com/svg.latex?T(n)=n)
 
+This can be verified by substituting the solution into the right side in both parts of the recurrence relation.
 
+Solving recurrence relations is an advanced topic, but fortunately a few specific cases cover most of the recursive algorithms you'll encounter. They are summarized in the table below, which omits the base case lines as they don't affect the order of the solutions.
+
+Recurrence | Solution
+-|-
+![t of n equals n plus t of n minus 1](https://latex.codecogs.com/svg.latex?T(n)=n+T(n-1)) | ![order n squared](https://latex.codecogs.com/svg.latex?\Theta(n^2))
+![t of n equals n plus 2 times t of n over 2](https://latex.codecogs.com/svg.latex?T(n)=n+2T(n/2)) | ![order n log n](https://latex.codecogs.com/svg.latex?\Theta(n\log&space;n))
+![t of n equals 1 plus t of n minus 1](https://latex.codecogs.com/svg.latex?T(n)=1+T(n-1)) | ![order n](https://latex.codecogs.com/svg.latex?\Theta(n))
+![t of n equals n plus t of n over 2](https://latex.codecogs.com/svg.latex?T(n)=n+T(n/2)) | ![order n](https://latex.codecogs.com/svg.latex?\Theta(n))
+![t of n equals 1 plus t of n over 2](https://latex.codecogs.com/svg.latex?T(n)=1+T(n/2)) | ![order log n](https://latex.codecogs.com/svg.latex?\Theta(\log&space;n))
 
 ## Additional Resources
 ### Online
