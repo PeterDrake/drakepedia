@@ -45,8 +45,8 @@ delicious gravy to be had. My general advice is to keep an eye out for anything 
 a better way; often there is a way to get the IDE to do the boring work for you.
 ### Creating a Program
 Right click on the src directory and select `New` | `Java Class`.
-### Saving a Program
-You don't have to do anything! IntelliJ IDEA automatically saves every few seconds.
+### Saving and Compiling a Program
+You don't have to do anything! IntelliJ IDEA automatically saves and compiles every few seconds.
 ### A Few Neat Tricks
 #### Autocomplete
 If you type part of something, IntelliJ IDEA pops up a menu of ways that you might want to complete it. It's practically multiple-choice programming! You can navigate through this menu with arrow keys and hit `enter` to pick the one you want (or just hit 'tab' to accept the first one). Note that while IntelliJ's first suggestion is *often* the right one, sometimes it isn't.
@@ -68,7 +68,9 @@ The tool windows you're likely to use most often are:
 ## Additional Resources
 ### Online
 - You can get a list of hotkeys from the `Help` menu (`Keymap Reference`).
-- If you installed the Features Trainer, there is a `Learn` option on the left side of the IntelliJ window; this links to several tutorials. (If you missed that during installation, go to `IntelliJ IDEA` \ `Preferences` | `Plugins` and install `IDE Features Trainer`.
+- If you installed the Features Trainer, there is a `Learn` option on the left side of the IntelliJ window; this links to several tutorials. (If you missed that during installation, go to `IntelliJ IDEA` | `Preferences` | `Plugins` and install `IDE Features Trainer`.
 - [JetBrains tutorials](https://www.jetbrains.com/idea/documentation/)
 ## Questions
+1. :star::star: You have a data file that your program is going to read. Where should you put that file?
 ## Answers
+1. Create a directory paralell to `src`; a good name for it is `resources`. Right click on it and select `Mark Directory as` | `Resources Root`.
