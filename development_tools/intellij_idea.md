@@ -8,11 +8,10 @@ in the editor.
 I've chosen IntelliJ IDEA because it is:
 - widely used in industry,
 - free and platform-independent, and
-- nearly identical to PyCharm (for Python) and Android Studio (for Android applications), so learning either of these should
-easy for someone who knows their way around IDEA.
+- nearly identical in design to PyCharm (for Python) and Android Studio (for Android applications), so learning either of these should easy for someone who knows their way around IDEA.
 ## Setup
 ### Downloading
-Note that you'll have to [install Java](development_tools/command_line.md) first.
+Note that you'll have to install the [Java Development Kit](command_line.md) first.
 
 You can download the [Community Edition](https://www.jetbrains.com/idea/download/) for free. You can also get the Ultimate
 Edition for free as a student by [filling out a form](https://www.jetbrains.com/student/), but there's no good reason
@@ -42,18 +41,19 @@ at the upper left of the IntelliJ IDEA window.
 ## Using IntelliJ IDEA
 The information below is enough to let you write and run programs. Everything else is just gravy, but there is a *lot* of
 delicious gravy to be had. My general advice is to keep an eye out for anything that seems tedious and then ask if there's
-a better way; often there is a way to get the IDE to do the boring work for you.
+a better way; often there is a way to get the IDE to do the boring work for you. Don't get hung up on memorizing all of the
+options, which would be impossible; just learn the features you use often and be vaguely aware of the features you use occasionally.
 ### Creating a Program
 Right click on the src directory and select `New` | `Java Class`.
 ### Saving and Compiling a Program
 You don't have to do anything! IntelliJ IDEA automatically saves and compiles every few seconds.
 ### A Few Neat Tricks
 #### Autocomplete
-If you type part of something, IntelliJ IDEA pops up a menu of ways that you might want to complete it. It's practically multiple-choice programming! You can navigate through this menu with arrow keys and hit `enter` to pick the one you want (or just hit 'tab' to accept the first one). Note that while IntelliJ's first suggestion is *often* the right one, sometimes it isn't.
+If you type part of something, IntelliJ IDEA pops up a menu of ways that you might want to complete it. It's practically multiple-choice programming! You can navigate through this menu with arrow keys and hit `enter` to pick the one you want (or just hit `tab` to accept the first one). Note that while the first suggestion is *often* the right one, sometimes it isn't.
 
 There are also a number of live templates that generate common code, such as `sout` to generate a `System.out.println` statement.
 #### Documentation
-To see the documentation for a class or method, put your cursor in the word and hit `ctrl-j'. It's faster than searching the web!
+To see the documentation for a class or method, put your cursor in the word and hit `ctrl-j`. It's faster than searching the web!
 #### Renaming
 Suppose you want to rename one of your variables or methods. Using a regular editor, this would be tedious and error-prone because you'd have to find all of the places where you used that name. With an IDE, it's much easier.
 
