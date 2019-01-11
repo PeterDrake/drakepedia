@@ -71,6 +71,8 @@ The tool windows you're likely to use most often are:
 - If you installed the Features Trainer, there is a `Learn` option on the left side of the IntelliJ window; this links to several tutorials. (If you missed that during installation, go to `IntelliJ IDEA` | `Preferences` | `Plugins` and install `IDE Features Trainer`.
 - [JetBrains tutorials](https://www.jetbrains.com/idea/documentation/)
 ## Questions
+1. :star: In what directory do program files generally live?
 1. :star::star: You have a data file that your program is going to read. Where should you put that file?
 ## Answers
+1. `src`
 1. Create a directory paralell to `src`; a good name for it is `resources`. Right click on it and select `Mark Directory as` | `Resources Root`.
