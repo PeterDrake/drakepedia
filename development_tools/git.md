@@ -83,11 +83,36 @@ git checkout master
 ```
 to reattach `HEAD` to the front of the `master` branch. Never make commits in a detached HEAD state; it could cause you to lose work.
 ### Branches
+Sometimes you want to do some experimental work on your program without putting it into the `master` branch. This is the time to create another branch. (You should be in a clean state before doing this, but it's okay if you're in a detached HEAD state.) Here's the command:
+```
+git checkout -b experiment
+```
+In this example, `experiment` is the name of your new branch. Now that you're on this branch, you can work as normal, modifying files and making commits. If you ever want to switch between branches, just do something like
+```
+git checkout branchname
+```
+where `branchname` is the name of the branch you want to switch to (e.g., `master`).
+
+Now suppose your experiment went well and you want to merge the two branches. If you're currently on the `experiment` branch, you can merge any changes from `master` with:
+```
+git merge master
+```
+To merge those changes back into 'master':
+```
+git checkout master
+git merge experiment
+```
+If you commit and merge often, and are a little lucky, merging will succeed automatically. Git is quite clever about this; if the changes on two branches are to different files, or even to different methods within the same file, git can figure out how to keep both sets of changes.
+
+Occasionally, though, it won't be obvious to git how to combine the changes. This is the dreaded *merge conflict*. When this happens, git will open your editor (we specified emacs above) and ask you to resolve the conflict, i.e., edit the files to keep the parts you want. After you have the files the way you want them, commit again to complete the merge.
 ### Remote Repositories
+Everything above has been about a local repository on your own machine. 
 ## Additional Resources
 ### Online
 ### Print
 ## Questions
 1. :star::star: How often should you commit?
+1. :star::star: Where is a local repository stored?
 ## Answers
-1. Often -- several times an hour. Part of the point of git is to allow you to go back to a previous commit if you make a mistake, so you want to have many options of how far to go back.
+1. Often -- several times an hour. Part of the point of git is to allow you to go back to a previous commit if you make a mistake, so you want to have many options as to how far to go back.
+1. In a hidden directory called `.git` inside the directory where you ran `git init`.
