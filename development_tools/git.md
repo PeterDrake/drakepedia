@@ -106,10 +106,31 @@ If you commit and merge often, and are a little lucky, merging will succeed auto
 
 Occasionally, though, it won't be obvious to git how to combine the changes. This is the dreaded *merge conflict*. When this happens, git will open your editor (we specified emacs above) and ask you to resolve the conflict, i.e., edit the files to keep the parts you want. After you have the files the way you want them, commit again to complete the merge.
 ### Remote Repositories
-Everything above has been about a local repository on your own machine. 
+Everything above has been about a local repository on your own machine. This is useful, but the real power of git lies in collaborating with others, using a remote repository stored at someplace like [GitHub](https://github.com/).
+
+Once you have cloned a remote repository to get a local one, you can work along in your local repository. You should avoid working on the `master` branch, but stable code will be merged into it.
+
+Occasionally, you'll want to incorporate the latest changes from the remote `master` branch into the branch you're working on (e.g., `experiment`). First make sure you are in a clean state, then:
+```
+git checkout master
+git pull
+git checkout experiment
+git merge master
+```
+The `pull` command brought all the changes from the remote `master` branch into your local `master` branch. You then merged these into your `experiment` branch.
+
+You can now push your branch to the remote branch:
+```
+git push origin experiment
+```
+This serves two purposes:
+- It stores a remote copy, so you won't lose your work even if your computer is destroyed.
+- Once you're confident that your code is woring properly, it enables you to make a "pull request", asking that your branch be merged into the remote `master` branch.
 ## Additional Resources
 ### Online
+- [Pro Git](https://git-scm.com/book/en/v2)
 ### Print
+- Chacon and Straub, *Pro Git*
 ## Questions
 1. :star::star: How often should you commit?
 1. :star::star: Where is a local repository stored?
