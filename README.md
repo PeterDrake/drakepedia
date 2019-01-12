@@ -28,4 +28,4 @@ Algorithms | | [Analysis of Algorithms](algorithms/analysis.md)<br>Traversal<br>
 Style | | Documentation<br>Omitting Needless Code | Defensive Programming |
 Object-<br>Oriented Programming | | Constructors<br>Instance Methods<br>Wrappers<br>Access Modifiers<br>Default Methods<br>Interfaces | Inheritance<br>Packages<br>Generics<br>Exceptions | Enums<br>Inner Classes
 Libraries | | java.lang<br>stidlib<br>java.util | | javax.swing
-Software<br>Development | | Plan-Change Evaluate Cycle<br>Testing<br>Debugging | | eXtreme Programming<br>Object-Oriented Design<br>Design Patterns
+Software<br>Development | | Plan-Change Evaluate Cycle<br>Testing<br>Debugging | | XP<br>OO Design<br>Design Patterns
