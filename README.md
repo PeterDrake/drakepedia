@@ -25,7 +25,7 @@ Development Tools | [Command Line](development_tools/command_line.md) | [Intelli
 Control<br>Structures | Main Method<br>If / Else<br>Loops<br>Static Methods | Recursion | |
 Data<br>Structures | Literals<br>Operators<br>Variables<br>Primitive Types<br>Strings<br>Arrays | Inanimate Objects<br>References<br>Linked Lists<br>Abstract Data Types<br>Lists<br>Stacks<br>Queues<br>Trees<br>Graphs | Sets<br>Priority Queues<br>Union-Find |
 Algorithms | | [Analysis of Algorithms](algorithms/analysis.md)<br>Traversal<br>Search | Sorting<br>Graph Algorithms |
-Style | | Documentation<br>Omitting Needless Code | Defensive Programming |
+Style | | Documentation<br>Omitting Needless<br>&nbsp;Code | Defensive<br>&nbsp;Programming |
 Object-<br>Oriented Programming | | Constructors<br>Instance Methods<br>Wrappers<br>Access Modifiers<br>Default Methods<br>Interfaces | Inheritance<br>Packages<br>Generics<br>Exceptions | Enums<br>Inner Classes
 Libraries | | java.lang<br>stidlib<br>java.util | | javax.swing
-Software<br>Development | | Plan-Change-Evaluate<br>Testing<br>Debugging | | XP<br>OO Design<br>Design Patterns
+Software<br>Development | | Plan-Change-Evaluate<br>Testing<br>Debugging | | eXtreme<br>&nbsp;Programming<br>Object-Oriented<br>&nbsp;Design<br>Design Patterns
