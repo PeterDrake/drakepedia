@@ -4,13 +4,8 @@ While I generally prefer to work in an integrated development environment like I
 develop Java programs from the command line.
 
 You must first have the [Java Development Kit](https://www.oracle.com/technetwork/java/javase/downloads/index.html) installed
-on your machine. You can verify that this is working by typing `java -version` on your command line. This should produce output
-something like that shown below.
-```
-java version "11.0.1" 2018-10-16 LTS
-Java(TM) SE Runtime Environment 18.9 (build 11.0.1+13-LTS)
-Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.1+13-LTS, mixed mode)
-```
+on your machine. You can verify that this is working by typing `javac -version` on your command line.
+
 The simple program below should be saved in a file called `Hello.java`. You can use any simple text editor, such as
 [Emacs](https://www.gnu.org/software/emacs/) (which comes pre-installed on most \*nix-based systems, including macOS),
 [Vim](https://www.vim.org/) (ditto), or [Sublime Text](https://www.sublimetext.com/). Be careful not to use a word processor
