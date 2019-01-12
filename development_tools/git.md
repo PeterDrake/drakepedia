@@ -130,6 +130,7 @@ This serves two purposes:
 ## Additional Resources
 ### Online
 - [Pro Git](https://git-scm.com/book/en/v2)
+- [A Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
 - [git](https://git-scm.com/)
 - [GitHub](https://github.com/)
 ### Print
