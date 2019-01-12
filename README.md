@@ -22,10 +22,10 @@ The table below shows which topics I expect people to learn in which courses. (C
 Topic | CS1 | CS2 | Algorithms | Software Development
 -|-|-|-|-
 Development Tools | [Command Line](development_tools/command_line.md) | [IntelliJ IDEA](development_tools/intellij_idea.md)| | [Git](development_tools/git)
-Control Structures | Main Method<br>If / Else Statements<br>Loops<br>Static Methods | Recursion | |
-Data Structures | Literals<br>Operators<br>Variables<br>Primitive Types<br>Strings<br>Arrays | Inanimate Objects<br>References<br>Linked Lists<br>Abstract Data Types<br>Lists<br>Stacks<br>Queues<br>Trees<br>Graphs | Sets<br>Priority Queues<br>Union-Find |
+Control<br>Structures | Main Method<br>If / Else Statements<br>Loops<br>Static Methods | Recursion | |
+Data<br>Structures | Literals<br>Operators<br>Variables<br>Primitive Types<br>Strings<br>Arrays | Inanimate Objects<br>References<br>Linked Lists<br>Abstract Data Types<br>Lists<br>Stacks<br>Queues<br>Trees<br>Graphs | Sets<br>Priority Queues<br>Union-Find |
 Algorithms | | [Analysis of Algorithms](algorithms/analysis.md)<br>Traversal<br>Search | Sorting<br>Graph Algorithms |
 Style | | Documentation<br>Omitting Needless Code | Defensive Programming |
-Object-Oriented Programming | | Constructors<br>Instance Methods<br>Wrappers<br>Access Modifiers<br>Default Methods<br>Interfaces | Inheritance<br>Packages<br>Generics<br>Exceptions | Enums<br>Inner Classes
+Object-<br>Oriented Programming | | Constructors<br>Instance Methods<br>Wrappers<br>Access Modifiers<br>Default Methods<br>Interfaces | Inheritance<br>Packages<br>Generics<br>Exceptions | Enums<br>Inner Classes
 Libraries | | java.lang<br>stidlib<br>java.util | | javax.swing
-Software Development | | Plan-Change Evaluate Cycle<br>Testing<br>Debugging | | eXtreme Programming<br>Object-Oriented Design<br>Design Patterns
+Software<br>Development | | Plan-Change Evaluate Cycle<br>Testing<br>Debugging | | eXtreme Programming<br>Object-Oriented Design<br>Design Patterns
