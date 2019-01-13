@@ -43,9 +43,11 @@ git merge master
 If you're about to issue a pull request, skip this entire step.
 
 1. Unless you're just refactoring, write one or more new unit tests. Run the tests to make sure they fail.
-1. Commit your changes.
+1. Add any new files to version control and commit your changes.
 1. Write/edit code until it passes all tests.
-1. Commit your changes.
+1. Add any new files to version control and commit your changes.
+
+Remember that you must **always** be in a clean state before trying to do anything else with git or GitHub; failure to do so  is a good way to lose your work. To get into a clean state, either commit or (if you're **absolutely sure you want to throw away all changes since the last commit**) `git reset --hard HEAD`.
 
 You've now added some new functionality! You can now either repeat this step or go back the beginning. You would go back to the beginning if either:
 - you have completed a task and are ready to share it with the rest of the team, or
@@ -53,10 +55,18 @@ You've now added some new functionality! You can now either repeat this step or 
 
 One or the other of these things should happen often!
 ### Committing From the Command Line
+To add a file:
+```
+git add yourfile
+```
+To commit:
 ```
 git commit -am 'Your commit message here'
 ```
 ### Committing From IntelliJ IDEA
+To add files:
+`command-9` to open the version control tool window. Right-click on files to add them to version control.
+To commit:
 `command-k`. Choose `Commit and Push` at the lower right.
 ## Issue Pull Request
 You've merged `master` into your branch and everything seems to be working. Now you're ready to share your code with the rest of your team!
