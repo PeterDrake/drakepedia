@@ -38,7 +38,7 @@ The developers now meet to do a small amount of planning.
 #### Coding
 Since we have received extensive training in this highly technical job, many students imagine that coding is the only "real" work and that the other parts of the process are meaningless bureaucratic hoops to jump through. Experienced developers know that planning, communication, coordination, and documentation are just as important. Cranking out a page of code by the seat of one's pants might suffice in an early computer science class, but in a large project with many developers this approach quickly leads to disaster.
 
-There are a number of technical steps for working with git here. A step-by-step process is provided in a separate document.
+There are a number of technical steps for working with git here. A step-by-step process is provided in [a separate document](xp_coding_steps.md).
 #### Delivery
 When time for the iteration runs out, it is time to deliver. We must resist the temptation to squeeze in one more feature that is "almost done". The last hour of each iteration is reserved for this stage.
 
