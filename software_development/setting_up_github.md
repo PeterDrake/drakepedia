@@ -25,6 +25,7 @@ out/
 1. Give the new repository the same name as the IntelliJ IDEA project.
 1. Select `Private`; do not initialize with a README.
 1. Click `Create repository`.
+1. In `Settings` | `Branches`, add a rule to the `master` branch that requires a pull request before merging. This prevents anyone from accidentally pushing to `master`.
 1. Copy the https URL to the clipboard.
 ## Push to the Remote Repository
 1. `VCS` | `Git` | `Push`.
