@@ -50,9 +50,8 @@ The customer now plays with the system, accepting or rejecting individual storie
 - [Extreme Programming: A gentle introduction](http://www.extremeprogramming.org/)
 - [The Agile Manifesto](https://agilemanifesto.org/)
 - [Extreme Programming: Values, Principles, and Practices](https://www.altexsoft.com/blog/business/extreme-programming-values-principles-and-practices/)
-- GitHub guide: [Mastering Issues](https://guides.github.com/features/issues/)
+- [GitHub guides](https://guides.github.com/)
 - [GitHub Issues Can be Agile if You To it Right](https://zube.io/blog/agile-project-management-workflow-for-github-issues/)
-- [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
 ### Print
 - Christensen, *Flexible, Reliable Software Using Patterns and Agile Development*, Chapter 1
 - Steinberg and Palmer, *Extreme Software Engineering: A Hands-On Approach*
