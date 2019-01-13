@@ -55,18 +55,22 @@ You've now added some new functionality! You can now either repeat this step or 
 
 One or the other of these things should happen often!
 ### Committing From the Command Line
-To add a file:
+To add a new file to version control:
 ```
 git add yourfile
 ```
+
 To commit:
 ```
 git commit -am 'Your commit message here'
 ```
 ### Committing From IntelliJ IDEA
-To add files:
+To add files to version control:
+
 `command-9` to open the version control tool window. Right-click on files to add them to version control.
+
 To commit:
+
 `command-k`. Choose `Commit and Push` at the lower right.
 ## Issue Pull Request
 You've merged `master` into your branch and everything seems to be working. Now you're ready to share your code with the rest of your team!
