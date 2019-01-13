@@ -59,3 +59,24 @@ git commit -am 'Your commit message here'
 ### Committing From IntelliJ IDEA
 `command-k`. Choose `Commit and Push` at the lower right.
 ## Issue Pull Request
+You've merged `master` into your branch and everything seems to be working. Now you're ready to share your code with the rest of your team!
+
+1. Go to GitHub.
+1. Navigate to your repository and the branch you've been working on.
+1. Click on `New pull request`.
+1. Set `base` to `master` and `compare` to your branch.
+1. Click on `Create pull request`.
+## Review Code
+Now find another pair in your team to review your code. You may have to wait a few minutes for them to make their next commit so that they can give you their full attention.
+
+Working with this other pair on GitHub, review the changes you made. Some things to consider:
+- Does the new code compile, run, and perform as advertised?
+- Are there thorough unit tests?
+- Is the code clean and well-documented?
+- Is there any way the code could be improved?
+
+If not everyone is satisfied, go back to the beginning and make improvements. The pull request remains open.
+
+When everyone is happy, have someone click on `Merge pull request`. Now your new features have been incorporated into the `master`, so everyone else will get them the next time they pull the latest code and merge from `master`.
+## Choose a New Task
+Choose a new task to work on. Often this will be the next task in the same story, but if you've finished an entire story you can pick, from the unclaimed stories, the one that has the highest priority as set by the customer.
