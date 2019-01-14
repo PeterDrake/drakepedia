@@ -11,6 +11,8 @@ The best way to learn Swing is probably to read chapters 10 and 11 of Horstmann'
 ### Print
 - Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Chapters 10-11
 ## Questions
+1. :star: Which class corresponds to a visible window on the screen?
 1. :star: Where is 0, 0 in the coordinate system used by Swing?
 ## Answers
+1. `javax.swing.JFrame`.
 1. At the upper left. The first coordinate is the `x` coordinate from left to right (in pixels). The second is the `y` coordinate from top to bottom.
