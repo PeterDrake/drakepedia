@@ -18,4 +18,4 @@ One could make a reasonable argument that there are better libraries (such as Ja
 ## Answers
 1. [`javax.swing.JFrame`](https://docs.oracle.com/javase/8/docs/api/index.html?javax/swing/package-summary.html).
 1. At the upper left. The first coordinate is the `x` coordinate from left to right (in pixels). The second is the `y` coordinate from top to bottom.
-1. [`java.awt.Component.repaint`](https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#repaint--).
+1. [`java.awt.Component.repaint`](https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#repaint--) (usually on a `JFrame`, which descends from `Component`).
