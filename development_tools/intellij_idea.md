@@ -31,7 +31,7 @@ There are several ways to do this:
 - Right click on the file within the src directory and select `Run`.
 - Click on the green play triangle near the top center of the window. This runs the last program that was run; that's
 *usually* what you want, but it can sometimes give surprising results if you've started editing a different file.
-- Hit `ctrl-R` (with the same caveat).
+- Hit `ctrl-R` (Mac) / `shift-F10` (Windows), with the same caveat.
 - Use the `Run` menu at the top of the screen.
 ### Installing stdlib
 1. Download the file stdlib.jar from [Sedgewick & Wayne's website](https://introcs.cs.princeton.edu/java/stdlib/). (The link is right under the table.)
@@ -53,7 +53,7 @@ If you type part of something, IntelliJ IDEA pops up a menu of ways that you mig
 
 There are also a number of live templates that generate common code, such as `sout` to generate a `System.out.println` statement.
 #### Documentation
-To see the documentation for a class or method, put your cursor in the word and hit `ctrl-j`. It's faster than searching the web!
+To see the documentation for a class or method, put your cursor in the word and hit `F1`. It's faster than searching the web!
 #### Renaming
 Suppose you want to rename one of your variables or methods. Using a regular editor, this would be tedious and error-prone because you'd have to find all of the places where you used that name. With an IDE, it's much easier.
 
@@ -67,7 +67,7 @@ The tool windows you're likely to use most often are:
 - Structure, which shows the methods in your current class in alphabetical order. No more scrolling through the code!
 ## Additional Resources
 ### Online
-- You can get a list of hotkeys from the `Help` menu (`Keymap Reference`).
+- You can get a list of hotkeys from the `Help` menu (`Keymap Reference`). Weirdly, one of the most useful hotkeys (`F1` to get documentation on the method or class under the cursor) isn't on this list. 
 - If you installed the Features Trainer, there is a `Learn` option on the left side of the IntelliJ window; this links to several tutorials. (If you missed that during installation, go to `IntelliJ IDEA` | `Preferences` | `Plugins` and install `IDE Features Trainer`.
 - [JetBrains tutorials](https://www.jetbrains.com/idea/documentation/)
 ## Questions
