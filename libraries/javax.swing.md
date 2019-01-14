@@ -5,6 +5,30 @@ javax.swing is the library built into Java for creating graphic user interfaces 
 The best way to learn Swing is probably to read chapters 10 and 11 of Horstmann's *Core Java*. The second best is to work through the code for these chapters from his website; I do this in the first couple of weeks of Software Development.
 
 One could make a reasonable argument that there are better libraries (such as JavaFX) or more modern ways of creating GUIs (such as creating web-based interfaces). Following Hortsmann's lead, I have chosen to stick with Swing so as not to overload students with too many installations, tools, and languages.
+## Components
+Look up individual components as you need details. For quick reference, here are some of the most widely-used classes:
+- Layout
+  - GridBagLayout
+  - JPanel
+  - JScrollPane
+- Text
+  - JLabel
+  - JTextField
+  - JPasswordField
+  - JTextArea
+- Choice
+  - JCheckBox
+  - ButtonGroup / JRadioButton
+  - JComboBox
+  - JSlider
+- Menus
+  - JMenuBar / JMenu / JMenuItem
+  - JPopupMenu
+  - JToolBar
+- Dialogs
+  - JOptionPane
+  - JDialog
+  - JFileChooser
 ## Additional Resources
 ### Online
 - [*Core Java* website](http://horstmann.com/corejava/)
