@@ -15,7 +15,9 @@ One could make a reasonable argument that there are better libraries (such as Ja
 1. :star: Which class corresponds to a visible window on the screen?
 1. :star: Where is 0, 0 in the coordinate system used by Swing?
 1. :star::star: If some back-end information in your program has changed and you need to re-draw something, what method should you call?
+1. :star::star: Why can't you create an instance of `Rectangle2D`?
 ## Answers
 1. [`javax.swing.JFrame`](https://docs.oracle.com/javase/8/docs/api/index.html?javax/swing/package-summary.html).
 1. At the upper left. The first coordinate is the `x` coordinate from left to right (in pixels). The second is the `y` coordinate from top to bottom.
 1. [`java.awt.Component.repaint`](https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#repaint--) (usually on a `JFrame`, which descends from `Component`).
+1. It is an abstract class. You must instead create an instance of `Rectangle2D.Double` (or, if you're creating a *huge* number of objects, `Rectangle2D.Float`).
