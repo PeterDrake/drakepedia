@@ -75,4 +75,4 @@ The tool windows you're likely to use most often are:
 1. :star::star: You have a data file that your program is going to read. Where should you put that file?
 ## Answers
 1. `src`
-1. Create a directory paralell to `src`; a good name for it is `resources`. Right click on it and select `Mark Directory as` | `Resources Root`.
+1. Create a directory parallel to `src`; a good name for it is `resources`. Right click on it and select `Mark Directory as` | `Resources Root`.
