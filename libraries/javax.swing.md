@@ -8,11 +8,14 @@ One could make a reasonable argument that there are better libraries (such as Ja
 ## Additional Resources
 ### Online
 - [*Core Java* website](http://horstmann.com/corejava/)
+- [Swing API](https://docs.oracle.com/javase/8/docs/api/index.html?javax/swing/package-summary.html) (Strangely, even though Swing is included with later versions of Java, later versions of the API don't mention it.)
 ### Print
 - Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Chapters 10-11
 ## Questions
 1. :star: Which class corresponds to a visible window on the screen?
 1. :star: Where is 0, 0 in the coordinate system used by Swing?
+1. :star::star: If the back-end information in your program has changed and you need to re-draw something, what method should you call?
 ## Answers
-1. `javax.swing.JFrame`.
+1. [`javax.swing.JFrame`](https://docs.oracle.com/javase/8/docs/api/index.html?javax/swing/package-summary.html)
 1. At the upper left. The first coordinate is the `x` coordinate from left to right (in pixels). The second is the `y` coordinate from top to bottom.
+1. `repaint`
