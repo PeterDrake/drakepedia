@@ -2,9 +2,9 @@
 ## Overview
 javax.swing is the library built into Java for creating graphic user interfaces (GUIs). It is more challenging to use than stdlib, but significantly more powerful. For instance, in buttons, sliders, and pop-up menus.
 
-The best way to learn Swing is probably to read chapters 10 and 11 of Horstmann's book. The second best is to work through the code for these chapters from his website; I do this in the first couple of weeks of Software Development.
+The best way to learn Swing is probably to read chapters 10 and 11 of Horstmann's *Core Java*. The second best is to work through the code for these chapters from his website; I do this in the first couple of weeks of Software Development.
 
-One could make a reasonable argument that there are better libraries (such as JavaFX) or more modern ways of creating GUIs (such as creating web-based interfaces). Following the lead of Horstmann in *Core Java*, I have chosen to stick with Swing so as not to overload students with too many installations, tools, and languages.
+One could make a reasonable argument that there are better libraries (such as JavaFX) or more modern ways of creating GUIs (such as creating web-based interfaces). Following Hortsmann's lead, I have chosen to stick with Swing so as not to overload students with too many installations, tools, and languages.
 ## Additional Resources
 ### Online
 - [*Core Java* website](http://horstmann.com/corejava/)
