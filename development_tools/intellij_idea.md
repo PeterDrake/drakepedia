@@ -46,7 +46,7 @@ options, which would be impossible; just learn the features you use often and be
 ### Creating a Program
 Right click on the src directory and select `New` | `Java Class`.
 ### Saving and Compiling a Program
-You don't have to do anything! IntelliJ IDEA automatically saves and compiles every few seconds.
+You don't have to do anything! IntelliJ IDEA automatically saves every few seconds. It compiles the program (if necessary) every time you run it.
 ### A Few Neat Tricks
 #### Autocomplete
 If you type part of something, IntelliJ IDEA pops up a menu of ways that you might want to complete it. It's practically multiple-choice programming! You can navigate through this menu with arrow keys and hit `enter` to pick the one you want (or just hit `tab` to accept the first one). Note that while the first suggestion is *often* the right one, sometimes it isn't.
