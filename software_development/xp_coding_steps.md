@@ -67,11 +67,11 @@ git commit -am 'Your commit message here'
 ### Committing From IntelliJ IDEA
 To add files to version control:
 
-`command-9` to open the version control tool window. Right-click on files to add them to version control.
+`command-9` (Mac) / `alt-9` (Windows) to open the version control tool window. Right-click on files to add them to version control.
 
 To commit:
 
-`command-k`. Choose `Commit and Push` at the lower right.
+`command-k` (Mac) / `ctrl-k` (Windows). Choose `Commit and Push` at the lower right.
 ## Issue Pull Request
 You've merged `master` into your branch and everything seems to be working. Now you're ready to share your code with the rest of your team!
 
