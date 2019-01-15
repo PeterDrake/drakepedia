@@ -17,6 +17,7 @@ Look up individual components as you need details. For quick reference, here are
   - JPasswordField
   - JTextArea
 - Choice
+  - JButton
   - JCheckBox
   - ButtonGroup / JRadioButton
   - JComboBox
