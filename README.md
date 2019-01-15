@@ -21,7 +21,7 @@ The table below shows which topics I expect people to learn in which courses. (C
 
 Topic | CS1 | CS2 | Algorithms | Software Development
 -|-|-|-|-
-Development Tools | [Command Line](development_tools/command_line.md) | [IntelliJ IDEA](development_tools/intellij_idea.md)| | [Git](development_tools/git)
+Development Tools | [Command Line](development_tools/command_line.md) | [IntelliJ IDEA](development_tools/intellij_idea.md)| | [Git](development_tools/git.md)
 Control<br>Structures | Main Method<br>If / Else<br>&nbsp;&nbsp;Statements<br>Loops<br>Static Methods | Recursion | |
 Data<br>Structures | Literals<br>Operators<br>Variables<br>Primitive Types<br>Strings<br>Arrays | Inanimate Objects<br>References<br>Linked Lists<br>Abstract Data Types<br>Lists<br>Stacks<br>Queues<br>Trees<br>Graphs | Sets<br>Priority Queues<br>Union-Find |
 Algorithms | | [Analysis of Algorithms](algorithms/analysis.md)<br>Traversal<br>Search | Sorting<br>Graph Algorithms |
