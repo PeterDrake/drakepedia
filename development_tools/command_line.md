@@ -30,11 +30,11 @@ java Hello
 ```
 ## Additional Resources
 ### Online
-- Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [section 1.1](https://introcs.cs.princeton.edu/java/11hello/)
-- Oracle's *Essentials of the Java Programming Language*, [lesson 1](https://www.oracle.com/technetwork/java/compile-136656.html)
+- Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 1.1](https://introcs.cs.princeton.edu/java/11hello/)
+- Oracle's *Essentials of the Java Programming Language*, [Lesson 1](https://www.oracle.com/technetwork/java/compile-136656.html)
 ### Print
-- Sedgewick and Wayne, *Introduction to Programming in Java*, section 1.1
-- Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, sections 2.1-2.2
+- Sedgewick and Wayne, *Introduction to Programming in Java*, Section 1.1
+- Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Sections 2.1-2.2
 ## Questions
 1. :star: What command is used to *compile* a Java program from the command line?
 1. :star: What command is used to *run* a Java program from the command line?
