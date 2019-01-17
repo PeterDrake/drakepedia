@@ -25,7 +25,7 @@ return;
 - Oracle's *Essentials of the Java Programming Language*, [Lesson 1](https://www.oracle.com/technetwork/java/compile-136656.html)
 ### Print
 - Sedgewick and Wayne, *Introduction to Programming in Java*, Section 1.1
-- Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Sections 2.1-2.2
+- Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Section 3.1
 ## Questions
 1. :star::star: What, if anything, can be changed on the first line of the program?
 1. :star::star: What, if anything, can be changed in the line:
