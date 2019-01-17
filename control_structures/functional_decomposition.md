@@ -5,6 +5,8 @@ A long program can be greatly improved by breaking it down into multiple *functi
 - The structure of the code is made clearer, making the code easier to read and write.
 - Individual methods can be tested, making the code easier to debug.
 - Methods can often be reused to solve other problems.
+
+A well-designed method should *do only one thing*: either return a value or have some side effect (modify a data structure in memory, draw something on the screen, etc.). 
 ### Calling Methods
 To call a method defined in the same class, use this syntax:
 ```java
@@ -39,7 +41,8 @@ static int square(int n) {
     return n * n;
 }
 ```
-
+### Return Statements
+### The Call Stack
 ## Additional Resources
 ### Online
 - Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 2.1](https://introcs.cs.princeton.edu/java/13function/)
@@ -51,6 +54,7 @@ static int square(int n) {
     ```java
     double s = Math.sin(double x);
     ```
+1. :star::star::star: Is it legal to have more than one method with the same name in the same class?
 ## Answers
 1. Don't put anything between the parentheses:
     ```java
@@ -60,3 +64,4 @@ static int square(int n) {
     ```java
     double s = Math.sin(x);
     ```
+1. Yes, as long as their argument lists differ in number or type. This is called *overloading*. When you call the method, Java uses the types of the arguments you provide to determine which version to use.
