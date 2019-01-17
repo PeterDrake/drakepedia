@@ -73,12 +73,13 @@ Its flow is:
 3. Execute the statements in the body of the loop.
 4. Go back to step 1.
 
-This loop is extremely handy for iterating through the elements of an array:
+The for each loop is extremely handy for iterating through the elements of an array:
 ```java
 for (int n : numbers) {
     System.out.println(n);
 }
 ```
+The first line can be read, "for each `int` `n` in `numbers`...".
 ## Additional Resources
 ### Online
 - Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 1.3](https://introcs.cs.princeton.edu/java/13flow/)
@@ -87,5 +88,44 @@ for (int n : numbers) {
 - Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Sections 3.8.3, 3.8.4, 3.8.6, and 3.10.3
 ## Questions
 1. :star: Explain how an `if` loop works.
+1. :star::star: What's the best loop to use to iterate through the elements of an array *backward*?
+1. :star::star: What's the best loop to use to modify an array of doubles to make each element 10 times as large?
+1. :star::star: Can a loop body be empty?
+1. :star::star: Which parts, if any, of the first line of a `for` loop can be omitted?
+1. :star::star: A variable declared in the initialization part of a `for` loop is only visible inside that loop. What can we do if we need to access it after the loop ends (to see its final value)?
 ## Answers
 1. There is no such thing as an `if` loop. Loops potentially execute their bodies multiple times, but `if` statements do so at most once.
+1. A `for` loop like:
+    ```java
+    for (int i = array.length - 1; i >= 0; i--) {
+        ...
+    }
+    ```
+    This could also be done with a `while` loop, but it would be more code. A for each loop wouldn't work because it only goes through a structure forward.
+1. A `for` loop:
+    ```java
+    for (int i = 0; i < array.length; i++) {
+        array[i] = array[i] * 10; // If you know about *=, that would be even better
+    }
+    ```
+    This could also be done with a `while` loop, but it would be more code. A for each loop wouldn't work because it doesn't give you access to the *indices* into the array, just the elements themselves.
+1. Sure. This is sometimes useful when all of the necessary work is done in the first line of the loop.
+1. All three of them. Empty initialization and update parts do nothing; an empty test always counts as `true`. Thus,
+    ```java
+    for ( ; ; ) {
+        ...
+    }
+    ```
+    is equivalent to:
+    ```java
+    while (true) {
+        ...
+    }
+    ```
+1. Declare the variable before the loop starts:
+    ```java
+    int i;
+    for (i = 0; i < 10; i++) {
+        ...
+    }
+    ```
