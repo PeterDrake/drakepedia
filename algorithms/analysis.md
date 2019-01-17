@@ -201,9 +201,10 @@ Recurrence | Solution Order
 ## Additional Resources
 ### Online
 - Short [video lecture](https://www.youtube.com/watch?v=w7-6h64HSQ8) on asymptotic notation
-- OpenDSA, [Chapter 8](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/AnalChap.html)
+- OpenDSA, [Algorithm Analysis](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/AnalChap.html)
 - Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 4.1](https://introcs.cs.princeton.edu/java/41analysis/)
 - Sedgewick and Wayne, *Algorithms, 4th Edition* booksite, [Section 1.4](https://algs4.cs.princeton.edu/14analysis/)
+- [Big-O Emoji](https://devrant.com/rants/1858258/big-o-emoji)
 ### Print
 - Sedgewick and Wayne, *Introduction to Programming in Java*, Section 4.1
 - Sedgewick and Wayne, *Algorithms, 4th Edition*, Section 1.4
