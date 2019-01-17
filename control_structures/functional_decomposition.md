@@ -42,6 +42,20 @@ static int square(int n) {
 }
 ```
 ### Return Statements
+To return a value from a method, use this syntax:
+```java
+return expr;
+```
+where `expr` is an expression of the appropriate type. If the method's return type is `void`, simply:
+```java
+return;
+```
+Once a `return` statement is executed, the method exits. No other code in the method is run after that. If there is code that cannot be reached because it is after a `return` statement, the method will not compile.
+
+A method with a return type of `void` doesn't need a `return` statement; it automatically returns at the end of the method.
+
+If the return type is not `void`, the method *must* return a value of that type. This must be true in every path through the method (taking different branches in `if`/`else` statements, entering or not entering loops, etc.). If there is a path through the method that does not lead to a return statement, the method will not compile.
+
 ### The Call Stack
 ## Additional Resources
 ### Online
@@ -54,6 +68,16 @@ static int square(int n) {
     ```java
     double s = Math.sin(double x);
     ```
+1. :star::star: Why does the method below not compile?
+    ```java
+    static int foo() {
+        for (int i = 0; i < 10; i++) {
+            if (i == 5) {
+                return 1;
+            }
+        }
+    }
+    ```
 1. :star::star::star: Is it legal to have more than one method with the same name in the same class?
 ## Answers
 1. Don't put anything between the parentheses:
@@ -64,4 +88,5 @@ static int square(int n) {
     ```java
     double s = Math.sin(x);
     ```
+1. The compiler can't predict that the `return` statement will always be reached. (It may be obvious to you that it will for this particular program, but in general it is impossible for the compiler to predict what a program will do.)
 1. Yes, as long as their argument lists differ in number or type. This is called *overloading*. When you call the method, Java uses the types of the arguments you provide to determine which version to use.
