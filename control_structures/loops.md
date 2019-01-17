@@ -122,6 +122,7 @@ The first line can be read, "for each `int` `n` in `numbers`...".
         ...
     }
     ```
+    In this extreme case, the `while` loop is clearer.
 1. Declare the variable before the loop starts:
     ```java
     int i;
