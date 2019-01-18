@@ -39,8 +39,8 @@ where:
 
 - *type* is the type of the value returned by the method (or `void` if the method doesn't return a value),
 - *name* is the name of the method,
-- each *type1* is the types of an argument, and
-- each *argument* is the names of the corresponding argument.
+- each *type* is the type of an argument, and
+- each *argument* is the name of the corresponding argument.
 
 Here is a more concrete example:
 ```java
@@ -65,7 +65,7 @@ If the return type is not `void`, the method *must* return a value of that type.
 ### The Call Stack
 When your `main` method calls a method, your program pauses, runs the other method, and then picks up where it left off in `main`. Behind the scenes, a structure called a *call frame* keeps track of where you are in each method as well as any local variables.
 
-If `main` call a method that in turn calls another method, you now have a *call stack*, with one call frame for the currently running method and one for each of the paused methods. Every time you call a method, a new call frame is pushed onto the top of the stack. Every time a method returns, a call frame is popped off the top of the stack and the next method down resumes. When the bottom call frame (for `main`) is popped off, the program ends.
+Of course, a method called by `main` may in turn call another method. The *call stack* contains one call frame for the currently running method and one for each of the paused methods. Every time you call a method, a new call frame is pushed onto the top of the stack. Every time a method returns, a call frame is popped off the top of the stack and the next method down resumes. When the bottom call frame (for `main`) is popped off, the program ends.
 ## Additional Resources
 ### Online
 - Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 2.1](https://introcs.cs.princeton.edu/java/13function/)
@@ -93,9 +93,9 @@ If `main` call a method that in turn calls another method, you now have a *call 
     ```java
     quux();
     ```
-1. Argument types aren't specified. This should be:
+1. Argument types aren't specified when calling a method. This should be:
     ```java
     double s = Math.sin(x);
     ```
-1. The compiler can't predict that the `return` statement will always be reached. (It may be obvious to you that it will for this particular program, but in general it is impossible for the compiler to predict what a program will do.)
+1. The compiler can't predict that the `return` statement will always be reached. It may be obvious to you that it will for this particular program, but in general it is impossible for the compiler to predict what a program will do.
 1. Yes, as long as their argument lists differ in number or type. This is called *overloading*. When you call the method, Java uses the types of the arguments you provide to determine which version to use.
