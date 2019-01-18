@@ -3,29 +3,31 @@
 Loops tell the computer to repeat some section of code many times, stopping at the appropriate point.
 ### While and Do While Loops
 A `while` loop has the form
-```java
-while (test) {
-    // Statements
+<pre>
+while (<em>test</em>) {
+    <em>statement</em>
+    ...
 }
-```
-where `test` is a boolean expression.
+</pre>
+where *test* is a boolean expression.
 
 Its flow is:
-1. If `test` is `false`, stop.
+1. If *test* is `false`, stop.
 1. Execute the statements in the body of the loop.
 1. Go back to step 1.
 
 Strictly speaking, this the only loop you need, but the other variations can make your code clearer and more concise.
 
 If you know that you want to execute the statements at least once, it is sometimes clearer to use a `do` `while` loop:
-```java
+<pre>
 do {
-    // Statements
-} while (test)
-```
+    <em>statement</em>
+    ...
+} while (<em>test</em>)
+</pre>
 The flow of this version is:
 1. Execute the statements in the body of the loop.
-1. If `test` is `false`, stop.
+1. If *test* is `false`, stop.
 1. Go back to step 1.
 ### Break and Continue
 A `break` statement (just the word `break` followed by a semicolon) exits the current loop. If inside multiple nested loops, `break` only exits the innermost loop. This can be interpreted as "exit the loop".
@@ -33,18 +35,19 @@ A `break` statement (just the word `break` followed by a semicolon) exits the cu
 A `continue` statement skips to the end of the body of the loop. This can be interpreted as "go on to the next pass through the loop".
 ### For Loops
 A `for` loop has the form
-```java
-for (initialization; test; update) {
-    // Statements
+<pre>
+for (<em>initialization</em>; <em>test</em>; <em>update</em>) {
+    <em>statement</em>
+    ...
 }
-```
-where `initialization` is a statement, `test` is a boolean expression, and `update` is another statement (without its usual closing semicolon).
+</pre>
+where *initialization* is a statement, *test* is a boolean expression, and *update* is another statement (without its usual closing semicolon).
 
 Its flow is:
-1. Execute `initialization`.
-2. If `test` is false, stop.
+1. Execute *initialization*.
+2. If *test* is false, stop.
 3. Execute the statements in the body of the loop.
-4. Execute `update`.
+4. Execute *update*.
 
 Here is a more concrete example:
 ```java
@@ -60,16 +63,17 @@ Here:
 This loop therefore prints each of the integers from 10 down through 1.
 ### For Each Loops
 A for each loop, also known as an enhanced `for` loop, has the form:
-```java
-for (type variable : structure) {
-    // Statements
+<pre>
+for (<em>type</em> <em>variable</em> : <em>structure</em>) {
+    <em>statement</em>
+    ...
 }
-```
-where `type` is a data type (such as `int` or `String`), `variable` is a new variable name, and `structure` is an array (or Iterable object) whose elements are of the specified type.
+</pre>
+where *type* is a data type (such as `int` or `String`), *variable* is a new variable name, and *structure* is an array (or Iterable object) whose elements are of the specified type.
 
 Its flow is:
-1. If there are no elements in `structure` that haven't been visited yet, stop.
-2. Assign `variable` to the next element in `structure`.
+1. If there are no elements in *structure* that haven't been visited yet, stop.
+2. Assign *variable* to the next element in *structure*.
 3. Execute the statements in the body of the loop.
 4. Go back to step 1.
 
@@ -129,4 +133,5 @@ The first line can be read, "for each `int` `n` in `numbers`...".
     for (i = 0; i < 10; i++) {
         ...
     }
+    // Now i is still visible here
     ```
