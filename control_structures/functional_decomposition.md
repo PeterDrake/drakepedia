@@ -8,32 +8,39 @@ A long program can be greatly improved by breaking it down into multiple *functi
 
 A well-designed method should *do only one thing*: either return a value or have some side effect (modify a data structure in memory, draw something on the screen, etc.). 
 ### Calling Methods
-To call a method defined in the same class, use this syntax:
-```java
-foo(a, b + 1);
-```
-Here `foo` is the name of the method and `a` and `b + 1` are arguments, expressions whose values are given to the method. If the method has a return type other than `void`, the method call is also an expression, so you can (e.g.) store the resulting value in a variable:
+To call a method defined in the same class, use the syntax
+<pre>
+<em>method</em>(<em>expr</em>, ...);
+</pre>
+where *method* is the name of the method and the *expr*s are values given to the method (called *arguments* or *parameters*).
+If the method has a return type other than `void`, the method call is also an expression, so you can (e.g.) store the resulting value in a variable:
 ```java
 int c = foo(a, b + 1);
 ```
-To call a method defined in another class, use this syntax:
+To call a method defined in another class, use the syntax
+<pre>
+<em>class</em>.<em>method</em>(<em>expr</em>, ...);
+</pre>
+where *class* is the name of the class where *method* is defined.
+
+For example:
 ```java
 StdDraw.rectangle(0.3, 0.8, 0.1, 0.1);
 ```
-Here `StdDraw` is the name of the class where the `rectangle` method is defined.
 ### Defining Methods
-You may define any number of methods within a class, using this syntax:
-```java
-static type name(type1 argument1, type2 argument2, ...) {
-    // Statements
+You may define any number of methods within a class, using the syntax
+<pre>
+static <em>type</em> <em>name</em>(<em>type<em> <em>argument</em>, ...) {
+    <em>statement</em>
+    ...
 }
-```
+</pre>
 where:
 
-- `type` is the type of the value returned by the method (or `void` if the method doesn't return a value),
-- `name` is the name of the method,
-- `type1`, `type2`, and so on are the types of the arguments, and
-- `argument1`, `argument2`, and so on are the names of the arguments.
+- *type* is the type of the value returned by the method (or `void` if the method doesn't return a value),
+- *name* is the name of the method,
+- each *type1* is the types of an argument, and
+- each *argument* is the names of the corresponding argument.
 
 Here is a more concrete example:
 ```java
@@ -42,11 +49,11 @@ static int square(int n) {
 }
 ```
 ### Return Statements
-To return a value from a method, use this syntax:
-```java
-return expr;
-```
-where `expr` is an expression of the appropriate type. If the method's return type is `void`, simply:
+To return a value from a method, use thie syntax:
+<pre>
+return <em>expr</em>;
+</pre>
+where *expr* is an expression of the appropriate type. If the method's return type is `void`, simply:
 ```java
 return;
 ```
