@@ -30,7 +30,7 @@ StdDraw.rectangle(0.3, 0.8, 0.1, 0.1);
 ### Defining Methods
 You may define any number of methods within a class, using the syntax
 <pre>
-static <em>type</em> <em>name</em>(<em>type<em> <em>argument</em>, ...) {
+static <em>type</em> <em>name</em>(<em>type</em> <em>argument</em>, ...) {
     <em>statement</em>
     ...
 }
