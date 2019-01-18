@@ -49,7 +49,7 @@ static int square(int n) {
 }
 ```
 ### Return Statements
-To return a value from a method, use thie syntax:
+To return a value from a method, use the syntax:
 <pre>
 return <em>expr</em>;
 </pre>
