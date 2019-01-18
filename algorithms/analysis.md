@@ -62,17 +62,17 @@ Clearly, ![g of n](https://latex.codecogs.com/svg.latex?g(n)) is larger for larg
 ### Related Notations
 There are several related asymptotic notations referring to unions of multiple orders. For example, the set ![big o of n](https://latex.codecogs.com/svg.latex?O(n)), pronounced "big O of ![n](https://latex.codecogs.com/svg.latex?n)", is the union of ![order n](https://latex.codecogs.com/svg.latex?\Theta(n)) and all lower orders. If we say that a function is in ![big o of n](https://latex.codecogs.com/svg.latex?O(n)), we mean that it is in ![order n](https://latex.codecogs.com/svg.latex?\Theta(n)) or some lower order.
 
-The related notations are summarized in the table below. ![big omega](https://latex.codecogs.com/svg.latex?\Omega) and ![little omega](https://latex.codecogs.com/svg.latex?\omega) are the upper- and lower-case versions of the Greek letter omega. Phrasing such as "much more" or "about like" is meant to emphasize that there is a constant factor of "wiggle room" within a given order.
+The related notations are summarized in the table below. Phrasing such as "much more" or "about like" is meant to emphasize that there is a constant factor of "wiggle room" within a given order.
 
-Notation | Idea | Combines | ![f](https://latex.codecogs.com/svg.latex?f) Grows
--|-|-|-
-![f is in big omega of g](https://latex.codecogs.com/svg.latex?f\in&space;\Omega(g)) | ![big theta of f is greater than or equal to big theta of g](https://latex.codecogs.com/svg.latex?\Theta(f)\geq\Theta(g)) | ![order g](https://latex.codecogs.com/svg.latex?\Theta(g)) and higher orders | like ![g](https://latex.codecogs.com/svg.latex?g) or much more quickly
-![f is in big theta of g](https://latex.codecogs.com/svg.latex?f\in&space;\Theta(g)) | ![big theta of f equals big theta of g](https://latex.codecogs.com/svg.latex?\Theta(f)=\Theta(g)) | ![order g](https://latex.codecogs.com/svg.latex?\Theta(g)) | about like ![g](https://latex.codecogs.com/svg.latex?g)
-![f is in big o of g](https://latex.codecogs.com/svg.latex?f\in&space;O(g)) | ![big theta of f is less than or equal to big theta of g](https://latex.codecogs.com/svg.latex?\Theta(f)\leq\Theta(g)) | ![order g](https://latex.codecogs.com/svg.latex?\Theta(g)) and lower orders | like ![g](https://latex.codecogs.com/svg.latex?g) or much more slowly
+Notation | Pronounced | Idea | Combines | ![f](https://latex.codecogs.com/svg.latex?f) Grows
+-|-|-|-|-
+![f is in big omega of g](https://latex.codecogs.com/svg.latex?f\in&space;\Omega(g)) | ![f](https://latex.codecogs.com/svg.latex?f) is in big omega of ![g](https://latex.codecogs.com/svg.latex?g) | ![big theta of f is greater than or equal to big theta of g](https://latex.codecogs.com/svg.latex?\Theta(f)\geq\Theta(g)) | ![order g](https://latex.codecogs.com/svg.latex?\Theta(g)) and higher orders | like ![g](https://latex.codecogs.com/svg.latex?g) or much more quickly
+![f is in big theta of g](https://latex.codecogs.com/svg.latex?f\in&space;\Theta(g))  | ![f](https://latex.codecogs.com/svg.latex?f) is in big theta of ![g](https://latex.codecogs.com/svg.latex?g)| ![big theta of f equals big theta of g](https://latex.codecogs.com/svg.latex?\Theta(f)=\Theta(g)) | ![order g](https://latex.codecogs.com/svg.latex?\Theta(g)) | about like ![g](https://latex.codecogs.com/svg.latex?g)
+![f is in big o of g](https://latex.codecogs.com/svg.latex?f\in&space;O(g))  | ![f](https://latex.codecogs.com/svg.latex?f) is in big o of ![g](https://latex.codecogs.com/svg.latex?g)| ![big theta of f is less than or equal to big theta of g](https://latex.codecogs.com/svg.latex?\Theta(f)\leq\Theta(g)) | ![order g](https://latex.codecogs.com/svg.latex?\Theta(g)) and lower orders | like ![g](https://latex.codecogs.com/svg.latex?g) or much more slowly
 
 ## Analyzing Algorithms
 ### Non-Recursive Algorithms
-Any operation whose time doesn't depend on the size of its input takes constant time. This includes assignments and operations on primitive numbers (which are of bounded size).
+Any operation whose time doesn't depend on the size of its input takes constant time. This includes assignments and arithmetic operations on primitive numbers (which are of bounded size).
 
 To analyze a non-recursive algorithm, ask of each step:
 - How long does this step take?
