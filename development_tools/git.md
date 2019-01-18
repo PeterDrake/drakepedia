@@ -17,7 +17,7 @@ git config --global core.editor emacs
 git config --global color.ui true
 ```
 ### Creating a Repository
-A *repository* is a set of snapshots of your files.
+A *repository* (or *repo*) is a set of snapshots of your files.
 
 First create a directory and put a simple file in it -- say, `file.txt`.
 
@@ -97,11 +97,6 @@ where `branchname` is the name of the branch you want to switch to (e.g., `maste
 Now suppose your experiment went well and you want to merge the two branches. If you're currently on the `experiment` branch, you can merge any changes from `master` with:
 ```
 git merge master
-```
-To merge those changes back into 'master':
-```
-git checkout master
-git merge experiment
 ```
 If you commit and merge often, and are a little lucky, merging will succeed automatically. Git is quite clever about this; if the changes on two branches are to different files, or even to different methods within the same file, git can figure out how to keep both sets of changes.
 
