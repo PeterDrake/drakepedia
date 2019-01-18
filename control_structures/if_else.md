@@ -1,20 +1,23 @@
 # If / Else Statements
 ## Overview
 An `if` statement has either the form
-```java
-if (test) {
-    // Statements
+<pre>
+if (<em>test</em>) {
+    <em>statement</em>
+    ...
 }
-```
+</pre>
 or the form
-```java
-if (test) {
-    // Statements
+<pre>
+if (<em>test</em>) {
+    <em>statement</em>
+    ...
 } else {
-    // Statements
+    <em>statement</em>
+    ...
 }
-```
-where `test` is a boolean expression. The first version executes the statements if the value of `test` is `true`. The second executes the first batch of statements if `test` is `true` and the second batch if it is `false`.
+</pre>
+where *test* is a boolean expression. The first version executes the statements in the body if the value of *test* is `true`. The second executes the first batch of statements if *test* is `true` and the second batch if it is `false`.
 
 Like other control structures involving curly braces, `if` statements can be nested inside each other.
 
