@@ -40,7 +40,7 @@ When a certain type is expected, that type must be used. There are two exception
 1. :star::star: What is the maximum value of an int?
 1. :star::star: What is the value of `'a' + 1`?
 1. :star::star::star: What does the literal `0.3f` mean?
-1. :star::star::star: Use Java to print the literal `0615`. What is the result? Why did this happen?
+1. :star::star::star: Use Java to print the literal `0615`. How can this surprising result be explained?
 ## Answers
 1. Two: `true` and `false`.
 1. `'x'` is a char; `"x"` is a String.
