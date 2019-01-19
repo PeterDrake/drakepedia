@@ -37,9 +37,9 @@ Some things, such as assignment statements and [method calls](functional_decompo
 1. :star: Is `x > 0` a statement or an expression?
 1. :star::star: What, if anything, can be changed on the first line of the program?
 1. :star::star: What, if anything, can be changed in the line:
-```java
-public static void main(String[] args) {
-```
+    ```java
+    public static void main(String[] args) {
+    ```
 ## Answers
 1. It is an expression. Its value is either `true` or `false`.
 1. The keyword `public` is optional. It doesn't matter unless your code is divided into multiple packages. The name of the program (`Hello` in the example above) can also change, but must match the name of the file (in this case `Hello.java`).
