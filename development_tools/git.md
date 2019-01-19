@@ -125,7 +125,7 @@ This serves two purposes:
 ## Additional Resources
 ### Online
 - [Pro Git](https://git-scm.com/book/en/v2)
-- DZone, [Gettig Started with Git Refcard](https://dzone.com/refcardz/getting-started-git?chapter=1)
+- DZone, [Getting Started with Git Refcard](https://dzone.com/refcardz/getting-started-git?chapter=1)
 - [A Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
 - [git](https://git-scm.com/)
 - [GitHub](https://github.com/)
