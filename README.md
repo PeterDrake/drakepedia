@@ -23,7 +23,7 @@ Topic | CS1 | CS2 | Algorithms | Software Development
 -|-|-|-|-
 Development Tools | [Command Line](development_tools/command_line.md) | [IntelliJ IDEA](development_tools/intellij_idea.md)| | [Git](development_tools/git.md)
 Control<br>Structures | [Main Method](control_structures/main_method.md)<br>[If / Else<br>&nbsp;&nbsp;Statements](control_structures/if_else.md)<br>[Loops](control_structures/loops.md)<br>[Functional<br>&nbsp;&nbsp;Decomposition](control_structures/functional_decomposition.md) | Recursion | |
-Data<br>Structures | Primitive Types<br>Operators<br>Variables<br>Strings<br>Arrays | Objects as Containers<br>References<br>Linked Lists<br>Abstract Data Types<br>Lists<br>Stacks<br>Queues<br>Trees<br>Graphs<br>Sets and Maps | Binary Search Trees<br>Hash Tables<br>Priority Queues<br>Union-Find |
+Data<br>Structures | [Primitive Types](control_structures/primitive_types.md)<br>Operators<br>Variables<br>Strings<br>Arrays | Objects as Containers<br>References<br>Linked Lists<br>Abstract Data Types<br>Lists<br>Stacks<br>Queues<br>Trees<br>Graphs<br>Sets and Maps | Binary Search Trees<br>Hash Tables<br>Priority Queues<br>Union-Find |
 Algorithms | | [Analysis of Algorithms](algorithms/analysis.md)<br>Traversal<br>Search | Sorting<br>Graph Algorithms |
 Style | | Documentation<br>Omitting Needless<br>&nbsp;&nbsp;Code | Defensive<br>&nbsp;Programming |
 Object-<br>Oriented Programming | | Constructors<br>Instance Methods<br>Wrappers<br>Access Modifiers<br>Default Methods<br>Interfaces | Inheritance<br>Packages<br>Generics<br>Exceptions | Enums<br>Inner Classes
