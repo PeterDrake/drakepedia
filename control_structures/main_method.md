@@ -34,7 +34,7 @@ Some things, such as assignment statements and [method calls](functional_decompo
 - Sedgewick and Wayne, *Introduction to Programming in Java*, Section 1.1
 - Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Section 3.1
 ## Questions
-1. Is `x > 0` a statement or an expression?
+1. :star: Is `x > 0` a statement or an expression?
 1. :star::star: What, if anything, can be changed on the first line of the program?
 1. :star::star: What, if anything, can be changed in the line:
 ```java
