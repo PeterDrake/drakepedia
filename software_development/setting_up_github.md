@@ -31,6 +31,7 @@ out/
 1. `VCS` | `Git` | `Push`.
 1. Clicking on `Define remote`.
 1. Paste https URL.
+1. `Push`.
 ## Add other team members as collaborators
 On the GitHub website, from the repository: `Settings` | `Collaborators`.
 ## References
