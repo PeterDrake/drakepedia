@@ -35,5 +35,5 @@ out/
 ## Add other team members as collaborators
 On the GitHub website, from the repository: `Settings` | `Collaborators`.
 ## References
-- [Set up a Git Repository](https://www.jetbrains.com/help/idea/set-up-a-git-repository.html)
+- [Set up a Git repository](https://www.jetbrains.com/help/idea/set-up-a-git-repository.html)
 - [Practicing with IntelliJ and Git](https://gist.github.com/bgun/c7447ab0906517221b6b)
