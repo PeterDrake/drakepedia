@@ -1,4 +1,4 @@
-# eXtreme Programming
+# Extreme Programming
 ## Overview
 Extreme Programming (XP) is a process for software development. Like other agile methods, it focuses on tight feedback loops, both between the developers and the code and and between the developers and the customer. This is intended to keep everyone's expectations accurate and avoid unpleasant surprises.
 ## Development Process
