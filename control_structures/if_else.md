@@ -1,4 +1,4 @@
-# If / Else Statements
+# If Statements
 ## Overview
 An `if` statement has either the form
 <pre>
@@ -25,6 +25,7 @@ Some sources call an `if` statement a *conditional statement* or *branch*.
 ## Additional Resources
 ### Online
 - Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 1.3](https://introcs.cs.princeton.edu/java/13flow/)
+- Goeschel, [Reflections on Curly Braces](https://blog.codecentric.de/en/2014/02/curly-braces/)
 ### Print
 - Sedgewick and Wayne, *Introduction to Programming in Java*, Section 1.3
 - Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Section 3.8.2
