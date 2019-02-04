@@ -5,10 +5,10 @@ tools that would be separate command-line applications (editor, compiler, debugg
 This saves time invoking different programs and allows various nice features, such as underlining of compilation errors
 in the editor.
 
-I've chosen IntelliJ IDEA because it is:
+I've chosen this IDE (which I'll just call IntelliJ henceforth because it is:
 - widely used in industry,
 - free and platform-independent, and
-- nearly identical in design to PyCharm (for Python) and Android Studio (for Android applications), so learning either of these should easy for someone who knows their way around IDEA.
+- nearly identical in design to PyCharm (for Python) and Android Studio (for Android applications), so learning either of these should easy for someone who knows their way around IntelliJ.
 ## Setup
 ### Downloading
 You'll have to install the [Java Development Kit](command_line.md) first.
@@ -19,7 +19,7 @@ to jump through this extra hoop.
 
 When the installer presents the option, it wouldn't hurt to install the IDE Features Trainer.
 ### Creating a Project
-1. Open IntelliJ IDEA and click `Create New Project`.
+1. Open IntelliJ and click `Create New Project`.
 1. Verify that the Project SDK is not empty (if it is, your Java installation didn't work) and click `Next`.
 1. Check `Create project` from template and click Java `Hello World`.
 1. Give the project a simple name, like "CS2", and click `Finish`.
@@ -36,9 +36,9 @@ There are several ways to do this:
 ### Installing stdlib
 1. Download the file stdlib.jar from [Sedgewick & Wayne's website](https://introcs.cs.princeton.edu/java/stdlib/). (The link is right under the table.)
 1. Drag and drop the file into your project. You'll want to drop into onto the project folder, just below the word Project
-at the upper left of the IntelliJ IDEA window.
+at the upper left of the IntelliJ window.
 1. Right click on the file and select `Add as library`.
-## Using IntelliJ IDEA
+## Using IntelliJ
 The information below is enough to let you write and run programs. Everything else is just gravy, but there is a *lot* of
 delicious gravy to be had. My general advice is to keep an eye out for anything that seems tedious and then ask if there's
 a better way; often there is a way to get the IDE to do the boring work for you. Don't get hung up on memorizing all of the
@@ -46,10 +46,10 @@ options, which would be impossible; just learn the features you use often and be
 ### Creating a Program
 Right click on the `src` directory and select `New` | `Java Class`.
 ### Saving and Compiling a Program
-You don't have to do anything! IntelliJ IDEA automatically saves every few seconds. It compiles the program (if necessary) every time you run it.
+You don't have to do anything! IntelliJ automatically saves every few seconds. It compiles the program (if necessary) every time you run it.
 ### A Few Neat Tricks
 #### Autocomplete
-If you type part of something, IntelliJ IDEA pops up a menu of ways that you might want to complete it. It's practically multiple-choice programming! You can navigate through this menu with arrow keys and hit `enter` to pick the one you want (or just hit `tab` to accept the first one). Note that while the first suggestion is *often* the right one, sometimes it isn't.
+If you type part of something, IntelliJ pops up a menu of ways that you might want to complete it. It's practically multiple-choice programming! You can navigate through this menu with arrow keys and hit `enter` to pick the one you want (or just hit `tab` to accept the first one). Note that while the first suggestion is *often* the right one, sometimes it isn't.
 
 There are also a number of live templates that generate common code, such as `sout` to generate a `System.out.println` statement.
 #### Documentation
@@ -57,9 +57,9 @@ To see the documentation for a class or method, put your cursor in the name and 
 #### Renaming
 Suppose you want to rename one of your variables or methods. Using a regular editor, this would be tedious and error-prone because you'd have to find all of the places where you used that name. With an IDE, it's much easier.
 
-Put your cursor in the name you want to change. Right click and choose `Refactor` | `Rename`. Now edit the name and hit `enter`. Boom! IntelliJ IDEA changes the name here and everywhere else it is used, *even in other files*!
+Put your cursor in the name you want to change. Right click and choose `Refactor` | `Rename`. Now edit the name and hit `enter`. Boom! IntelliJ changes the name here and everywhere else it is used, *even in other files*!
 ### Tool Windows
-In addition to the main panel where you're editing code, IntelliJ IDEA has several tool windows. You can see a list of them in the `View` menu. You can turn them on or off from that menu or with the indicated hotkeys. You can also drag the borders between them to resize them.
+In addition to the main panel where you're editing code, IntelliJ has several tool windows. You can see a list of them in the `View` menu. You can turn them on or off from that menu or with the indicated hotkeys. You can also drag the borders between them to resize them.
 
 The tool windows you're likely to use most often are:
 - Project, which gives you an overview of all of your files.
@@ -72,7 +72,9 @@ The tool windows you're likely to use most often are:
 - [JetBrains tutorials](https://www.jetbrains.com/idea/documentation/)
 ## Questions
 1. :star: In what directory do program files generally live?
+1. :star::star: How do you stop a running program (e.g., one that has gone into an infinite loop)?
 1. :star::star: You have a data file that your program is going to read. Where should you put that file?
 ## Answers
 1. `src`
+1. Click on the red square at the left of the `Run` tool window. Alternately, `Run` | `Stop` (or use the indicated hotkey).
 1. Simple answer: put it in your project but not inside `src`. Professional answer: create a directory parallel to `src`; a good name for it is `resources`. Right click on it and select `Mark Directory as` | `Resources Root`.
