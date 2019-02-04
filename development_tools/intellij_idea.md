@@ -5,7 +5,7 @@ tools that would be separate command-line applications (editor, compiler, debugg
 This saves time invoking different programs and allows various nice features, such as underlining of compilation errors
 in the editor.
 
-I've chosen this IDE (which I'll just call IntelliJ henceforth because it is:
+I've chosen this IDE (which I'll just call IntelliJ henceforth) because it is:
 - widely used in industry,
 - free and platform-independent, and
 - nearly identical in design to PyCharm (for Python) and Android Studio (for Android applications), so learning either of these should easy for someone who knows their way around IntelliJ.
