@@ -92,6 +92,12 @@ The first line can be read, "for each `int` `n` in `numbers`...".
 - Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Sections 3.8.3, 3.8.4, 3.8.6, and 3.10.3
 ## Questions
 1. :star: Explain how an `if` loop works.
+1. :star: How would you write the `for` loop below as a `while` loop?
+    ```java
+    for (int i = 0; i < 5; i++) {
+        System.out.println(i);
+    }
+    ```
 1. :star::star: What's the best loop to use to iterate through the elements of an array *backward*?
 1. :star::star: What's the best loop to use to modify an array of doubles to make each element 10 times as large?
 1. :star::star: Can a loop body be empty?
@@ -99,6 +105,16 @@ The first line can be read, "for each `int` `n` in `numbers`...".
 1. :star::star: A variable declared in the initialization part of a `for` loop is only visible inside that loop. What can we do if we need to access it after the loop ends (to see its final value)?
 ## Answers
 1. There is no such thing as an `if` loop. Loops potentially execute their bodies multiple times, but `if` statements do so at most once.
+1.
+    ```java
+    int i = 0;
+    while (i < 5) {
+        System.out.println(i);
+        i++;
+    }
+    ```
+    This isn't *exactly* equivalent, because the local variable `i` is still visible after the loop in this version. In the
+    `for` loop, `i` is only visible inside the loop.
 1. A `for` loop like:
     ```java
     for (int i = array.length - 1; i >= 0; i--) {
