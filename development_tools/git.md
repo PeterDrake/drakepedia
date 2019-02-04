@@ -129,6 +129,7 @@ This serves two purposes:
 - [A Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
 - [git](https://git-scm.com/)
 - [GitHub](https://github.com/)
+- [IntelliJ Documentation on Git](https://www.jetbrains.com/help/idea/using-git-integration.html) (see the table of contents on the left side of this page)
 ### Print
 - Chacon and Straub, *Pro Git*
 ## Questions
