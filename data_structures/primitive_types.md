@@ -29,7 +29,6 @@ When a certain type is expected, that type must be used. There are two exception
 ## Additional Resources
 ### Online
 - Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 1.1](https://introcs.cs.princeton.edu/java/12types/)
-- DZone, Core Java Refcard, [Chapter 5](https://dzone.com/refcardz/core-java?chapter=5)
 - Wired, [No, 'Gangnam Style' Didn't Break YouTube. We Did the Math](https://www.wired.com/2014/12/gangnam-style-youtube-math/)
 - Kotaku, [Why Gandhi Is Such an Asshole in *Civilization*](https://kotaku.com/why-gandhi-is-such-an-asshole-in-civilization-1653818245)
 ### Print
