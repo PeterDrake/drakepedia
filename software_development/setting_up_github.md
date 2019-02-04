@@ -18,6 +18,7 @@ out/
 *.class
 *~
 *.jar
+.idea
 ```
 ## Create Repository on GitHub
 1. Log into github.com.
