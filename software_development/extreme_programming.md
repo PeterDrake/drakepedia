@@ -15,7 +15,7 @@ Stories should be relatively small and testable *by the customer*. They should a
 
 Stories will be modified, added, and discarded as the project proceeds. Nothing is etched in stone.
 #### Setting Up a GitHub Repository
-**One developer** should [create a new GitHub repository](setting_up_githib.md). The others should then clone it to their local machines.
+**One developer** should [create a new GitHub repository](setting_up_github.md). The others should then clone it to their local machines.
 ### Iteration
 Development proceeds in a series of iterations (known in some other agile methods as sprints). For the main Software Development project, each iteration lasts two weeks.
 
