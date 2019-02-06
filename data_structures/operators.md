@@ -17,6 +17,27 @@ Conditional|`?:`|`a ? b : c` has the value of `b` if `a` is true, `c` otherwise.
 
 ## Additional Resources
 ### Online
+- Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 1.2](https://introcs.cs.princeton.edu/java/12types/)
+- Anderson, [Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html) (These are in C, but the operators are pretty much the same in C and in Java.)
 ### Print
+- Sedgewick and Wayne, *Introduction to Programming in Java*, Section 1.2
+- Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Section 3.5
 ## Questions
+1. :star: What is the value of `2 + 3 * 4`?
+1. :star: What is the value of `83 % 10`?
+1. :star::star::star: What are the values of the variables after the following code is evaluated?
+    ```java
+    int a = 1;
+    int b = a++;
+    int c = ++a;
+    ```
+1. :star::star::star: What is the difference between `>>` and `>>>`?
+1. :star::star::star: What is the value of `-32 % 10`?
+1. :star::star::star: If `a` and `b` are boolean expressions, what is the difference between `a && b` and `a & b`?
 ## Answers
+1. 14, because multiplication has higher operator precedence than addition. It is not reasonable to memorize the entire operator precedence hierarchy; whenever there is any doubt, use parentheses.
+1. 3, because when 83 is divided by 10 the remainder is 3.
+1. `a` is 3, `b` is 1, and `c` is 3. This is because `++a` increments `a` *before* yielding a value, but `a++` increments `a` *after* yielding a value.
+1. The difference lies in what is shifted in on the left side. `>>` copies the leftmost (sign) bit, so that `a >> 3` is `a` divided by 2 to the 3rd power. `>>>` shifts in a 0, which is sometimes preferable when an int is being interpreted as a set of bits rather than as a number.
+1. -2. If the first argument to `%` is negative, the result is negative as well. This is consistent with the interpretation of `%` as "remainder" but not really with the interpretation as "modulo".
+1. `a && b` is short-circuited: if `a` is false, `b` is not evaluated (which might matter if `b` is actually a method call). `a & b` is not short-circuited.
