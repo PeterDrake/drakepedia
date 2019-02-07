@@ -26,7 +26,7 @@ Note that `pull` both fetches the remote versions of all branches and tries to m
 ### Command Line
 If you're creating a new branch:
 ```
-git checout -b branchname
+git checkout -b branchname
 ```
 If you're just checking out an existing branch, leave out the `-b`.
 ### IntelliJ IDEA
