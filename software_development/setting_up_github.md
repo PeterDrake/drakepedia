@@ -8,7 +8,7 @@ I describe this [elsewhere](intellij_idea).
 1. `File` | `New` | `File`, `.gitignore`, add to version control when asked.
 1. Give it the contents below.
    ```
-   ## This files tells git what NOT to include in version control
+   ## This file tells git what NOT to include in version control
 
    # Compiled files
    out/
