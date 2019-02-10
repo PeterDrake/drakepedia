@@ -7,27 +7,28 @@ I describe this [elsewhere](intellij_idea).
 ## Set Up .gitignore
 1. `File` | `New` | `File`, `.gitignore`, add to version control when asked.
 1. Give it the contents below.
+   ```
+   ## This files tells git what NOT to include in version control
+
+   # Compiled files
+   out/
+   *.class
+
+   # IntelliJ configuration information
+   .idea/
+
+   # Automatic backups created by Emacs
+   *~
+
+   # Hidden files used by macOS to indicate directory display details, e.g., icon ordering
+   .DS_Store
+   ```
 1. Add all remaining files to version control.
    1. `command-9` to open version control tool window.
    1. Select files under `Unversioned Files`.
    1. Right click and select `Add to VCS`.
 1. Click on the project at the top so all files are select and commit with `command-k`.
-```
-## This files tells git what NOT to include in version control
 
-# Compiled files
-out/
-*.class
-
-# IntelliJ configuration information
-.idea/
-
-# Automatic backups created by Emacs
-*~
-
-# Hidden files used by macOS to indicate directory display details, e.g., icon ordering
-.DS_Store
-```
 ## Create Repository on GitHub
 1. Log into github.com.
 1. Click on the green `New repository` button on the right.
