@@ -20,7 +20,7 @@ I describe this [elsewhere](intellij_idea).
    # Automatic backups created by Emacs
    *~
 
-   # Hidden files used by macOS to indicate directory display details, e.g., icon ordering
+   # Hidden files used by macOS to indicate directory display details, e.g., icon positions
    .DS_Store
    ```
 1. Add all remaining files to version control.
