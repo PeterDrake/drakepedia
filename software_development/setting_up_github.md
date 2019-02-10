@@ -13,12 +13,20 @@ I describe this [elsewhere](intellij_idea).
    1. Right click and select `Add to VCS`.
 1. Click on the project at the top so all files are select and commit with `command-k`.
 ```
-.DS_Store
+## This files tells git what NOT to include in version control
+
+# Compiled files
 out/
 *.class
-*~
-*.jar
+
+# IntelliJ configuration information
 .idea/
+
+# Automatic backups created by Emacs
+*~
+
+# Hidden files used by macOS to indicate directory display details, e.g., icon ordering
+.DS_Store
 ```
 ## Create Repository on GitHub
 1. Log into github.com.
