@@ -42,7 +42,7 @@ I describe this [elsewhere](intellij_idea).
 1. Paste https URL.
 1. `Push`.
 ## Protect the master Branch
-1. On GitHub, in `Settings` | `Branches`, add a rule to the `master` branch that requires a pull request before merging. This prevents anyone from accidentally pushing to `master`.
+On GitHub, in `Settings` | `Branches`, add a rule to the `master` branch that requires a pull request before merging. This prevents anyone from accidentally pushing to `master`.
 ## Add other team members as collaborators
 On the GitHub website, from the repository: `Settings` | `Collaborators`.
 ## References
