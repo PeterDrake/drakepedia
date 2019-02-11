@@ -27,5 +27,5 @@ Data<br>Structures | [Primitive Types](data_structures/primitive_types.md)<br>[O
 Algorithms | | [Analysis of Algorithms](algorithms/analysis.md)<br>Traversal<br>Search | Sorting<br>Graph Algorithms |
 Style | | Documentation<br>Omitting Needless Code | Defensive Programming |
 Object-<br>Oriented Programming | | Constructors<br>Instance Methods<br>Wrappers<br>Access Modifiers<br>Default Methods<br>Interfaces | Inheritance<br>Packages<br>Generics<br>Exceptions | Enums<br>Inner Classes
-Libraries | | java.lang<br>stidlib<br>java.util | | [javax.swing](libraries/javax.swing.md)
+Libraries | | java.lang<br>stdlib<br>java.util | | [javax.swing](libraries/javax.swing.md)
 Software<br>Development | | Plan-Change-Evaluate Cycle<br>Pair Programming<br>Testing<br>Debugging | | [Extreme Programming](software_development/extreme_programming.md)<br>Object-Oriented Design<br>Design Patterns
