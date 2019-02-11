@@ -7,7 +7,7 @@ Testing is how we know whether our software is working correctly, that is, doing
 ## JUnit
 Manual testing is fine for very small, simple programs but it quickly becomes tedious and error-prone for larger ones. When you hear "tedious and error-prone", you should think, "Can I automate this?" JUnit is a tool for automating unit tests in Java. (Other languages have similar frameworks.)
 
-A JUnit test suite is a class containing test methods. Once [installed in IntelliJ](development_tools/intellij_idea.md#Installing\ Junit), JUnit allows you to run all of the tests in a class (or even in a directory) at the click of a button.
+A JUnit test suite is a class containing test methods. Once [installed in IntelliJ](../development_tools/intellij_idea.md#Installing-Junit), JUnit allows you to run all of the tests in a class (or even in a directory) at the click of a button.
 
 Each method is annotated with `@Test` before the method signature. A test generally sets up some data structures and then makes an assertion about the result of some method call:
 ```java
