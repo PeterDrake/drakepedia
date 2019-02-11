@@ -20,6 +20,7 @@ It seems natural to most students to first write code and then test it. The surp
 - It forces us to think precisely about what a method is supposed to do.
 - When writing the code, repeatedly running the test will let us know when we've succeeded.
 - After a test has passed, it provides a regression test that will let us know if we later break something.
+
 The process for test-driven development is:
 1. Write a test for some new feature to be added or bug to be corrected.
 1. Fail the test. If the test passes before you've written the main code or fixed the bug, there's probably something wrong with the test.
