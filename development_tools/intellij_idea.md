@@ -38,6 +38,14 @@ There are several ways to do this:
 1. Drag and drop the file into your project. You'll want to drop into onto the project folder, just below the word Project
 at the upper left of the IntelliJ window.
 1. Right click on the file and select `Add as library`.
+### Installing JUnit
+If you are using [JUnit](software_development/testing.md), you will also neet to set up IntelliJ to support it.
+1. Create a new directory, parallel to `src`, called `test`. Your test classes will go here.
+1. Right click on this directory and choose `Mark Directory as` | `Test Sources Root`.
+1. In a non-test class, place the cursor inside the name of the class (in the line `public class NameOfClass`).
+1. Hit `alt-enter` and select `Create Test`.
+1. In the dialog window that appears, choose `JUnit5` for the testing library. If there is a `Fix` button just below this, click it and click `OK` the additional dialog window that appears.
+1. If you actually want to create a new test class now, check `setup/@Before` and any particular methods you want to test, then click `OK`. If not, click `Cancel`. 
 ## Using IntelliJ
 The information below is enough to let you write and run programs. Everything else is just gravy, but there is a *lot* of
 delicious gravy to be had. My general advice is to keep an eye out for anything that seems tedious and then ask if there's
