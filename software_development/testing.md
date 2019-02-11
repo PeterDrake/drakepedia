@@ -15,11 +15,26 @@ assertEquals(10, sumOfFirstNNumbers(4));
 ```
 where `sumOfFirstNNumbers` is the method being tested. In this case, `10` is the expected value and `sumOfFirstNNumbers(4)` is the computation that is supposed to return that result.
 ## Test-Driven Development
-
+It seems natural to most students to first write code and then test it. The surprising technique of *test-driven development* turns this upside-down, writing the test *before* the code in question. This has several advantages:
+- It forces us to actually write tests rather than put off doing so forever.
+- It forces us to think precisely about what a method is supposed to do.
+- When writing the code, repeatedly running the test will let us know when we've succeeded.
+- After a test has passed, it provides a regression test that will let us know if we later break something.
+The process for test-driven development is:
+1. Write a test for some new feature to be added or bug to be corrected.
+1. Fail the test. If the test passes before you've written the main code or fixed the bug, there's probably something wrong with the test.
+1. Write the code to be tested.
+1. Pass the test. (If the test doesn't pass, go back and edit the code.)
 ## Additional Resources
 ### Online
 ### Print
 ## Questions
 1. :star: What annotation has to appear before each test method in a JUnit test class?
+1. :star: If you pass all of your unit tests, does that mean my program is correct?
+1. :star::star: If a test doesn't pass, how do you know the problem isn't in the test itself?
+1. :star::star: How do you test a user interface that involves detecting mouse clicks and graphics?
 ## Answers
 1. `@Test`
+1. No. Passing all of the tests is *necessary* but not *sufficient*. Certainly a program that *doesn't* pass the tests has a problem.
+1. You can't be absolutely sure. Since the test is usually much simpler than the code being tested, any test failure is *probably* due to the code being tested, but sometimes there are bugs in the test. Testing mostly just gives us more confidence when tests *do* pass. This is is similar to the reasoning behind doing a math problem two different ways or [double-entry bookkeeping](https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system).
+1. In general, you don't. This is why it's important to separate back-end logic from user-interface code: the former can be easily tested, the latter cannot.
