@@ -7,13 +7,13 @@ Testing is how we know whether our software is working correctly, that is, doing
 ## JUnit
 Manual testing is fine for very small, simple programs but it quickly becomes tedious and error-prone for larger ones. When you hear "tedious and error-prone", you should think, "Can I automate this?" JUnit is a tool for automating unit tests in Java. (Other languages have similar frameworks.)
 
-A JUnit test suite is a class containing test methods. Once [installed in IntelliJ](../development_tools/intellij_idea.md#Installing-Junit), JUnit allows you to run all of the tests in a class (or even in a directory) at the click of a button.
-
-Each method is annotated with `@Test` before the method signature. A test generally sets up some data structures and then makes an assertion about the result of some method call:
+A JUnit test suite is a class containing test methods. Each method is annotated with `@Test` before the method signature. A test generally sets up some data structures and then makes an assertion about the result of some method call:
 ```java
 assertEquals(10, sumOfFirstNNumbers(4));
 ```
 where `sumOfFirstNNumbers` is the method being tested. In this case, `10` is the expected value and `sumOfFirstNNumbers(4)` is the computation that is supposed to return that result.
+
+Once [installed in IntelliJ](../development_tools/intellij_idea.md#Installing-Junit), JUnit allows you to run all of the tests in a class (or even in a directory) at the click of a button.
 ## Test-Driven Development
 It seems natural to most students to first write code and then test it. The surprising technique of *test-driven development* turns this upside-down, writing the test *before* the code in question. This has several advantages:
 - It forces us to actually write tests rather than put off doing so forever.
