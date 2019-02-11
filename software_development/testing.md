@@ -28,10 +28,12 @@ The process for test-driven development is:
 1. Pass the test. (If the test doesn't pass, go back and edit the code.)
 ## Additional Resources
 ### Online
+- [JUnit 5](https://junit.org/junit5/)
 ### Print
+- Christensen, *Flexible, Reliable Software Using Patterns and Agile Development*, Chapters 2, 5, 8, 12, and 34
 ## Questions
 1. :star: What annotation has to appear before each test method in a JUnit test class?
-1. :star: If you pass all of your unit tests, does that mean my program is correct?
+1. :star: If you pass all of your unit tests, does that mean your program is correct?
 1. :star::star: If a test doesn't pass, how do you know the problem isn't in the test itself?
 1. :star::star: How do you test a user interface that involves detecting mouse clicks and graphics?
 ## Answers
