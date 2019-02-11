@@ -39,7 +39,7 @@ There are several ways to do this:
 at the upper left of the IntelliJ window.
 1. Right click on the file and select `Add as library`.
 ### Installing JUnit
-If you are using [JUnit](software_development/testing.md), you will also neet to set up IntelliJ to support it.
+If you are using [JUnit](../software_development/testing.md), you will also neet to set up IntelliJ to support it.
 1. Create a new directory, parallel to `src`, called `test`. Your test classes will go here.
 1. Right click on this directory and choose `Mark Directory as` | `Test Sources Root`.
 1. In a non-test class, place the cursor inside the name of the class (in the line `public class NameOfClass`).
