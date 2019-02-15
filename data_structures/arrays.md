@@ -46,7 +46,10 @@ In Java, as in most modern programming languages, the two numbers specify the nu
 
 ## Additional Resources
 ### Online
+- Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 1.4](https://introcs.cs.princeton.edu/java/14array/)
 ### Print
+- Sedgewick and Wayne, *Introduction to Programming in Java*, Section 1.4
+- Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Section 3.10
 ## Questions
 1. :star: Can an array have length 0?
 1. :star: What is the index of the *last* element of an array `arr`?
@@ -55,11 +58,15 @@ In Java, as in most modern programming languages, the two numbers specify the nu
     int[][] m = new int[3][4];
     ```
     what is `m.length`?
+1. :star: How would you declare a three-dimensional array of doubles?
+1. :star: How many elements are in the array that is value of the expression `new boolean[2][3][4][5]`?
 1. :star::star: Is there a good way to remember that it's rows, columns?
 1. :star::star: How can you determine the number of *columns* in a multidimensional array `m`?
 ## Answers
-1. Yes, 0 is a valid length.
+1. Yes, any non-negative integer is a valid length.
 1. `arr.length - 1`. This is because indices start at 0; if there are 10 elements, they are numbered 0 through 9.
 1. 3, which is the number of rows. `length` only follows one reference and counts the number of boxes in the array at the other end.
+1. `double[][][] arr;`.
+1. 120, which is the product of the dimensions.
 1. Think of a can of [RC Cola](https://en.wikipedia.org/wiki/RC_Cola).
 1. `m[0].length`.
