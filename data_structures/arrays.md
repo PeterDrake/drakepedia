@@ -22,7 +22,7 @@ If the declaration and initialization happen on the same line, as in the example
 ## Indexing
 Array elements are numbered *starting at 0*. Thus, `arr[0]` is the first element of `arr`, `arr[1]` is the second, and so on.
 
-You can use this to access or change any element of an array. If we take our array above and
+You can use this to access or change any element of an array. If we take our array above and set
 ```java
 arr[2] = 8;
 ```
@@ -33,12 +33,33 @@ then the array looks like this:
 Java arrays (unlike C arrays) know how long they are. The length of `arr` is `arr.length`.
 
 ## Multidimensional Arrays
+A structure like a matrix or a checkerboard can be represented by a multidimensional array. This is declared using multiple pairs of square brackets:
+```java
+int[][] m = new int[3][4];
+```
+
+A multidimensional array is represented as an array of arrays:
+
+![m contains an arrow pointing to a column of 3 boxes, each of which contains an arrow pointing to a row of four boxes, each containing a 0](array_multidimensional.svg)
+
+In Java, as in most modern programming languages, the two numbers specify the number of rows and the number of columns, respectively. The lower right box in the diagram above is `m[2][3]`.
+
 ## Additional Resources
 ### Online
 ### Print
 ## Questions
 1. :star: Can an array have length 0?
 1. :star: What is the index of the *last* element of an array `arr`?
+1. :star: Given
+    ```java
+    int[][] m = new int[3][4];
+    ```
+    what is `m.length`?
+1. :star::star: Is there a good way to remember that it's rows, columns?
+1. :star::star: How can you determine the number of *columns* in a multidimensional array `m`?
 ## Answers
 1. Yes, 0 is a valid length.
 1. `arr.length - 1`. This is because indices start at 0; if there are 10 elements, they are numbered 0 through 9.
+1. 3, which is the number of rows. `length` only follows one reference and counts the number of boxes in the array at the other end.
+1. Think of a can of [RC Cola](https://en.wikipedia.org/wiki/RC_Cola).
+1. `m[0].length`.
