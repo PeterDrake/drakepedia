@@ -60,8 +60,8 @@ In Java, as in most modern programming languages, the two numbers specify the nu
     what is `m.length`?
 1. :star: How would you declare a three-dimensional array of doubles?
 1. :star: How many elements are in the array that is value of the expression `new boolean[2][3][4][5]`?
-1. :star::star: Is there a good way to remember that it's rows, columns?
-1. :star::star: How can you determine the number of *columns* in a multidimensional array `m`?
+1. :star: Is there a good way to remember that it's rows, columns?
+1. :star::star: How can you determine the number of *columns* in a two-dimensional array `m`?
 ## Answers
 1. Yes, any non-negative integer is a valid length.
 1. `arr.length - 1`. This is because indices start at 0; if there are 10 elements, they are numbered 0 through 9.
