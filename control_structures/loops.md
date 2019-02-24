@@ -91,7 +91,7 @@ The first line can be read, "for each `int` `n` in `numbers`...".
 - Sedgewick and Wayne, *Introduction to Programming in Java*, Section 1.3
 - Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Sections 3.8.3, 3.8.4, 3.8.6, and 3.10.3
 ## Questions
-1. :star: What is printed by the following loop?
+1. :star: What is printed by the following code?
     ```java
     for (int i = 0; i < 5; i++) {
         System.out.print(i);
