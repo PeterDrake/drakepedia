@@ -8,7 +8,7 @@ The operators are summarized in the table below. See the additional resources fo
 
 Category|Operators|Notes
 -|-|-
-Arithmetic|`+ - * / %`|`%` is the remainder operator, sometimes called the modulus operator.<br>`-` can be used for negation (prefix) or subtraction(infix).
+Arithmetic|`+ - * / %`|`%` is the remainder operator, sometimes called the modulo operator.<br>`-` can be used for negation (prefix) or subtraction (infix).
 Comparison|`< <= == >= > !=`|These have boolean values.<br>`!=` means "is not equal to".
 Assignment|`= ++ -- += -= *= /= %= <<= >>= &= ^= \|=`|Assignments are also statements.<br>`++` and `--` can be prefix or postfix.<br>`x++` roughly means `x = x + 1`.<br>`x += 5` roughly means `x = x + 5`.
 Logical|`&& \|\| !`|These take boolean operands and produce boolean values.<br>`&&` and `\|\|` are short-circuited.<br>`!` is prefix.
