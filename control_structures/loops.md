@@ -91,6 +91,12 @@ The first line can be read, "for each `int` `n` in `numbers`...".
 - Sedgewick and Wayne, *Introduction to Programming in Java*, Section 1.3
 - Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Sections 3.8.3, 3.8.4, 3.8.6, and 3.10.3
 ## Questions
+1. :star: What is printed by the following loop?
+    ```java
+    for (int i = 0; i < 5; i++) {
+        System.out.print(i);
+    }
+    ```    
 1. :star: Explain how an `if` loop works.
 1. :star: How would you write the `for` loop below as a `while` loop?
     ```java
@@ -104,6 +110,7 @@ The first line can be read, "for each `int` `n` in `numbers`...".
 1. :star::star: Which parts, if any, of the first line of a `for` loop can be omitted?
 1. :star::star: A variable declared in the initialization part of a `for` loop is only visible inside that loop. What can we do if we need to access it after the loop ends (to see its final value)?
 ## Answers
+1. `01234`
 1. There is no such thing as an `if` loop. Loops potentially execute their bodies multiple times, but `if` statements do so at most once.
 1.
     ```java
