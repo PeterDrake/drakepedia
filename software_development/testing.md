@@ -32,11 +32,13 @@ The process for test-driven development is:
 ### Print
 - Christensen, *Flexible, Reliable Software Using Patterns and Agile Development*, Chapters 2, 5, 8, 12, and 34
 ## Questions
+1. :star: Name at least one advantage of test-driven development.
 1. :star: What annotation has to appear before each test method in a JUnit test class?
 1. :star: If you pass all of your unit tests, does that mean your program is correct?
 1. :star::star: If a test doesn't pass, how do you know the problem isn't in the test itself?
 1. :star::star: How do you test a user interface that involves detecting mouse clicks and graphics?
 ## Answers
+1. It forces us to actually write tests rather than put off doing so forever. It forces us to think precisely about what a method is supposed to do. When writing the code, repeatedly running the test will let us know when we've succeeded. After a test has passed, it provides a regression test that will let us know if we later break something.
 1. `@Test`
 1. No. Passing all of the tests is *necessary* but not *sufficient*. Certainly a program that *doesn't* pass the tests has a problem.
 1. You can't be absolutely sure. Since the test is usually much simpler than the code being tested, any test failure is *probably* due to the code being tested, but sometimes there are bugs in the test. Testing mostly just gives us more confidence when tests *do* pass. This is is similar to the reasoning behind doing a math problem two different ways or [double-entry bookkeeping](https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system).
