@@ -40,6 +40,7 @@ When a certain type is expected, that type must be used. There are two exception
 1. :star: What's the difference between `'x'` and `"x"`?
 1. :star::star: What is the maximum value of an int?
 1. :star::star: What is the value of `'a' + 1`?
+1. :star::star: What is the value of `(double) 5 / 3`?
 1. :star::star: What does the literal `NaN` mean?
 1. :star::star::star: What does the literal `0.3f` mean?
 1. :star::star::star: Use Java to print the literal `0615`. How can this surprising result be explained?
@@ -48,6 +49,7 @@ When a certain type is expected, that type must be used. There are two exception
 1. `'x'` is a char; `"x"` is a String.
 1. ![2 to the 31st power minus 1 = 2147483647](https://latex.codecogs.com/svg.latex?2^{31}-1=2147483647). You should know that it's about two billion; you can look up the exact value if you ever need it.
 1. 98, because the char literal `'a'` is converted to the number 97 (its Unicode value). `(char)('a' + 1)` is `b`.
+1. 1, because the integer division happens before the cast. To perform floating point division, convert one of the values before the division, as `((double) 5) / 3` or `5.0 / 3`.
 1. `NaN` is the double value *not a number*. It is the result of calculations such as `0.0 / 0.0`.
 1. `0.3f` is the number 0.3 represented as a float rather than a double.
 1. `0615` is evaluated as 397. An integer literal starting with `0` is read as an octal (base 8) number rather than a decimal number. Similarly, a literal starting with `0x` is read as a hexadecimal (base 16) number.
