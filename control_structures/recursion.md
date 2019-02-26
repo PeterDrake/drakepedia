@@ -73,6 +73,17 @@ For a method with multiple recursive calls, like `hanoi`, the call stack can gro
 If a recursive method doesn't include a base case, or the recursive calls don't get closer to a base case, the call stack *will* grow until the system runs out of memory, at which point the system will crash. This is called a *stack overflow*.
 
 ## Thinking Recursively
+
+When solving a problem recursively, start by solving a very simple instance (![n equals 1](https://latex.codecogs.com/svg.latex?n=1), the empty String, etc.). Then solve a slightly harder one. After you have several solutions, see if you find a rule connection each one to the solution to a simpler problem. A side bonus of this approach is that your solutions make good [test](https://github.com/PeterDrake/drakepedia/blob/master/software_development/testing.md) cases.
+
+Every recursive method must have at least one base case and at least one recursive case.
+
+Recursive calls must get closer to the base case in order to avoid a stack overflow.
+
+While working through the call stack is sometimes useful for debugging, it's often best to instead think about *solving a problem in terms of easier problems*. If your base case works correctly, it's okay to make a "leap of faith" and *assume* that your method works correctly for smaller problems.
+
+Simple recursive methods don't involve loops. Some more complicated ones might use a loop to make recursive calls for several easier problems.
+
 ## Additional Resources
 ### Online
 - Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 2.3](https://introcs.cs.princeton.edu/java/23recursion/)
@@ -82,6 +93,8 @@ If a recursive method doesn't include a base case, or the recursive calls don't 
 ## Questions
 1. :star: What happens if a recursive method with no base case is called?
 1. :star: When is recursion preferable to iteration (using loops)?
+1. :star::star::star: Recursion revolves around a base case and a step from one input to a slightly larger input. What mathematical proof technique uses this same idea?
 ## Answers
 1. It keeps calling itself until the call stack fills up all available memory, at which point the program crashes. This is called a stack overflow.
 1. Some algorithms are much more clearly stated using recursion rather than iteration. These are algorithms that solve a problem by first solving one or more easier problems. In general, if you can find a way to express your algorithm iteratively, do that; if, in trying to do this, you find that you need to remember work to do after solving the easier problem, recursion will probably be easier.
+1. Induction.
