@@ -18,6 +18,7 @@ Conditional|`?:`|`a ? b : c` has the value of `b` if `a` is true, `c` otherwise.
 ## Additional Resources
 ### Online
 - Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 1.2](https://introcs.cs.princeton.edu/java/12types/)
+- Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Appendix A: Operator Precedence in Java](https://introcs.cs.princeton.edu/java/11precedence/)
 - Anderson, [Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html) (These are in C, but the operators are pretty much the same in C and in Java.)
 ### Print
 - Sedgewick and Wayne, *Introduction to Programming in Java*, Section 1.2
