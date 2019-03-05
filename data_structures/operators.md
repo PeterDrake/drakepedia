@@ -17,7 +17,7 @@ Conditional|`?:`|`a ? b : c` has the value of `b` if `a` is true, `c` otherwise.
 
 ## Operator Precedence
 
-In an expression involving multiple operators, like `2 + 4 * 3`, *operator precedence* rules determine the order in which operations are carried out. In this case, multiplication has higher precedence than addition, so the multiplication happens first, giving a result of 14.
+In an expression involving multiple operators, like `2 + 3 * 4`, *operator precedence* rules determine the order in which operations are carried out. In this case, multiplication has higher precedence than addition, so the multiplication happens first, giving a result of 14.
 
 Like almost all modern languages, Java has an elaborate [operator precedence hierarchy](https://introcs.cs.princeton.edu/java/11precedence/). You will gain some intuition about it with practice, but you are not expected to memorize it. If there is every any doubt, use parentheses to clarify order of operations. For example, you might write the expression above as `2 + (3 * 4)`. 
 
@@ -48,7 +48,7 @@ Like almost all modern languages, Java has an elaborate [operator precedence hie
 1. :star::star::star: What is the value of `-32 % 10`?
 1. :star::star::star: If `a` and `b` are boolean expressions, what is the difference between `a && b` and `a & b`?
 ## Answers
-1. 14, because multiplication has higher operator precedence than addition. It is not reasonable to memorize the entire operator precedence hierarchy; whenever there is any doubt, use parentheses.
+1. 14, because multiplication has higher operator precedence than addition.
 1. 3, because when 83 is divided by 10 the remainder is 3.
 1. 1.6666666666666667, because the cast has higher precedence than the division. An equivalent expression is `((double) 5) / 3`.
 1. 1.0, because the (integer) division happens before the assignment (which causes a type conversion). An equivalent statement is:
