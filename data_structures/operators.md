@@ -30,7 +30,7 @@ Like almost all modern languages, Java has an elaborate [operator precedence hie
 - Sedgewick and Wayne, *Introduction to Programming in Java*, Section 1.2
 - Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Section 3.5
 ## Questions
-1. :star: What is the value of `2 + 3 * 4`?
+1. :star: What is the value of `5 - 2 * 3`?
 1. :star: What is the value of `83 % 10`?
 1. :star::star: What is the value of `(double) 5 / 3`?
 1. :star::star: After
@@ -48,7 +48,7 @@ Like almost all modern languages, Java has an elaborate [operator precedence hie
 1. :star::star::star: What is the value of `-32 % 10`?
 1. :star::star::star: If `a` and `b` are boolean expressions, what is the difference between `a && b` and `a & b`?
 ## Answers
-1. 14, because multiplication has higher operator precedence than addition.
+1. -1, because multiplication has higher operator precedence than subtraction.
 1. 3, because when 83 is divided by 10 the remainder is 3.
 1. 1.6666666666666667, because the cast has higher precedence than the division. An equivalent expression is `((double) 5) / 3`.
 1. 1.0, because the (integer) division happens before the assignment (which causes a type conversion). An equivalent statement is:
