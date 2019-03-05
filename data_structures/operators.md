@@ -15,6 +15,12 @@ Logical|`&& \|\| !`|These take boolean operands and produce boolean values.<br>`
 Bitwise|`& \| ~ ^ << >> >>>`|These operate on integer types.<br>`~` and `^` are prefix.
 Conditional|`?:`|`a ? b : c` has the value of `b` if `a` is true, `c` otherwise.
 
+## Operator Precedence
+
+In an expression involving multiple operators, like `2 + 4 * 3`, *operator precedence* rules determine the order in which operations are carried out. In this case, multiplication has higher precedence than addition, so the multiplication happens first, giving a result of 14.
+
+Like almost all modern languages, Java has an elaborate [operator precedence hierarchy](https://introcs.cs.princeton.edu/java/11precedence/). You will gain some intuition about it with practice, but you are not expected to memorize it. If there is every any doubt, use parentheses to clarify order of operations. For example, you might write the expression above as `2 + (3 * 4)`. 
+
 ## Additional Resources
 ### Online
 - Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 1.2](https://introcs.cs.princeton.edu/java/12types/)
@@ -26,6 +32,12 @@ Conditional|`?:`|`a ? b : c` has the value of `b` if `a` is true, `c` otherwise.
 ## Questions
 1. :star: What is the value of `2 + 3 * 4`?
 1. :star: What is the value of `83 % 10`?
+1. :star::star: What is the value of `(double) 5 / 3`?
+1. :star::star: After
+    ```java
+    double x = 5 / 3;
+    ```
+    what is the value of `x`?
 1. :star::star::star: What are the values of the variables after the following code is evaluated?
     ```java
     int a = 1;
@@ -38,6 +50,11 @@ Conditional|`?:`|`a ? b : c` has the value of `b` if `a` is true, `c` otherwise.
 ## Answers
 1. 14, because multiplication has higher operator precedence than addition. It is not reasonable to memorize the entire operator precedence hierarchy; whenever there is any doubt, use parentheses.
 1. 3, because when 83 is divided by 10 the remainder is 3.
+1. 1.6666666666666667, because the cast has higher precedence than the division. An equivalent expression is `((double) 5) / 3`.
+1. 1.0, because the (integer) division happens before the assignment (which causes a type conversion). An equivalent statement is:
+    ```java
+    double x = (5 / 3);
+    ```
 1. `a` is 3, `b` is 1, and `c` is 3. This is because `++a` increments `a` *before* yielding a value, but `a++` increments `a` *after* yielding a value.
 1. The difference lies in what is shifted in on the left side. `>>` copies the leftmost (sign) bit, so that `a >> 3` is `a` divided by 2 to the 3rd power. `>>>` shifts in a 0, which is sometimes preferable when an int is being interpreted as a set of bits rather than as a number.
 1. -2. If the first argument to `%` is negative, the result is negative as well. This is consistent with the interpretation of `%` as "remainder" but not really with the interpretation as "modulo".
