@@ -1,6 +1,6 @@
 # Constructors
 ## Overview
-## Additional Materials
+## Additional Resources
 ## Questions
 1. :star: Where should an instance variable be initialized?
 ## Answers
