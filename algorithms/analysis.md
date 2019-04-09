@@ -33,13 +33,13 @@ The table below summarizes the most commonly occurring orders.
 
 Order | Nickname
 --|--
-![order 2 to the n](https://latex.codecogs.com/svg.latex?2^n) | exponential
-![order n cubed](https://latex.codecogs.com/svg.latex?n^3) | cubic
-![order n squared](https://latex.codecogs.com/svg.latex?n^2) | quadratic
-![order n log n](https://latex.codecogs.com/svg.latex?n\log&space;n) | linearithmic
-![order n](https://latex.codecogs.com/svg.latex?n) | linear
-![order log n](https://latex.codecogs.com/svg.latex?\log&space;n) | logarithmic
-![order 1](https://latex.codecogs.com/svg.latex?1) | constant
+![order 2 to the n](https://latex.codecogs.com/svg.latex?\Omega(2^n)) | exponential
+![order n cubed](https://latex.codecogs.com/svg.latex?\Omega(n^3)) | cubic
+![order n squared](https://latex.codecogs.com/svg.latex?\Omega(n^2)) | quadratic
+![order n log n](https://latex.codecogs.com/svg.latex?\Omega(n\log&space;n)) | linearithmic
+![order n](https://latex.codecogs.com/svg.latex?\Omega(n)) | linear
+![order log n](https://latex.codecogs.com/svg.latex?\Omega(\log&space;n)) | logarithmic
+![order 1](https://latex.codecogs.com/svg.latex?\Omega(1)) | constant
 
 Orders are useful for two reasons:
 - It is often relatively easy to tell which order a function is in.
