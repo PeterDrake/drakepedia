@@ -8,7 +8,7 @@
 
     ![q is an array-based queue. The data array contains 5, 2, 7, and an unused cell. Front is 0 and size is 3.](array_queue_example.svg)
     
-    Draw the final state of the stack after executing the following sequence of operations:
+    Draw the final state of the queue after executing the following sequence of operations:
     ```java
     q.enqueue(4);
     q.dequeue();
