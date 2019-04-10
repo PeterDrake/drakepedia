@@ -16,3 +16,6 @@
     s.push(8);
     ```
 ## Answers
+1.
+    ![s is a linked stack containing, from top to bottom, 8, 2, 7](linked_stack_after.svg)
+    
