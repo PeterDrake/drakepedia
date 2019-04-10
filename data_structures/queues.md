@@ -16,6 +16,7 @@
     q.enqueue(8);
     ```
 ## Answers
-1.
-![q is an array-based queue. The data array contains 8, an unused cell, 7, and 4. Front is 2 and size is 3.](array_queue_after.svg)
+1. &nbsp;
+
+    ![q is an array-based queue. The data array contains 8, an unused cell, 7, and 4. Front is 2 and size is 3.](array_queue_after.svg)
     
