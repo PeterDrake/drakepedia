@@ -1,6 +1,6 @@
 # Stacks
 ## Abstract Data Type
-## Array-based Implementation
+## Array-Based Implementation
 ## Linked Implementation
 ## Additional Resources
 ## Questions
