@@ -103,13 +103,13 @@ Line | Cost | Times | Total
 `int i;` | ![c](https://latex.codecogs.com/svg.latex?c) | 1 | ![c](https://latex.codecogs.com/svg.latex?c)
 `i = 1;` | ![d](https://latex.codecogs.com/svg.latex?d) | 1 | ![d](https://latex.codecogs.com/svg.latex?d)
 `while (i <= n)` | ![e](https://latex.codecogs.com/svg.latex?e) | ![n plus 1](https://latex.codecogs.com/svg.latex?n+1) | ![e n plus e](https://latex.codecogs.com/svg.latex?en+e)
-`sum += 1;` | ![f](https://latex.codecogs.com/svg.latex?f) | ![n plus 1](https://latex.codecogs.com/svg.latex?n+1) | ![f n plus f](https://latex.codecogs.com/svg.latex?fn+f)
-`i++;` | ![g](https://latex.codecogs.com/svg.latex?g) | ![n plus 1](https://latex.codecogs.com/svg.latex?n+1) | ![g n plus g](https://latex.codecogs.com/svg.latex?gn+g)
+`sum += 1;` | ![f](https://latex.codecogs.com/svg.latex?f) | ![n](https://latex.codecogs.com/svg.latex?n) | ![f n](https://latex.codecogs.com/svg.latex?fn)
+`i++;` | ![g](https://latex.codecogs.com/svg.latex?g) | ![n](https://latex.codecogs.com/svg.latex?n) | ![g n](https://latex.codecogs.com/svg.latex?gn)
 `return sum;` | ![h](https://latex.codecogs.com/svg.latex?h) | 1 | ![h](https://latex.codecogs.com/svg.latex?h)
 
 This adds up to:
 
-![a plus b plus c plus d plus e n plus e plus f n plus f plus g n plus g plus h](https://latex.codecogs.com/svg.latex?a+b+c+d+en+e+fn+f+gn+g+h)
+![a plus b plus c plus d plus e n plus e plus f n plus g n plus h](https://latex.codecogs.com/svg.latex?a+b+c+d+en+e+fn+gn+h)
 
 Since lower order terms don't matter, this in the same order as
 
