@@ -172,7 +172,7 @@ static double sum(double[] a, int i) {
 ```
 What is the order of its running time? The non-recursive method does nothing but call the other one and return the result, so it is the second method we must examine. Our normal technique doesn't work because it's not clear how long the recursive call takes.
 
-To analyze a recursive algorithm, we first write a special equation called a recurrence relation. For this algorithm, the reurrence relation is:
+To analyze a recursive algorithm, we first write a special equation called a recurrence relation. For this algorithm, the recurrence relation is:
 
 ![t of n is 1 if n equals 1, or 1 plus t of n minus one otherwise](https://latex.codecogs.com/svg.latex?T(n)=\begin{cases}1\textrm{&space;if&space;}n=1\\\\1+T(n-1)\textrm{&space;otherwise}\end{cases})
 
