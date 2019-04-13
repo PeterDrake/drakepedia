@@ -16,7 +16,7 @@ Its flow is:
 1. Execute the statements in the body of the loop.
 1. Go back to step 1.
 
-Strictly speaking, this the only loop you need, but the other variations can make your code clearer and more concise.
+Strictly speaking, this is the only loop you need, but the other variations can make your code clearer and more concise.
 
 If you know that you want to execute the statements at least once, it is sometimes clearer to use a `do` `while` loop:
 <pre>
