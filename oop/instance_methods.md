@@ -1,5 +1,6 @@
 # Instance Methods
 ## Overview
+(include getters and setters)
 ## Additional Resources
 ## Questions
 1. :star: Add a method `perimeter`, which takes no arguments and returns the Square's perimeter, to the class below.
@@ -44,6 +45,7 @@
 
     }
     ```
+1. :star: In another class, I have created `p`, an instance of class `Person`. When I try to print `p.height`, Java tells me that I don't have access to the private instance variable `height`. What is the proper object-oriented way to to get the value of this variable?
 ## Answers
 1.
     ```java
@@ -57,3 +59,4 @@
     ```
     should be added inside the class (but not inside any method).
 1. The instance method `getBalance` cannot be called from the static method `main`. It would work to print `new Account().getBalance()`.
+1. `p.getHeight()`.
