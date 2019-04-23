@@ -11,7 +11,7 @@ The *neighbors* of a vertex are the vertices directly connected to it by edges. 
 Several variations exist, including *directed* graphs (where the edges are one-way arrows) and *weighted* graphs (where there is a number indicating cost or capacity associated with each edge).
 ## Representation
 ### Adjacency matrix
-An *adjacency matrix* or *neighbor matrix* is a two-dimensional array of booleans, with true at position *i*, *j* if there is an edge connecting vertex *i* to vertex *j*. The adjacency matrix for the graph above is shown below (with shaded boxes indicating true and unshaded boxes indicating false).
+An *adjacency matrix* or *neighbor matrix* is a two-dimensional array of booleans, with true at position ![i, j](https://latex.codecogs.com/svg.latex?i\,j) if there is an edge connecting vertex ![i](https://latex.codecogs.com/svg.latex?i) to vertex ![j](https://latex.codecogs.com/svg.latex?j). The adjacency matrix for the graph above is shown below (with shaded boxes indicating true and unshaded boxes indicating false).
 
 ![8 by 8 matrix as described above](adjacency_matrix.svg)
 
