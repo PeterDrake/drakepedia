@@ -8,8 +8,11 @@ In the graph below, there are eight vertices, numbered 0 through 7. There is an 
 
 The *neighbors* of a vertex are the vertices directly connected to it by edges. In the graph above, 4's neighbors are 0, 1, and 5.
 
+Several variations exist, including *directed* graphs (where the edges are one-way arrows) and *weighted* graphs (where there is a number indicating cost or capacity associated with each edge).
 ## Representation
 ### Adjacency matrix
+An *adjacency matrix* or *neighbor matrix* is a two-dimensional array of booleans, with true at position *i*, *j* if there is an edge connecting vertex i to vertex j. The adjacency matrix for the graph above is shown below (with shaded boxes indicating true and unshaded boxes indicating false).
+
 ### Adjacency lists
 ## Traversal
 ### Breadth-First
