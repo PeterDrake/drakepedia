@@ -16,9 +16,11 @@ An *adjacency matrix* or *neighbor matrix* is a two-dimensional array of boolean
 ![8 by 8 matrix as described above](adjacency_matrix.svg)
 
 ### Adjacency lists
-In a graph with ![v](https://latex.codecogs.com/svg.latex?v) vertices, the amount of memory used by an adjacency matrix is in ![order v squared](https://latex.codecogs.com/svg.latex?\Theta(v^2)). This is fine for graphs that are small or very *dense* (that is, having close to every possible edge), but in practice there is a more efficient representation. The *Adjacency list* or *neighbor list* representation consists of a one-dimensional array, each element of which is a list of the neighbors of the corresponding vertex. The adjacency list representation of the graph above is shown below.
+In a graph with ![v](https://latex.codecogs.com/svg.latex?v) vertices, the amount of memory used by an adjacency matrix is in ![order v squared](https://latex.codecogs.com/svg.latex?\Theta(v^2)). This is fine for graphs that are small or very *dense* (that is, having close to every possible edge), but for typical large, *sparse* graphs, there is a more efficient representation. The *Adjacency list* or *neighbor list* representation consists of a one-dimensional array, each element of which is a list of the neighbors of the corresponding vertex. The adjacency list representation of the graph above is shown below.
 
+![array of 8 elements, each pointing to a chain of list nodes, as described above](adjacency_list.svg)
 
+The space taken by this representation is in ![order v + e](https://latex.codecogs.com/svg.latex?\Theta(v+e)), where ![v](https://latex.codecogs.com/svg.latex?v) is the number of vertices and ![e](https://latex.codecogs.com/svg.latex?e) is the number of edges.
 
 ## Additional Resources
 ### Online
