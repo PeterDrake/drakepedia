@@ -25,7 +25,7 @@ The space taken by this representation is in ![order v + e](https://latex.codeco
 ## Additional Resources
 ### Online
 - Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 4.5](https://introcs.cs.princeton.edu/java/45graph/)
-- OpenDSA, [Graphs](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/GraphIntro.html)
+- OpenDSA, [Graphs Chapter Introduction](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/GraphIntro.html) and [Graph Implementations](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/GraphImpl.html)
 - Sedgewick and Wayne, *Algorithms* booksite, [Section 4.1](https://algs4.cs.princeton.edu/41graph/)
 ### Print
 - Sedgewick and Wayne, *Introduction to Programming in Java*, 2nd Edition, Section 4.5
