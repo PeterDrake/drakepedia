@@ -26,9 +26,10 @@ The space taken by this representation is in ![order v + e](https://latex.codeco
 ### Online
 - Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 4.5](https://introcs.cs.princeton.edu/java/45graph/)
 - OpenDSA, [Graphs](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/GraphIntro.html)
+- Sedgewick and Wayne, *Algorithms* booksite, [Section 4.1](https://algs4.cs.princeton.edu/41graph/)
 ### Print
 - Sedgewick and Wayne, *Introduction to Programming in Java*, 2nd Edition, Section 4.5
-- Sedgewick and Wayne, *Algorithms*, 4th Edition, Chapter 4
+- Sedgewick and Wayne, *Algorithms*, 4th Edition, Section 4.1
 - Cormen *et al.*, *Introduction to Algorithms*, 3rd Edition, Section 22.1 
 ## Questions
 1. :star: What is the singular form of the plural noun "vertices"?
