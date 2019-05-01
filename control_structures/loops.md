@@ -115,6 +115,15 @@ The first line can be read, "for each `int` `n` in `numbers`...".
 1. :star::star: Can a loop body be empty?
 1. :star::star: Which parts, if any, of the first line of a `for` loop can be omitted?
 1. :star::star: A variable declared in the initialization part of a `for` loop is only visible inside that loop. What can we do if we need to access it after the loop ends (to see its final value)?
+1. :star::star: What does the code below accomplish? Assume `a` is an array of ints.
+    ```java
+    for (int i = 0; i < a.length / 2; i++) {
+        int j = a.length - 1 - i;
+        int temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+    }
+    ```
 ## Answers
 1. `01234`
 1. There is no such thing as an `if` loop. Loops potentially execute their bodies multiple times, but `if` statements do so at most once.
@@ -170,3 +179,4 @@ The first line can be read, "for each `int` `n` in `numbers`...".
     }
     // Now i is still visible here
     ```
+1. It reverses the order of the elements of `a`.
