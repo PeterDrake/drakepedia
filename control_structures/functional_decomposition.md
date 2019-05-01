@@ -87,6 +87,20 @@ Of course, a method called by `main` may in turn call another method. The *call 
         }
     }
     ```
+1. :star::star: Simplify the following method by using a separate method to avoid redunant code:
+    ```java
+    public double differenceOfSums(double[] a, double[] b) {
+        double sumA = 0;
+        for (int i = 0; i < a.length; i++) {
+            sumA += a[i];
+        }
+        double sumB = 0;
+        for (int i = 0; i < b.length; i++) {
+            sumB += b[i];
+        }
+        return sumA - sumB;
+    }
+    ```
 1. :star::star::star: Is it legal to have more than one method with the same name in the same class?
 ## Answers
 1. Don't put anything between the parentheses:
@@ -98,4 +112,18 @@ Of course, a method called by `main` may in turn call another method. The *call 
     double s = Math.sin(x);
     ```
 1. The compiler can't predict that the `return` statement will always be reached. It may be obvious to you that it will for this particular program, but in general it is impossible for the compiler to predict what a program will do.
+1.
+    ```java
+    public double differenceOfSums(double[] a, double[] b) {
+        return sum(a) - sum(b);
+    }
+
+    public double sum(double[] a) {
+        double result = 0;
+        for (int i = 0; i < a.length; i++) {
+            result += a[i];
+        }
+        return result;
+    }
+    ```
 1. Yes, as long as their argument lists differ in number or type. This is called *overloading*. When you call the method, Java uses the types of the arguments you provide to determine which version to use.
