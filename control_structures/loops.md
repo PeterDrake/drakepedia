@@ -104,6 +104,12 @@ The first line can be read, "for each `int` `n` in `numbers`...".
         System.out.println(i);
     }
     ```
+1. :star: How would you write the `for` loop below as a for each loop? Assume `a` is an array of Strings.
+    ```java
+    for (int i = 0; i < a.length; i++) {
+        System.out.println(a[i]);
+    }
+    ```
 1. :star::star: What's the best loop to use to iterate through the elements of an array *backward*?
 1. :star::star: What's the best loop to use to modify an array of doubles to make each element 10 times as large?
 1. :star::star: Can a loop body be empty?
@@ -122,6 +128,12 @@ The first line can be read, "for each `int` `n` in `numbers`...".
     ```
     This isn't *exactly* equivalent, because the local variable `i` is still visible after the loop in this version. In the
     `for` loop, `i` is only visible inside the loop.
+1.
+    ```java
+    for (String s : a) {
+        System.out.println(s);
+    }
+    ```
 1. A `for` loop like:
     ```java
     for (int i = array.length - 1; i >= 0; i--) {
