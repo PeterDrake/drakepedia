@@ -101,6 +101,12 @@ Of course, a method called by `main` may in turn call another method. The *call 
         return sumA - sumB;
     }
     ```
+1. :star::star: What one line could be added to the method below to make it compile?
+    ```java
+    static int broken() {
+    
+    }
+    ```
 1. :star::star::star: Is it legal to have more than one method with the same name in the same class?
 ## Answers
 1. Don't put anything between the parentheses:
@@ -126,4 +132,5 @@ Of course, a method called by `main` may in turn call another method. The *call 
         return result;
     }
     ```
+1. `return -1;` (Any integer would work.)
 1. Yes, as long as their argument lists differ in number or type. This is called *overloading*. When you call the method, Java uses the types of the arguments you provide to determine which version to use.
