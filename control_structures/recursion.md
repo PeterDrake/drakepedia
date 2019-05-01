@@ -93,8 +93,22 @@ Simple recursive methods don't involve loops. Some more complicated ones might u
 ## Questions
 1. :star: What happens if a recursive method with no base case is called?
 1. :star: When is recursion preferable to iteration (using loops)?
+1. :star::star: Given the code below, under what conditions does `check(s)` return true?
+    ```java
+    static boolean check(String s) {
+        return check(s, 0, s.length());
+    }
+
+    static boolean check(String s, int lo, int hi) {
+        if (hi - lo <= 1) {
+            return true;
+        }
+        return s.charAt(lo) == s.charAt(hi - 1) && check(s, lo + 1, hi - 1);
+    }
+    ```
 1. :star::star::star: Recursion revolves around a base case and a step from one input to a slightly larger input. What mathematical proof technique uses this same idea?
 ## Answers
 1. It keeps calling itself until the call stack fills up all available memory, at which point the program crashes. This is called a stack overflow.
 1. Some algorithms are much more clearly stated using recursion rather than iteration. These are algorithms that solve a problem by first solving one or more easier problems. In general, if you can find a way to express your algorithm iteratively, do that; if, in trying to do this, you find that you need to remember work to do after solving the easier problem, recursion will probably be easier.
+1. `s` is a palindrome (that is, reads the same forward and backward).
 1. Induction.
