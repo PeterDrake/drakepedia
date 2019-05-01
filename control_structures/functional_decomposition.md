@@ -87,7 +87,7 @@ Of course, a method called by `main` may in turn call another method. The *call 
         }
     }
     ```
-1. :star::star: Simplify the following method by using a separate method to avoid redunant code:
+1. :star::star: Simplify the following method by using a separate method to avoid redundant code:
     ```java
     public double differenceOfSums(double[] a, double[] b) {
         double sumA = 0;
