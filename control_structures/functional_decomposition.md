@@ -89,7 +89,7 @@ Of course, a method called by `main` may in turn call another method. The *call 
     ```
 1. :star::star: Simplify the following method by using a separate method to avoid redundant code:
     ```java
-    public double differenceOfSums(double[] a, double[] b) {
+    static double differenceOfSums(double[] a, double[] b) {
         double sumA = 0;
         for (int i = 0; i < a.length; i++) {
             sumA += a[i];
@@ -114,11 +114,11 @@ Of course, a method called by `main` may in turn call another method. The *call 
 1. The compiler can't predict that the `return` statement will always be reached. It may be obvious to you that it will for this particular program, but in general it is impossible for the compiler to predict what a program will do.
 1.
     ```java
-    public double differenceOfSums(double[] a, double[] b) {
+    static double differenceOfSums(double[] a, double[] b) {
         return sum(a) - sum(b);
     }
 
-    public double sum(double[] a) {
+    static double sum(double[] a) {
         double result = 0;
         for (int i = 0; i < a.length; i++) {
             result += a[i];
