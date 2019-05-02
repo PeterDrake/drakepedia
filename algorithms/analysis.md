@@ -218,6 +218,14 @@ Recurrence | Solution Order
 1. :star::star: What is the order of the running time of the `linearSearch` algorithm above when `key` is not present in `a`?
 1. :star::star: What's wrong with the following statement?
    > The best case for the algorithm I'm analyzing occurs when ![n equals 1](https://latex.codecogs.com/svg.latex?n=1).
+1. :star::star: What is the order of the running time of the code below?
+    ```java
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            System.out.println(i + ", " + j);
+        }
+    }
+    ```
 1. :star::star::star: What statement in asymptotic notation is equivalent to the following?
    > There exists some ![c greater than 0](https://latex.codecogs.com/svg.latex?c>0) and some ![n sub zero](https://latex.codecogs.com/svg.latex?n_0) such that, for all ![n greater than or equal to n sub zero](https://latex.codecogs.com/svg.latex?n\geq&space;n_0), ![f of n is less than or equal to c times g of n](https://latex.codecogs.com/svg.latex?f(n)\leq&space;cg(n)).
 1. :star::star::star: Read the definition of ![tilde](https://latex.codecogs.com/svg.latex?\sim) notation on the Sedgewick & Wayne booksite. Given two functions ![f(n)](https://latex.codecogs.com/svg.latex?f(n)) and ![g of n](https://latex.codecogs.com/svg.latex?g(n)), what is the relationship between the statements ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)) and ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n)))? In other words, does one statement imply the other, vice versa, neither, or both?
@@ -231,6 +239,7 @@ Recurrence | Solution Order
 1. No. Asymptotic notation says nothing about small values of ![n](https://latex.codecogs.com/svg.latex?n). For large values, we know that ![f of n](https://latex.codecogs.com/svg.latex?f(n)) exceeds ![g of n](https://latex.codecogs.com/svg.latex?g(n)) by no more than a constant factor, but it might be that ![f of n equals 10 n](https://latex.codecogs.com/svg.latex?f(n)=10n) and ![g of n equals n](https://latex.codecogs.com/svg.latex?g(n)=n).
 1. Linear.
 1. Best-case, average, amortized, and worst-case analysis must apply for all values of ![n](https://latex.codecogs.com/svg.latex?n). If they differ, they must do so between different inputs of each size. For example, a sorting algorithm might have a best case when the array is already sorted and a worst case when it is already sorted in reverse order.
+1. ![order n squared](https://latex.codecogs.com/svg.latex?\Theta(n^2)). The innermost line takes constant time. The inner loop runs ![n](https://latex.codecogs.com/svg.latex?n) times each time the outer loop runs. The outer loop runs ![n](https://latex.codecogs.com/svg.latex?n) times, so the innermost line runs a total of ![n squared](https://latex.codecogs.com/svg.latex?n^2) times.
 1. ![f of n is in big o of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;O(g(n)))
 1. ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)) implies ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n))), but not vice versa. For example, if ![f of n equals n](https://latex.codecogs.com/svg.latex?f(n)=n) and ![g of n equals 2n](https://latex.codecogs.com/svg.latex?g(n)=2n), then ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n))) but it is not true that ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)). The ![tilde](https://latex.codecogs.com/svg.latex?\sim) notation ignores lower-order terms just like ![big theta](https://latex.codecogs.com/svg.latex?\Theta) notation does, but it does not ignore constant factors.
 1. Yes: ![f is in little o of g](https://latex.codecogs.com/svg.latex?f\in&space;o(g)). Similarly, ![f is in little omega of g](https://latex.codecogs.com/svg.latex?f\in&space;\omega(g)), where ![the symbol that looks like a w](https://latex.codecogs.com/svg.latex?\omega) is a lower-case omega, means that ![f](https://latex.codecogs.com/svg.latex?f) is in a strictly higher order.
