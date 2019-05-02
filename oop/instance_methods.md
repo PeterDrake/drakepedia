@@ -46,6 +46,7 @@
     }
     ```
 1. :star::star: In another class, I have created `p`, an instance of class `Person`. When I try to print `p.height`, Java tells me that I don't have access to the private instance variable `height`. What is the proper object-oriented way to to get the value of this variable?
+TODO: Move this to the page on access levels and remove all access levels from this page.
 1. :star::star: By adding an instance variable, modify the class below so that the instance methods don't need arguments.
     ```java
     class Square {
