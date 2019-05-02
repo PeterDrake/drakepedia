@@ -26,6 +26,6 @@ Control<br>Structures | [Main Method](control_structures/main_method.md)<br>[If 
 Data<br>Structures | [Primitive Types](data_structures/primitive_types.md)<br>[Operators](data_structures/operators.md)<br>Variables<br>Strings<br>[Arrays](data_structures/arrays.md) | Objects as Containers<br>References<br>Linked Lists<br>Abstract Data Types<br>Lists<br>Stacks<br>Queues<br>Trees<br>[Graphs](data_structures/graphs.md)<br>Sets and Maps | Binary Search Trees<br>Hash Tables<br>Priority Queues<br>Union-Find |
 Algorithms | | [Analysis of Algorithms](algorithms/analysis.md)<br>Search<br>Traversal | Sorting<br>Graph Algorithms |
 Style | | Documentation<br>Omitting Needless Code | Defensive Programming |
-Object-<br>Oriented Programming | | Constructors<br>Instance Methods<br>Wrapper Classes<br>Access Modifiers<br>Default Methods<br>Interfaces | Inheritance<br>Packages<br>Generics<br>Exceptions | Enums<br>Inner Classes
+Object-<br>Oriented Programming | | Constructors<br>Instance Methods<br>Wrapper Classes<br>Access Modifiers<br>Default Methods<br>Interfaces<br>Generics | Inheritance<br>Packages<br>Exceptions | Enums<br>Inner Classes
 Libraries | | java.lang<br>stdlib<br>java.util | | [javax.swing](libraries/javax.swing.md)
 Software<br>Development | | Plan-Change-Evaluate Cycle<br>Pair Programming<br>[Testing](software_development/testing.md)<br>Debugging | | [Extreme Programming](software_development/extreme_programming.md)<br>Object-Oriented Design<br>Design Patterns
