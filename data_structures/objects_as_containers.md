@@ -2,7 +2,8 @@
 ## Overview
 ## Additional Resources
 ## Questions
-1. :star: What is printed by the program below?
+1. :star: What reserved word is used when creating an object?
+1. :star::star: What is printed by the program below?
     ```java
     public class Mystery {
 
@@ -16,4 +17,5 @@
     }
     ```
 ## Answers
+1. `new`
 1. 0, which is the default value of `x`.
