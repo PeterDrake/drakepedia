@@ -14,7 +14,7 @@
     1. Is `a.equals(b)`?
     1. Is `b == c`?
     1. Is `b.equals(c)`?
-1. Suppose we have defined
+1. :star::star: Suppose we have defined
     ```java
     void alter1(int[] a) {
         a[0] = 5;
@@ -26,7 +26,7 @@
     alter1(b);
     ```
     What are the elements of `b` afterward?
-1. Suppose we have defined
+1. :star::star: Suppose we have defined
     ```java
     void alter2(int[] a) {
         a = new int[] {5, 6, 7, 8};
