@@ -16,6 +16,7 @@
 
     }
     ```
+QUESTION TO ADD: Trying to access instance variable from a class, e.g., Mystery.x above.
 ## Answers
 1. `new`
 1. 0, which is the default value of `x`.
