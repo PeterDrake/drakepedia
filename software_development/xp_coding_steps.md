@@ -79,7 +79,9 @@ To commit:
 
 `command-k` (Mac) / `ctrl-k` (Windows). Choose `Commit and Push` at the lower right.
 ## Issue Pull Request
-You've merged `master` into your branch and everything seems to be working. Now you're ready to share your code with the rest of your team!
+Pull the latest version of the code and then merge `master` into your branch. Once any merge conflicts have been resolved, push the resulting commit.
+
+Now you're ready to share your code with the rest of your team!
 
 1. Go to GitHub.
 1. Navigate to your repository and the branch you've been working on.
