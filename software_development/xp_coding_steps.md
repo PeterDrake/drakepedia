@@ -64,6 +64,12 @@ To commit:
 ```
 git commit -am 'Your commit message here'
 ```
+
+You should also push your code up to GitHub:
+```
+git push
+```
+
 ### Committing From IntelliJ IDEA
 To add files to version control:
 
