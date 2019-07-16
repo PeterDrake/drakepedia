@@ -38,6 +38,7 @@ A program should:
 - Clearly present the information the user needs to make decisions and allow the user to easily communicate those decisions back to the program. While it can be very useful during debugging to print some additional information (e.g., about the state of data structures), the final version of a program should not do this.
 - Have elegant, [clear](https://introcs.cs.princeton.edu/java/11style/), well-commented code. Any commented-out code should be removed.
 - Behave reasonably even in situations not explicitly tested.
+
 Except where specified, you do not need to do error-checking in programs. For example, if you ask the user to type an integer, you may assume that they will do so, and are not responsible for what happens if they type “fnord” instead.
 
 ### Writing Assignments
