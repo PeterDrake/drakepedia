@@ -80,10 +80,10 @@ If a question seems ambiguous, make and state a reasonable assumption. If, in a 
 ## Grades
 You can see your current status at any time within Canvas. **_If there is a problem with your grade, it is your responsibility to address it immediately._** I will not offer ad hoc extra credit to improve your grade after the course is over.
 
-# Disabilities
+## Disabilities
 If you have a disability that may impact your academic performance, you may request accommodations by submitting documentation to [Student Support Services](https://www.lclark.edu/offices/student_support_services/). After you have submitted documentation and filled out paperwork for the current semester requesting accommodations, staff in that office will notify me of the accommodations for which you are eligible.
 
-# Sexual Misconduct
+## Sexual Misconduct
 
 Our school is committed to fostering a safe, productive learning environment. Title IX and our school policy prohibits discrimination on the basis of sex. Sexual misconduct — including harassment, domestic and dating violence, sexual assault, and stalking — is also prohibited at our school.
 
