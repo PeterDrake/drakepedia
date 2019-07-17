@@ -12,7 +12,7 @@ To call a method defined in the same class, use the syntax
 <pre>
 <em>method</em>(<em>expr</em>, ...);
 </pre>
-where *method* is the name of the method and the *expr*s are values given to the method (called *arguments* or *parameters*).
+where *method* is the name of the method and the *expr*s are values given to the method (called *arguments*).
 If the method has a return type other than `void`, the method call is also an expression, so you can (e.g.) store the resulting value in a variable:
 ```java
 int c = foo(a, b + 1);
@@ -30,7 +30,7 @@ StdDraw.rectangle(0.3, 0.8, 0.1, 0.1);
 ### Defining Methods
 You may define any number of methods within a class, using the syntax
 <pre>
-static <em>type</em> <em>name</em>(<em>type</em> <em>argument</em>, ...) {
+static <em>type</em> <em>name</em>(<em>type</em> <em>parameter</em>, ...) {
     <em>statement</em>
     ...
 }
@@ -39,8 +39,9 @@ where:
 
 - *type* is the type of the value returned by the method (or `void` if the method doesn't return a value),
 - *name* is the name of the method,
-- each *type* is the type of an argument, and
-- each *argument* is the name of the corresponding argument.
+- each *type* is the type of the corresponding *parameter*.
+
+A *parameter* is a local variable that holds the value of an argument when the method is called.
 
 Here is a more concrete example:
 ```java
@@ -48,6 +49,11 @@ static int square(int n) {
     return n * n;
 }
 ```
+If we call the method as
+```java
+square(3);
+```
+then the parameter `n` stores the value 3.
 ### Return Statements
 To return a value from a method, use the syntax:
 <pre>
