@@ -103,8 +103,7 @@ Some sources call an `if` statement a *conditional statement* or *branch*.
             <em>statement</em>
             ...
         }    
-    }
-    </pre>
+    }</pre>
     The alternate *else if* form makes this easier to read:
     <pre>
     if (<em>test1</em>) {
@@ -116,5 +115,4 @@ Some sources call an `if` statement a *conditional statement* or *branch*.
     } else {
         <em>statement</em>
         ... 
-    }
-    </pre>
+    }</pre>
