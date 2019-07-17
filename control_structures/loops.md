@@ -45,9 +45,10 @@ where *initialization* is a statement, *test* is a boolean expression, and *upda
 
 Its flow is:
 1. Execute *initialization*.
-2. If *test* is false, stop.
-3. Execute the statements in the body of the loop.
-4. Execute *update*.
+1. If *test* is false, stop.
+1. Execute the statements in the body of the loop.
+1. Execute *update*.
+1. Go back to step 2.
 
 Here is a more concrete example:
 ```java
@@ -77,18 +78,15 @@ Its flow is:
 3. Execute the statements in the body of the loop.
 4. Go back to step 1.
 
-The for each loop is extremely handy for iterating through the elements of an array:
+The for each loop is extremely handy for iterating through the elements of an [array](../data_structures/arrays.md):
 ```java
 for (int n : numbers) {
     System.out.println(n);
 }
 ```
 The first line can be read, "for each `int` `n` in `numbers`...".
-## Additional Resources
-### Online
-- Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 1.3](https://introcs.cs.princeton.edu/java/13flow/)
-### Print
-- Sedgewick and Wayne, *Introduction to Programming in Java*, Section 1.3
+## Resources
+- Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 1.3](https://introcs.cs.princeton.edu/java/13flow/)
 - Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Sections 3.8.3, 3.8.4, 3.8.6, and 3.10.3
 ## Questions
 1. :star: What is printed by the following code?
