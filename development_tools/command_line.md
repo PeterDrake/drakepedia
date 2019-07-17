@@ -1,7 +1,6 @@
 # Command Line
 ## Overview
-While I generally prefer to work in an integrated development environment like IntelliJ IDEA, it's certainly possible to
-develop Java programs from the command line.
+While I generally prefer to work in an integrated development environment like [IntelliJ IDEA](intellij_idea.md), it's certainly possible to develop Java programs from the command line.
 
 You must first have the [Java Development Kit](https://www.oracle.com/technetwork/java/javase/downloads/index.html) installed
 on your machine. You can verify that this is working by typing `javac -version` on your command line.
