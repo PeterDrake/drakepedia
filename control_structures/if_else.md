@@ -22,12 +22,9 @@ where *test* is a boolean expression. The first version executes the statements 
 Like other control structures involving curly braces, `if` statements can be nested inside each other.
 
 Some sources call an `if` statement a *conditional statement* or *branch*.
-## Additional Resources
-### Online
-- Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 1.3](https://introcs.cs.princeton.edu/java/13flow/)
+## Resources
+- Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 1.3](https://introcs.cs.princeton.edu/java/13flow/)
 - Goeschel, [Reflections on Curly Braces](https://blog.codecentric.de/en/2014/02/curly-braces/)
-### Print
-- Sedgewick and Wayne, *Introduction to Programming in Java*, Section 1.3
 - Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Section 3.8.2
 ## Questions
 1. :star::star: Explain the difference between
@@ -79,6 +76,7 @@ Some sources call an `if` statement a *conditional statement* or *branch*.
         System.out.println("B");
     }
     ```
+1. :star::star: The first form at the top of this page is called a *one-armed* if statement. The second form is a *two-armed* if statement. How could you use if statements to make a three-way decision? 
 ## Answers
 1. The second version only prints `B` if *both* `test1` and `test2` are true.
 1. The second version only prints `B` if `test1` is `false` *and* `test2` is `true`.
@@ -92,3 +90,4 @@ Some sources call an `if` statement a *conditional statement* or *branch*.
     }
     ```
     If `test` was `false`, then `!test` *must* be `true`; there's no need to waste code or computation checking it.
+1. asdfdsaf
