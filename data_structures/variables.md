@@ -44,6 +44,8 @@ x = -17;
 The *scope* of a variable is the region of code where the variable can be accessed. This extends from the point where the variable is declared until the end of the [method](../control_structures/functional_decomposition.md). The scope of a method parameter is the entire method.
 
 ## Resources
+- Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 1.2](https://introcs.cs.princeton.edu/java/12types/)
+- Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Section 3.4
 
 ## Questions
 1. :star: Explain the difference between `x = y;` and `x == y`.
@@ -59,8 +61,8 @@ The *scope* of a variable is the region of code where the variable can be access
     ```
 1. :star: Is the following code legal?
     ```java
-    int x = 2;
-    int X = 3;
+    int variable = 2;
+    int VARIABLE = 3;
     ```
 1. :star::star: If `alive` is a boolean variable, how can `alive == true` be replaced with a shorter expression?
 1. :star::star: Do `x = y;` and `y = x;` mean the same thing?
@@ -72,7 +74,7 @@ The *scope* of a variable is the region of code where the variable can be access
 1. `x = y;` is a statement that causes `x` to contain a copy of the value of `y`. `x == y` is a boolean expression that is true if and only if `x` and `y` contain the same value.
 1. Yes. It doesn't make sense as algebra, where the `=` symbol is used to *state* that two expressions are equal, but it's fine in Java. It creates a variable `x`, assigns it the value 2, and then replaces that value with 3.
 1. No. Once a variable has been declared, you cannot declare a second variable with the same name in the same scope.
-1. Yes. Since Java is case-sensitive, `x` and `X` are different variables.
+1. Yes. Since Java is case-sensitive, `variable` and `VARIABLE` are different variables.
 1. If `alive == true`, `alive` is true; if not, `alive` is false. In other words, `alive` and `alive == true` always have exactly the same value. The shorter version is always preferable as it is clearer, is more concise, and avoids the risk of accidentally typing `alive = true` (which is an assignment, not a comparison).
 1. No. If `x` was 1 and `y` was 2, then `x = y;` would change `x`'s value to 2, but `y = x;` would change `y`'s value to 1.
 1. No. The value on the left side of an assignment statement must be a variable (or some other place where a value can be stored, like an array element).
@@ -82,7 +84,7 @@ The *scope* of a variable is the region of code where the variable can be access
     x = y;
     y = temp;
     ```
-    To remember this, imagine that you have an object (say, a can of beans) in each hand. To swap them, you put one down on the table, move the other can to your newly-empty hand, and then pick up the one on the table. This analogy is slightly strained because `int temp = x;` doesn't empty out `x`, it just copies the value of `x` into `temp`.
+    To remember this, imagine that you have an object (say, a can of beans) in each hand. To swap them, you put one down on the table, move the other one to your newly-empty hand, and then pick up the one on the table. This analogy is slightly strained because `int temp = x;` doesn't empty out `x`, it just copies the value of `x` into `temp`.
 1. Surprisingly, you can accomplish this using the bitwise xor operator:
     ```java
     x = x ^ y;
