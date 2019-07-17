@@ -11,6 +11,8 @@ provided, but there should be so many questions that memorizing all of the answe
 I list additional online and print resources where applicable, trying to list the most valuable ones first. In general, print
 resources go into more depth or provide a more gentle explanation.
 
+Some of the resources listed are online, others in books. If you are a member of the [Association for Computing Machinery (ACM)](https://www.acm.org/membership/membership-options) ($19/year), you have electronic access to many of these books through the [Safari Learning Platform](https://myacm.acm.org/dashboard.cfm?svc=saf).
+
 Questions are rated according to their difficulty:
 - :star: By the end of the course in question, you should be able to answer these questions immediately off the top of your
 head. They often involve terminology or basic concepts.
