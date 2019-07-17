@@ -90,4 +90,19 @@ Some sources call an `if` statement a *conditional statement* or *branch*.
     }
     ```
     If `test` was `false`, then `!test` *must* be `true`; there's no need to waste code or computation checking it.
-1. asdfdsaf
+1. You could nest a second if statement inside the else clause of the first:
+    <pre>
+    if (<em>test1</em>) {
+        <em>statement</em>
+        ...
+    } else {
+        if (<em>test2</em>) {
+            <em>statement</em>
+            ...
+        } else {
+            <em>statement</em>
+            ...
+        }    
+    }
+    </pre>
+    
