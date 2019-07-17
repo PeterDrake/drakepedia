@@ -26,15 +26,12 @@ There are two cases where literals are of non-primitive types:
 When a certain type is expected, that type must be used. There are two exceptions:
 - When Java can do the conversion without losing information, it will do so. For example, an int can be converted to a double. Thus, when adding `1 + 1.5`, the `+` operator needs its two operands to be of the same type, so Java automatically converts the int `1` into the double `1.0`.
 - You can explicitly *cast* one type to another. The expression `(int) 3.9` converts the double `3.9` into the int `3`, truncating the non-integer part.
-## Additional Resources
-### Online
-- Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 1.2](https://introcs.cs.princeton.edu/java/12types/)
+## Resources
+- Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 1.2](https://introcs.cs.princeton.edu/java/12types/)
 - ProTech, [Java Fundamentals Tutorial: Data Types](https://www.protechtraining.com/content/java_fundamentals_tutorial-data_types)
+- Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Sections 3.3, 3.5.3, and 3.5.4
 - Wired, [No, 'Gangnam Style' Didn't Break YouTube. We Did the Math](https://www.wired.com/2014/12/gangnam-style-youtube-math/)
 - Kotaku, [Why Gandhi Is Such an Asshole in *Civilization*](https://kotaku.com/why-gandhi-is-such-an-asshole-in-civilization-1653818245)
-### Print
-- Sedgewick and Wayne, *Introduction to Programming in Java*, Section 1.2
-- Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Sections 3.3, 3.5.3, and 3.5.4
 ## Questions
 1. :star: How many different boolean values are there?
 1. :star: What's the difference between `'x'` and `"x"`?
