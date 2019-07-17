@@ -3,7 +3,7 @@
 A long program can be greatly improved by breaking it down into multiple *functions*, represented in Java as static methods. This has many advantages:
 - Redundant code (repeating the same statements in several places) is avoided, making the code shorter.
 - The structure of the code is made clearer, making the code easier to read and write.
-- Individual methods can be tested, making the code easier to debug.
+- Individual methods can be [tested](../software_development/testing.md), making the code easier to debug.
 - Methods can often be reused to solve other problems.
 
 A well-designed method should *do only one thing*: either return a value or have some side effect (modify a data structure in memory, draw something on the screen, etc.). 
