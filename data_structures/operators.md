@@ -21,14 +21,11 @@ In an expression involving multiple operators, like `2 + 3 * 4`, *operator prece
 
 Like almost all modern languages, Java has an elaborate [operator precedence hierarchy](https://introcs.cs.princeton.edu/java/11precedence/). You will gain some intuition about it with practice, but you are not expected to memorize it. If there is every any doubt, use parentheses to clarify order of operations. For example, you might write the expression above as `2 + (3 * 4)`. 
 
-## Additional Resources
-### Online
-- Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 1.2](https://introcs.cs.princeton.edu/java/12types/)
-- Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Appendix A: Operator Precedence in Java](https://introcs.cs.princeton.edu/java/11precedence/)
-- Anderson, [Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html) (These are in C, but the operators are pretty much the same in C and in Java.)
-### Print
-- Sedgewick and Wayne, *Introduction to Programming in Java*, Section 1.2
+## Resources
+- Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 1.2](https://introcs.cs.princeton.edu/java/12types/)
+- Sedgewick and Wayne, *Introduction to Programming in Java*, [Appendix A: Operator Precedence in Java](https://introcs.cs.princeton.edu/java/11precedence/)
 - Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Section 3.5
+- Anderson, [Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html) (These are in C, but the operators are pretty much the same in C and in Java.)
 ## Questions
 1. :star: What is the value of `5 - 2 * 3`?
 1. :star: What is the value of `83 % 10`?
