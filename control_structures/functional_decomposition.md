@@ -63,20 +63,18 @@ where *expr* is an expression of the appropriate type. If the method's return ty
 ```java
 return;
 ```
-Once a `return` statement is executed, the method exits. No other code in the method is run after that. If there is code that cannot be reached because it is after a `return` statement, the method will not compile.
+Once a return statement is executed, the method exits. No other code in the method is run after that. If there is code that cannot be reached because it is after a return statement, the method will not compile.
 
-A method with a return type of `void` doesn't need a `return` statement; it automatically returns at the end of the method.
+A method with a return type of `void` doesn't need a return statement; it automatically returns at the end of the method.
 
-If the return type is not `void`, the method *must* return a value of that type. This must be true in every path through the method (taking different branches in `if`/`else` statements, entering or not entering loops, etc.). If there is a path through the method that does not lead to a return statement, the method will not compile.
+If the return type is not `void`, the method *must* return a value of that type. This must be true in every path through the method (taking different branches in if else statements, entering or not entering loops, etc.). If there is a path through the method that does not lead to a return statement, the method will not compile.
 ### The Call Stack
 When your `main` method calls a method, your program pauses, runs the other method, and then picks up where it left off in `main`. Behind the scenes, a structure called a *call frame* keeps track of where you are in each method as well as any local variables.
 
 Of course, a method called by `main` may in turn call another method. The *call stack* contains one call frame for the currently running method and one for each of the paused methods. Every time you call a method, a new call frame is pushed onto the top of the stack. Every time a method returns, a call frame is popped off the top of the stack and the next method down resumes. When the bottom call frame (for `main`) is popped off, the program ends.
-## Additional Resources
-### Online
-- Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 2.1](https://introcs.cs.princeton.edu/java/13function/)
-### Print
-- Sedgewick and Wayne, *Introduction to Programming in Java*, Section 2.1
+## Resources
+- Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 2.1](https://introcs.cs.princeton.edu/java/13function/)
+
 ## Questions
 1. :star: How do you call a method that doesn't take any arguments?
 1. :star::star: What's wrong with the following method call?
