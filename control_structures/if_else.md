@@ -105,8 +105,8 @@ Some sources call an `if` statement a *conditional statement* or *branch*.
         }    
     }
     </pre>
-    The alternate else if form makes this easier to read:
-        <pre>
+    The alternate *else if* form makes this easier to read:
+    <pre>
     if (<em>test1</em>) {
         <em>statement</em>
         ...
