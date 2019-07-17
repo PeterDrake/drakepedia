@@ -70,7 +70,7 @@ for (<em>type</em> <em>variable</em> : <em>structure</em>) {
     ...
 }
 </pre>
-where *type* is a data type (such as `int` or `String`), *variable* is a new variable name, and *structure* is an array (or Iterable object) whose elements are of the specified type.
+where *type* is a data type (such as `int` or `String`), *variable* is a new variable name, and *structure* is an [array](../data_structures/arrays.md) (or Iterable object) whose elements are of the specified type.
 
 Its flow is:
 1. If there are no elements in *structure* that haven't been visited yet, stop.
@@ -78,7 +78,7 @@ Its flow is:
 3. Execute the statements in the body of the loop.
 4. Go back to step 1.
 
-The for each loop is extremely handy for iterating through the elements of an [array](../data_structures/arrays.md):
+The for each loop is extremely handy for iterating through the elements of an array:
 ```java
 for (int n : numbers) {
     System.out.println(n);
