@@ -9,7 +9,7 @@ The simple program below should be saved in a file called `Hello.java`. You can 
 [Emacs](https://www.gnu.org/software/emacs/) (which comes pre-installed on most \*nix-based systems, including macOS),
 [Vim](https://www.vim.org/) (ditto), or [Sublime Text](https://www.sublimetext.com/). Be careful not to use a word processor
 such as Microsoft Word, Notepad, or TextEdit, which will add extraneous formatting information to the file. Note that Java is
-case-sensitive and insists that the name of the class match the name of the file.
+case-sensitive and that it insists that the name of the class match the name of the file.
 ```java
 public class Hello {
 
