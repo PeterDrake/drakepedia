@@ -41,7 +41,7 @@ x = -17;
 
 ### Scope
 
-The *scope* of a variable is the region of code where the variable can be accessed. This extends from the point where the variable is declared until the end of the [method](../control_structures/functional_decomposition.md). The scope of a method parameter is the entire method.
+The *scope* of a variable is the region of code where the variable can be accessed. This extends from the point where the variable is declared until the next closing curly brace at the end of an [if / else statement](../control_structures/if_else.md), [loop](../control_structures/loops.md), or [method](../control_structures/functional_decomposition.md). The scope of a method parameter is the entire method.
 
 ## Resources
 - Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 1.2](https://introcs.cs.princeton.edu/java/12types/)
