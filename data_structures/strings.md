@@ -20,7 +20,7 @@ Declaration and initialization | `char[] a = {'a', 'b', 'c'};` | `String s = "ab
 Length | `a.length`|`s.length()`
 Element at index *i* | `a[i]` | `s.charAt(i)`
 
-Another difference is that, unlike arrays, Strings are *immutable*: they cannot be changed. If `s` is the String `"hello"`, the expression `s.toUpperCase()` doesn't *modify* `s`, but the *value of the expression* is `"HELLO"`. If you wanted to change the value of `s`, you would need to say:
+Another difference is that, unlike arrays, Strings are *immutable*: they cannot be changed. If `s` is the String `"hello"`, the expression `s.toUpperCase()` doesn't modify `s`, but the value of the expression is `"HELLO"`. If you wanted to change the value of `s`, you would need to say:
 ```java
 s = s.toUpperCase();
 ```
@@ -48,6 +48,7 @@ Expression | Value | Notes
 1. :star::star::star: How would you convert a `char[]` `a` into a String?
 1. :star::star::star: How would you convert a String `s` into a `char[]`?
 1. :star::star::star: Can the [for each loop](../control_structures/loops.md#for-each-loops) be used to iterate through the characters of a String `s`?
+1. :star::star::star: The String method `getChars` has a return type of `void`, so it doesn't return a value. Since Strings are immutable, the method also can't modify the String. What's the point of such a method?
 
 ## Answers
 1. Yes: `""`
@@ -61,3 +62,4 @@ Expression | Value | Notes
     for (char c : s.toCharArray()) {
         ...
     }
+1. One of the parameters of `getChars` is an array. The method modifies that array.
