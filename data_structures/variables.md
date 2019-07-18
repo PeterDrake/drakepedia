@@ -69,7 +69,7 @@ The *scope* of a variable is the region of code where the variable can be access
 1. :star::star: Is `3 = x;` a legal statement?
 1. :star::star: How would you swap the values of two variables `x` and `y`?
 1. :star::star::star: How would you swap the values of two variables `x` and `y` *without using a third variable*?
-1. :star::star::star: Is `a = b = c;` a legal statment?
+1. :star::star::star: Is `a = b = c;` a legal statement?
 ## Answers
 1. `x = y;` is a statement that causes `x` to contain a copy of the value of `y`. `x == y` is a boolean expression that is true if and only if `x` and `y` contain the same value.
 1. Yes. It doesn't make sense as algebra, where the `=` symbol is used to *state* that two expressions are equal, but it's fine in Java. It creates a variable `x`, assigns it the value 2, and then replaces that value with 3.
