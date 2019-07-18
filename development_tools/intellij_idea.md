@@ -8,7 +8,7 @@ in the editor.
 I've chosen this IDE (which I'll just call IntelliJ henceforth) because it is:
 - widely used in industry,
 - free and platform-independent, and
-- nearly identical in design to PyCharm (for Python) and Android Studio (for Android applications), so learning either of these should easy for someone who knows their way around IntelliJ.
+- nearly identical in design to PyCharm (for Python), Android Studio (for Android applications), and Rider (for C#, which is used with the Unity game development engine) so learning any of these should easy for someone who knows their way around IntelliJ.
 ## Setup
 ### Downloading
 You'll have to install the [Java Development Kit](command_line.md) first.
@@ -73,15 +73,14 @@ The tool windows you're likely to use most often are:
 - Project, which gives you an overview of all of your files.
 - Run, which shows the console output (if any) for the current program.
 - Structure, which shows the methods in your current class in alphabetical order. No more scrolling through the code!
-## Additional Resources
-### Online
+## Resources
 - You can get a list of hotkeys from the `Help` menu (`Keymap Reference`). Weirdly, one of the most useful hotkeys (`F1` to get documentation on the method or class under the cursor) isn't on this list. 
 - If you installed the Features Trainer, there is a `Learn` option on the left side of the IntelliJ window; this links to several tutorials. (If you missed that during installation, go to `IntelliJ IDEA` | `Preferences` | `Plugins` and install `IDE Features Trainer`.)
 - [JetBrains tutorials](https://www.jetbrains.com/idea/documentation/)
 ## Questions
 1. :star: In what directory do program files generally live?
 1. :star::star: How do you stop a running program (e.g., one that has gone into an infinite loop)?
-1. :star::star: You have a data file that your program is going to read. Where should you put that file?
+1. :star::star::star: You have a data file that your program is going to read. Where should you put that file?
 ## Answers
 1. `src`
 1. Click on the red square at the left of the `Run` tool window. Alternately, `Run` | `Stop` (or use the indicated hotkey).
