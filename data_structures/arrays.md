@@ -30,7 +30,7 @@ then the array looks like this:
 
 ![The third box now contains an 8 instead of a 0](array_modified.svg)
 
-Java arrays (unlike C arrays) know how long they are. The length of `arr` is `arr.length`.
+Java arrays (unlike C arrays) know how long they are. The length of `arr` is `arr.length` (which in this case is 4).
 
 ## Multidimensional Arrays
 A structure like a matrix or a checkerboard can be represented by a multidimensional array. This is declared using multiple pairs of square brackets:
@@ -44,11 +44,8 @@ A multidimensional array is represented as an array of arrays:
 
 In Java, as in most modern programming languages, the two numbers specify the number of rows and the number of columns, respectively. The lower right box in the diagram above is `m[2][3]`.
 
-## Additional Resources
-### Online
-- Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 1.4](https://introcs.cs.princeton.edu/java/14array/)
-### Print
-- Sedgewick and Wayne, *Introduction to Programming in Java*, Section 1.4
+## Resources
+- Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 1.4](https://introcs.cs.princeton.edu/java/14array/)
 - Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Section 3.10
 ## Questions
 1. :star: Can an array have length 0?
