@@ -47,7 +47,7 @@ Expression | Value | Notes
 1. :star::star: How would you get the last three characters of a String `s`?
 1. :star::star::star: How would you convert a `char[]` `a` into a String?
 1. :star::star::star: How would you convert a String `s` into a `char[]`?
-1. :star::star::star: Can the [for each loop](../control_structures/loops.md#for_each_loops) be used to iterate through the characters of a String `s`?
+1. :star::star::star: Can the [for each loop](../control_structures/loops.md#for-each-loops) be used to iterate through the characters of a String `s`?
 
 ## Answers
 1. Yes: `""`
