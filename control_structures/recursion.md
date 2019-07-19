@@ -19,7 +19,7 @@ The first part, called the *base case*, directly solves a simple problem: ![1 fa
 
 The second part, the *recursive case*, solves the simpler problem of computing ![n minus 1 factorial](https://latex.codecogs.com/svg.latex?(n-1)!), then multiplies that result by ![n](https://latex.codecogs.com/svg.latex?n) to find ![n factorial](https://latex.codecogs.com/svg.latex?n!).
 
-This may seem like a strange way to solve the problem. You should be able to devise a less confusing (and slightly more efficient) algorithm to find the same result using *iteration* (a loop). In fact, anything that can be done with iteration can be done with recursion, and vice versa.
+This may seem like a strange way to solve the problem. You should be able to devise a less confusing (and slightly more efficient) algorithm to find the same result using *iteration* (a [loop](loops.md)). In fact, anything that can be done with iteration can be done with recursion, and vice versa.
 
 Why, then, should you wrap your head around recursion? Some algorithms are much more naturally expressed using recursion. For example, consider the [Towers of Hanoi](https://www.mathsisfun.com/games/towerofhanoi.html) puzzle, which seeks to move `n` disks from peg `start` to peg `end`, using peg `spare` for temporary storage. A *divide and conquer* algorithm first recursively moves `n - 1` disks to `spare`, then moves the largest disk to `end`, and finally recursively moves `n - 1` disks from `spare` to `end`.
 
@@ -66,7 +66,7 @@ After a few steps, the call stack looks like this:
 
 The bottom call frame is for `main`, as usual. `main` called `factorial(5)`, which called `factorial(4)`, which called `factorial(3)`, the current call frame.
 
-This doesn't lead to an infinite loop because you eventually hit the base case, which make another recursive call. After it finishes, the top frame is popped off and the frame below picks up where it left off.
+This doesn't lead to an infinite loop because you eventually hit the base case, which does not make another recursive call. After it finishes, the top frame is popped off and the frame below picks up where it left off.
 
 For a method with multiple recursive calls, like `hanoi`, the call stack can grow and shrink several times, but the process eventually ends.
 
@@ -84,12 +84,10 @@ While working through the call stack is sometimes useful for debugging, it's oft
 
 Simple recursive methods don't involve loops. Some more complicated ones might use a loop to make recursive calls for several easier problems.
 
-## Additional Resources
-### Online
-- Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 2.3](https://introcs.cs.princeton.edu/java/23recursion/)
+## Resources
+- Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 2.3](https://introcs.cs.princeton.edu/java/23recursion/)
 - CodingBat, [Recursion-1](https://codingbat.com/java/Recursion-1) and [Recursion-2](https://codingbat.com/java/Recursion-2)
-### Print
-- Sedgewick and Wayne, *Introduction to Programming in Java*, Section 2.3
+
 ## Questions
 1. :star: What happens if a recursive method with no base case is called?
 1. :star: When is recursion preferable to iteration (using loops)?
