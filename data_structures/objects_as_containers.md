@@ -35,7 +35,7 @@ then each instance of the class has its own version of each instance variable. I
 
 Instance variables are automatically initialized to default values: 0 for numeric types, `false` for booleans, and `null` for reference types.
 ## Resources
-This page is intended as a very gentle introduction to objects. There is much more to learn, covered in other sections of the Drakepedia. Other books and websites tend to dive in much more quickly, getting straight to constructors, instance methods, and so on. It is perhaps best to hold off on such topics until you have some practices using objects as containers.
+This page is intended as a very gentle introduction to objects. There is much more to learn, covered in other sections of the [Drakepedia](../README.md). Other books and websites tend to dive in much more quickly, getting straight to constructors, instance methods, and so on. It is perhaps best to hold off on such topics until you have some practices using objects as containers.
 ## Questions
 1. :star: What reserved word is used when creating an object?
 1. :star::star: If you define a class Tree, can you make an array of Trees?
@@ -58,7 +58,7 @@ This page is intended as a very gentle introduction to objects. There is much mo
 ## Answers
 1. `new`
 1. Yes. Simply declare a variable of type `Tree[]`.
-1. Yes. It's even possible (and sometimes useful) to use a class as a type of an instance variable in the *same* class.
+1. Yes. It's even possible (and sometimes useful) to use a class as the type of an instance variable in the *same* class.
 1. Yes. In fact, the ability to pass in one object rather than several separate arguments is one of the main reasons for defining classes of objects.
 1. Yes. Since a method can only return one value, returning an object is one of the best ways for a method to return complex information.
 1. 0, which is the default value of `x`.
