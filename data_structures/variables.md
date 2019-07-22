@@ -85,7 +85,7 @@ The *scope* of a variable is the region of code where the variable can be access
     y = temp;
     ```
     To remember this, imagine that you have an object (say, a can of beans) in each hand. To swap them, you put one down on the table, move the other one to your newly-empty hand, and then pick up the one on the table. This analogy is slightly strained because `int temp = x;` doesn't empty out `x`, it just copies the value of `x` into `temp`.
-1. Surprisingly, you can accomplish this using the bitwise xor operator:
+1. Surprisingly, you can accomplish this (for integer types) using the bitwise xor operator:
     ```java
     x = x ^ y;
     y = x ^ y;
