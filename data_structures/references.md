@@ -2,7 +2,8 @@
 ## Overview
 ## Equality
 ## Null
-## Additional Resources
+## Modifying Method Arguments
+## Resources
 ## Questions
 1. :star::star: Suppose we execute the following code (assuming Point is a class with a well-defined `equals` method):
     ```java
@@ -16,7 +17,7 @@
     1. Is `b.equals(c)`?
 1. :star::star: Suppose we have defined
     ```java
-    void alter1(int[] a) {
+    static void alter1(int[] a) {
         a[0] = 5;
     }
     ```
@@ -28,7 +29,7 @@
     What are the elements of `b` afterward?
 1. :star::star: Suppose we have defined
     ```java
-    void alter2(int[] a) {
+    static void alter2(int[] a) {
         a = new int[] {5, 6, 7, 8};
     }
     ```
