@@ -68,6 +68,14 @@ g(b);
 then the array to which `b` refers *has* been modified, because the parameter `a` is an alias for the argument `b`.
 
 ## Equality
+References make the notion of equality more complex.
+
+The `==` operator asks whether two boxes contain the same thing: the same primitive value or references to the same object. If memory looks like
+
+![](equality.svg)
+
+then `a == b` but `a != c`.
+
 ## Null
 ## Garbage Collection
 ## Resources
