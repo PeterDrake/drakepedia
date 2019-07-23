@@ -70,16 +70,51 @@ then the array to which `b` refers *has* been modified, because the parameter `a
 ## Equality
 References make the notion of equality more complex.
 
-The `==` operator asks whether two boxes contain the same thing: the same primitive value or references to the same object. If memory looks like
+The `==` operator asks whether two boxes contain the same thing: the same primitive value or references to the same object. For example, suppose you have defined a `Point` class
+```java
+class Point {
+    int x;
+    int y;
+}
+```
+and then:
+```java
+Point p = new Point();
+p.x = 3;
+p.y = 4;
+Point q = p;
+Point r = new Point();
+r.x = 3;
+r.y = 4;
+```
 
-![](equality.svg)
+Memory now looks like this:
 
-then `a == b` but `a != c`.
+![p contains a reference to a Point object in which x is 3 and y is 4. q contains another reference to the same Point. r contains a reference to a second point in which x is 3 and y is 4.](equality.svg)
 
+then `p == q` but `p != r` because `p` and `r` do not refer to *the same object*.
+
+We are often interested in whether two objects have the same *contents*. In this sense, `p` and `r` are equal. For many built-in classes (including String), the expression `p.equals(q)` is true if `p` and `q` have the same contents. This is the preferred way to compare objects.
+
+You can also write `equals` methods for your own classes.
 ## Null
+The keyword `null` is a reference to nothing. If you
+```java
+String s = null;
+```
+Then `s` doesn't refer to anything. I draw this as a line connected to a dot rather than to an arrowhead:
+
+![s contains a reference to nothing](null.svg)
+
+Trying to do anything with `s`, such as asking for `s.length()`, results in a `NullPointerException` because there is no String object on the other end.
+
+`null` is the default value for object types.
+
 ## Garbage Collection
 ## Resources
 ## Questions
+NULL WORKS WITH ==
+COMPARING ARRAYS
 1. :star: What is the term for two references to the same object?
 1. :star: Which types use references?
 1. :star::star: Suppose you execute the following code (assuming Point is a class with a well-defined `equals` method):
