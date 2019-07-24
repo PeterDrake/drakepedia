@@ -111,12 +111,22 @@ Trying to do anything with `s`, such as asking for `s.length()`, results in a `N
 `null` is the default value for object types.
 
 ## Garbage Collection
+
+Every object takes up memory. As soon as an object is unreachable (that is, there are no more references to it), the Java system reclaims that memory through a process called *garbage collection*.
+
+This feature of Java is in contrast to C, where it is the programmer's responsibility to free objects when they are no longer needed. A C programmer who does not manage memory with extreme care can end up with a *memory leaks*, where unreachable objects take up more and more memory until the system crashes, or a *dangling pointer*, where a reference points to a location in memory that does not contain the intended object. Either of these bugs can be exceedingly difficult to detect and fix.
+
 ## Resources
+
+- Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 3.1](https://introcs.cs.princeton.edu/java/31datatype/)
+- Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Section 4.2.1 and 4.3.6
+- Draper, [The Worst Mistake of Computer Science](https://www.lucidchart.com/techblog/2015/08/31/the-worst-mistake-of-computer-science/)
 ## Questions
-NULL WORKS WITH ==
-COMPARING ARRAYS
 1. :star: What is the term for two references to the same object?
 1. :star: Which types use references?
+1. :star: Is it possible to create a dangling pointer in Java?
+1. :star::star: Is it posisble to create a memory leak in Java?
+1. :star::star: If you define `String s = null;`, is `s == null`?
 1. :star::star: Suppose you execute the following code (assuming Point is a class with a well-defined `equals` method):
     ```java
     Point a = new Point(1, 2);
@@ -159,9 +169,14 @@ COMPARING ARRAYS
     ```
     What are the elements of `b` afterward?
 1. :star::star::star: What's the difference between a reference and a pointer?
+1. :star::star::star: How can you tell if two arrays `a` and `b` have the same contents?
+1. :star::star::star: What type is the literal value `null`?
 ## Answers
 1. Aliases.
 1. All non-primitive types, that is, array types and types defined by classes and interfaces.
+1. No. The only way to get a reference is to create a new object using new `new` (or special syntax for arrays and Strings). The only way to get rid of an object is to set the last reference to it to refer to `null` or another object.
+1. Not strictly speaking; you can't have an object that is truly unreachable. If, however, you stored extra references to objects in an array and then changed the original references, the objects would still be reachable and they would therefore not be garbage collected.
+1. Yes. `==` compares the contents of the box for `s` to the literal value `null` and determines that they're the same. It doesn't cause a NullPointerException because this check doesn't look at what's on the other end of the reference.
 1.
     1. No (`a` and `b` refer to different objects)
     1. Yes
@@ -171,3 +186,5 @@ COMPARING ARRAYS
 1. 5, 2, 3, 4. Since `a` and `b` refer to the same array, alterations to the array on the other end of the reference are visible from either variable.
 1. 1, 2, 3, 4. Making the local variable `a` point to a new array does not affect the external variable `b`.
 1. Some sources will use these two words interchangeably. Indeed, a pointer (which is the address of a location in memory) is one way for a compiler to implement a reference. Other sources will insist that it's only a pointer if you have access to the address and can perform arithmetic on it to, for example, find the next consecutive location in memory. This is what people mean when they say, "C has pointers but Java does not." The designers of Java felt that the few additional shortcuts you can take with "true" pointers aren't worth the subtle and frustrating bugs that can result from messing with addresses directly.
+1. `a == b` only checks if the two references are to the same array and `a.equals(b)` is not defined for arrays. One solution is to iterate through the elements using a (possibly nested) [loop](../control_structures/loops.md). Another is to use `java.util.Arrays.equals(a, b)` (for one-dimensional arrays) or `java.util.Arrays.deepEquals(a, b)` (for multidimensional arrays).
+1. `null` has its own type, which has no name. It can be cast to any other object type. While many programming languages have such a special value, some computer scientists consider it [a bad idea](https://www.lucidchart.com/techblog/2015/08/31/the-worst-mistake-of-computer-science/).
