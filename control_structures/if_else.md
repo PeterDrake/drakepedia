@@ -24,8 +24,8 @@ Like other control structures involving curly braces, `if` statements can be nes
 Some sources call an `if` statement a *conditional statement* or *branch*.
 ## Resources
 - Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 1.3](https://introcs.cs.princeton.edu/java/13flow/)
-- Goeschel, [Reflections on Curly Braces](https://blog.codecentric.de/en/2014/02/curly-braces/)
 - Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Section 3.8.2
+- Goeschel, [Reflections on Curly Braces](https://blog.codecentric.de/en/2014/02/curly-braces/)
 ## Questions
 1. :star::star: Explain the difference between
     ```java
