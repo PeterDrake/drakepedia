@@ -7,7 +7,9 @@ Recall that a variable holds *exactly one thing*:
 
 This is a simple story for [primitive types](primitive_types.md).
 
-What if the type is an array type or a class? In this case, the box for the variable contains a *reference* to an object. You can think of a reference as an arrow pointing to the object. For example, if you
+What if the type is an array type or a class? In this case, the box for the variable contains a *reference* to an object. These types are therefore called *reference types*.
+
+You can think of a reference as an arrow pointing to the object. For example, if you
 ```java
 int[] a = {6, 2, 5};
 ```
@@ -27,7 +29,7 @@ then the value 4 is copied from `x`'s box into `y`'s:
 
 ![The box for x contains 4. The box for y also contains 4.](simple_assignment.svg)
 
-With reference, an assignment still copies the contents of the box, but now that means copying the *reference*, not the object on the other end. For example, if you
+With references, an assignment still copies the contents of the box, but now that means copying the *reference*, not the object on the other end. For example, if you
 ```java
 int[] a = {1, 2, 3};
 int[] b = a;
@@ -54,7 +56,7 @@ f(y);
 ```
 has no effect on `y`. The parameter `x` gets a *copy* of the value stored in `y`, so no matter what happens to `x`, `y` is unchanged.
 
-If, on the other hand, a method has a parameter of an object type, like:
+If, on the other hand, a method has a parameter of an object type, like
 ```java
 static void g(int[] a) {
     a[0] = 3;
@@ -98,11 +100,11 @@ We are often interested in whether two objects have the same *contents*. In this
 
 You can also write `equals` methods for your own classes.
 ## Null
-The keyword `null` is a reference to nothing. If you
+The literal value `null` is a reference to nothing. If you
 ```java
 String s = null;
 ```
-Then `s` doesn't refer to anything. I draw this as a line connected to a dot rather than to an arrowhead:
+then `s` doesn't refer to anything. I draw this as a line connected to a dot rather than to an arrowhead:
 
 ![s contains a reference to nothing](null.svg)
 
@@ -114,7 +116,7 @@ Trying to do anything with `s`, such as asking for `s.length()`, results in a `N
 
 Every object takes up memory. As soon as an object is unreachable (that is, there are no more references to it), the Java system reclaims that memory through a process called *garbage collection*.
 
-This feature of Java is in contrast to C, where it is the programmer's responsibility to free objects when they are no longer needed. A C programmer who does not manage memory with extreme care can end up with a *memory leaks*, where unreachable objects take up more and more memory until the system crashes, or a *dangling pointer*, where a reference points to a location in memory that does not contain the intended object. Either of these bugs can be exceedingly difficult to detect and fix.
+This feature of Java is in contrast to C, where it is the programmer's responsibility to free objects when they are no longer needed. A C programmer who does not manage memory with extreme care can end up with a *memory leak*, where unreachable objects take up more and more memory until the system crashes, or a *dangling pointer*, where a reference points to a location in memory that does not contain the intended object. Either of these bugs can be exceedingly difficult to detect and fix.
 
 ## Resources
 
@@ -125,12 +127,16 @@ This feature of Java is in contrast to C, where it is the programmer's responsib
 1. :star: What is the term for two references to the same object?
 1. :star: Which types use references?
 1. :star: Is it possible to create a dangling pointer in Java?
-1. :star::star: Is it posisble to create a memory leak in Java?
+1. :star::star: Is it possible to create a memory leak in Java?
 1. :star::star: If you define `String s = null;`, is `s == null`?
 1. :star::star: Suppose you execute the following code (assuming Point is a class with a well-defined `equals` method):
     ```java
-    Point a = new Point(1, 2);
-    Point b = new Point(1, 2);
+    Point a = new Point();
+    a.x = 1;
+    a.y = 2;
+    Point b = new Point();
+    b.x = 1;
+    b.y = 2;
     Point c = b;
     ```
     1. Is `a == b`?
