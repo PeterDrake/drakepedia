@@ -1,4 +1,4 @@
-# Main Method
+# The Main Method
 ## Overview
 A simple Java program is structured like this:
 ```java
