@@ -30,4 +30,4 @@ Algorithms | | [Analysis of Algorithms](algorithms/analysis.md)<br>Search<br>Tra
 Style | | Documentation<br>Omitting Needless Code | Defensive Programming |
 Object-<br>Oriented Programming | | Constructors<br>Instance Methods<br>Wrapper Classes<br>Access Modifiers<br>Default Methods<br>Interfaces<br>Generics | Inheritance<br>Packages<br>Exceptions | Enums<br>Inner Classes
 Libraries | | java.lang<br>stdlib<br>java.util | | [javax.swing](libraries/javax.swing.md)
-Software<br>Development | | Iterative Deelopment<br>Pair Programming<br>[Testing](software_development/testing.md)<br>Debugging | | [Extreme Programming](software_development/extreme_programming.md)<br>Object-Oriented Design<br>Design Patterns
+Software<br>Development | | Iterative Development<br>Pair Programming<br>[Testing](software_development/testing.md)<br>Debugging | | [Extreme Programming](software_development/extreme_programming.md)<br>Object-Oriented Design<br>Design Patterns
