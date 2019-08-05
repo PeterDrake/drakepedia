@@ -24,7 +24,7 @@ The table below shows which topics I expect people to learn in which courses. (C
 Topic | CS1 | CS2 | Algorithms | Software Development
 -|-|-|-|-
 Development Tools | [Command Line](development_tools/command_line.md) | [IntelliJ IDEA](development_tools/intellij_idea.md)| | [Git](development_tools/git.md)
-Control<br>Structures | [Main Method](control_structures/main_method.md)<br>[If Statements](control_structures/if_else.md)<br>[Loops](control_structures/loops.md)<br>[Functional Decomposition](control_structures/functional_decomposition.md) | [Recursion](control_structures/recursion.md) | |
+Control<br>Structures | [The Main Method](control_structures/the_main_method.md)<br>[If Statements](control_structures/if_else.md)<br>[Loops](control_structures/loops.md)<br>[Functional Decomposition](control_structures/functional_decomposition.md) | [Recursion](control_structures/recursion.md) | |
 Data<br>Structures | [Primitive Types](data_structures/primitive_types.md)<br>[Operators](data_structures/operators.md)<br>[Variables](data_structures/variables.md)<br>[Strings](data_structures/strings.md)<br>[Arrays](data_structures/arrays.md) | [Inanimate Objects](data_structures/inanimate_objects.md)<br>[References](data_structures/references.md)<br>Linked Lists<br>Lists<br>Stacks<br>Queues<br>Trees<br>[Graphs](data_structures/graphs.md)<br>Sets and Maps | Binary Search Trees<br>Hash Tables<br>Priority Queues<br>Union-Find |
 Algorithms | | [Analysis of Algorithms](algorithms/analysis.md)<br>Search<br>Traversal | Sorting<br>Graph Algorithms |
 Style | | Documentation<br>Omitting Needless Code | Defensive Programming |
