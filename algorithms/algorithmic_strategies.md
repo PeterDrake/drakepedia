@@ -1,6 +1,6 @@
 # Algorithmic Strategies
 ## Algorithmic Problems
-An *algorithmic problem* asks you to either devise a *function* or implement an *abstract data type* (using a data structure and one or more methods). Methods, like functions, have input and output; they may also depend on or mutate the associated data structure. You may run into such problems in a class, while solving a specific real-world problem, or while building code libraries for solving real-world problems.
+An *algorithmic problem* asks you to either devise a *function* or implement an *abstract data type* (using a data structure and one or more methods). Functions have input and output. Methods often have input and/or output; they may also depend on or mutate the associated data structure. You may run into such problems in a class, while solving a specific real-world problem, or while building code libraries for solving real-world problems.
 
 A solution to an algorithmic problem should be:
 - *Correct*. An incorrect solution is almost always useless, although there are some domains where approximate algorithms are acceptable.
@@ -11,10 +11,10 @@ It is important to distinguish a *problem* from a *problem instance*. Array sort
 
 ## Major Approaches
 
-You will see many algorithms in your career as a computer scientist. Rather than view them as a disorganizes bag of tricks, it is useful to find some recurring themes. Here are four major approaches that you will encounter many times:
+You will see many algorithms in your career as a computer scientist. Rather than view them as a disorganized bag of tricks, it is useful to find some recurring themes. Here are four major approaches that you will encounter many times:
 
 ### Brute Force
-Try all of the possibilities. For example, in searching for some element in an unordered array, you simply compare it to each element in the array. The brute force approach generally infeasible for problems involving combinations of elements.
+Try all of the possibilities. For example, in searching for some element in an unordered array, you simply compare it to each element in the array. The brute force approach is generally infeasible for problems involving combinations of elements.
 
 ### Transform
 Turn the problem into an instance of a different problem, solve that, and turn the solution into a solution to the original problem. For example, when searching for an element in an array, sorting the array transforms the problem into an easier one.
@@ -30,10 +30,10 @@ Start with an easy guess at the solution and then improve it after each step. Fo
 If you are overwhelmed by an algorithmic problem, or find that your thoughts are disorganized, the following checklist may help.
 
 1. Carefully examine the problem description
-    - What are the inputs, outputs, and (for an absract data type problem) data mutations?
+    - What are the inputs, outputs, and (for an abtsract data type problem) data mutations?
     - Define several test cases, representing all major categories of inputs.
     - What is important to the computation and what can be abstracted away?
-    - Is this identical or similar to another problem for which a solution is known?
+    - Is this problem identical or similar to another problem for which a solution is known?
 1. Devise several plans
     - Apply the approaches above to brainstorm plans.
     - Describe each plan in pseudocode.
@@ -48,7 +48,7 @@ If you are overwhelmed by an algorithmic problem, or find that your thoughts are
     - Time each implementation to verify the analysis.
     - Reflect on what you've learned, both about this problem and in general.
 1. Present results
-    - Clearly explain all of the previous steps.
+    - Clearly explain what you did in all of the previous steps.
     
 ## Resources
 - Cormen *et al.*, *Introduction to Algorithms, 3rd Edition*, Chapter 1
