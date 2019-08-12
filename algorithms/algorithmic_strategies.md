@@ -51,6 +51,10 @@ If you are overwhelmed by an algorithmic problem, or find that your thoughts are
     - Clearly explain all of the previous steps.
     
 ## Resources
+- Cormen *et al.*, *Introduction to Algorithms, 3rd Edition*, Chapter 1
 
 ## Questions
+
+1. :star: Is "Find the shortest driving route from Portland, OR to Portland, ME" a problem or a problem instance?
 ## Answers
+1. This is an instance of the problem "Find the shortest driving route between two cities."
