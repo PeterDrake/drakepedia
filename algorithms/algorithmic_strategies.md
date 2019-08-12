@@ -51,6 +51,7 @@ If you are overwhelmed by an algorithmic problem, or find that your thoughts are
     - Clearly explain what you did in all of the previous steps.
     
 ## Resources
+- Levitin, *Introduction to the Design and Analysis of Algorithms*, Chapter 1
 - Cormen *et al.*, *Introduction to Algorithms, 3rd Edition*, Chapter 1
 
 ## Questions
