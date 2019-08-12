@@ -26,6 +26,31 @@ Create two or more smaller instances, solve one or more of them, then use these 
 Start with an easy guess at the solution and then improve it after each step. For example, to find the largest number in an array, you might first guess that it's the first element and then update this guess as you examine each successive element.
 
 ## Problem-Solving Strategy
+
+If you are overwhelmed by an algorithmic problem, or find that your thoughts are disorganized, the following checklist may help.
+
+1. Carefully examine the problem description
+    - What are the inputs, outputs, and (for an absract data type problem) data mutations?
+    - Define several test cases, representing all major categories of inputs.
+    - What is important to the computation and what can be abstracted away?
+    - Is this identical or similar to another problem for which a solution is known?
+1. Devise several plans
+    - Apply the approaches above to brainstorm plans.
+    - Describe each plan in pseudocode.
+1. Analyze plans
+    - Determine the order of the running time of each plan.
+    - Eliminate clearly inferior plans.
+1. Carry out each plan
+    - Write unit tests to verify that code is correct.
+    - Write the code.
+    - Beautify and, if necessary, optimize the code.
+1. Analyze results
+    - Time each implementation to verify the analysis.
+    - Reflect on what you've learned, both about this problem and in general.
+1. Present results
+    - Clearly explain all of the previous steps.
+    
 ## Resources
+
 ## Questions
 ## Answers
