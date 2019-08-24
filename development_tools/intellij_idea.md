@@ -13,7 +13,7 @@ I've chosen this IDE (which I'll just call IntelliJ henceforth) because it is:
 ### Downloading
 You'll have to install the [Java Development Kit](command_line.md) first.
 
-You can download the [Community Edition](https://www.jetbrains.com/idea/download/) for free. You can also get the Ultimate
+You can download the [Community Edition](https://www.jetbrains.com/idea/download/) of IntelliJ for free. You can also get the Ultimate
 Edition for free as a student by [filling out a form](https://www.jetbrains.com/student/), but there's no good reason
 to jump through this extra hoop.
 
