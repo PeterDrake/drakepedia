@@ -1,7 +1,7 @@
 # Setting Up a GitHub Repository
 These are my notes on setting up a GitHub repository for a new project using IntelliJ IDEA or PyCharm. I generally do this myself for research or Software Development projects. For the moment, I give instructions for IntelliJ IDEA and assume things work similarly for PyCharm.
 ## Create Project in IDE
-I describe this [elsewhere](intellij_idea).
+I describe this [elsewhere](../development_tools/intellij_idea).
 ## Put Project Under Local Version Control
 `VCS` | `Enable Version Control Integration`. Select Git and click `OK`.
 ## Set Up .gitignore
