@@ -20,9 +20,19 @@ to jump through this extra hoop.
 When the installer presents the option, it wouldn't hurt to install the IDE Features Trainer.
 ### Creating a Project
 1. Open IntelliJ and click `Create New Project`.
-1. Verify that the Project SDK is not empty (if it is, your Java installation didn't work) and click `Next`.
-1. Check `Create project` from template and click Java `Hello World`.
-1. Give the project a simple name, like "CS2", and click `Finish`.
+1. Verify that the Project SDK is version 11 (ask for help if it isn't) and click `Next`.
+1. Check `Create project from template` and click `Next`.
+1. Give the project a simple name, like "CS2". Make sure the `Base package` field is empty. Click `Finish`.
+1. For testing purposes, modify the program that was created to look exactly like this:
+    ```java
+    public class Main {
+
+        public static void main(String[] args) {
+	          System.out.println("Hello, world!");
+        }
+        
+    }
+    ```
 
 You can click on the little triangles at left to expand directories. Your code goes in the `src` directory.
 ### Running a Program
