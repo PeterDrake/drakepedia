@@ -31,8 +31,8 @@ Node list = a;
 
 A linked list is a [recursive](../control_structures/recursion.md) data structure, in that a linked list is either:
 
-* Empty (represented as `null`), or
-* An item and a reference to another linked list.
+- empty (represented as `null`), or
+- an item and a reference to another linked list.
 
 Methods operating on lists tend to either be recursive, taking advantage of this structure, or iterative, walking down the chain of `next` references. For example, here are two ways to find the sum of the numbers in a list:
 
@@ -55,10 +55,14 @@ static int iterativeSum(Node list) {
 }
 ```
 
-
 ## Resources
-## Questions
+Note: many sources, including other parts of the Drakepedia, discuss linked lists in the context of more complex objects.
 
+- Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 4.3](https://introcs.cs.princeton.edu/java/43stack/)
+- Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Section 9.3.1
+- Cormen *et al.*, *Introduction to Algorithms, 3rd Edition*, Section 10.2
+
+## Questions
 1. :star: Write a Node class for building linked lists of doubles.
 1. :star: Name an advantage linked lists have over arrays.
 1. :star: What is the value of the `next` instance variable in the *last* Node in a linked list?
