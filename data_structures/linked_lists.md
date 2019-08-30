@@ -29,6 +29,31 @@ Node list = a;
 
 (The temporary variables `a`, `b`, and `c` are not shown in the diagram.) Note that `c`'s `next` instance variable is left at its default value of `null`. The value `null` is also used to represent an empty linked list (one containing no items).
 
+A linked list is a [recursive](../control_structures/recursion.md) data structure, in that a linked list is either:
+
+* Empty (represented as `null`), or
+* An item and a reference to another linked list.
+
+Methods operating on lists tend to either be recursive, taking advantage of this structure, or iterative, walking down the chain of `next` references. For example, here are two ways to find the sum of the numbers in a list:
+
+```java
+static int recursiveSum(Node list) {
+    if (list == null) {
+        return 0;
+    }
+    return list.item + recursiveSum(list.next);
+}
+```
+
+```java
+static int iterativeSum(Node list) {
+    int sum = 0;
+    for (Node n = list; n != null; n = n.next) {
+        sum += n.item;
+    }
+    return sum;
+}
+```
 
 
 ## Resources
