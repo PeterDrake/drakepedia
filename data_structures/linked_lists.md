@@ -68,9 +68,9 @@ Note: many sources, including other parts of the Drakepedia, discuss linked list
 1. :star: What is the value of the `next` instance variable in the *last* Node in a linked list?
 1. :star::star: The method below is supposed to determine the length of a linked list, but it contains an off-by-one error. How should it be fixed?
     ```java
-    public int length() {
+    static int length(Node list) {
         int result = 0;
-        for (Node n = front.next; n != null; n = n.next) {
+        for (Node n = list.next; n != null; n = n.next) {
             result++;
         }
         return result;
@@ -85,4 +85,4 @@ Note: many sources, including other parts of the Drakepedia, discuss linked list
     ```
 1. A linked list can grow longer or shorter. An array must have its length specified when it is created.
 1. `null`.
-1. `n` should start at `front`, not `front.next`.
+1. `n` should start at `list`, not `list.next`.
