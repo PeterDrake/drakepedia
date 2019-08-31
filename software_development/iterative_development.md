@@ -11,12 +11,19 @@ Now write a ridiculously simple program and get it to work. Even getting the cla
 Once you have something running, make a series of passes (iterations) through the following steps:
 
 1. Plan out what improvement you want to make next. You may find an appropriate task on your list, or you may find that one of those tasks must be divided into smaller tasks. Aim for the smallest possible improvement that you could make that would take you from your currently running program to a slightly better running program.
-1. Make the change. Avoid the dangerous temptation to change more than one thing. If you see other things that could be improved, add them to your task list for future iterations.
-1. Evaluate your change. Did it work? How do you know? If this improvement is complete, go back to step 1 and make the next one. Otherwise, go back to step 2 and correct or finish this change.
+1. Make the change. Avoid the dangerous temptation to change more than one thing[.](https://www.youtube.com/watch?v=ed8CTu3FOZA) If you see other things that could be improved, add them to your task list for future iterations.
+1. Evaluate your change. Did it work? How do you know? If this improvement is complete, make any needed changes to the task list and go back to step 1. Otherwise, go back to step 2 to correct or finish this change.
 
-It is important to make as many short iterations as possible. Think of software development like diving for treasure or bringing the groceries in from the car: trying to do everything in one trip is a recipe for disaster.
+Maintaining the task list on paper (or electronically) and making many short iterations reduces the number of things you need to keep in your head. This in turn makes your work faster, more accurate, and less stressful. 
 
 ## Resources
 - [Plan, Change, Evaluate](../administrivia/how_to_college.md#plan-change-evaluate)
+- [John Green on iterative development of novels](https://www.youtube.com/watch?v=PCTO91aBFXk)
 ## Questions
+1. :star: What is the first step in iterative development?
+1. :star: Can the task list be changed after the first iteration?
+1. :star: Is it better to have many short iterations or a few long ones?
 ## Answers
+1. Write down a task list.
+1. Yes; indeed, it is expected.
+1. Many short iterations.
