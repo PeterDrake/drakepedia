@@ -14,9 +14,9 @@ Once you have something running, make a series of passes (iterations) through th
 1. Make the change. Avoid the dangerous temptation to change more than one thing. If you see other things that could be improved, add them to your task list for future iterations.
 1. Evaluate your change. Did it work? How do you know? If this improvement is complete, go back to step 1 and make the next one. Otherwise, go back to step 2 and correct or finish this change.
 
-It is important to make as many short iterations as possible. Think of software development like diving for treasure or bringing the groceries in from the car: trying to everything in one trip is a recipe for disaster.
+It is important to make as many short iterations as possible. Think of software development like diving for treasure or bringing the groceries in from the car: trying to do everything in one trip is a recipe for disaster.
 
 ## Resources
-- [Plan, Change, Evaluate](../administrivia/how_to_college.md#plan_change_evaluate)
+- [Plan, Change, Evaluate](../administrivia/how_to_college.md#plan-change-evaluate)
 ## Questions
 ## Answers
