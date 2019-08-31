@@ -1,12 +1,12 @@
 # How to College
 
-## Why are you here?
+## Why Are You Here?
 
 A good life is one in which you enjoy yourself and make the world a better place. Your time at Lewis & Clark is meant to prepare you for such a life. Learning is intrinsically pleasurable and puts you in a better position to participate in and help build the world to come. While you have other important things to do while you're here (social activities, a job, volunteering, etc.), you are in courses to learn.
 
 You are not here to prove that you already know everything. **_Ask questions._** The point is not to test you but to expand your skills and understanding. It is crucial to have a [growth mindset](https://www.mindsetworks.com/science/): to realize that abilities (math, writing, etc.) are not fixed and innate but can be improved through effort and practice.
 
-## You are not alone
+## You Are Not Alone
 
 Instructors strive to give you assignments that are neither too easy or too hard, but require you to stretch. While your final essay, program, etc. must be your own work (or sometimes that of a small team), you are not expected to sit alone in a room and derive everything from first principles. Every hero needs friends, allies, and mentors. Don't hold yourself to an impossible standard.
 
@@ -26,7 +26,7 @@ Taking care of yourself is one of your priorities, but think about this in both 
 
 When time inevitably gets really tight, you may have to resort to [triage](https://en.wikipedia.org/wiki/Triage). Divide your concerns into things those that are beyond your control, those where your effort will make a difference, and those that will be fine [without your intervention](https://xkcd.com/386/). If you've got three classes where you're getting an easy A+, a C, and a hopeless F, spend your efforts on the C class. If it's not too late, drop the F class. Once the crisis passes, talk with your advisor about what you might do to prevent the next one.
 
-## Plan, change, evaluate
+## Plan, Change, Evaluate
 
 Quality work can't be done in one pass. It requires repeatedly planning what to do next, making some change, and evaluating the result. This is a universal truth that applies to every nontrivial thing you might want to create, including computer programs, mathematical proofs, essays, musical compositions, films, games, speeches, scientific hypotheses, and essays about universal truths.
 
