@@ -26,10 +26,8 @@ The process for test-driven development is:
 1. Fail the test. If the test passes before you've written the main code or fixed the bug, there's probably something wrong with the test.
 1. Write the code to be tested.
 1. Pass the test. (If the test doesn't pass, go back and edit the code.)
-## Additional Resources
-### Online
+## Resources
 - [JUnit 5](https://junit.org/junit5/)
-### Print
 - Christensen, *Flexible, Reliable Software Using Patterns and Agile Development*, Chapters 2, 5, 8, 12, and 34
 ## Questions
 1. :star: Give at least one advantage of test-driven development.
