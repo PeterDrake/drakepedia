@@ -14,7 +14,7 @@ Once you have something running, make a series of passes (iterations) through th
 1. Make the change. Avoid the dangerous temptation to change more than one thing[.](https://www.youtube.com/watch?v=ed8CTu3FOZA) If you see other things that could be improved, add them to your task list for future iterations.
 1. Evaluate your change. Did it work? How do you know? If this improvement is complete, make any needed changes to the task list and go back to step 1. Otherwise, go back to step 2 to correct or finish this change.
 
-Maintaining the task list on paper (or electronically) and making many short iterations reduces the number of things you need to keep in your head. This in turn makes your work faster, more accurate, and less stressful. 
+Maintaining the task list on paper (or electronically) and performing many short iterations reduces the number of things you need to keep in your head. This in turn makes your work faster, more accurate, and less stressful. 
 
 ## Resources
 - [Plan, Change, Evaluate](../administrivia/how_to_college.md#plan-change-evaluate)
@@ -23,7 +23,9 @@ Maintaining the task list on paper (or electronically) and making many short ite
 1. :star: What is the first step in iterative development?
 1. :star: Can the task list be changed after the first iteration?
 1. :star: Is it better to have many short iterations or a few long ones?
+1. :star::star: You are about to end a four-hour programming session. In which step of an iteration would you *not* like to be?
 ## Answers
 1. Write down a task list.
 1. Yes; indeed, it is expected.
 1. Many short iterations.
+1. Step 2 (making a change). Stopping here would be like a surgeon leaving the operating room with the patient open on the table. Performing many short iterations will give you the freedom to stop at an appropriate point when you need to stop to attend another meeting, eat, sleep, etc.
