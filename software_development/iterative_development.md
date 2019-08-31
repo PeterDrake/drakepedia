@@ -28,4 +28,4 @@ Maintaining the task list on paper (or electronically) and performing many short
 1. Write down a task list.
 1. Yes; indeed, it is expected.
 1. Many short iterations.
-1. Step 2 (making a change). Stopping here would be like a surgeon leaving the operating room with the patient open on the table. Performing many short iterations will give you the freedom to stop at an appropriate point when you need to stop to attend another meeting, eat, sleep, etc.
+1. Step 2 (making a change). Stopping here would be like a surgeon leaving the operating room with the patient open on the table. Performing many short iterations will give you the freedom to stop at an appropriate point when you need to attend another meeting, eat, sleep, etc.
