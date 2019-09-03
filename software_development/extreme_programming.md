@@ -45,14 +45,12 @@ When time for the iteration runs out, it is time to deliver. We must resist the 
 A working version of the system is presumably in the GitHub repository on the `master` branch. It need only be checked out and put into a format the customer can use (e.g., a .jar file) along with any necessary instructions and delivered.
 
 The customer now plays with the system, accepting or rejecting individual stories in PivotalTracker. This also gives the customer the opportunity to discover bugs that the developers missed and think about what's important for the next iteration. Crucially, the customer agrees or disagrees with any claims the developers have made about completing stories.
-## Additional Resources
-### Online
+## Resources
 - [Extreme Programming: A gentle introduction](http://www.extremeprogramming.org/)
 - [The Agile Manifesto](https://agilemanifesto.org/)
 - [Extreme Programming: Values, Principles, and Practices](https://www.altexsoft.com/blog/business/extreme-programming-values-principles-and-practices/)
 - [GitHub guides](https://guides.github.com/)
 - [GitHub Issues Can be Agile if You To it Right](https://zube.io/blog/agile-project-management-workflow-for-github-issues/)
-### Print
 - Christensen, *Flexible, Reliable Software Using Patterns and Agile Development*, Chapter 1
 - Steinberg and Palmer, *Extreme Software Engineering: A Hands-On Approach*
 ## Questions
