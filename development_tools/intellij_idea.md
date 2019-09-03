@@ -43,7 +43,7 @@ There are several ways to do this:
 *usually* what you want, but it can sometimes give surprising results if you've started editing a different file.
 - Hit `ctrl-R` (Mac) / `shift-F10` (Windows), with the same caveat.
 - Use the `Run` menu at the top of the screen.
-### Installing stdlib
+### Installing [stdlib](libraries/stdlib.md)
 1. Download the file stdlib.jar from [Sedgewick & Wayne's website](https://introcs.cs.princeton.edu/java/stdlib/). (The link is right under the table.)
 1. Drag and drop the file into your project. You'll want to drop into onto the project folder, just below the word Project
 at the upper left of the IntelliJ window.
