@@ -108,7 +108,7 @@ If you are doing animation in a loop, resist the temptation to just change one p
 ```java
 StdDraw.clear();
 ```
-to clear the window, redraw *everything*, and end each pass with
+to clear the window, redraw *everything*, and then
 ```java
 StdDraw.show();
 ```
