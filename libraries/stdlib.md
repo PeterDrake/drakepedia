@@ -113,7 +113,50 @@ to clear the window and end each pass with
 StdDraw.show();
 ```
 ### Mouse and Keyboard Input
+The methods for detecting mouse and keyboard events are, perhaps surprisingly, in the StdDraw class. It is best not to combine these with methods from StdIn, as that would require the user to click back and forth between two windows.
+
+To detect a mouse click:
+
+```java
+while (!StdDraw.isMousePressed()) {
+    // Wait for mouse to be pressed
+}
+double x = StdDraw.mouseX();
+double y = StdDraw.mouseY();
+while (StdDraw.isMousePressed()) {
+    // Wait for mouse to be released
+}
+```
+
+Now `x` and `y` hold the coordinates of the location where the mouse was clicked.
+
+There are two different ways to detect keyboard input. If you want to detect discrete key presses, use:
+
+```java
+while (!StdDraw.hasNextKeyTyped()) {
+    // Wait for keypress
+}
+char c = StdDraw.nextKeyTyped();
+```
+
+If, on the other hand, you want to detect whether a specific key is down right now (as you might in a real-time game), start your program (even before the word `class`) with
+
+```java
+import static java.awt.event.KeyEvent.*;
+```
+
+and then use:
+
+```java
+if (StdDraw.isKeyPressed(VK_A)) {
+    ...
+}
+```
+
+In this case, `VK_A` is the special code for the 'a' key. There are [similar codes](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyEvent.html) for all of the other keys, like `VK_SHIFT`.
+
 ## Resources
+- [stdlib documentation](https://introcs.cs.princeton.edu/java/stdlib/)
 
 ## Questions
 1. :star::star: Why aren't we using real Java?
