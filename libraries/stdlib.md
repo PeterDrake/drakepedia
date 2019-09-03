@@ -169,8 +169,8 @@ In this case, `VK_A` is the special code for the 'a' key. There are [similar cod
     StdDraw.enableDoubleBuffering();
     StdDraw.filledRectangle(0.5, 0.5, 0.1, 0.3);
     ```
-1. :star::star::star: Write a program that draw a dot and moves it left or right a little each time the user presses and releases 'a' or 'd', respectively.
-1. :star::star::star: Write a program that draw a dot and moves it continuously left or right whenever 'a' or 'd', respectively, is being held down.
+1. :star::star::star: Write a program that draws a dot and moves it left or right a little each time the user presses and releases 'a' or 'd', respectively.
+1. :star::star::star: Write a program that draws a dot and moves it continuously left or right whenever 'a' or 'd', respectively, is being held down.
 ## Answers
 1. This is real Java; nothing about the language has changed. We are simply using a library that someone else has written so that we don't have to write a bunch of tedious code that isn't relevant to the topics we're studying.
 1.
