@@ -222,7 +222,8 @@ In this case, `VK_A` is the special code for the 'a' key. There are [similar cod
                 StdDraw.show();
                 if (StdDraw.isKeyPressed(VK_A)) {
                     x -= 0.001;
-                } else if (StdDraw.isKeyPressed(VK_D)) {
+                }
+                if (StdDraw.isKeyPressed(VK_D)) {
                     x += 0.001;
                 }
             }
