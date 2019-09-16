@@ -8,7 +8,7 @@ Code is not just for the computer. It's also read by other people who need to un
 
 > Writing is thinking. To write well is to think clearly. That's why it's so hard.
 >
-> David McCullough, interview with NEH chairman Bruce Cole, *Humanities 23:4*
+> David McCullough, interview with NEH chairman Bruce Cole, *Humanities* 23:4
 
 A second advantage of commenting is that it forces you to think clearly about the code you are writing. What exactly is this method supposed to accomplish? What exactly does this array represent?
 
