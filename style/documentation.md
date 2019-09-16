@@ -53,7 +53,7 @@ C++-style comments are also useful for commenting out a section of code, which i
 ## Questions
 1. :star: How can you identify a Javadoc comment?
 1. :star::star: Which style is best for commenting out code?
-1. :star::star: Why don't you include comments when writing code in class?
+1. :star::star: Why don't you include comments when writing code on the whiteboard?
 ## Answers
 1. It starts with `/**` and ends with `*/`.
 1. C++-style `//` comments. C-style `/* */` comments are dangerous because they don't nest:
