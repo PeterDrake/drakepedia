@@ -37,11 +37,34 @@ Another advantage of Javadoc comments is that many IDEs will read them to produc
 
 ### C++-style comments
 
-As in C++, 
+As in C++, `//` and anything after it on the same line is a comment. This is the preferable way to comment something within a method or to add a small comment at the end of a line.
+
+```java
+int height; // In centimeters
+```
+
+C++-style comments are also useful for commenting out a section of code, which is often useful while debugging.  Most IDEs will provide a hotkey to toggle C++-style comments at the beginning of every line in the selected section of code. In [IntelliJ IDEA](../development_tools/intellij_idea.md), this is `command-/` (Mac) / `ctrl-/` (Windows).
+
 ## Resources
+- Sedgewick and Wayne, *Introduction to Programming in Java*, Section 1.1 (print only)
+- Horstmann, *Core Java, Volume 1, 11th Edition*, Section 3.2.
+- [How to Write Doc Comments for the Javadoc Tool](https://www.oracle.com/technetwork/java/javase/documentation/index-137868.html)
+
 ## Questions
-no comments in class?
-which style is best for commenting out code
 1. :star: How can you identify a Javadoc comment?
+1. :star::star: Which style is best for commenting out code?
+1. :star::star: Why don't you include comments when writing code in class?
 ## Answers
 1. It starts with `/**` and ends with `*/`.
+1. C++-style `//` comments. C-style `/* */` comments are dangerous because they don't nest:
+    ```java
+    /*
+      int x = 1;
+      /*
+        int y = 2;
+      */
+      int z = 3;
+    */
+    ```
+    The compiler sees this as one comment stretching from the *first* `/*` to the *first* `*/`, so the statement `int z = 3;` is not commented out and the last `*/` doesn't make sense.
+1. The "documentation" for such code comes in the form of spoken words.
