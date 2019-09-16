@@ -29,7 +29,19 @@ The other two syntaxes are preferable.
 
 ### Javadoc comments
 
-A Javadoc comment is a special kind of C-style comment that begins with `/**`. This is best used rigth before a class, method, instance variable, etc.
+A Javadoc comment is a special kind of C-style comment that begins with `/**`. This is best used right before a class, method, instance variable, etc.:
+
+```java
+/**
+ * Returns the larger of a and b.
+ */
+static int max(int a, int b) {
+    if (a > b) {
+        return a;
+    }
+    return b;
+}
+```
 
 When Java code is commented in this way, a program called Javadoc can be run (from the command line or through an IDE) to produce nicely-formatted HTML documents describing the code. These documents form an *application programming interface* (*API*), which is extremely useful for anyone who wants to use the classes you've defined without reading the code. An example is [the API for Java's Math class](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html).
 
@@ -49,6 +61,7 @@ C++-style comments are also useful for commenting out a section of code, which i
 - Sedgewick and Wayne, *Introduction to Programming in Java*, Section 1.1 (print only)
 - Horstmann, *Core Java, Volume 1, 11th Edition*, Section 3.2.
 - [How to Write Doc Comments for the Javadoc Tool](https://www.oracle.com/technetwork/java/javase/documentation/index-137868.html)
+- Vermeulen *et al.*, *The Elements of Java Style*, Chapter 4 
 
 ## Questions
 1. :star: How can you identify a Javadoc comment?
@@ -59,11 +72,11 @@ C++-style comments are also useful for commenting out a section of code, which i
 1. C++-style `//` comments. C-style `/* */` comments are dangerous because they don't nest:
     ```java
     /*
-      int x = 1;
-      /*
-        int y = 2;
-      */
-      int z = 3;
+        int x = 1;
+        /*
+            int y = 2;
+        */
+        int z = 3;
     */
     ```
     The compiler sees this as one comment stretching from the *first* `/*` to the *first* `*/`, so the statement `int z = 3;` is not commented out and the last `*/` doesn't make sense.
