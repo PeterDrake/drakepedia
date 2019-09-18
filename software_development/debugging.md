@@ -13,7 +13,7 @@ Give variables and methods names that clearly explain their purpose. For example
 
 This almost goes without saying, but you can't fix a bug until you realize there is a problem. If you have no way of knowing whether your program is working correctly, debugging it is hopeless.
 
-Design your program to [fail fast](https://en.wikipedia.org/wiki/Fail-fast), so you find out about the error as soon as possible.
+Design your program to [fail fast](https://en.wikipedia.org/wiki/Fail-fast), so you find out about errors as soon as possible.
 
 ### Reproducing Problems
 
@@ -21,7 +21,7 @@ Before you can fix a problem, you must be able to reliably reproduce it. (This i
 
 After you can do this manually, encode the problem into a [JUnit test](testing.md#junit) that fails with the buggy code. This way, you'll know when you've fixed the bug.
 
-If you used [test-driven development](testing.md#test-driven-development), you may have already handled preventing bugs, noticing the problem, and reproducing the problem. Of course, not all problems can be foreseen, but anything you can do to make the debugging process easier is worthwhile.
+If you're using [test-driven development](testing.md#test-driven-development), you may have already handled preventing bugs, noticing the problem, and reproducing the problem. Of course, not all problems can be foreseen, but anything you can do to make the debugging process easier is worthwhile.
 
 Now that you can reproduce the problem, several approaches are available for hunting down the bug.
 ### Debugging
@@ -51,9 +51,10 @@ To use a debugger, set one or more *breakpoints*, typically by clicking to the l
 
 ## Resources
 - [Debugging Your First Java Application](https://www.jetbrains.com/help/idea/debugging-your-first-java-application.html)
+- Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Section 7.6
 ## Questions
 1. :star: What does a breakpoint do?
 1. :star::star: When is it better to use `println` statements versus a debugger?
 ## Answers
 1. When you run a program in debugging mode, the debugger pauses whenever it reaches a breakpoint. You can then inspect the values of variables.
-1. Usually a debugger is preferable because you can set a breakpoint that displays all variables with a single mouse click. You might use `println` statements if you don't have a debugger available or if you want to quickly inspect one variable at many points during the run (such as every pass through a loop that runs a hundred times).
+1. Usually a debugger is preferable because you can set a breakpoint that displays all variables with a single mouse click (and remove it just as easily). You might use `println` statements if you don't have a debugger available or if you want to quickly inspect one variable at many points during the run (such as every pass through a loop that runs a hundred times).
