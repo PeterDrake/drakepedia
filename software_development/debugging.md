@@ -45,9 +45,15 @@ Run the program. If everything is working correctly at the `println`, the proble
 This is analogous to the binary search algorithm.
 #### Using a Debugger
 
+An automatic *debugger* like the one built into [IntelliJ IDEA](../development_tools/intellij_idea.md) does not, sadly, automatically remove bugs. It does allow you to step through your program in great detail and inspect the values of variables at any point.
+
+To use a debugger, set one or more *breakpoints*, typically by clicking to the left of the line of code. Run the program in debug mode. It will run until it reaches the breakpoint and then pause, showing the state of the call stack and values of the variables. If you tell the debugger to continue, it will resume running until it reaches another breakpoint or the end of the program.
 
 ## Resources
+- [Debugging Your First Java Application](https://www.jetbrains.com/help/idea/debugging-your-first-java-application.html)
 ## Questions
 1. :star: What does a breakpoint do?
+1. :star::star: When is it better to use `println` statements versus a debugger?
 ## Answers
 1. When you run a program in debugging mode, the debugger pauses whenever it reaches a breakpoint. You can then inspect the values of variables.
+1. Usually a debugger is preferable because you can set a breakpoint that displays all variables with a single mouse click. You might use `println` statements if you don't have a debugger available or if you want to quickly inspect one variable at many points during the run (such as every pass through a loop that runs a hundred times).
