@@ -49,8 +49,12 @@ An automatic *debugger* like the one built into [IntelliJ IDEA](../development_t
 
 To use a debugger, set one or more *breakpoints*, typically by clicking to the left of the line of code. Run the program in debug mode. It will run until it reaches the breakpoint and then pause, showing the state of the call stack and values of the variables. If you tell the debugger to continue, it will resume running until it reaches another breakpoint or the end of the program.
 
+It is also possible to set up fancier breakpoints that pause the program only under certain conditions, whenever a particular variable is accessed, whenever a particular exception is thrown, etc.
+
 ## Resources
-- [Debugging Your First Java Application](https://www.jetbrains.com/help/idea/debugging-your-first-java-application.html)
+- IntelliJ documentation:
+    - [Debugging Your First Java Application](https://www.jetbrains.com/help/idea/debugging-your-first-java-application.html)
+    - [Breakpoints](https://www.jetbrains.com/help/idea/using-breakpoints.html)
 - Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Section 7.6
 ## Questions
 1. :star: What does a breakpoint do?
