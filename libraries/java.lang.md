@@ -1,13 +1,14 @@
 # java.lang
 ## Overview
-The built-in java.lang packages contains a number of classes that are used extremely frequently in Java programs. You are not required to import these classes; you can use them directly.
+The built-in java.lang package contains a number of classes that are used extremely frequently in Java programs. You are not required to import these classes; you can use them directly.
 
 The [API](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/package-summary.html) lists everything, but the most commonly used are:
 ### [Object](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html)
 This is the "cosmic superclass" from which all other classes descend.
 ### [System](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html)
-This class contains the static field `out` (as in `System.out.println`) and the methods [`exit`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#exit(int)) (to force a program to stop) and [`nanoTime`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#nanoTime()) (for timing programs).
+This class contains the static field `out` (as in `System.out.println`) and the methods [`exit`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#exit(int)) (to force a program to stop) and [`nanoTime`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.html#nanoTime()) (for timing a program).
 ### [String](https://github.com/PeterDrake/drakepedia/blob/master/data_structures/strings.md)
+This is the built-in class for representing strings of text.
 ### Wrapper Classes
 Integer, Boolean, Character, etc.
 ### [Math](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html)
