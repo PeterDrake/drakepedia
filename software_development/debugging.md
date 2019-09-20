@@ -26,7 +26,7 @@ If you're using [test-driven development](testing.md#test-driven-development), y
 Now that you can reproduce the problem, several approaches are available for hunting down the bug.
 ### Debugging
 #### Viewing Error Messages
-Java's error messages are usually quite helpful (compared to other programming languages). When an exception or error occurs, you are told the type of problem (e.g., `NullPointerException`) and given a stack trace of where it occurred. Go through the stack trace line by line from the top until you find a line that is in your code (as opposed to in a standard library, which is unlikely to contain a bug). Click on the line number to go there in your code. What, on this line, could have caused that exception?
+Java's error messages are usually quite helpful (compared to other programming languages). When an exception or error occurs, you are told the type of problem (e.g., `NullPointerException`) and given a stack trace of where it occurred. Go through the stack trace line by line from the top until you find a line that is in your code (as opposed to in a standard library, which is unlikely to contain a bug). Click on the line number to go there in your code. Ask yourself what, on this line, could have caused that exception?
 
 For example, if you have a `NullPointerException` on a line like
 
