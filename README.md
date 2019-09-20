@@ -29,5 +29,5 @@ Data<br>Structures | [Primitive Types](data_structures/primitive_types.md)<br>[O
 Algorithms | | [Analysis of Algorithms](algorithms/analysis.md)<br>Search<br>Traversal | [Algorithmic Strategies](algorithms/algorithmic_strategies.md)<br>Sorting<br>Graph Algorithms |
 Style | | [Documentation](style/documentation.md)<br>Omitting Needless Code | Defensive Programming |
 Object-<br>Oriented Programming | | Constructors<br>Instance Methods<br>Wrapper Classes<br>Access Modifiers<br>Default Methods<br>Interfaces<br>Generics | Inheritance<br>Packages<br>Exceptions | Enums<br>Inner Classes
-Libraries | | java.lang<br>[stdlib](libraries/stdlib.md)<br>java.util | | [javax.swing](libraries/javax.swing.md)
+Libraries | | [java.lang](libraries/java.lang.md)<br>[stdlib](libraries/stdlib.md)<br>java.util | | [javax.swing](libraries/javax.swing.md)
 Software<br>Development | | [Iterative Development](software_development/iterative_development.md)<br>[Pair Programming](software_development/pair_programming.md)<br>[Testing](software_development/testing.md)<br>[Debugging](software_development/debugging.md) | | [Extreme Programming](software_development/extreme_programming.md)<br>Object-Oriented Design<br>Design Patterns
