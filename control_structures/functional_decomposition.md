@@ -112,6 +112,7 @@ Of course, a method called by `main` may in turn call another method. The *call 
     }
     ```
 1. :star::star::star: Is it legal to have more than one method with the same name in the same class?
+1. :star::star::star: Can you define a method inside another method?
 ## Answers
 1. Don't put anything between the parentheses:
     ```java
@@ -138,3 +139,4 @@ Of course, a method called by `main` may in turn call another method. The *call 
     ```
 1. `return -1;` (Any integer would work.)
 1. Yes, as long as their argument lists differ in number or type. This is called *overloading*. When you call the method, Java uses the types of the arguments you provide to determine which version to use.
+1. The short answer is no, although there are some obscure special cases like lambda expressions and local classes.
