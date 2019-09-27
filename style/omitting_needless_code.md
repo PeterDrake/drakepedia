@@ -22,7 +22,7 @@ static boolean isEven(int n) {
     if (n % 2 == 0) {
         result = true;
     } else if (n % 2 == 1) {
-        result = true;
+        result = false;
     }
     return result;
 }
@@ -36,7 +36,7 @@ static boolean isEven(int n) {
     if (n % 2 == 0) {
         result = true;
     } else if (n % 2 == 1) {
-        result = true;
+        result = false;
     }
     return result;
 }
@@ -54,7 +54,7 @@ static boolean isEven(int n) {
     if (n % 2 == 0) {
         result = true;
     } else {
-        result = true;
+        result = false;
     }
     return result;
 }
@@ -64,28 +64,138 @@ This is correct and shorter than the original, but you can do even better.
 
 ### Stop as soon as you know the answer
 
-In this example, once the value of `result` has been set, it will never change. It's best to simply...
-
-### Avoid redundant code
-
-Suppose we want to determine if either of two Strings contains a space. We could do this:
+In this example, once the value of `result` has been set, it will never change. You can therefore return as soon as you know the answer:
 
 ```java
-static boolean eitherContainsSpace(String a, String b) {
-    if (a.contains(' ')) {
+static boolean isEven(int n) {
+    boolean result;
+    if (n % 2 == 0) {
+        return true;
+    } else {
+        return false;
+    }
+    return result;
+}
 ```
 
+Now the local variable `result` can be eliminated completely:
+
+```java
+static boolean isEven(int n) {
+    if (n % 2 == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+```
 
 ### Use shorter expressions
 
+In the example, the method returns `true` if `n % 2 == 0` is true and `false` if `n % 2 == 0` is false. In other words, the value of `n % 2 == 0` is the value you want to return:
+
+```java
+static boolean isEven(int n) {
+    return n % 2 == 0;
+}
+```
+
+### Avoid redundant code
+
+If you find the identical code in several places in your program, strongly consider defining one method and calling it in each place. [Don't repeat yourself.](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+
+If you find several *similar* patches of code, see if you can figure out what's similar and what's different between them. Write a method whose parameters specify the different part.
+
+If the identical or similar sections of code appear one right after another, a loop may be the easiest solution.
+
 ### Minimize special cases
+
+Sometimes exactly the same code can handle more than one case. Consider the standard recursive method to compute the nth Fibonacci number:
+
+```java
+static int fibo(int n) {
+    if (n == 0) {
+        return 1;
+    }
+    if (n == 1) {
+        return 1;
+    }
+    return fibo(n - 1) + fibo(n - 2);
+}
+```
+
+Since the returned value for the two base cases is the same, they can be combined:
+
+```java
+static int fibo(int n) {
+    if (n <= 1) {
+        return 1;
+    }
+    return fibo(n - 1) + fibo(n - 2);
+}
+```
 
 ### Separate control from data
 
+This method find the sum of the four elements adjacent to element `r`, `c` in a two-dimensional array:
+
+```java
+static int neighborSum(int[][] grid, int r, int c) {
+    int sum = 0;
+    if (r > 0) {
+        sum += grid[r - 1][c];
+    }
+    if (r < grid.length - 1) {
+        sum += grid[r + 1][c];
+    }
+    if (c > 0) {
+        sum += grid[r][c - 1];
+    }
+    if (c < grid[r].length - 1) {
+        sum += grid[r][c + 1];
+    }
+    return sum;
+}
+```
+
+The four if statements differ only in their tests and in the array indices. By storing the four directions in a separate array `offsets`, you can accomplish all of these in one loop:
+
+```java
+static int neighborSum(int[][] grid, int r, int c) {
+    int[][] offsets = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+    int sum = 0;
+    for (int[] offset : offsets) {
+        int rr = r + offset[0];
+        int cc = c + offset[1];
+        if (rr >= 0 && rr < grid.length && cc >= 0 && cc < grid[r].length) {
+            sum += grid[rr][cc];
+        }
+    }
+    return sum;
+}
+```
+
+Modify the method to also look at the diagonal neighbors now becomes trivial; only the data has to be modified.
+
+```java
+static int neighborSum(int[][] grid, int r, int c) {
+    int[][] offsets = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}, {-1, -1}, {-1, 1}, {1, -1}, {1, 1}};
+    int sum = 0;
+    for (int[] offset : offsets) {
+        int rr = r + offset[0];
+        int cc = c + offset[1];
+        if (rr >= 0 && rr < grid.length && cc >= 0 && cc < grid[r].length) {
+            sum += grid[rr][cc];
+        }
+    }
+    return sum;
+}
+```
+
 ## Resources
+
 ## Questions
 1. :star::star: Is a shorter program always preferable?
-TODO isEven method
 1. :star::star: Using an array, refactor the method below to avoid the long if/else chain.
     ```java
     public String toString() {
