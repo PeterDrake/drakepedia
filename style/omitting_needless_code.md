@@ -203,7 +203,7 @@ static int neighborSum(int[][] grid, int r, int c) {
 1. :star::star: Is a shorter program always preferable?
 1. :star::star: Using an array, refactor the method below to avoid the long if/else chain.
     ```java
-    public String toString() {
+    static String toString(int n) {
         if (n == 0) {
             return "red";
         } else if (n == 1) {
@@ -225,7 +225,7 @@ static int neighborSum(int[][] grid, int r, int c) {
 1. No. The goal is clarity, and to that end we omit only *needless* code. Programmers sometimes play ["code golf"](https://en.wikipedia.org/wiki/Code_golf), solving a problem in as few characters as possible, but a program so short that it becomes cryptic serves nothing but the ego of the programmer.
 1.
     ```java
-    public String toString() {
+    static String toString(int n) {
         String[] colors = {"red", "orange", "yellow", "green", "blue", "indigo", "violet"};
         return colors[n];
     }
