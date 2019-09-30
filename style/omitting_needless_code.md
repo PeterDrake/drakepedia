@@ -12,7 +12,7 @@ Programs should be clear. To that end, they should be concise. An overly long pr
 
 Crafting elegant solutions is part of the art of programming. Several techniques will steer you in the right direction.
 
-### Do not store values that will never be read
+### Don't check for conditions that must be true
 
 Consider this method to determine whether a number is even:
 
@@ -28,25 +28,25 @@ static boolean isEven(int n) {
 }
 ```
 
-The initial value of `result` will never be read, it is *always* going to be set in the `if` statement, so there's no need to initialize it:
+This is correct, but it can be more concise.
+
+`n % 2` must either be 0 or 1. You therefore don't need the second `if` check:
 
 ```java
 static boolean isEven(int n) {
-    boolean result;
+    boolean result = false;
     if (n % 2 == 0) {
         result = true;
-    } else if (n % 2 == 1) {
+    } else {
         result = false;
     }
     return result;
 }
 ```
 
-This version won't compile because the compiler doesn't *know* that `result` will always get a value. You can fix that with the next technique.
+### Do not store values that will never be read
 
-### Don't check for conditions that must be true
-
-Continuing the example, `n % 2` must either be 0 or 1. You therefore don't need the second `if` check:
+Continuing the example, the initial value of `result` will never be read (it is *always* going to be set in the `if` statement) so there's no need to initialize it:
 
 ```java
 static boolean isEven(int n) {
@@ -175,7 +175,9 @@ static int neighborSum(int[][] grid, int r, int c) {
 }
 ```
 
-Modify the method to also look at the diagonal neighbors now becomes trivial; only the data has to be modified.
+This improvement was made by separating the control (what to do with each neighbor) from the data (the list of offsets to find neighbors).
+
+Modifying the method to also look at the diagonal neighbors now becomes trivial; only the data has to be modified.
 
 ```java
 static int neighborSum(int[][] grid, int r, int c) {
@@ -193,6 +195,9 @@ static int neighborSum(int[][] grid, int r, int c) {
 ```
 
 ## Resources
+
+-Martin, *Clean Code*
+
 
 ## Questions
 1. :star::star: Is a shorter program always preferable?
