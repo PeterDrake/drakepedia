@@ -35,6 +35,7 @@ Like almost all modern languages, Java has an elaborate [operator precedence hie
     double x = 5 / 3;
     ```
     what is the value of `x`?
+1. :star::star: A set of numbers in the 0 through 63 range can be represented as a single long. Suppose `a` and `b` are two such sets. What Java expression produces the intersection of these two sets?
 1. :star::star::star: What are the values of the variables after the following code is evaluated?
     ```java
     int a = 1;
@@ -52,6 +53,7 @@ Like almost all modern languages, Java has an elaborate [operator precedence hie
     ```java
     double x = (5 / 3);
     ```
+1. `a & b`.
 1. `a` is 3, `b` is 1, and `c` is 3. This is because `++a` increments `a` *before* yielding a value, but `a++` increments `a` *after* yielding a value.
 1. The difference lies in what is shifted in on the left side. `>>` copies the leftmost (sign) bit, so that `a >> 3` is `a` divided by 2 to the 3rd power. `>>>` shifts in a 0, which is sometimes preferable when an int is being interpreted as a set of bits rather than as a number.
 1. -2. If the first argument to `%` is negative, the result is negative as well. This is consistent with the interpretation of `%` as "remainder" but not really with the interpretation as "modulo".
