@@ -1,8 +1,6 @@
 # Search
 ## Overview
-## Additional Resources
-### Online
-### Print
+## Resources
 ## Questions
 1. :star: What is the order of the worst-case running time of binary search?
 ## Answers
