@@ -62,7 +62,7 @@ Some sources call an `if` statement a *conditional statement* or *branch*.
         System.out.println("B");
     }
     ```
-1. :star::star: What is printed by the statement below?
+1. :star::star: What is printed by the code below?
     ```java
     if (false)
         System.out.println("A");
