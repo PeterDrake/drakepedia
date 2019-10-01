@@ -30,7 +30,7 @@ The process for test-driven development is:
 - [JUnit 5](https://junit.org/junit5/)
 - Christensen, *Flexible, Reliable Software Using Patterns and Agile Development*, Chapters 2, 5, 8, 12, and 34
 ## Questions
-1. :star: Give at least one advantage of test-driven development.
+1. :star: Describe at least one advantage of test-driven development.
 1. :star: What annotation has to appear before each test method in a JUnit test class?
 1. :star: If you pass all of your unit tests, does that mean your program is correct?
 1. :star: What claim does the following assertion make?
