@@ -196,17 +196,15 @@ Recurrence | Solution Order
 ![t of n equals n plus t of n over 2](https://latex.codecogs.com/svg.latex?T(n)=n+T(n/2)) | ![order n](https://latex.codecogs.com/svg.latex?\Theta(n))
 ![t of n equals 1 plus t of n over 2](https://latex.codecogs.com/svg.latex?T(n)=1+T(n/2)) | ![order log n](https://latex.codecogs.com/svg.latex?\Theta(\log&space;n))
 
-## Additional Resources
+## Resources
 ### Online
 - Short [video lecture](https://www.youtube.com/watch?v=w7-6h64HSQ8) on asymptotic notation
 - OpenDSA, [Algorithm Analysis](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/AnalChap.html)
-- Sedgewick and Wayne, *Introduction to Programming in Java* booksite, [Section 4.1](https://introcs.cs.princeton.edu/java/41analysis/)
-- Sedgewick and Wayne, *Algorithms, 4th Edition* booksite, [Section 1.4](https://algs4.cs.princeton.edu/14analysis/)
-- [Big-O Emoji](https://devrant.com/rants/1858258/big-o-emoji)
-### Print
-- Sedgewick and Wayne, *Introduction to Programming in Java*, Section 4.1
-- Sedgewick and Wayne, *Algorithms, 4th Edition*, Section 1.4
+- Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 4.1](https://introcs.cs.princeton.edu/java/41analysis/)
+- Sedgewick and Wayne, *Algorithms, 4th Edition*, [Section 1.4](https://algs4.cs.princeton.edu/14analysis/)
 - Cormen *et al.*, *Introduction to Algorithms, 3rd Edition*, Chapters 3-4
+- [Big-O Emoji](https://devrant.com/rants/1858258/big-o-emoji)
+
 ## Questions
 1. :star::star: What's wrong with the following statement?
    > Since ![n cubed](https://latex.codecogs.com/svg.latex?n^3) grows more quickly than ![n squared](https://latex.codecogs.com/svg.latex?n^2), an algorithm with cubic running time is faster than one with quadratic running time.
@@ -218,6 +216,20 @@ Recurrence | Solution Order
 1. :star::star: What is the order of the running time of the `linearSearch` algorithm above when `key` is not present in `a`?
 1. :star::star: What's wrong with the following statement?
    > The best case for the algorithm I'm analyzing occurs when ![n equals 1](https://latex.codecogs.com/svg.latex?n=1).
+1. :star::star: What is the order of the worst-case running time of the method below?
+    ```java
+    static boolean mystery(int[] arr, int k) {
+        int lo = 0;
+        int hi = arr.length;
+        while (lo < hi) {
+            if (arr[lo] == k) {
+                return true;
+            }
+            lo++;
+        }
+        return false;
+    }
+    ```
 1. :star::star: What is the order of the running time of the code below?
     ```java
     for (int i = 0; i < n; i++) {
@@ -239,6 +251,7 @@ Recurrence | Solution Order
 1. No. Asymptotic notation says nothing about small values of ![n](https://latex.codecogs.com/svg.latex?n). For large values, we know that ![f of n](https://latex.codecogs.com/svg.latex?f(n)) exceeds ![g of n](https://latex.codecogs.com/svg.latex?g(n)) by no more than a constant factor, but it might be that ![f of n equals 10 n](https://latex.codecogs.com/svg.latex?f(n)=10n) and ![g of n equals n](https://latex.codecogs.com/svg.latex?g(n)=n).
 1. Linear.
 1. Best-case, average, amortized, and worst-case analysis must apply for all values of ![n](https://latex.codecogs.com/svg.latex?n). If they differ, they must do so between different inputs of each size. For example, a sorting algorithm might have a best case when the array is already sorted and a worst case when it is already sorted in reverse order.
+1. ![order n](https://latex.codecogs.com/svg.latex?\Theta(n)). In the worst case, the loop examines each of the ![n](https://latex.codecogs.com/svg.latex?n) elements of `arr`.
 1. ![order n squared](https://latex.codecogs.com/svg.latex?\Theta(n^2)). The innermost line takes constant time. The inner loop runs ![n](https://latex.codecogs.com/svg.latex?n) times each time the outer loop runs. The outer loop runs ![n](https://latex.codecogs.com/svg.latex?n) times, so the innermost line runs a total of ![n squared](https://latex.codecogs.com/svg.latex?n^2) times.
 1. ![f of n is in big o of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;O(g(n)))
 1. ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)) implies ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n))), but not vice versa. For example, if ![f of n equals n](https://latex.codecogs.com/svg.latex?f(n)=n) and ![g of n equals 2n](https://latex.codecogs.com/svg.latex?g(n)=2n), then ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n))) but it is not true that ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)). The ![tilde](https://latex.codecogs.com/svg.latex?\sim) notation ignores lower-order terms just like ![big theta](https://latex.codecogs.com/svg.latex?\Theta) notation does, but it does not ignore constant factors.
