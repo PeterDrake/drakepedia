@@ -54,7 +54,7 @@ Expression | Value | Notes
 1. Yes: `""`
 1. `"three3"`. When the `+` operator is given a String and a non-String value (in this case an int), the other value is converted into a String (in this case `"3"`) and then the two Strings are concatenated.
 1. `s.charAt(s.length() - 1)`
-1. `s.subString(s.length() - 3, s.length())`
+1. `s.substring(s.length() - 3, s.length())`
 1. `new String(a)`
 1. `s.toCharArray()`
 1. Not directly, but you can do it by converting the String to an array of chars:
