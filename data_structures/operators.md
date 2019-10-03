@@ -53,6 +53,10 @@ Like almost all modern languages, Java has an elaborate [operator precedence hie
     ```java
     double x = (5 / 3);
     ```
+    This could be fixed by [casting](primitive_typesmd#type-conversion) one of the values to a double:
+    ```java
+    double x = (double)5 / 3;
+    ```
 1. `a & b`.
 1. `a` is 3, `b` is 1, and `c` is 3. This is because `++a` increments `a` *before* yielding a value, but `a++` increments `a` *after* yielding a value.
 1. The difference lies in what is shifted in on the left side. `>>` copies the leftmost (sign) bit, so that `a >> 3` is `a` divided by 2 to the 3rd power. `>>>` shifts in a 0, which is sometimes preferable when an int is being interpreted as a set of bits rather than as a number.
