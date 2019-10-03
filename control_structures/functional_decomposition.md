@@ -123,8 +123,7 @@ Of course, a method called by `main` may in turn call another method. The *call 
     double s = Math.sin(x);
     ```
 1. The compiler can't predict that the `return` statement will always be reached. It may be obvious to you that it will for this particular program, but in general it is impossible for the compiler to predict what a program will do.
-1.
-    ```java
+1.  ```java
     static double differenceOfSums(double[] a, double[] b) {
         return sum(a) - sum(b);
     }
