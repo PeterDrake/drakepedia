@@ -53,7 +53,7 @@ Like almost all modern languages, Java has an elaborate [operator precedence hie
     ```java
     double x = (5 / 3);
     ```
-    This could be fixed by [casting](primitive_typesmd#type-conversion) one of the values to a double:
+    This could be fixed by [casting](primitive_types.md#type-conversion) one of the values to a double:
     ```java
     double x = (double)5 / 3;
     ```
