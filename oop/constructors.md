@@ -56,10 +56,42 @@ If you *do* explicitly define a constructor, you *do not* get a default construc
 
 ### `this`
 
+The parameter names `initialX` and `initialY` above are a bit awkward. It would be nice if you could define the constructor as:
 
+```java
+Point(double x, double x) {
+    x = x;
+    y = y;
+}
+```
 
+Lines like
+
+```java
+x = x;
+```
+
+seem suspicious. In fact, this constructor does not work properly. The parameters are new local variables, not references to the instance variables. Inside the method `x` refers to the parameter, not the instance variable. The parameter is said to *shadow* the instance variable, because it prevents the light of the instance variable from reaching down into the depths of the method. The line
+
+```java
+x = x;
+```
+
+simply sets the parameter to its own value, which of course has no effect.
+
+All is not lost. The instance variable can still be referred to as `this.x`, that is, the `x` instance variable of `this`, which is the object currently being created. You can therefore use the parameter names you want:
+
+```java
+Point(double x, double x) {
+    this.x = x;
+    this.y = y;
+}
+```
 
 ## Resources
+- Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 3.2](https://introcs.cs.princeton.edu/java/32class/)
+
+
 ## Questions
 1. :star: Where should an instance variable be initialized?
 1. :star: Describe a situation where it's necessary to use `this`.
