@@ -52,7 +52,7 @@ Every time you use `new` to create an object, you are calling a constructor.
 
 If you do not explicitly define a constructor (as in the first definition of Point above), Java automatically provides a default constructor that takes no arguments and doesn't do anything. This is what was used in the first object creation above.
 
-If you *do* explicitly define a constructor, you *do not* get a default constructor. When we add a constructor to the definition of Point, it is no longer legal to say `new Point()`.
+If you *do* explicitly define a constructor, you *do not* get a default constructor. When we add a constructor with parameters to the definition of Point, it is no longer legal to say `new Point()`.
 
 ### `this`
 
