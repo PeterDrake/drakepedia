@@ -4,13 +4,45 @@ In procedural langauges like Fortran and C, the world is made of data structures
 
 In object-oriented languages like C++ and Java, the world is made of objects and you *ask them to do things*. If `v` is an object (an instance of a class Vector), you would say `v.length()` to get the length of `v`. Think of this expression as asking the object, "What is your length?" Similarly, you might say `v.add(w)` to ask the object, "What is the result of adding you to `w`?"
 
+The things that an object knows how to do are called *instance methods*, because you call them on specific instances (objects). This is constrasted with static methods, which are called on classes, as in `Math.sin(x)`.
 
+Instance methods are defined inside a class, but they are not declared static. Here is the definition of Vector including a [constructor](constructors.md) and the methods described above:
 
+```java
+public class Vector {
 
-### `this` Revisited
+    double x;
+
+    double y;
+
+    Vector(double x, double y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    double length() {
+        return Math.sqrt((x * x) + (y * y));
+    }
+
+    Vector add(Vector that) {
+        return new Vector(x + that.x, y + that.y);
+    }
+    
+}
+```
+
+It is worth making sure you understand the definition of `add`. The body could have been written as
+
+```java
+return new Vector(this.x + that.x, that.y + that.y);
+```
+
+to emphasize that you are adding together the value of `x` for `this` (the object on which `add` was called) and the value of `x` for `that` (the argument passed to the method). When there is no ambiguity, you are allowed to leave off `this.`.
+
 ### Getters and Setters
 ## Resources
 ## Questions
+TODO Is that a reserved word?
 1. :star::star: Add a method `perimeter`, which takes no arguments and returns the Square's perimeter, to the class below.
     ```java
     public class Square {
