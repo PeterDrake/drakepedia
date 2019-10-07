@@ -2,7 +2,7 @@
 ## Overview
 In procedural langauges like Fortran and C, the world is made of data structures and you *do things to them*. For example, if you have a data structure `v`representing a two-dimensional vector, you might call functions like `length(v)` to determine the length of `v` or `add(v, w)` to get the sum of vectors `v` and `w`.
 
-In object-oriented languages like C++ and Java, the world is made of objects and you *ask them to do things*. If `v` is an object (an instance of a class Vector), you would say `v.length()` to get the length of `v`. Think of this expression as saying to the object, "Tell me your length." Similarly, you might say `v.add(w)` to say to the object, "Tell me the result of adding you to `w`."
+In object-oriented languages like C++ and Java, the world is made of objects and you *ask them to do things*. If `v` is an object (an instance of a class Vector), you would say `v.length()` to get the length of `v`. Think of this expression as saying to the object, "Tell me your length." Similarly, `v.add(w)` says to the object, "Tell me the result of adding you to `w`."
 
 The things that an object knows how to do are called *instance methods*, because you call them on specific instances (objects). This is constrasted with static methods, which are called on classes, as in `Math.sin(x)`.
 
@@ -34,7 +34,7 @@ public class Vector {
 It is worth making sure you understand the definition of `add`. The body could have been written as
 
 ```java
-return new Vector(this.x + that.x, that.y + that.y);
+return new Vector(this.x + that.x, this.y + that.y);
 ```
 
 to emphasize that you are adding together the value of `x` for `this` (the object on which `add` was called) and the value of `x` for `that` (the argument passed to the method). When there is no ambiguity, you are allowed to leave off `this.`.
@@ -44,8 +44,9 @@ to emphasize that you are adding together the value of `x` for `this` (the objec
 - Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Section 4.3
 
 ## Questions
-1. :star: When is an instance method declared static?
+1. :star: When, if ever, is an instance method declared static?
 1. :star::star: Is `this` a reserved word? What about `that`?
+1. :star::star: When, if ever, is `this == null`?
 1. :star::star: Add a method `perimeter`, which takes no arguments and returns the Square's perimeter, to the class below.
     ```java
     class Square {
@@ -112,6 +113,7 @@ to emphasize that you are adding together the value of `x` for `this` (the objec
 ## Answers
 1. Never. By definition, an instance method is one that is *not* declared static.
 1. `this` is a [reserved word](https://en.wikipedia.org/wiki/List_of_Java_keywords). `that` is not, but it is sometimes a reasonable name for a parameter of the same type as `this`.
+1. Never. Calling an instance method on `null` results in a `NullPointerException`. 
 1.
     ```java
     double perimeter() {
