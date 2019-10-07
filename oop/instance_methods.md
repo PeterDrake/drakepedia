@@ -44,14 +44,15 @@ to emphasize that you are adding together the value of `x` for `this` (the objec
 - Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Section 4.3
 
 ## Questions
-TODO Is that a reserved word?
+1. :star: When is an instance method declared static?
+1. :star::star: Is `this` a reserved word? What about `that`?
 1. :star::star: Add a method `perimeter`, which takes no arguments and returns the Square's perimeter, to the class below.
     ```java
-    public class Square {
+    class Square {
 
-        private double side;
+        double side;
 
-        public Square(double s) {
+        Square(double s) {
             side = s;
         }
 
@@ -59,13 +60,13 @@ TODO Is that a reserved word?
     ```
 1. :star::star: Supply the missing line in the class below.
     ```java
-    public class Snake {
+    class Snake {
 
-        public Snake(double length) {
+        Snake(double length) {
             this.length = length;
         }
 
-        public double getLength() {
+        double getLength() {
             return length;
         }
 
@@ -73,22 +74,20 @@ TODO Is that a reserved word?
     ```
 1. :star::star: Why does the class below not compile?
     ```java
-    public class Account {
+    class Account {
 
-        private int balance;
+        int balance;
 
-        public int getBalance() {
+        int getBalance() {
             return balance;
         }
 
-        public static void main(String[] args) {
+        static void main(String[] args) {
             System.out.println(getBalance());
         }
 
     }
     ```
-1. :star::star: In another class, I have created `p`, an instance of class `Person`. When I try to print `p.height`, Java tells me that I don't have access to the private instance variable `height`. What is the proper object-oriented way to to get the value of this variable?
-TODO: Move this to the page on access levels and remove all access levels from this page.
 1. :star::star: By adding an instance variable, modify the class below so that the instance methods don't need arguments.
     ```java
     class Square {
@@ -111,19 +110,21 @@ TODO: Move this to the page on access levels and remove all access levels from t
     }
     ```
 ## Answers
+1. Never. By definition, an instance method is one that is *not* declared static.
+1. `this` is a [reserved word](https://en.wikipedia.org/wiki/List_of_Java_keywords). `that` is not, but it is sometimes a reasonable name for a parameter of the same type as `this`.
 1.
     ```java
-    public double perimeter() {
+    double perimeter() {
         return 4 * side;
     }
     ```
 1. The line
     ```java
-    private double length;
+    double length;
     ```
     should be added inside the class (but not inside any method).
 1. The instance method `getBalance` cannot be called from the static method `main`. It would work to print `new Account().getBalance()`.
-1. `p.getHeight()`.
+
 1.
     ```java
     class Square {
