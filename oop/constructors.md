@@ -90,7 +90,7 @@ Point(double x, double x) {
 
 ## Resources
 - Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 3.2](https://introcs.cs.princeton.edu/java/32class/)
-
+- Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Sections 4.3.4 and 4.6
 
 ## Questions
 1. :star: Where should an instance variable be initialized?
