@@ -1,7 +1,15 @@
 # Instance Methods
 ## Overview
-(include getters and setters)
-## Additional Resources
+In procedural langauges like Fortran and C, the world is made of data structures and you *do things to them*. For example, if you have a data structure `v`representing a two-dimensional vector, you might call functions like `length(v)` to determine the length of `v` or `add(v, w)` to get the sum of vectors `v` and `w`.
+
+In object-oriented languages like C++ and Java, the world is made of objects and you *ask them to do things*. If `v` is an object (an instance of a class Vector), you would say `v.length()` to get the length of `v`. Think of this expression as asking the object, "What is your length?" Similarly, you might say `v.add(w)` to ask the object, "What is the result of adding you to `w`?"
+
+
+
+
+### `this` Revisited
+### Getters and Setters
+## Resources
 ## Questions
 1. :star::star: Add a method `perimeter`, which takes no arguments and returns the Square's perimeter, to the class below.
     ```java
