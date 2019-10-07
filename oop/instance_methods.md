@@ -39,8 +39,10 @@ return new Vector(this.x + that.x, that.y + that.y);
 
 to emphasize that you are adding together the value of `x` for `this` (the object on which `add` was called) and the value of `x` for `that` (the argument passed to the method). When there is no ambiguity, you are allowed to leave off `this.`.
 
-### Getters and Setters
 ## Resources
+- Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 3.2](https://introcs.cs.princeton.edu/java/32class/)
+- Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Section 4.3
+
 ## Questions
 TODO Is that a reserved word?
 1. :star::star: Add a method `perimeter`, which takes no arguments and returns the Square's perimeter, to the class below.
