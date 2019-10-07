@@ -2,7 +2,7 @@
 ## Overview
 In procedural langauges like Fortran and C, the world is made of data structures and you *do things to them*. For example, if you have a data structure `v`representing a two-dimensional vector, you might call functions like `length(v)` to determine the length of `v` or `add(v, w)` to get the sum of vectors `v` and `w`.
 
-In object-oriented languages like C++ and Java, the world is made of objects and you *ask them to do things*. If `v` is an object (an instance of a class Vector), you would say `v.length()` to get the length of `v`. Think of this expression as asking the object, "What is your length?" Similarly, you might say `v.add(w)` to ask the object, "What is the result of adding you to `w`?"
+In object-oriented languages like C++ and Java, the world is made of objects and you *ask them to do things*. If `v` is an object (an instance of a class Vector), you would say `v.length()` to get the length of `v`. Think of this expression as saying to the object, "Tell me your length." Similarly, you might say `v.add(w)` to say to the object, "Tell me the result of adding you to `w`."
 
 The things that an object knows how to do are called *instance methods*, because you call them on specific instances (objects). This is constrasted with static methods, which are called on classes, as in `Math.sin(x)`.
 
