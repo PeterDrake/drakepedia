@@ -40,7 +40,7 @@ The process for test-driven development is:
 1. :star::star: If a test doesn't pass, how do you know the problem isn't in the test itself?
 1. :star::star: How do you test a user interface that involves detecting mouse clicks and graphics?
 ## Answers
-1. It forces us to actually write tests rather than put off doing so forever. It forces us to think precisely about what a method is supposed to do. When writing the code, repeatedly running the test will let us know when we've succeeded. After a test has passed, it provides a regression test that will let us know if we later break something.
+1. It forces you to actually write tests rather than put off doing so forever. It forces you to think precisely about what a method is supposed to do. It allows you to detect bugs sooner. When writing the code, repeatedly running the test lets you know when you've succeeded. After a test has passed, it provides a regression test that will let you know if we later break something.
 1. `@Test`
 1. No. Passing all of the tests is *necessary* but not *sufficient*. Certainly a program that *doesn't* pass the tests has a problem.
 1. If the `volume` method is called on the object `amp`, it will return 11.
