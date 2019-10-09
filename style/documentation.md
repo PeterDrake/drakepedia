@@ -60,6 +60,7 @@ C++-style comments are also useful for commenting out a section of code, which i
 ## Resources
 - Sedgewick and Wayne, *Introduction to Programming in Java*, Section 1.1 (print only)
 - Horstmann, *Core Java, Volume 1, 11th Edition*, Section 3.2.
+- [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
 - [How to Write Doc Comments for the Javadoc Tool](https://www.oracle.com/technetwork/java/javase/documentation/index-137868.html)
 - Vermeulen *et al.*, *The Elements of Java Style*, Chapter 4 
 
