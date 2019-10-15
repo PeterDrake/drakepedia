@@ -66,10 +66,12 @@ C++-style comments are also useful for commenting out a section of code, which i
 
 ## Questions
 1. :star: How can you identify a Javadoc comment?
+1. :star::star: How many comments do you need in your code?
 1. :star::star: Which style is best for commenting out code?
 1. :star::star: Why don't you include comments when writing code on the whiteboard?
 ## Answers
 1. It starts with `/**` and ends with `*/`.
+1. Include a Javadoc `/** */` comment before each method or class. Any method is particularly long or confusing, include C++-style `\\` comments within the method (or, better yet, consider breaking the method up into multiple methods). You don't have to provide Javadoc comments for methods that are private, are [completely obvious](https://google.github.io/styleguide/javaguide.html#s7.3.1-javadoc-exception-self-explanatory) (like standard getters and setters), or override default methods (like `toString` or `equals`). 
 1. C++-style `//` comments. C-style `/* */` comments are dangerous because they don't nest:
     ```java
     /*
