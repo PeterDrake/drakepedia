@@ -1,6 +1,6 @@
 # Wrapper Classes
 ## Overview
-For every primitive type, there is a corresponding wrapper class in the java.util package. These are listed below.
+For every primitive type, there is a corresponding *wrapper class* in the java.util package. These are listed below.
 
 | Primitive Type | Wrapper Class|
 | --- | --- |
@@ -48,7 +48,7 @@ automatically converts `i` back into a primitive int.
 
 ## Questions
 1. :star: What is the name of the wrapper class for the primitive type `int`?
-1. :star: What is the wrapper class for the `String` type?
+1. :star: What is the name of the wrapper class for the `String` type?
 1. :star::star: What expression is true if two Longs `a` and `b` contain the same value?
 ## Answers
 1. `Integer`
