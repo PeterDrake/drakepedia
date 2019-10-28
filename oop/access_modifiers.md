@@ -38,11 +38,49 @@ For example, a "helper method" that is used only to support another public metho
 
 ## Getters and Setters
 
+Suppose we have a Person class with an instance variable `height`. The rules above suggest that `height` should be private:
 
-### Constants
+```java
+/** Height in inches. */
+private int height; 
+```
+
+This is correct, but what if you need to get the height of person `p` in another class? The compiler won't let you refer to `p.height` because it is private.
+
+The correct solution is to provide a *getter* (*accessor*) and a *setter* (*mutator*):
+
+```java
+public int getHeight() {
+    return height;
+}
+
+public void setHeight(int height) {
+    this.height = height;
+}
+```
+
+Now other classses can refer to, for example, `p.getHeight()`.
+
+If other classes can now modify `height` using `setHeight`, what was the point of all this? Why not just make `height` public? Using getters and setters provides several advantages:
+
+* If you want to make it so that others can see an instance variable but not modify it, you can provide a getter but no setter.
+* You can change your internal representation without modifying the getter and setter behavior. For example, a class representing a two-dimensional vector might use rectangular or polar coordinates; someone using such a class doesn't have to know which it is and their code won't break if the representation is changed.
+* A setter can enforce constraints, such as disallowing negative heights or making sure that multiple instance variables have consistent values.
+* While debugging, you know that any change to the instance variable *must* either be in thie class or go through the setter, so you only have to look at code in this class.
+
+Most IDEs can automatically generate getters and setters.
 
 ## Resources
+- Sedgewick and Wayne, *Introduction to Programming in Java*, Sections [3.2](https://introcs.cs.princeton.edu/java/32class/) and [3.3](https://introcs.cs.princeton.edu/java/33design/)
+- Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Chapters 4-5
+
 ## Questions
 1. :star::star: In another class, I have created `p`, an instance of class `Person`. When I try to print `p.height`, Java tells me that I don't have access to the private instance variable `height`. What is the proper object-oriented way to to get the value of this variable?
+1. :star::star: If I want to set an instance variable of another object of the same class, do I have to use a setter?
+1. :star::star: Suppose I have and object `airplane` which has an instance variable `speed` and I want to increase it by 3.2 from another class. Because `speed` is private, I can't just say `airplane.speed += 3.2;`.
+1. :star::star: If I have a boolean instance variable `onFire`, what is the associated getter called?
 ## Answers
 1. `p.getHeight()`.
+1. No; code in the same class can access private parts of the class. You might choose to use a setter if does extra work, like enforcing constraints.
+1. `airplane.setSpeed(plane.getSpeed() + 3.2);`
+1. `isOnFire`. This convention is used for booleans so that expressions like `hair.isOnFire()` will make grammatical sense in English.
