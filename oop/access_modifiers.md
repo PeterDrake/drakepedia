@@ -15,9 +15,9 @@ To support *information hiding*, Java provides four *access modifiers*, which ca
 | `protected` | This package and descendents of this class |
 | `public` | All classes |
 
-There is no keywoard for the package private level; this is the default that you get if you don't specify one of the others.
+There is no keyword for the package private level; this is the default that you get if you don't specify one of the others.
 
-In very large prorgrams it is useful to group classes into packages. I don't bother with this in CS2, putting everything in the nameless default package, so the last three levels are equivalent there.
+In very large prorgrams it is useful to group classes into packages. I don't bother with this in CS2. I just put everything in the nameless default package, so the last three levels are equivalent there.
 
 ### Rules for Using Access Modifiers
 
@@ -34,7 +34,7 @@ The full rule, for sophisticated Java programmers using packages, is:
 
 * Make everything as private as possible.
 
-For example, a "helper method" that is used only to support another public method, might reasonably be private. If, however, that method is also going to be called by a unit test, it will have to be package private.
+For example, a "helper method" that is used only to support another public method might reasonably be private. If, however, that method is also going to be called by a unit test, it will have to be package private.
 
 ## Getters and Setters
 
@@ -75,12 +75,12 @@ Most IDEs can automatically generate getters and setters.
 - Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Chapters 4-5
 
 ## Questions
-1. :star::star: In another class, I have created `p`, an instance of class `Person`. When I try to print `p.height`, Java tells me that I don't have access to the private instance variable `height`. What is the proper object-oriented way to to get the value of this variable?
+1. :star: In another class, I have created `p`, an instance of class `Person`. When I try to print `p.height`, Java tells me that I don't have access to the private instance variable `height`. What is the proper object-oriented way to to get the value of this variable?
 1. :star::star: If I want to set an instance variable of another object of the same class, do I have to use a setter?
-1. :star::star: Suppose I have and object `airplane` which has an instance variable `speed` and I want to increase it by 3.2 from another class. Because `speed` is private, I can't just say `airplane.speed += 3.2;`.
+1. :star::star: Suppose I have an object `airplane` that has an instance variable `speed`. How can I increase `speed` by 3.2 from another class? Because `speed` is private, I can't just say `airplane.speed += 3.2;`.
 1. :star::star: If I have a boolean instance variable `onFire`, what is the associated getter called?
 ## Answers
 1. `p.getHeight()`.
-1. No; code in the same class can access private parts of the class. You might choose to use a setter if does extra work, like enforcing constraints.
+1. No; code in the same class can access private parts of any instance of the class. You might choose to use a setter if does extra work, like enforcing constraints.
 1. `airplane.setSpeed(plane.getSpeed() + 3.2);`
 1. `isOnFire`. This convention is used for booleans so that expressions like `hair.isOnFire()` will make grammatical sense in English.
