@@ -83,7 +83,7 @@ It is good style, though not required, to add `@Override` before your definition
         return x == that.x && y == that.y;
     }
     ```
-    and then
+    Now you define:
     ```java
     Point a = new Point(1, 2);
     Object b = new Point(1, 2);
