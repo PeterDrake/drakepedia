@@ -44,11 +44,11 @@ First notice that the type of the parameter is `Object`. This is neccessary beca
 
 The first line inside the method checks to see if `this` and the parameter `o` are the same object. If they are `==`, they *must* be `equals`, so you can return `true` immediately. This line is not strictly necessary, but it saves some computation for this common case.
 
-The next line checks for two conditions that would allow you to immediately return `false`. Since `this` can never by null, if `o` is null then they can be `equals`. Also, if `this` and `o` are not instances of the same class, they cannot be `equals`.
+The next line checks for two conditions that would allow you to immediately return `false`. Since `this` can never be null, if `o` is null then they cannot be `equals`. Also, if `this` and `o` are not instances of the same class, they cannot be `equals`.
 
-Having established that `o` is a Point (even though it is stored in a parameter of type Object), you know cast it to a Point and store that in a local variable called `point`.
+Having established that `o` is a Point (even though it is stored in a parameter of type Object), you now cast it to a Point and store that in a local variable called `point`.
 
-Finally, you can actually compare the instance variables.
+Finally, you actually compare the instance variables.
 
 The default version of `equals` behaves like `==`: `a.equals(b)` only returns true if `a` and `b` are the same object.
 
