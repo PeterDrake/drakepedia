@@ -72,11 +72,10 @@ It is good style, though not required, to add `@Override` before your definition
         return this.toString().equals(obj.toString());
     }
     ```
-1. :star::star::star: When you ask your IDE to generate `equals`, it also want to generate a method called `hashCode`. What's up with that?
+1. :star::star::star: When you ask your IDE to generate `equals`, it also wants to generate a method called `hashCode`. What's up with that?
 1. :star::star::star: Suppose you define the `equals` method for Point like this:
     ```java
     public boolean equals(Point that) {
-        StdOut.println("mine");
         if (that == null) {
             return false;
         }
@@ -96,9 +95,10 @@ It is good style, though not required, to add `@Override` before your definition
 1. You might want to do something with the String other than printing it, such as writing it to a file or (in a test) comparing it to another String.
 1. I think so.
 1. No. This would throw a NullPointerExceptoin if `obj` was null. It might also return true in some situations where `this` and `obj` are instances of different classes. Finally, for some objects containing very large data structures, it might either give incorrect answers or be woefully inefficient (depending on how `toString` is defined).
-1. `hashCode` is used by a data structure called a hash table. That data structure depends on the behavior of `equals` and `hashCode` to be similar in certain ways, so if you override one you should override the other. Until you start using hash tables you can ignore this extra method.
+1. `hashCode` is used by a data structure called a hash table. That data structure depends on the behavior of `equals` and `hashCode` being similar in certain ways, so if you override one you should override the other. Until you start using hash tables you can ignore this extra method.
 1. `false`, `true`, and `false` respectively. This suprising behavior depends on the fact that Object is a *polymorphic type*, which can hold an instance of any class. The type of the variable need not match the type of the object to which it refers. Specifically, `b` is of type Object, but refers to an instance of `Point`. When deciding which version of an overloaded method to use, Java generally looks at variable types, except where there is overriding. Here:
     - In `a.equals(b)`, Java sees that `a`, a Point, has one version of `equals` that takes an Object and another that takes a Point. Since the variable type of `b` is Object, the default version of `equals` is used.
     - In `a.equals(c)`, Java uses your version since the variable type of `c` is Point.
     - In `b.equals(c)`, Java sees that `b`, an Object, has only the default version of `equals`, which it uses.
+    
     To avoid this very confusing result, make sure your `equals` method takes an Object.
