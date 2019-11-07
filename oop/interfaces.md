@@ -8,9 +8,9 @@ As an example, here is a Shape interface:
 ```java
 public interface Shape {
 
-    public double area();
+    double area();
 
-    public double perimeter();
+    double perimeter();
 
 }
 ```
@@ -108,6 +108,9 @@ public class Prism {
 ```
 
 ## Resources
+- Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 3.3](https://introcs.cs.princeton.edu/java/33design/)
+- Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Section 6.1
+
 ## Questions
 1. :star: What is an interface?
 1. :star: What is special about methods that appear in interfaces?
@@ -120,8 +123,11 @@ public class Prism {
 
     }
     ```
-ARRAY OF SHAPES
-IS OBJECT AN INTERFACE
+1. :star::star: Is `Shape[]` a valid type?
+1. :star::star: Can a class implement more than one interface?
+1. :star::star: Can interfaces contain instance methods.
+1. :star::star::star: Shouldn't the methods in the interface be declared public?
+1. :star::star::star: Object is also a polymorphic type. Does that mean that Object is an interface?
 ## Answers
 1. An interface defines a type but doesn't specify how it is implemented. It can be thought of as a promise or contract, indicating one or more methods that must be supplied by any class implementing that interface.
 1. They don't have bodies, just the first line (method signature).
@@ -146,3 +152,12 @@ IS OBJECT AN INTERFACE
 
     }
     ```
+1. Yes. Each element in this array would have to be an instance of some class implementing Shape.
+1. Yes. You would begin such a class with a line like:
+    ```java
+    public class Dog implements FurryThing, HeatSource, Eater { ... }
+    ```
+    It would need to provide all of the methods promised by each of those interfaces.
+1. No.
+1. Interface methods are *always* public, so Java doesn't require you to explicitly declare them public.
+1. No. Object is a class that provides versions of methods. Other classes don't *implement* Object, they *extend* it, adding new methods and instance variables and possibly overriding other methods.
