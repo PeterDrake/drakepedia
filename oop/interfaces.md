@@ -119,15 +119,15 @@ public class Prism {
     public interface Operator {
 
         /** Returns the result of applying this operator to a and b. */
-        public double apply(double a, double b);
+        double apply(double a, double b);
 
     }
     ```
 1. :star::star: Is `Shape[]` a valid type?
 1. :star::star: Can a class implement more than one interface?
-1. :star::star: Can interfaces contain instance methods.
-1. :star::star::star: Shouldn't the methods in the interface be declared public?
-1. :star::star::star: Object is also a polymorphic type. Does that mean that Object is an interface?
+1. :star::star: Can interfaces contain instance methods?
+1. :star::star::star: Should the methods in the interface be declared public?
+1. :star::star::star: [Object](default_methods.md) is also a polymorphic type. Does that mean that Object is an interface?
 ## Answers
 1. An interface defines a type but doesn't specify how it is implemented. It can be thought of as a promise or contract, indicating one or more methods that must be supplied by any class implementing that interface.
 1. They don't have bodies, just the first line (method signature).
