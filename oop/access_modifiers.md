@@ -82,5 +82,5 @@ Most IDEs can automatically generate getters and setters.
 ## Answers
 1. `p.getHeight()`.
 1. No; code in the same class can access private parts of any instance of the class. You might choose to use a setter if does extra work, like enforcing constraints.
-1. `airplane.setSpeed(plane.getSpeed() + 3.2);`
+1. `airplane.setSpeed(airplane.getSpeed() + 3.2);`
 1. `isOnFire`. This convention is used for booleans so that expressions like `hair.isOnFire()` will make grammatical sense in English.
