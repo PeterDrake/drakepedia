@@ -13,7 +13,7 @@ public String toString() {
 
 Now `new Point(3, 4).toString()` has the value `"<3, 4>"`.
 
-In some common situations where a String is expected, such as contatenating Strings with `+` or calling `println`, if a non-String object is supplied, its `toString` method is called automatically. This means that, instead of
+In some common situations where a String is expected, such as concatenating Strings with `+` or calling `println`, if a non-String object is supplied, its `toString` method is called automatically. This means that, instead of
 
 ```java
 System.out.println(p.toString());
