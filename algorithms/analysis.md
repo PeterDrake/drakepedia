@@ -197,7 +197,6 @@ Recurrence | Solution Order
 ![t of n equals 1 plus t of n over 2](https://latex.codecogs.com/svg.latex?T(n)=1+T(n/2)) | ![order log n](https://latex.codecogs.com/svg.latex?\Theta(\log&space;n))
 
 ## Resources
-### Online
 - Short [video lecture](https://www.youtube.com/watch?v=w7-6h64HSQ8) on asymptotic notation
 - OpenDSA, [Algorithm Analysis](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/AnalChap.html)
 - Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 4.1](https://introcs.cs.princeton.edu/java/41analysis/)
