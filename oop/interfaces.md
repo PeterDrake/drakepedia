@@ -125,7 +125,7 @@ public class Prism {
     ```
 1. :star::star: Is `Shape[]` a valid type?
 1. :star::star: Can a class implement more than one interface?
-1. :star::star: Can interfaces contain instance methods?
+1. :star::star: Can interfaces contain instance variables?
 1. :star::star::star: Should the methods in the interface be declared public?
 1. :star::star::star: [Object](default_methods.md) is also a polymorphic type. Does that mean that Object is an interface?
 ## Answers
