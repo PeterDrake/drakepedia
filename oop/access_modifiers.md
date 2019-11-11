@@ -66,7 +66,7 @@ If other classes can now modify `height` using `setHeight`, what was the point o
 * If you want to make it so that others can see an instance variable but not modify it, you can provide a getter but no setter.
 * You can change your internal representation without modifying the getter and setter behavior. For example, a class representing a two-dimensional vector might use rectangular or polar coordinates; someone using such a class doesn't have to know which it is and their code won't break if the representation is changed.
 * A setter can enforce constraints, such as disallowing negative heights or making sure that multiple instance variables have consistent values.
-* While debugging, you know that any change to the instance variable *must* either be in thie class or go through the setter, so you only have to look at code in this class.
+* While debugging, you know that any change to the instance variable *must* either be in this class or go through the setter, so you only have to look at code in this class.
 
 Most IDEs can automatically generate getters and setters.
 
