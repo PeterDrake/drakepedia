@@ -4,7 +4,7 @@
 ## Questions
 1. :star: What is the order of the running time of depth-first search in a connected graph?
 1. :star: What is the order of the running time of breadth-first search in a connected graph?
-1 : star: Breadth-first search uses a queue to maintain the frontier. What does Dijkstra's algorithm use?
+1. :star: Breadth-first search uses a queue to maintain the frontier. What does Dijkstra's algorithm use?
 1. :star: When is Dijkstra's algortihm better than breadth-first search for finding shortest paths?
 1. :star: What is the order of the running time for the Floyd-Warshall all-pairs shortest-path algorithm?
 1. :star::star: Give a topologial sort of the graph below.
