@@ -19,4 +19,4 @@
 1.
     ![5 is the black root. Its children are 2, red, and 7, black. 2's children, both black, are 1 and 3.](rbtree_after_deletion.svg)
 1.
-    ![All nodes are black and the tree is perfect. 4 is the roor, 2 and 6 are its children, and 1, 3, 5, and 7 are its grandchildren.](rbtree2_after_deletion.svg)
+    ![All nodes are black and the tree is perfect. 4 is the root, 2 and 6 are its children, and 1, 3, 5, and 7 are its grandchildren.](rbtree2_after_insertion.svg)
