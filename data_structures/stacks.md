@@ -12,12 +12,77 @@ The *stack* abstract data type defines a stack as a sequence of items, with the 
 
 The standard metaphor for a stack is one of those spring-loaded stacks of plates you might find in a cafeteria. You can push a new plate onto the stack or pop one off the top, but there's no way to access the plates underneath. Stacks are said to be *last in, first out* (LIFO).
 
-in Java, an abstract data type is represented by an [interface](../oop/interfaces.md).
+The sequence of previously-viewed pages that your web browser maintains to allow you to go back is represented as a stack.
+
+in Java, an abstract data type is represented by an [interface](../oop/interfaces.md). The Stack interface looks like this:
+
+```java
+public interface Stack<T> {
+
+    public boolean isEmpty();
+
+    public T pop();
+
+    public void push(T item);
+    
+}
+
+```
+
+There are multiple ways to implement this interface, described below.
 
 ## Array-Based Implementation
+The items in the stack can be kept in an array. The only catch is that an array has a fixed size, while a stack can grow and shrink as items are pushed and popped. Two simple tricks deal with this problem:
+
+- Maintain an int `size` indicating how many items are currently in the stack. Thus, even if the array has room for 8 items, if `size` is 5, only the first 5 items are considered part of the stack.
+- If anyone tries to push onto a full stack, copy all of the current items into a new, larger array first.
+
+Here is code for the array-based implementation:
+
+```java
+public class ArrayStack<T> implements Stack<T> {
+
+    private T[] data;
+
+    private int size;
+
+    public ArrayStack() {
+        data = (T[]) new Object[1];
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    @Override
+    public T pop() {
+        size--;
+        return data[size];
+    }
+
+    @Override
+    public void push(T item) {
+        if (size == data.length) { // Array is full; resize
+            T[] d = (T[]) new Object[data.length * 2];
+            for (int i = 0; i < size; i++) {
+                d[i] = data[i];
+            }
+            data = d;
+        }
+        data[size] = item;
+        size++;
+    }
+
+}
+
+```
+
+
 ## Linked Implementation
 ## Additional Resources
 ## Questions
+1. :star: In the array-based implementation, does `size` indicate the index of the current top item or the index of the next item to be pushed?
 1. :star::star: Here is a linked stack:
 
     ![s is a linked stack containing, from top to bottom, 5, 2, 7](linked_stack_example.svg)
@@ -30,6 +95,7 @@ in Java, an abstract data type is represented by an [interface](../oop/interface
     s.push(8);
     ```
 ## Answers
+1. The next item to be pushed. The current top item, if there is one, is at index `size - 1`.
 1.
     ![s is a linked stack containing, from top to bottom, 8, 2, 7](linked_stack_after.svg)
     
