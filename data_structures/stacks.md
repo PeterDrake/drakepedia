@@ -101,8 +101,11 @@ or less than 2 copies (constant) per item.
     s.pop();
     s.push(8);
     ```
+1. It would save space to replace the epxression `data.length * 2` in the `push` method of ArrayBasedStack with `data.length + 1`. What effect would this have on the amortized running time of `push`?
 ## Answers
 1. The next item to be pushed. The current top item, if there is one, is at index `size - 1`.
 1.
     ![s is a linked stack containing, from top to bottom, 8, 2, 7](linked_stack_after.svg)
-    
+1. The total amount of copying in pushing *n* items would become
+    1 + 2 + 3 + ... + *n* = *n*(*n* + 1) / 2
+    which is (*n* + 1) / 2 copies per item. The amortized time is therefore linear.
