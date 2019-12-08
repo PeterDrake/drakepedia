@@ -4,15 +4,15 @@
 
 An *abstract data type* defines a data type and associated operations. It does not say anything about how these operations are implemented; it merely conveys the idea of the data type.
 
-The *stack* abstract data type defines a stack as a sequence of items, with the following operations:
+The *stack* abstract data type defines a stack as a vertical sequence of items, with the following operations:
 
 - `isEmpty` returns true if the stack is empty
 - `pop` removes and returns the top item from the stack
 - `push` adds an item to the top of the stack
 
-The standard metaphor for a stack is one of those spring-loaded stacks of plates you might find in a cafeteria. You can push a new plate onto the stack or pop one off the top, but there's no way to access the plates underneath. Stacks are said to be *last in, first out* (LIFO).
+The standard metaphor for a stack is one of those spring-loaded stacks of plates you might find in a cafeteria. You can push a new plate onto the stack or pop one off the top, but there's no way to access the plates underneath. The sequence of previously-viewed pages that your web browser maintains to allow you to go back is also represented as a stack.
 
-The sequence of previously-viewed pages that your web browser maintains to allow you to go back is represented as a stack.
+Stacks are said to be *last in, first out* (LIFO).
 
 in Java, an abstract data type is represented by an [interface](../oop/interfaces.md). The Stack interface looks like this:
 
@@ -137,6 +137,7 @@ All three stack methods take constant time.
 
 ## Questions
 1. :star: In the array-based implementation, does `size` indicate the index of the current top item or the index of the next item to be pushed?
+1. :star: What is the amortized running time of all three stack operations in both array-based and linked implementations?
 1. :star::star: Here is a linked stack:
 
     ![s is a linked stack containing, from top to bottom, 5, 2, 7](linked_stack_example.svg)
@@ -148,9 +149,21 @@ All three stack methods take constant time.
     s.pop();
     s.push(8);
     ```
-1. It would save space to replace the epxression `data.length * 2` in the `push` method of ArrayBasedStack with `data.length + 1`. What effect would this have on the amortized running time of `push`?
+1. :star::star: It would save space to replace the epxression `data.length * 2` in the `push` method of ArrayBasedStack with `data.length + 1`. What effect would this have on the amortized running time of `push`?
+1. :star::star: What does the code below do?
+    ```java
+    Stack<String> s = new ArrayStack<String>();
+    In in = new In("file.txt");
+    while (in.hasNextLine()) {
+        s.push(in.readLine());
+    }
+    while (!s.isEmpty()) {
+        StdOut.println(s.pop());
+    }
+    ```
 ## Answers
 1. The next item to be pushed. The current top item, if there is one, is at index `size - 1`.
+1. Constant.
 1.
     ![s is a linked stack containing, from top to bottom, 8, 2, 7](linked_stack_after.svg)
 1. The total amount of copying in pushing *n* items would become
@@ -158,3 +171,4 @@ All three stack methods take constant time.
     1 + 2 + 3 + ... + *n* = *n*(*n* + 1) / 2
     
     which is (*n* + 1) / 2 copies per item. The amortized time is therefore linear.
+1. It prints the lines of `file.txt` in reverse order.
