@@ -107,5 +107,7 @@ or less than 2 copies (constant) per item.
 1.
     ![s is a linked stack containing, from top to bottom, 8, 2, 7](linked_stack_after.svg)
 1. The total amount of copying in pushing *n* items would become
+
     1 + 2 + 3 + ... + *n* = *n*(*n* + 1) / 2
+    
     which is (*n* + 1) / 2 copies per item. The amortized time is therefore linear.
