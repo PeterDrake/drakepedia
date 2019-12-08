@@ -87,7 +87,54 @@ Clearly the `isEmpty` and `pop` operations take constant time.
 or less than 2 copies (constant) per item.
 
 ## Linked Implementation
+
+A linked implementation uses a chain of linked list nodes. The LinkedStack object knows about the top node, which knows about the next node, and so on. Here is the code:
+
+```java
+public class LinkedStack<T> implements Stack<T> {
+
+    private class Node {
+
+        T item;
+
+        Node next;
+
+        Node(T item, Node next) {
+            this.item = item;
+            this.next = next;
+        }
+
+    }
+
+    private Node top;
+
+    @Override
+    public boolean isEmpty() {
+        return top == null;
+    }
+
+    @Override
+    public T pop() {
+        T result = top.item;
+        top = top.next;
+        return result;
+    }
+
+    @Override
+    public void push(T item) {
+        top = new Node(item, top);
+    }
+
+}
+```
+
+All three stack methods take constant time.
+
 ## Additional Resources
+
+- Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 4.3](https://introcs.cs.princeton.edu/java/43stack/)
+- Cormen *et al.*, *Introduction to Algorithms, 3rd Edition*, Section 10.1
+
 ## Questions
 1. :star: In the array-based implementation, does `size` indicate the index of the current top item or the index of the next item to be pushed?
 1. :star::star: Here is a linked stack:
