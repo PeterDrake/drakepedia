@@ -78,6 +78,9 @@ public class ArrayStack<T> implements Stack<T> {
 
 ```
 
+Clearly the `isEmpty` and `pop` operations take constant time.
+
+`push` takes constant time in the best case, but in the worst case (when the array was full) it takes linear time to copy all of the items currently in the stack into the larger array. It turns out that `push` takes constant [amortized time](../algorithms/analysis.md#Best-Case-Average-Worst-Case-and-Amortized Analysis).
 
 ## Linked Implementation
 ## Additional Resources
