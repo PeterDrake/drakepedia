@@ -2,7 +2,7 @@
 
 ## Abstract Data Type
 
-An *abstract data type* defines a data type and the associated operations. It does not say anything about how these operations are implemented; it merely conveys the idea of the data type.
+An *abstract data type* defines a data type and associated operations. It does not say anything about how these operations are implemented; it merely conveys the idea of the data type.
 
 The *stack* abstract data type defines a stack as a sequence of items, with the following operations:
 
