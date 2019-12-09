@@ -1,7 +1,7 @@
 # Queues
 ## Abstract Data Type
 
-A *queue* (pronounced like the letter Q) is similar to a stack, but items are added at one end (the back) and removed from the other (the front). The metaphor is a line of people waiting to buy tickets: new people arrive at the back and (after buying their tickets) leave from the front. Britons call such a line a queue and will talk about "queuing up". Because items leave in the same order they arrive, queues are *first in, first out* (FIFO).
+A *queue* (pronounced like the letter Q) is similar to a [stack](stack.md), but items are added at one end (the back) and removed from the other (the front). The metaphor is a line of people waiting to buy tickets: new people arrive at the back and (after buying their tickets) leave from the front. Britons call such a line a queue and will talk about "queuing up". Because items leave in the same order they arrive, queues are *first in, first out* (FIFO).
 
 The operations are:
 
@@ -130,16 +130,6 @@ public class LinkedQueue<T> implements Queue<T> {
         return front == null;
     }
 
-    public static void main(String[] args) {
-        Queue<Integer> q = new LinkedQueue<>();
-        q.enqueue(1);
-        q.enqueue(2);
-        q.enqueue(3);
-        while (!q.isEmpty()) {
-            StdOut.println(q.dequeue());
-        }
-    }
-
 }
 ```
 
@@ -151,6 +141,7 @@ All operations take constant time.
 - Cormen *et al.*, *Introduction to Algorithms, 3rd Edition*, Section 10.1
 
 ## Questions
+1. :star: What is the difference between a stack and a queue?
 1. :star::star: Here is an array-based queue:
 
     ![q is an array-based queue. The data array contains 5, 2, 7, and an unused cell. Front is 0 and back is 3.](array_queue_example.svg)
@@ -162,8 +153,21 @@ All operations take constant time.
     q.dequeue();
     q.enqueue(8);
     ```
+1. :star::star: What does the code below do?
+    ```java
+    Queue<String> q = new LinkedQueue<String>();
+    In in = new In("file.txt");
+    while (in.hasNextLine()) {
+        q.enqueue(in.readLine());
+    }
+    while (!q.isEmpty()) {
+        StdOut.println(q.dequeue());
+    }
+    ```
 ## Answers
+1. A stack is last in, first out and a queue is first in, first out.
 1. &nbsp;
 
     ![q is an array-based queue. The data array contains 8, an unused cell, 7, and 4. Front is 2 and back is 1.](array_queue_after.svg)
     
+1. It prints the lines of `file.txt` in their original order.
