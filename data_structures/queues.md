@@ -135,7 +135,7 @@ public class LinkedQueue<T> implements Queue<T> {
 
 All operations take constant time.
 
-## Additional Resources
+## Resources
 
 - Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 4.3](https://introcs.cs.princeton.edu/java/43stack/)
 - Cormen *et al.*, *Introduction to Algorithms, 3rd Edition*, Section 10.1
