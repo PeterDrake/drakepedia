@@ -130,7 +130,7 @@ public class LinkedStack<T> implements Stack<T> {
 
 All three stack methods take constant time.
 
-## Additional Resources
+## Resources
 
 - Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 4.3](https://introcs.cs.princeton.edu/java/43stack/)
 - Cormen *et al.*, *Introduction to Algorithms, 3rd Edition*, Section 10.1
