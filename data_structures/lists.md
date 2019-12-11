@@ -90,7 +90,7 @@ public class ArrayList<T> implements List<T> {
 
 ```
 
-The `addAt` and `removeAt` methods take linear time in the worst case. In the best case, when the item being added or removed is at the back end of the list, they take constant time.
+The `addAt` and `removeAt` methods take linear time in the worst case. In the best case, when the item being added or removed is at the back end of the list, they take constant amortized time.
 
 ## Linked Implementation
 
@@ -173,7 +173,7 @@ public class LinkedList<T> implements List<T> {
 
 ```
 
-Again, `addAt` and `removeAt` take linear time in the worst case and consant time in the best case, but here the best case is adding or removing something from the *front* of the list. `get`, `set`, and `size` now also take linear time in the worst case because they must walk down the list to find the item in question.
+Again, `addAt` and `removeAt` take linear time in the worst case and constant time in the best case, but here the best case is adding or removing something from the *front* of the list. `get`, `set`, and `size` now also take linear time in the worst case because they must walk down the list to find the item in question.
 
 ## Iterables
 
@@ -249,7 +249,7 @@ public Iterator<T> iterator() {
 
 private class LinkedListIterator implements Iterator<T> {
 
-    private Node current;
+    Node current;
 
     public LinkedListIterator() {
         current = front;
@@ -280,7 +280,18 @@ private class LinkedListIterator implements Iterator<T> {
 1. :star: Of the following operations, which take linear time in the worst case for an array-based list? `addAt`, `get`, `removeAt`, `set`, `size`.
 1. :star: Of the following operations, which take linear time in the worst case for a linked list? `addAt`, `get`, `removeAt`, `set`, `size`.
 1. :star: Describe a situation where a LinkedList is faster than an ArrayList.
+1. :star::star: Suppose `nums` is a `List<Integer>`. A programmer who is unaware of the `size` method tries to count the number of items in `nums` with the following code:
+    ```java
+    Iterator<Integer> iter = nums.iterator();
+    int count = 0;
+    while (iter.hasNext()) {
+        count++;
+    }
+    StdOut.println(count);
+    ```
+    It goes into an infinite loop. Why?
 ## Answers
 1. `addAt` and `removeAt`.
 1. All of them.
 1. Adding or removing the first item of a list takes constant time with a LinkedList but linear time with an ArrayList.
+1. `hasNext`, unlike `next`, does not advance the iterator down the list; it merely reports the current state of the iterator. This could be fixed by adding `iter.next();` inside the while loop.
