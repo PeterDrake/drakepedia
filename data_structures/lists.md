@@ -173,7 +173,7 @@ public class LinkedList<T> implements List<T> {
 
 ```
 
-Again, `addAt` and `removeAt` take linear time in the worst case and consant time in the best case, but here the best case is adding or removing something from the *front* of the list. `get` and `set` now also take linear time in the worst case because they must walk down the list to find the item in question.
+Again, `addAt` and `removeAt` take linear time in the worst case and consant time in the best case, but here the best case is adding or removing something from the *front* of the list. `get`, `set`, and `size` now also take linear time in the worst case because they must walk down the list to find the item in question.
 
 ## Iterables
 
@@ -273,7 +273,14 @@ private class LinkedListIterator implements Iterator<T> {
 ## Resources
 
 - Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 4.3](https://introcs.cs.princeton.edu/java/43stack/)
-- Cormen *et al.*, *Introduction to Algorithms, 3rd Edition*, Section 10.1
+- Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Section 9.1.3
 
 ## Questions
+
+1. :star: Of the following operations, which take linear time in the worst case for an array-based list? `addAt`, `get`, `removeAt`, `set`, `size`.
+1. :star: Of the following operations, which take linear time in the worst case for a linked list? `addAt`, `get`, `removeAt`, `set`, `size`.
+1. :star: Describe a situation where a LinkedList is faster than an ArrayList.
 ## Answers
+1. `addAt` and `removeAt`.
+1. All of them.
+1. Adding or removing the first item of a list takes constant time with a LinkedList but linear time with an ArrayList.
