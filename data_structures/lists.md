@@ -1,7 +1,7 @@
 # Lists
 ## Abstract Data Type
 
-A *list* is a sequence of elements. It is similar to an array, but it can be resized. The exact set of operations available varies from one library to another, but in general a list must support getting and setting items at particular locations, inserting and removing items while maintaining the order of the other items, and iterating through the list. A bare-bones interface is given below.
+A *list* is a sequence of elements. It is similar to an array, but it can be resized. The exact set of operations available varies from one library to another, but in general a list must support getting and setting items at particular indices, inserting and removing items while maintaining the order of the other items, and iterating through the list. A bare-bones interface is given below.
 
 ```java
 public interface List<T> extends Iterable<T> {
