@@ -26,6 +26,7 @@
     ```
 1. :star::star: How can quicksort be modified to make the worst case extremely unlikely?
 1. :star::star: How does bucket sort beat the lower bound on sorting?
+1. :star::star: Briefly explain the difference between insertion sort and selection sort.
 ## Answers
 1. ![order n squared](https://latex.codecogs.com/svg.latex?\Theta(n^2))
 1. ![order n log n](https://latex.codecogs.com/svg.latex?\Theta(n\log&space;n)), in both the best and worst case.
@@ -34,3 +35,4 @@
 1. Insertion sort.
 1. Shuffle the array before sorting.
 1. It makes the additional assumption that the data are uniformly distributed across a known range. Since it uses arithmetic to place keys into buckets, it is not a comparison sort and the lower bound does not apply.
+1. Insertion sort repeatedly finds the next item in the unsorted region and inserts it among the already sorted items. Selection sort repeatedly finds the smallest item among the unsorted items and adds it to the end of the sorted region.
