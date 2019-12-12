@@ -5,6 +5,7 @@
 ## Merge Sort
 ## Quicksort
 ## Heapsort
+## Lower Bound on Sorting
 ## Bucket Sort
 ## Resources
 ## Questions
@@ -12,6 +13,7 @@
 1. :star: What is the order of the running time of mergesort?
 1. :star: What is the order of the worst-case running time of heapsort?
 1. :star: When is insertion sort the best algorithm to use?
+1. :star: What is the lower bound on the worst-case running time of a comparison sort?
 1. :star::star: Which sorting algorithm is this?
     ```java
     static void sort(int[] arr) {
@@ -32,6 +34,7 @@
 1. ![order n log n](https://latex.codecogs.com/svg.latex?\Theta(n\log&space;n)), in both the best and worst case.
 1. ![order n log n](https://latex.codecogs.com/svg.latex?\Theta(n\log&space;n)).
 1. When sorting very short arrays or arrays that are already nearly sorted.
+1. ![big omega of n log n](https://latex.codecogs.com/svg.latex?\Omega(n\log&space;n))
 1. Insertion sort.
 1. Shuffle the array before sorting.
 1. It makes the additional assumption that the data are uniformly distributed across a known range. Since it uses arithmetic to place keys into buckets, it is not a comparison sort and the lower bound does not apply.
