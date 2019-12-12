@@ -15,8 +15,8 @@
 
     ![6 is the black root. Its children are 4, red, and 7, black. 4's children, both black, are 2 and 5. 2 has a red left child 1.](rbtree2.svg)
 ## Answers
-1. ![order log n](https://latex.codecogs.com/svg.latex?\Theta(log&space;n))
-1. ![order log n](https://latex.codecogs.com/svg.latex?\Theta(log&space;n))
+1. ![order log n](https://latex.codecogs.com/svg.latex?\Theta(\log&space;n))
+1. ![order log n](https://latex.codecogs.com/svg.latex?\Theta(\log&space;n))
 1. Increasing order (or decreasing order).
 1.
     ![5 is the root. Its children are 2 and 6. 2's children are 1 and 3. 6 has only a right child, 7.](bst_after_deletion.svg)
