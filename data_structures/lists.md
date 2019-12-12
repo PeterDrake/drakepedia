@@ -233,7 +233,7 @@ private class ArrayListIterator implements Iterator<T> {
 }
 ```
 
-Inexplicably, the Iterator interface is in the java.util package, so the following line must appear before the definition of ArrayList:
+[Surprisingly](https://stackoverflow.com/questions/6906215/why-are-iterablee-and-iteratore-in-different-packages), the Iterator interface is in the java.util package, so the following line must appear before the definition of ArrayList:
 
 ```java
 import java.util.Iterator;
