@@ -3,6 +3,7 @@
 ## Resources
 ## Questions
 1. :star: What is the order of the average running time of the search operation on a binary search tree?
+1. :star::star: In what order would you insert the numbers 1 through 100 into a binary search tree to make the tree perform as poorly as possible?
 1. :star::star: Draw the binary search tree below after deleting 4.
 
     ![4 is the root. Its children are 2 and 6. 2's children are 1 and 3. 6's children are 5 and 7.](bst.svg)
@@ -14,6 +15,7 @@
     ![6 is the black root. Its children are 4, red, and 7, black. 4's children, both black, are 2 and 5. 2 has a red left child 1.](rbtree2.svg)
 ## Answers
 1. ![order n log n](https://latex.codecogs.com/svg.latex?\Theta(n\log&space;n))
+1. Increasing order (or decreasing order).
 1.
     ![5 is the root. Its children are 2 and 6. 2's children are 1 and 3. 6 has only a right child, 7.](bst_after_deletion.svg)
 1.
