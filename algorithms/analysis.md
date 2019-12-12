@@ -188,7 +188,7 @@ This can be verified by substituting the solution into the recurrence relation.
 
 Solving recurrence relations is an advanced topic, but fortunately a few specific cases cover most of the recursive algorithms you'll encounter. They are summarized in the table below, which omits the base case lines as they don't affect the order of the solutions.
 
-Recurrence | Solution Order
+Recurrence Relation | Solution Order
 -|-
 ![t of n equals n plus t of n minus 1](https://latex.codecogs.com/svg.latex?T(n)=n+T(n-1)) | ![order n squared](https://latex.codecogs.com/svg.latex?\Theta(n^2))
 ![t of n equals n plus 2 times t of n over 2](https://latex.codecogs.com/svg.latex?T(n)=n+2T(n/2)) | ![order n log n](https://latex.codecogs.com/svg.latex?\Theta(n\log&space;n))
@@ -205,7 +205,7 @@ Recurrence | Solution Order
 - [Big-O Emoji](https://devrant.com/rants/1858258/big-o-emoji)
 
 ## Questions
-1. :star: What is the order of the solution to the recurrence ![t of n equals n plus 2 times t of n over 2](https://latex.codecogs.com/svg.latex?T(n)=n+2T(n/2))?
+1. :star: What is the order of the solution to the recurrence relation ![t of n equals n plus 2 times t of n over 2](https://latex.codecogs.com/svg.latex?T(n)=n+2T(n/2))?
 1. :star::star: What's wrong with the following statement?
    > Since ![n cubed](https://latex.codecogs.com/svg.latex?n^3) grows more quickly than ![n squared](https://latex.codecogs.com/svg.latex?n^2), an algorithm with cubic running time is faster than one with quadratic running time.
 1. :star::star: Suppose we know that ![f of n is in big o of n squared](https://latex.codecogs.com/svg.latex?f(n)\in&space;O(n^2)), ![g of n is in big o of n cubed](https://latex.codecogs.com/svg.latex?g(n)\in&space;O(n^3)), and ![h of n is in big omega of n cubed](https://latex.codecogs.com/svg.latex?h(n)\in&space;\Omega(n^3)).
