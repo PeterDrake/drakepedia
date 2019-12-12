@@ -3,7 +3,7 @@
 ## Resources
 ## Questions
 1. :star: What is the order of the average running time of the search operation on a binary search tree?
-1. :star: What is the order of the worst-case running time of insertion on a red-black tree?
+1. :star: What is the order of the worst-case running time of insertion into a red-black tree?
 1. :star::star: In what order would you insert the numbers 1 through 100 into a binary search tree to make the tree perform as poorly as possible?
 1. :star::star: Draw the binary search tree below after deleting 4.
 
