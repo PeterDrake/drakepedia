@@ -15,7 +15,8 @@
 
     ![There are 4 vertices, labeled A through D. The weight along the edge AB is 1, AC is 2, AD is 6, BC is 3, BD is 4, and CD is 5.](mst.svg)
 1. :star::star: Why are negative weight cycles a problem when finding shortest paths?
-1. :star::star: Which problem is *not* solved using an algorithm based on depth-first search: topological sorting, minimum spanning tree, or connected components?
+1. :star::star: Which problem is *not* solved using an algorithm based on depth-first search: topological sorting, minimum spanning tree, or connected components?'
+1. :star::star: In modern programming languages like Java and Python, objects are deleted (their memory is reclaimed) when they are no longer reachable variables. This is called garbage collection. Suppose several variables refer to objects and objects can contain multiple references to other objects. Describe an algorithm that can find all of the reachable objects.
     
 ## Answers
 1. ![order V plus E](https://latex.codecogs.com/svg.latex?\Theta(V+E))
@@ -29,3 +30,4 @@
     ![The edges of weights 1, 2, and 4 are included.](mst_solved.svg)
 1. If a path contains a negative weight cycle, "shortest path" is not well-defined; a shorter path can always be found by making another lap around the cycle.
 1. Minimum spanning tree.
+1. Perform a depth-first search from each variable.
