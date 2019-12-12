@@ -205,6 +205,7 @@ Recurrence | Solution Order
 - [Big-O Emoji](https://devrant.com/rants/1858258/big-o-emoji)
 
 ## Questions
+1. :star: What is the order of the solution to the recurrence ![t of n equals n plus 2 times t of n over 2](https://latex.codecogs.com/svg.latex?T(n)=n+2T(n/2))?
 1. :star::star: What's wrong with the following statement?
    > Since ![n cubed](https://latex.codecogs.com/svg.latex?n^3) grows more quickly than ![n squared](https://latex.codecogs.com/svg.latex?n^2), an algorithm with cubic running time is faster than one with quadratic running time.
 1. :star::star: Suppose we know that ![f of n is in big o of n squared](https://latex.codecogs.com/svg.latex?f(n)\in&space;O(n^2)), ![g of n is in big o of n cubed](https://latex.codecogs.com/svg.latex?g(n)\in&space;O(n^3)), and ![h of n is in big omega of n cubed](https://latex.codecogs.com/svg.latex?h(n)\in&space;\Omega(n^3)).
@@ -248,6 +249,7 @@ Recurrence | Solution Order
 1. :star::star::star: Read the definition of ![tilde](https://latex.codecogs.com/svg.latex?\sim) notation on the Sedgewick & Wayne booksite. Given two functions ![f(n)](https://latex.codecogs.com/svg.latex?f(n)) and ![g of n](https://latex.codecogs.com/svg.latex?g(n)), what is the relationship between the statements ![f of n tilde g of n](https://latex.codecogs.com/svg.latex?f(n)\sim&space;g(n)) and ![f of n is in big theta of g of n](https://latex.codecogs.com/svg.latex?f(n)\in&space;\Theta(g(n)))? In other words, does one statement imply the other, vice versa, neither, or both?
 1. :star::star::star: The notation ![f is in big o of g](https://latex.codecogs.com/svg.latex?f\in&space;O(g)) means that ![f](https://latex.codecogs.com/svg.latex?f) is either in the same order as ![g](https://latex.codecogs.com/svg.latex?g) or a lower order. Is there a notation that means ![f](https://latex.codecogs.com/svg.latex?f) is in a strictly lower order?
 ## Answers
+1. ![order n log n](https://latex.codecogs.com/svg.latex?\Theta(n\log&space;n))
 1. If the running time grows quickly, then it is very large for large values of ![n](https://latex.codecogs.com/svg.latex?n). To have a large running time is to be slow.
 1.
    1. Nothing.
