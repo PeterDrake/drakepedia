@@ -49,6 +49,7 @@ The average running time is also logarithmic because about half of the array ele
 
 ## Questions
 1. :star: What is the order of the worst-case running time of binary search?
+1. :star: What must be true of an array for binary search to be used on it?
 1. :star::star: What is the order of the best-case running time of linear search?
 1. :star::star: Complete the method below.
     ```java
@@ -61,6 +62,7 @@ The average running time is also logarithmic because about half of the array ele
 1. :star::star::star: To find the midpoint, Sedgewick and Wayne use the expression `lo + (hi - lo) / 2`. Wouldn't `(lo + hi) / 2` work just as well and be slightly more efficient?
 ## Answers
 1. ![order log n](https://latex.codecogs.com/svg.latex?\Theta(\log&space;n))
+1. It must be sorted.
 1. Constant. This would happen if the first element of the array was they key being sought.
 1.
     ```java
