@@ -33,7 +33,7 @@ The space taken by this representation is in ![order v + e](https://latex.codeco
 - Cormen *et al.*, *Introduction to Algorithms*, 3rd Edition, Section 22.1 
 ## Questions
 1. :star: What is the singular form of the plural noun "vertices"?
-1. :star: What is the difference between a directed and and undirected graph?
+1. :star: What is the difference between a directed and an undirected graph?
 1. :star::star: What is the maximum number of edges in a graph with ![v](https://latex.codecogs.com/svg.latex?v) vertices? Assume an edge cannot connect a vertex to itself.
 ## Answers
 1. "vertex"
