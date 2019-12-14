@@ -28,7 +28,7 @@ The notation `extends Iterable<T>` is explained below.
 
 ## Array-Based Implementation
 
-The array-based implementation is very similar to that for a [stacks](stacks.md):
+The array-based implementation is very similar to that for a [stack](stacks.md):
 
 ```java
 import java.util.Iterator;
