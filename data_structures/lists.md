@@ -12,7 +12,7 @@ public interface List<T> extends Iterable<T> {
     /** Returns the item at index i. */
     public T get(int i);
 
-    /** Removes the item at index i, shifting later items to lower indices to close the resulting gap.. */
+    /** Removes the item at index i, shifting later items to lower indices to close the resulting gap. */
     public void removeAt(int i);
 
     /** Sets the item at index i to T. */
