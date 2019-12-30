@@ -15,13 +15,31 @@ An unskilled computer programmer is just as dangerous as an unskilled bridge des
 ## Assignments
 
 ### Late Policy
-Assignment have due dates for your benefit. They help you manage your time and keep up with the rest of the class.
+I have several goals in setting a late policy:
 
-That said, due dates should not be an artificial source of stress. I understand that illnesses, athletic events, technical difficulties, and so on sometimes lead to handing in things late. Just be aware that anything not there when I sit down to grade may not come back to you for a long time.
+* Encourage you to do the work, because practice is where the learning really happens.
+* Help you manage your time and prevent you from getting catastrophically far behind.
+* Minimize the amount of stress you experience when you do run up against a deadline. I understand that illnesses, athletic events, technical difficulties, and so on sometimes lead to handing in things late.
+* Be able to grade everyone's submission to a given assignment at the same time, for efficiency and fairness. 
+* Avoid having to waste my time looking at handin dates, listening to requests for extensions, etc.
+* Have a reasonable point after which I can discuss the assignment in class without giving away the answer to people who haven't done it yet.
 
-If you have a 0 for some assignment (because you didn't turn it in by the time I graded it), you may submit it later and I'll eventually grade it. You may also resubmit as many times as you like before the deadline, because nothing will be graded before then. Once I've graded something, though, I will not grade a second version.
+Each assignment therefore has a due date (when you should turn it in) and a **_one-week grace period_**. Outside of *extreme* circumstances, you can't turn things in after the grace period.
 
-The last day of class at 11:59 PM (my clock, not yours) is an absolute final deadline after which no assignments will be accepted.
+Some time (hopefully a couple of days) after the due date, I (or a teaching assistant) will grade the assignment. If you still have time before the grace period, you may hand in a revised version. After the grace period ends, we will grade again.
+
+| Your Excuse for Missing the Grace Period Deadline | What I'll Say |
+| --- | --- |
+| I was sick for a couple of days. | Sorry, it's already a week late. |
+| My laptop died. | Sorry, it's already a week late. |
+| I had to participate in an athletic event or concert. | Sorry, it's already a week late. |
+| I had to drive my roommate to the hospital. | Sorry, but it's already a week late. |
+| My cat died. | I'm very sorry, but it's already a week late. |
+| I have special accommodations from Student Support Services. | If the one-week grace period is not sufficient, come talk to me. |
+| I was attacked by a llama and I've been in the hospital for a week. | Come talk to me. |
+| I was attacked by two llamas and I've been in the hospital for two months. | You should probably withdraw for the semester. |
+
+**_The last day of class at 11:59 PM (my clock, not yours) is an absolute final deadline after which no assignments will be accepted._**
 
 ### Handing In Assignments
 
