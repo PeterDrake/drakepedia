@@ -18,7 +18,7 @@ An unskilled computer programmer is just as dangerous as an unskilled bridge des
 I have several goals in setting a late policy:
 
 * Encourage you to do the work, because practice is where the learning really happens.
-* Help you manage your time and prevent you from getting catastrophically far behind.
+* Help you manage your time and prevent you from getting catastrophically behind.
 * Minimize the amount of stress you experience when you do run up against a deadline. I understand that illnesses, athletic events, technical difficulties, and so on sometimes lead to handing in things late.
 * Be able to grade everyone's submission to a given assignment at the same time, for efficiency and fairness. 
 * Avoid having to waste my time looking at handin dates, listening to requests for extensions, etc.
@@ -30,14 +30,16 @@ Some time (hopefully a couple of days) after the due date, I (or a teaching assi
 
 | Your Excuse for Missing the Grace Period Deadline | What I'll Say |
 | --- | --- |
-| I was sick for a couple of days. | Sorry, it's already a week late. |
-| My laptop died. | Sorry, it's already a week late. |
-| I had to participate in an athletic event or concert. | Sorry, it's already a week late. |
+| I was sick for a couple of days. | Sorry, but it's already a week late. |
+| My laptop died. | Sorry, but it's already a week late. |
+| I had to participate in an athletic event or concert. | Sorry, but it's already a week late. |
 | I had to drive my roommate to the hospital. | Sorry, but it's already a week late. |
 | My cat died. | I'm very sorry, but it's already a week late. |
-| I have special accommodations from Student Support Services. | If the one-week grace period is not sufficient, come talk to me. |
+| I have special accommodations from Student Support Services. | If the one-week grace period is not sufficient, come talk to me *before* the due date. |
 | I was attacked by a llama and I've been in the hospital for a week. | Come talk to me. |
 | I was attacked by two llamas and I've been in the hospital for two months. | You should probably withdraw for the semester. |
+
+Do not misinterpret the grace period as the "real" deadline. The deadline is the deadline; the grace period is for emergencies.
 
 **_The last day of class at 11:59 PM (my clock, not yours) is an absolute final deadline after which no assignments will be accepted._**
 
