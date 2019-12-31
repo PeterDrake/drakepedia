@@ -34,6 +34,7 @@ Some time (hopefully a couple of days) after the due date, I (or a teaching assi
 | My laptop died. | Sorry, but it's already a week late. |
 | I had to participate in an athletic event or concert. | Sorry, but it's already a week late. |
 | I had to drive my roommate to the hospital. | Sorry, but it's already a week late. |
+| I neglected to set my Canvas account to Pacific time, so the due date was off by one. | Sorry, but it's already a week late. |
 | My cat died. | I'm very sorry, but it's already a week late. |
 | I have special accommodations from Student Support Services. | If the one-week grace period is not sufficient, come talk to me *before* the due date. |
 | I was attacked by a llama and I've been in the hospital for a week. | Come talk to me. |
