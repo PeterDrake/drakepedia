@@ -100,5 +100,8 @@ Working with this other pair on GitHub, review the changes you made. Some things
 If not everyone is satisfied, go back to the beginning and make improvements. The pull request remains open.
 
 When everyone is happy, have someone click on `Merge pull request`. Now your new features have been incorporated into the `master`, so everyone else will get them the next time they pull the latest code and merge from `master`.
+
+Check off the task in Trello, or (if you've finished an entire story) move the story to the Done column.
+
 ## Choose a New Task
-Choose a new task to work on. Often this will be the next task in the same story, but if you've finished an entire story you can pick, from the unclaimed stories, the one that has the highest priority as set by the customer.
+Choose a new task to work on. Often this will be the next task in the same story, but if you've finished an entire story you can pick, from the unclaimed stories, the one that has the highest priority as set by the customer. In that case, attach your names to the card and move it to the In Progress column.
