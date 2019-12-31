@@ -1,6 +1,31 @@
 # Extreme Programming
 ## Overview
 Extreme Programming (XP) is a process for software development. Like other agile methods, it focuses on tight feedback loops, both between the developers and the code and between the developers and the customer. This is intended to keep everyone's expectations accurate and avoid unpleasant surprises.
+
+XP emphasizes certain values and practices.
+
+### Values
+
+* Communication
+* Simplicity
+* Feedback
+* Respect
+* Courage
+
+### Practices
+
+* Testing first
+* Pair programming
+* Sustainable pace
+* Simple design
+* Refactoring
+* Small releases
+* Continuous integration
+* Colelctive code ownership
+* Coding standards
+* Customer involvement
+* The planning game
+
 ## Development Process
 ### Initial Setup
 A couple of things have to happen before the customer and the developers have their first meeting.
