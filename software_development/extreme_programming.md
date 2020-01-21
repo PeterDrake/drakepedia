@@ -21,7 +21,7 @@ XP emphasizes certain values and practices.
 * Refactoring
 * Small releases
 * Continuous integration
-* Colelctive code ownership
+* Collective code ownership
 * Coding standards
 * Customer involvement
 * The planning game
