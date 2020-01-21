@@ -49,7 +49,7 @@ If you're about to issue a pull request, skip this entire step.
 
 Remember that you must **always** be in a clean state before trying to do anything else with git or GitHub; failure to do so  is a good way to lose your work. To get into a clean state, either commit or (if you're **absolutely sure you want to throw away all changes since the last commit**) `git reset --hard HEAD`.
 
-You've now added some new functionality! You can now either repeat this step or go back the beginning. You would go back to the beginning if either:
+You've now added some new functionality! You can now either repeat this step or go back to the beginning. You would go back to the beginning if either:
 - you have completed a task and are ready to share it with the rest of the team, or
 - others have merged some changes into `master` and you want to have access to them.
 
