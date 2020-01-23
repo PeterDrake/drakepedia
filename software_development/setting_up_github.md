@@ -16,6 +16,7 @@ I describe this [elsewhere](../development_tools/intellij_idea.md).
 
    # IntelliJ configuration information
    .idea/
+   *.iml
 
    # Automatic backups created by Emacs
    *~
