@@ -32,10 +32,10 @@ Here's an outline of the process:
 
 **The navigator should keep this page open and always know where you are in the checklist.**
 
-## Choose a task
-### Choose a story
+## 1 Choose a task
+### 1.i Choose a story
 On Trello, you and your partner should be attached to a card in the In Progress column. If you're here because you just finished a story, pick a new one from the current iteration in the Iterations column; if there aren't any, pick a story from the next iteration. Don't skip ahead to a story that looks easy or interesting; respect the customer's priorities about what to work on next.
-### Choose a task
+### 1.ii Choose a task
 If the story has a checklist of tasks in it, pick the next task in the list.
 
 ## Get the latest version of your team's work
