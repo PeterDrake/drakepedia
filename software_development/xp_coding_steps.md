@@ -18,12 +18,11 @@ Here's an outline of the process. **The navigator should keep this page open and
     1. [Merge from master](#2iv-merge-from-master)
 1. [Write/edit code](#3-writeedit-code)
     1. [Make sure you are in a clean state and on the right branch](#3i-make-sure-you-are-in-a-clean-state-and-on-the-right-branch)
-    1. [Unless you're just refactoring, write and fail new unit tests](#3ii-unless-youre-just-refactoring-write-and-fail-new-unit-tests)
-    1. [Commit the tests](#3iii-commit-the-tests)
-    1. [Write/edit code](#3iv-writeedit-code)
-    1. [Run tests; if they fail, go back to (3.iv)](#3v-run-tests-if-they-fail-go-back-to-3iv)
-    1. [Commit locally](#3vi-commit-locally)
-    1. [Go back to (3.ii) unless you've finished a task or it's almost the end of the session](#3vii-go-back-to-3ii-unless-youve-finished-a-task-or-its-almost-the-end-of-the-session)
+    1. [Unless you're just refactoring, write new unit tests](#3ii-unless-youre-just-refactoring-write-new-unit-tests)
+    1. [Write/edit code](#3iii-writeedit-code)
+    1. [Run tests; if they fail, go back to (3.iii)](#3iv-run-tests-if-they-fail-go-back-to-3iv)
+    1. [Commit locally](#3v-commit-locally)
+    1. [Go back to (3.ii) unless you've finished a task or it's almost the end of the session](#3vi-go-back-to-3ii-unless-youve-finished-a-task-or-its-almost-the-end-of-the-session)
 1. [Share your work with your team](#4-share-your-work-with-your-team)
     1. [Get the latest version of your team's work](#4i-get-the-latest-version-of-your-teams-work)
     1. [Issue a pull request](#4ii-issue-a-pull-request)
@@ -177,29 +176,25 @@ Make sure that the merge worked. If you get an error message indicating a merge 
 
 This is the same as (2.i), but also make sure the correct branch is showing.
 
-### 3.ii Unless you're just refactoring, write and fail new unit tests
+### 3.ii Unless you're just refactoring, write new unit tests
 
-In test-driven development, every change should be either refactoring or trying to pass some test.
+In test-driven development, every change should be either refactoring or trying to pass some test. The tests should fail at this point. Be sure to commit them as described in (2.i).
 
-### 3.iii Commit the tests
-
-See (2.i) for instructions on committing.
-
-### 3.iv Write/edit code
+### 3.iii Write/edit code
 
 You'll spend most of your time here ...
 
-### 3.v Run tests; if they fail, go back to (3.iv)
+### 3.iv Run tests; if they fail, go back to (3.iii)
 
 If they pass, bask in the glow of the green bar.
 
-### 3.vi Commit locally
+### 3.v Commit locally
 
 See (2.i) for instructions on committing.
 
-### 3.vii Go back to (3.ii) unless you've finished a task or it's almost the end of the session
+### 3.vi Go back to (3.ii) unless you've finished a task or it's almost the end of the session
 
-You will probably spend most of your time in (3.ii) through (3.vii). This should result in very frequent commits -- *at least* once per hour, ideally even more often. Committing every few minutes is perfectly reasonable.
+You will probably spend most of your time in (3.ii) through (3.vi). This should result in very frequent commits -- *at least* once per hour, ideally even more often. Committing every few minutes is perfectly reasonable.
 
 ## 4 Share your work with your team
 
