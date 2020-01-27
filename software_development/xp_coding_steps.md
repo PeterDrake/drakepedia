@@ -12,11 +12,11 @@ Here's an outline of the process:
     1. [Choose a story](#1i-choose-a-story)
     1. [Choose a task](#1ii-choose-a-task)
 1. [Get the latest version of your team's work](#2-get-the-latest-version-of-your-teams-work)
-    1. Make sure you are in a clean state
-    1. Pull everything
-    1. Check out your branch
-    1. Merge from master
-1. Write/edit code
+    1. [Make sure you are in a clean state](#2i-make-sure-you-are-in-a-clean-state)
+    1. [Pull everything](#2ii-pull-everything)
+    1. [Check out your branch](#2iii-check-out-your-branch)
+    1. [Merge from master](#2iv-merge-from-master)
+1. [Write/edit code](#3-writeedit-code)
     1. Make sure you are in a clean state and on the right branch
     1. Unless you're just refactoring, write and fail new unit tests
     1. Commit the tests
