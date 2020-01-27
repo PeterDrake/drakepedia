@@ -8,7 +8,7 @@ Don't spend hours in any one step. Keep moving so that commits and merges are fr
 
 Here's an outline of the process:
 
-1. Choose a task
+[1. Choose a task](#1-choose-a-task)
     1. Choose a story
     1. Choose a task
 1. Get the latest version of your team's work
@@ -172,7 +172,7 @@ git merge master
 
 ---
 
-
+Make sure that the merge worked. If you get an error message indicating a merge conflict, resolve the conflict by editing the offending files and then committing again. **_Do not do anything else until you have resolved the conflict._**
 
 ## 3 Write/edit code
 ### 3.i Make sure you are in a clean state and on the right branch
