@@ -6,7 +6,7 @@ Don't skip steps! That way lies disaster.
 
 Don't spend hours in any one step. Keep moving so that commits and merges are frequent. There are few things less pleasant than merging two branches that haven't communicated with each other in weeks.
 
-Here's an outline of the process:
+Here's an outline of the process. **The navigator should keep this page open and always know where you are in the checklist.**
 
 1. [Choose a task](#1-choose-a-task)
     1. [Choose a story](#1i-choose-a-story)
@@ -30,8 +30,6 @@ Here's an outline of the process:
     1. [Review code](#4iii-review-code)
     1. [If you've finished your task, indicate your progress on Trello and go back to (1)](#4iv-if-youve-finished-your-task-indicate-your-progress-on-trello-and-go-back-to-1)
     1. [If it's not the end of the session, go back to (2)](#4v-if-its-not-the-end-of-the-session-go-back-to-2)
-
-**The navigator should keep this page open and always know where you are in the checklist.**
 
 ## 1 Choose a task
 ### 1.i Choose a story
