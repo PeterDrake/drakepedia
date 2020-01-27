@@ -41,7 +41,8 @@ If the story has a checklist of tasks in it, pick the next task in the list.
 
 ## Get the latest version of your team's work
 ### Make sure you are in a clean state
-Remember that you must always be in a clean state before trying to do anything else with git or GitHub; failure to do so is a good way to lose your work.
+Remember that you must always be in a clean state before trying to do anything else with git or GitHub; failure to do so is a good way to lose your work. If you are *not* in a clean state, you need to either commit or throw away your work since the last commit before proceeding.
+
 #### To check if you are in a clean state
 
 ---
@@ -65,8 +66,6 @@ Default Changelist
 and nothing else.
 
 ---
-
-If you are *not* in a clean state, you need to either commit or throw away your work since the last commit before proceeding.
 
 #### To commit
 ##### Command line
