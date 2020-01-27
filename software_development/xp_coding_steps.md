@@ -21,16 +21,70 @@ Here's an outline of the process:
     1. Make sure you are in a clean state and on the right branch
     1. Unless you're just refactoring, write and fail new unit tests
     1. Write/edit code
-    1. Run tests; if they fail, go back to c
+    1. Run tests; if they fail, go back to (iii)
     1. Commit locally
-    1. Go back to a unless you've finished a task or it's almost the end of the session
+    1. Go back to (i) unless you've finished a task or it's almost the end of the session
 1. Make your work available to your team
     1. Get the latest version of your team's work
     1. Issue a pull request
     1. Review code
-    1. Go back to 1 (if you've finished your task) or 2 (otherwise)
+    1. If you've finished your task, indicate your progress on Trello and go back to (1)
+    1. If it's not the end of the session, go back to (2)
 
 **The navigator should keep this page open and always know where you are in the checklist.**
+
+## 1 Choose a task
+### Choose a story
+On Trello, you and your partner should be attached to a card in the In Progress column. If you're here because you just finished a story, pick a new one from the current iteration in the Iterations column; if there aren't any, pick a story from the next iteration. Don't skip ahead to a story that looks easy or interesting; respect the customer's priorities about what to work on next.
+### Choose a task
+If the story has a checklist of tasks in it, pick the next task in the list.
+
+## Get the latest version of your team's work
+### Make sure you are in a clean state
+Remember that you must always be in a clean state before trying to do anything else with git or GitHub; failure to do so is a good way to lose your work.
+#### To check if you are in a clean state
+##### Command line
+```
+git status
+```
+
+The resulting message tells you what branch you're on if you have changes since the last commit. It should end in
+
+```
+nothing to commit, working tree clean
+```
+##### Intellij IDEA
+`command-9` (Mac) / `alt-9` (Windows) to open the version control tool window. It should say
+```
+Default Changelist
+```
+and nothing else.
+
+#### To commit
+#### To throw away your work since your last commit
+
+
+To get into a clean state, either commit or (if you're absolutely sure you want to throw away all changes since the last commit) git reset --hard HEAD.
+
+### Check out master
+### Pull everything
+### Check out your branch
+### Merge from master
+
+## Write/edit code
+### Make sure you are in a clean state and on the right branch
+### Unless you're just refactoring, write and fail new unit tests
+### Write/edit code
+### Run tests; if they fail, go back to (iii)
+### Commit locally
+### Go back to (i) unless you've finished a task or it's almost the end of the session
+    
+## Make your work available to your team
+### Get the latest version of your team's work
+### Issue a pull request
+### Review code
+### If you've finished your task, indicate your progress on Trello and go back to (1)
+### If it's not the end of the session, go back to (2)
 
 
 UNDER CONSTRUCTION -- CHECK BACK TOMORROW
