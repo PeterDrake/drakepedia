@@ -22,14 +22,14 @@ Here's an outline of the process:
     1. [Commit the tests](#3iii-commit-the-tests)
     1. [Write/edit code](#3iv-writeedit-code)
     1. [Run tests; if they fail, go back to (3.iv)](#3v-run-tests-if-they-fail-go-back-to-3iv)
-    1. Commit locally
-    1. Go back to (3.ii) unless you've finished a task or it's almost the end of the session
-1. Share your work with your team
-    1. Get the latest version of your team's work
-    1. Issue a pull request
-    1. Review code
-    1. If you've finished your task, indicate your progress on Trello and go back to (1)
-    1. If it's not the end of the session, go back to (2)
+    1. [Commit locally](#3vi-commit-locally)
+    1. [Go back to (3.ii) unless you've finished a task or it's almost the end of the session](#3vii-go-back-to-3ii-unless-youve-finished-a-task-or-its-almost-the-end-of-the-session)
+1. [Share your work with your team](#4-share-your-work-with-your-team)
+    1. [Get the latest version of your team's work](#4i-get-the-latest-version-of-your-teams-work)
+    1. [Issue a pull request](#4ii-issue-a-pull-request)
+    1. [Review code](#4iii-review-code)
+    1. [If you've finished your task, indicate your progress on Trello and go back to (1)](#4iv-if-youve-finished-your-task-indicate-your-progress-on-trello-and-go-back-to-1)
+    1. [If it's not the end of the session, go back to (2)](#4v-if-its-not-the-end-of-the-session-go-back-to-2)
 
 **The navigator should keep this page open and always know where you are in the checklist.**
 
