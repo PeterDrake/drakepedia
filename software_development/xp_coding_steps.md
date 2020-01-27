@@ -19,11 +19,12 @@ Here's an outline of the process:
 1. Write/edit code
     1. Make sure you are in a clean state and on the right branch
     1. Unless you're just refactoring, write and fail new unit tests
+    1. Commit the tests
     1. Write/edit code
-    1. Run tests; if they fail, go back to (iii)
+    1. Run tests; if they fail, go back to (3.iii)
     1. Commit locally
-    1. Go back to (i) unless you've finished a task or it's almost the end of the session
-1. Make your work available to your team
+    1. Go back to (3.ii) unless you've finished a task or it's almost the end of the session
+1. Share your work with your team
     1. Get the latest version of your team's work
     1. Issue a pull request
     1. Review code
@@ -64,6 +65,8 @@ Default Changelist
 
 and nothing else.
 
+The current branch is shown at the lower right, after the word `Git:`.
+
 ---
 
 #### To commit
@@ -94,7 +97,7 @@ To add files to version control:
 
 To commit:
 
-`command-k` (Mac) / `ctrl-k` (Windows). Choose `Commit` at the lower right.
+`command-k` (Mac) / `ctrl-k` (Windows). Make sure the right files are checked at the top of the dialog box and that the commit message explains how the program's behavior is different. Choose `Commit` at the lower right.
 
 ---
 
@@ -171,20 +174,72 @@ git merge master
 
 
 
-## Write/edit code
-### Make sure you are in a clean state and on the right branch
-### Unless you're just refactoring, write and fail new unit tests
-### Write/edit code
-### Run tests; if they fail, go back to (iii)
-### Commit locally
-### Go back to (i) unless you've finished a task or it's almost the end of the session
-    
-## Make your work available to your team
-### Get the latest version of your team's work
-### Issue a pull request
-### Review code
-### If you've finished your task, indicate your progress on Trello and go back to (1)
-### If it's not the end of the session, go back to (2)
+## 3 Write/edit code
+### 3.i Make sure you are in a clean state and on the right branch
+
+This is the same as (2.i), but also make sure the correct branch is showing.
+
+### 3.ii Unless you're just refactoring, write and fail new unit tests
+
+In test-driven development, every change should be either refactoring or trying to pass some test.
+
+### 3.iii Commit the tests
+
+See (2.i) for instructions on committing.
+
+### 3.iv Write/edit code
+
+You'll spend most of your time here ...
+
+### 3.v Run tests; if they fail, go back to (3.iv)
+
+If they pass, bask in the glow of the green bar.
+
+### 3.vi Commit locally
+
+See (2.i) for instructions on committing.
+
+### 3.vii Go back to (3.ii) unless you've finished a task or it's almost the end of the session
+
+You will probably spend most of your time in (3.ii) through (3.vii). This should result in very frequent commits -- *at least* once per hour, ideally even more often. Committing every few minutes is perfectly reasonable.
+
+## 4 Share your work with your team
+
+This should happen several times per session. If you end a session without sharing, your team will have a real problem if you are sick or otherwise unavailable next session.
+
+### 4.i Get the latest version of your team's work
+
+This is exactly the same as step (2).
+
+### 4.ii Issue a pull request
+
+Go to the GitHub website for your project. Choose the branch you're on (using the selector on the left end of the line that has the green `Clone or download` button on the right) and choose `New pull request`.
+
+This tells your team, "Our branch has some new functionality. Let's merge it into master."
+
+### 4.iii Review code
+
+Now find another pair in your team to review your code. You may have to wait a few minutes for them to make their next commit so that they can give you their full attention.
+
+Working with this other pair on GitHub, review the changes you made. Some things to consider:
+- Does the new code compile, run, and perform as advertised?
+- Are there thorough unit tests?
+- Do the tests pass?
+- Is the code clean and well-documented?
+- Is there any way the code could be improved?
+
+If not everyone is satisfied, go back (3.ii) if you need a new test or (3.iv) otherwise. The pull request remains open.
+
+When everyone is happy, have someone from the other pair enter a review and click on `Merge pull request`. Now your new features have been incorporated into the `master`.
+
+### 4.iv If you've finished your task, indicate your progress on Trello and go back to (1)
+
+Check off the task. If the story is complete, move it to the Done column.
+
+### 4.v If it's not the end of the session, go back to (2)
+
+You have finished something and are now ready to move on to the next thing!
+
 
 
 UNDER CONSTRUCTION -- CHECK BACK TOMORROW
