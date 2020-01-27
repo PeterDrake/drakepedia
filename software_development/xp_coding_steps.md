@@ -17,11 +17,11 @@ Here's an outline of the process:
     1. [Check out your branch](#2iii-check-out-your-branch)
     1. [Merge from master](#2iv-merge-from-master)
 1. [Write/edit code](#3-writeedit-code)
-    1. Make sure you are in a clean state and on the right branch
-    1. Unless you're just refactoring, write and fail new unit tests
-    1. Commit the tests
-    1. Write/edit code
-    1. Run tests; if they fail, go back to (3.iii)
+    1. [Make sure you are in a clean state and on the right branch](#3i-make-sure-you-are-in-a-clean-state-and-on-the-right-branch)
+    1. [Unless you're just refactoring, write and fail new unit tests](#3ii-unless-youre-just-refactoring-write-and-fail-new-unit-tests)
+    1. [Commit the tests](#3iii-commit-the-tests)
+    1. [Write/edit code](#3iv-writeedit-code)
+    1. [Run tests; if they fail, go back to (3.iv)](#3v-run-tests-if-they-fail-go-back-to-3iv)
     1. Commit locally
     1. Go back to (3.ii) unless you've finished a task or it's almost the end of the session
 1. Share your work with your team
