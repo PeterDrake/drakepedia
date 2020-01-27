@@ -21,14 +21,14 @@ Don't spend hours in any one step. Keep moving so that commits and merges are fr
     1. [Unless you're just refactoring, write new unit tests](#3ii-unless-youre-just-refactoring-write-new-unit-tests)
     1. [Write/edit code](#3iii-writeedit-code)
     1. [Run tests; if they fail, go back to (3.iii)](#3iv-run-tests-if-they-fail-go-back-to-3iii)
-    1. [Commit locally](#3v-commit-locally)
+    1. [Commit](#3v-commit)
     1. [Go back to (3.ii) unless you've finished a task or it's almost the end of the session](#3vi-go-back-to-3ii-unless-youve-finished-a-task-or-its-almost-the-end-of-the-session)
 1. [Share your work with your team](#4-share-your-work-with-your-team)
     1. [Get the latest version of your team's work](#4i-get-the-latest-version-of-your-teams-work)
     1. [Issue a pull request](#4ii-issue-a-pull-request)
     1. [Review code](#4iii-review-code)
-    1. [If you've finished your task, indicate your progress on Trello and go back to (1)](#4iv-if-youve-finished-your-task-indicate-your-progress-on-trello-and-go-back-to-1)
-    1. [If it's not the end of the session, go back to (2)](#4v-if-its-not-the-end-of-the-session-go-back-to-2)
+    1. [Indicate your progress on Trello](#4iv-indicate-your-progress-on-trello)
+    1. [If it's not the end of the session, go back to (1)](#4v-if-its-not-the-end-of-the-session-go-back-to-1)
 
 ## 1 Choose a task
 ### 1.i Choose a story
@@ -68,6 +68,8 @@ The current branch is shown at the lower right, after the word `Git:`.
 
 #### To commit
 
+The instructions below also push your changes up to GitHub *on your branch*. There's nothing wrong with doing this every time you commit locally. You should *definitely* push when you make the last commit in a session.
+
 ---
 
 ##### Command line
@@ -94,7 +96,7 @@ To add files to version control:
 
 To commit:
 
-`command-k` (Mac) / `ctrl-k` (Windows). Make sure the right files are checked at the top of the dialog box and that the commit message explains how the program's behavior is different. Choose `Commit` at the lower right.
+`command-k` (Mac) / `ctrl-k` (Windows). Make sure the right files are checked at the top of the dialog box and that the commit message explains how the program's behavior is different. Choose `Commit and Push` at the lower right.
 
 ---
 
@@ -188,7 +190,7 @@ You've trained for this!
 
 If they pass, bask in the glow of the green bar.
 
-### 3.v Commit locally
+### 3.v Commit
 
 See (2.i) for instructions on committing.
 
@@ -198,7 +200,7 @@ You will probably spend most of your time in (3.ii) through (3.vi). This should 
 
 ## 4 Share your work with your team
 
-This should happen several times per session. If you end a session without sharing, your team will have a real problem if you are sick or otherwise unavailable next session.
+You've finished a task, so it's time to incorporate it into the master branch.
 
 ### 4.i Get the latest version of your team's work
 
@@ -225,10 +227,10 @@ If not everyone is satisfied, go back (3.ii) if you need a new test or (3.iv) ot
 
 When everyone is happy, have someone from the other pair enter a review and click on `Merge pull request`. Now your new features have been incorporated into the `master`.
 
-### 4.iv If you've finished your task, indicate your progress on Trello and go back to (1)
+### 4.iv Indicate your progress on Trello
 
 Check off the task. If the story is complete, move it to the Done column.
 
-### 4.v If it's not the end of the session, go back to (2)
+### 4.v If it's not the end of the session, go back to (1)
 
 You have finished something and are now ready to move on to the next thing!
