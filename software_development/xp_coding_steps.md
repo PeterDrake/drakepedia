@@ -33,7 +33,7 @@ Here's an outline of the process:
 
 **The navigator should keep this page open and always know where you are in the checklist.**
 
-## 1 Choose a task
+## Choose a task
 ### Choose a story
 On Trello, you and your partner should be attached to a card in the In Progress column. If you're here because you just finished a story, pick a new one from the current iteration in the Iterations column; if there aren't any, pick a story from the next iteration. Don't skip ahead to a story that looks easy or interesting; respect the customer's priorities about what to work on next.
 ### Choose a task
@@ -43,6 +43,7 @@ If the story has a checklist of tasks in it, pick the next task in the list.
 ### Make sure you are in a clean state
 Remember that you must always be in a clean state before trying to do anything else with git or GitHub; failure to do so is a good way to lose your work.
 #### To check if you are in a clean state
+---
 ##### Command line
 ```
 git status
@@ -53,14 +54,40 @@ The resulting message tells you what branch you're on if you have changes since 
 ```
 nothing to commit, working tree clean
 ```
-##### Intellij IDEA
+##### IntelliJ IDEA
 `command-9` (Mac) / `alt-9` (Windows) to open the version control tool window. It should say
 ```
 Default Changelist
 ```
 and nothing else.
+---
+If you are *not* in a clean state, you need to either commit or throw away your work since the last commit before proceeding.
 
 #### To commit
+##### Command line
+To add a new file to version control:
+```
+git add yourfile
+```
+
+To commit:
+```
+git commit -am 'Your commit message here'
+```
+
+You should also push your code up to GitHub:
+```
+git push
+```
+
+##### IntelliJ IDEA
+To add files to version control:
+
+`command-9` (Mac) / `alt-9` (Windows) to open the version control tool window. Right-click on files to add them to version control.
+
+To commit:
+
+`command-k` (Mac) / `ctrl-k` (Windows). Choose `Commit and Push` at the lower right.
 #### To throw away your work since your last commit
 
 
