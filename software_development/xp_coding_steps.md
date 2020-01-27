@@ -11,7 +11,7 @@ Here's an outline of the process:
 1. [Choose a task](#1-choose-a-task)
     1. [Choose a story](#1i-choose-a-story)
     1. [Choose a task](#1ii-choose-a-task)
-1. [Get the latest version of your team's work](#-2-get-the-latest-version-of-your-teams-work)
+1. [Get the latest version of your team's work](#2-get-the-latest-version-of-your-teams-work)
     1. Make sure you are in a clean state
     1. Pull everything
     1. Check out your branch
