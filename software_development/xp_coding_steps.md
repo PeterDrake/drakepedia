@@ -1,12 +1,12 @@
 # Extreme Programming Coding Steps
 ## Overview
-Congratulations! You're involved in an Extreme Programming project, your team has met with the customer and done initial planning, and now you and your pair programming partner are ready to start coding. This document gives a checklist to go through as you work. (Don't worry, there's still *plenty* of room for creativity and problem-solving.)
+You're involved in an Extreme Programming project, your team has met with the customer and done initial planning, and now you and your pair programming partner are ready to start coding. This document gives a checklist to go through as you work. (Don't worry, there's still *plenty* of room for creativity and problem-solving.)
 
 Don't skip steps! That way lies disaster.
 
 Don't spend hours in any one step. Keep moving so that commits and merges are frequent. There are few things less pleasant than merging two branches that haven't communicated with each other in weeks.
 
-Here's an outline of the process. **The navigator should keep this page open and always know where you are in the checklist.**
+**The navigator should keep this page open and always know where you are in this checklist.**
 
 1. [Choose a task](#1-choose-a-task)
     1. [Choose a story](#1i-choose-a-story)
@@ -20,7 +20,7 @@ Here's an outline of the process. **The navigator should keep this page open and
     1. [Make sure you are in a clean state and on the right branch](#3i-make-sure-you-are-in-a-clean-state-and-on-the-right-branch)
     1. [Unless you're just refactoring, write new unit tests](#3ii-unless-youre-just-refactoring-write-new-unit-tests)
     1. [Write/edit code](#3iii-writeedit-code)
-    1. [Run tests; if they fail, go back to (3.iii)](#3iv-run-tests-if-they-fail-go-back-to-3iv)
+    1. [Run tests; if they fail, go back to (3.iii)](#3iv-run-tests-if-they-fail-go-back-to-3iii)
     1. [Commit locally](#3v-commit-locally)
     1. [Go back to (3.ii) unless you've finished a task or it's almost the end of the session](#3vi-go-back-to-3ii-unless-youve-finished-a-task-or-its-almost-the-end-of-the-session)
 1. [Share your work with your team](#4-share-your-work-with-your-team)
