@@ -38,8 +38,8 @@ On Trello, you and your partner should be attached to a card in the In Progress 
 ### 1.ii Choose a task
 If the story has a checklist of tasks in it, pick the next task in the list.
 
-## Get the latest version of your team's work
-### Make sure you are in a clean state
+## 2 Get the latest version of your team's work
+### 2.i Make sure you are in a clean state
 Remember that you must always be in a clean state before trying to do anything else with git or GitHub; failure to do so is a good way to lose your work. If you are *not* in a clean state, you need to either *commit* or (on rare occasions) *throw away your work since the last commit* before proceeding.
 
 #### To check if you are in a clean state
@@ -116,25 +116,25 @@ git reset --hard HEAD
 
 ---
 
-### Pull everything
+### 2.ii Pull everything
 
 Pulling both fetches the remote versions of all branches and tries to merge them into your local branches. This *shouldn't* result in any merge conflicts. If it does (because you and someone else were committing on the same branch), you'll have to resolve the conflicts.
 
 ---
 
-##### Command line
+#### Command line
 
 ```
 git pull -all
 ```
 
-##### IntelliJ IDEA
+#### IntelliJ IDEA
 
 `VCS` | `Git` | `Pull`. In the window that pops up, click on the two-circling-arrows icon on the right and check all the branches before clicking `Pull` so you'll get any branches that others have created or updated.
 
 ---
 
-### Check out your branch
+### 2.iii Check out your branch
 
 **_YOU SHOULD NEVER DO ANY CODING WHILE ON THE MASTER BRANCH. ALSO, TWO DIFFERENT PAIRS SHOULD NEVER BE WORKING ON THE SAME BRANCH._**
 
@@ -154,8 +154,22 @@ If you're just checking out an existing branch, leave out the `-b`.
 
 ---
 
+### 2.iv Merge from master
 
-### Merge from master
+This step merges all of the changes from the master branch (including work by other members of your team) into your branch.
+
+---
+
+#### Command Line
+```
+git merge master
+```
+#### IntelliJ IDEA
+`VCS` | `Git` | `Merge Changes...`. Make sure you're on the branch you think you're on, check `master`, and click `Merge`.
+
+---
+
+
 
 ## Write/edit code
 ### Make sure you are in a clean state and on the right branch
