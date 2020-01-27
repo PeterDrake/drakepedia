@@ -8,7 +8,7 @@ Don't spend hours in any one step. Keep moving so that commits and merges are fr
 
 Here's an outline of the process:
 
-[1. Choose a task](#1-choose-a-task)
+1. [Choose a task](#1-choose-a-task)
     1. Choose a story
     1. Choose a task
 1. Get the latest version of your team's work
