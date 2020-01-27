@@ -43,7 +43,9 @@ If the story has a checklist of tasks in it, pick the next task in the list.
 ### Make sure you are in a clean state
 Remember that you must always be in a clean state before trying to do anything else with git or GitHub; failure to do so is a good way to lose your work.
 #### To check if you are in a clean state
+
 ---
+
 ##### Command line
 ```
 git status
@@ -59,8 +61,11 @@ nothing to commit, working tree clean
 ```
 Default Changelist
 ```
+
 and nothing else.
+
 ---
+
 If you are *not* in a clean state, you need to either commit or throw away your work since the last commit before proceeding.
 
 #### To commit
