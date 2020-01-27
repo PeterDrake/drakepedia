@@ -1,12 +1,43 @@
 # Extreme Programming Coding Steps
 ## Overview
-Congratulations! You're involved in an Extreme Programming project, your team has met with the customer and done initial planning, and now you and your pair programming partner are ready to start coding. This document gives a checklist to go through as you work. (Don't worry, there's still *plenty* of room for creativity and problem-solving.) The navigator should keep this page open and always know where you are in the list.
+Congratulations! You're involved in an Extreme Programming project, your team has met with the customer and done initial planning, and now you and your pair programming partner are ready to start coding. This document gives a checklist to go through as you work. (Don't worry, there's still *plenty* of room for creativity and problem-solving.)
 
-Don't skip steps! That way lies madness.
+Don't skip steps! That way lies disaster.
 
 Don't spend hours in any one step. Keep moving so that commits and merges are frequent. There are few things less pleasant than merging two branches that haven't communicated with each other in weeks.
 
 Here's an outline of the process:
+
+1. Choose a task
+    1. Choose a story
+    1. Choose a task
+1. Get the latest version of your team's work
+    1. Make sure you are in a clean state
+    1. Check out master
+    1. Pull everything
+    1. Check out your branch
+    1. Merge from master
+1. Write/edit code
+    1. Make sure you are in a clean state and on the right branch
+    1. Unless you're just refactoring, write and fail new unit tests
+    1. Write/edit code
+    1. Run tests; if they fail, go back to c
+    1. Commit locally
+    1. Go back to a unless you've finished a task or it's almost the end of the session
+1. Make your work available to your team
+    1. Get the latest version of your team's work
+    1. Issue a pull request
+    1. Review code
+    1. Go back to 1 (if you've finished your task) or 2 (otherwise)
+
+**The navigator should keep this page open and always know where you are in the checklist.**
+
+
+UNDER CONSTRUCTION -- CHECK BACK TOMORROW
+
+
+
+
 1. Get the latest version of the code from GitHub
 1. Choose a branch
 1. Merge from `master`
