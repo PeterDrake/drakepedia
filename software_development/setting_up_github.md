@@ -24,7 +24,7 @@ I describe this [elsewhere](../development_tools/intellij_idea.md).
    # Hidden files used by macOS to indicate directory display details, e.g., icon positions
    .DS_Store
    ```
-   For a PyCharm project, omit `out/` and `*.class` but include `venv/`.
+   For a PyCharm project, omit `out/` and `*.class` but include `venv/` and `/workspace.xml`.
 1. Add all remaining files to version control.
    1. `command-9` to open version control tool window.
    1. Select files under `Unversioned Files`.
