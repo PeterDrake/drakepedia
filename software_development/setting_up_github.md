@@ -18,6 +18,10 @@ I describe this [elsewhere](../development_tools/intellij_idea.md).
    .idea/
    *.iml
 
+   # PyCharm configuration information
+   venv/
+   /workspace.xml
+
    # Automatic backups created by Emacs
    *~
 
