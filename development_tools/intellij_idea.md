@@ -39,9 +39,8 @@ You can click on the little triangles at left to expand directories. Your code g
 There are several ways to do this:
 - With the program file open, click on the green "play" triangle next to the class (or next to the main method) and choose `Run`.
 - Right click on the file within the `src` directory and select `Run`.
-- Click on the green play triangle near the top center of the window. This runs the last program that was run; that's
-*usually* what you want, but it can sometimes give surprising results if you've started editing a different file.
-- Hit `ctrl-R` (Mac) / `shift-F10` (Windows), with the same caveat.
+- Click on the green play triangle near the top center of the window. This runs the configuration selected in the pull-down menu to the left the green play triangle.
+- Hit `ctrl-R` (Mac) / `shift-F10` (Windows), ditto.
 - Use the `Run` menu at the top of the screen.
 ### Installing [stdlib](../libraries/stdlib.md)
 1. Download the file stdlib.jar from [Sedgewick & Wayne's website](https://introcs.cs.princeton.edu/java/stdlib/). (The link is right under the table.)
@@ -62,7 +61,11 @@ delicious gravy to be had. My general advice is to keep an eye out for anything 
 a better way; often there is a way to get the IDE to do the boring work for you. Don't get hung up on memorizing all of the
 options, which would be impossible; just learn the features you use often and be vaguely aware of the features you use occasionally (so you can look them up when you need them).
 ### Creating a Program
-Right click on the `src` directory and select `New` | `Java Class`.
+Right click on the `src` directory, select `New` | `Java Class`, select `Class`, and choose a name. It's probably wise also
+to associate your program with a run configuration as follows. Click on the gray down arrow near the green "play" triangle
+near the top center of the window and select `Edit Configurations...`, click on the `+` button in the top left corner,
+select `Application`, give your configuration a `Name` (typically the same as the name of the class you've just chosen),
+type the name of your class again in the `Main class` field, and click `OK`.
 ### Saving and Compiling a Program
 You don't have to do anything! IntelliJ automatically saves every few seconds. It compiles the program (if necessary) every time you run it.
 ### A Few Neat Tricks
