@@ -35,6 +35,18 @@ Expression | Value | Notes
 `"Flower".toLowerCase()`|`"flower"`|Converts to lower case
 `"flower".toUpperCase()`|`"FLOWER"`|Converts to upper case
 
+Because, in most cases, String methods return a new String, you can cascade calls. For instance, you could write:
+```java
+s.replace('X', 'x').startsWith("0x")
+```
+to find out if `s` starts with either `"0x"` or `"0X"`.
+
+or:
+```java
+s.substring(0, 4).toLowerCase()
+```
+to extract the first four characters of `s` and convert them to lower case.
+
 ## Resources
 - Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 1.2](https://introcs.cs.princeton.edu/java/12types/)
 - Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Section 3.6
@@ -49,6 +61,7 @@ Expression | Value | Notes
 1. :star::star::star: How would you convert a String `s` into a `char[]`?
 1. :star::star::star: Can the [for each loop](../control_structures/loops.md#for-each-loops) be used to iterate through the characters of a String `s`?
 1. :star::star::star: The String method `getChars` has a return type of `void`, so it doesn't return a value. Since Strings are immutable, the method also can't modify the String. What's the point of such a method?
+1. :star::star::star: How would find out if a String `s` starts with optional spaces followed by either `"0x"` or `"0X"`?
 
 ## Answers
 1. Yes: `""`
@@ -63,3 +76,4 @@ Expression | Value | Notes
         ...
     }
 1. One of the parameters of `getChars` is an array. The method modifies that array.
+1. `s.trim().replace('X', 'x').startsWith("0x")` or `s.trim().toLowerCase().startsWith("0x")`.
