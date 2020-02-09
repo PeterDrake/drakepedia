@@ -64,6 +64,24 @@ The *scope* of a variable is the region of code where the variable can be access
     int variable = 2;
     int VARIABLE = 3;
     ```
+1. :star: What is the scope of variable `n` in the following code snippet?
+   ```java
+   int fac(int n) {
+       int p = 1;
+       for (int i = 1; i <= n; i++)
+           p = p * i;
+       return p;
+   }
+   ```
+1. :star: What is the scope of variable `i` in the following code snippet?
+   ```java
+   int fac(int n) {
+       int p = 1;
+       for (int i = 1; i <= n; i++)
+           p = p * i;
+       return p;
+   }
+   ```
 1. :star::star: If `alive` is a boolean variable, how can `alive == true` be replaced with a shorter expression?
 1. :star::star: Do `x = y;` and `y = x;` mean the same thing?
 1. :star::star: Is `3 = x;` a legal statement?
@@ -75,6 +93,8 @@ The *scope* of a variable is the region of code where the variable can be access
 1. Yes. It doesn't make sense as algebra, where the `=` symbol is used to *state* that two expressions are equal, but it's fine in Java. It creates a variable `x`, assigns it the value 2, and then replaces that value with 3.
 1. No. Once a variable has been declared, you cannot declare a second variable with the same name in the same scope.
 1. Yes. Since Java is case-sensitive, `variable` and `VARIABLE` are different variables.
+1. The scope of `n` is the entire method `fac()`.
+1. The scope of `i` is the `for` loop.
 1. If `alive == true`, `alive` is true; if not, `alive` is false. In other words, `alive` and `alive == true` always have exactly the same value. The shorter version is always preferable as it is clearer, is more concise, and avoids the risk of accidentally typing `alive = true` (which is an assignment, not a comparison).
 1. No. If `x` was 1 and `y` was 2, then `x = y;` would change `x`'s value to 2, but `y = x;` would change `y`'s value to 1.
 1. No. The value on the left side of an assignment statement must be a variable (or some other place where a value can be stored, like an array element).
