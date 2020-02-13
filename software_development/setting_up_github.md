@@ -28,6 +28,7 @@ Optionally, set up a test directory and a sample class and test.
    .idea/modules.xml
    .idea/modules
    *.ipr
+   *.iml
 
    # IntelliJ / Java information
    out/
