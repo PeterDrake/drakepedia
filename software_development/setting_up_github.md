@@ -13,23 +13,41 @@ Optionally, set up a test directory and a sample class and test.
    ```
    ## This file tells git what NOT to include in version control
 
-   # Compiled files
+   # General JetBrains configuration information
+   .idea/**/workspace.xml
+   .idea/**/tasks.xml
+   .idea/**/usage.statistics.xml
+   .idea/**/dictionaries
+   .idea/**/shelf
+   .idea/**/contentModel.xml
+   .idea/**/gradle.xml
+   .idea/**/libraries
+   .idea/artifacts
+   .idea/compiler.xml
+   .idea/jarRepositories.xml
+   .idea/modules.xml
+   .idea/modules
+   *.ipr
+
+   # IntelliJ / Java information
    out/
    *.class
 
-   # IntelliJ configuration information
-   .idea/
-   *.iml
-
-   # PyCharm configuration information
+   # PyCharm / Python information
    venv/
-   /workspace.xml
+   __pycache__/
+   *.py[cod]
+   *$py.class
 
    # Automatic backups created by Emacs
    *~
 
    # Hidden files used by macOS to indicate directory display details, e.g., icon positions
    .DS_Store
+
+   # Sources I consulted in creating this file:
+   # https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
+   # https://github.com/github/gitignore/blob/master/Python.gitignore
    ```
    
 1. Add all remaining files to version control.
