@@ -2,6 +2,9 @@
 These are my notes on setting up a GitHub repository for a new project using IntelliJ IDEA or PyCharm. I generally do this myself for research or Software Development projects. For the moment, I give instructions for IntelliJ IDEA and assume things work similarly for PyCharm.
 ## Create Project in IDE
 I describe this [elsewhere](../development_tools/intellij_idea.md).
+
+Optionally, set up a test directory and a sample class and test.
+
 ## Put Project Under Local Version Control
 `VCS` | `Enable Version Control Integration`. Select Git and click `OK`.
 ## Set Up .gitignore
@@ -28,7 +31,7 @@ I describe this [elsewhere](../development_tools/intellij_idea.md).
    # Hidden files used by macOS to indicate directory display details, e.g., icon positions
    .DS_Store
    ```
-   For a PyCharm project, omit `out/` and `*.class` but include `venv/` and `/workspace.xml`.
+   
 1. Add all remaining files to version control.
    1. `command-9` to open version control tool window.
    1. Select files under `Unversioned Files`.
