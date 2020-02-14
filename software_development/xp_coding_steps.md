@@ -132,7 +132,9 @@ git pull -all
 
 #### IntelliJ IDEA
 
-`VCS` | `Git` | `Pull`. In the window that pops up, click on the two-circling-arrows icon on the right before clicking `Pull` so you'll get any branches that others have created or updated.
+`VCS` | `Git` | `Pull`.
+
+If you want to branches other than the one you're on to be updated in your local repository, click on the two-circling-arrows icon on the right, check the box for the branch you're on, and finally click `Pull`.
 
 ---
 
