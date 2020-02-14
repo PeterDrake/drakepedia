@@ -122,16 +122,15 @@ git push origin experiment
 This serves two purposes:
 - It stores a remote copy, so you won't lose your work even if your computer is destroyed.
 - Once you're confident that your code is woring properly, it enables you to make a *pull request*, asking that your branch be merged into the remote `master` branch.
-## Additional Resources
-### Online
+## Resources
+
 - [Pro Git](https://git-scm.com/book/en/v2)
 - DZone, [Getting Started with Git Refcard](https://dzone.com/refcardz/getting-started-git?chapter=1)
 - [A Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
 - [git](https://git-scm.com/)
 - [GitHub](https://github.com/)
 - [IntelliJ Documentation on Git](https://www.jetbrains.com/help/idea/using-git-integration.html) (see the table of contents on the left side of this page)
-### Print
-- Chacon and Straub, *Pro Git*
+- [Untrack files already added to git repository based on .gitignore](http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/)
 ## Questions
 1. :star::star: How often should you commit?
 1. :star::star: Where is a local repository stored?
