@@ -10,7 +10,7 @@ You are not here to prove that you already know everything. **_Ask questions._**
 
 Instructors strive to give you assignments that are neither too easy or too hard, but require you to stretch. While your final essay, program, etc. must be your own work (or sometimes that of a small team), you are not expected to sit alone in a room and derive everything from first principles. Every hero needs friends, allies, and mentors. Don't hold yourself to an impossible standard.
 
-When something isn't clear or you don't know how to proceed, ask for help. Ask questions in class, in lab or office hours, and on course forums. (Don't imagine that you're the only one confused.) Your instructors, teaching assistants, and fellow students are here for exactly this reason. The ability to answer your questions as they arise the whole point of college; without it, you might as well have stayed home, read a book, and saved a great deal of money.
+When something isn't clear or you don't know how to proceed, ask for help. Ask questions in class, in lab or office hours, and on course forums. (Don't imagine that you're the only one confused.) Your instructors, teaching assistants, and fellow students are here for exactly this reason. The ability to answer your questions as they arise is the whole point of college; without it, you might as well have stayed home, read a book, and saved a great deal of money.
 
 You can get a free, individual [SAAB tutor](https://aslclark.org/saab-tutoring/) (or, if you're doing well, get paid to be one). The [Writing Center](http://college.lclark.edu/academics/support/writing_center/) and [Symbolic and Quantitative Resource Center (SQRC)](https://college.lclark.edu/departments/mathematical_sciences/sqrc/) are also valuable resources.
 
