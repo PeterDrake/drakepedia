@@ -1,5 +1,18 @@
 # Policies
 
+## COVID-19 Details
+
+* For fall 2020, CS 383 Algorithm Design and Analysis will be taught online. CORE 121-06 Numbers: Measuring Up will be taught in person (except for the first two days).
+* Read [LC's Health and Safety Expectations for All Community Members](https://www.lclark.edu/news/2020-plans/health-and-safety/). TLDR: masks, social distancing, constant handwashing. The danger is real and everyone's actions matter. Behave like you're on an infected cruise ship.
+* I will take attendance, both to see if anyone is falling through the cracks and for contact tracing. It does not directly count as part of your grade, although of course students with better attendance tend to do better. **Do not come to a physical class if you are sick or self-isolating.**
+* When communicating online:
+  * Unless you are talking (or have been instructed otherwise), mute your microphone.
+  * If it is reasonable to do so, have your video on. I realize that people may be unable to do this at various times, but if you are comfortable sharing video, it makes it easier for us to feel like a class of scholars learning together rather than a bunch of individuals watching a video independently. Seeing people's faces can also clarify meaning (Are you angry? Are you joking?) and help you make friends.
+  * Remember that the text chat window is available.
+  * Be present and attentive. I do a lot of "active learning" and small group work; having the class "playing" on your phone while you do something else isn't going to work.
+  * Have paper and pencil with you while you are "in class". This lets you take notes without using up precious screen space. If you need to communicate with me, a TA, or other students in diagram form, you can draw on paper and hold it up to the camera.
+* I'm here for you! The best way to make sure I see a message is to send me email.
+
 ## Academic Integrity
 
 Read the College's Statement on Academic Integrity (the first two pages of the [Policies and Procedures section](https://www.lclark.edu/live/files/6190-cas-catalogpolicies-and-procedurespdf) of the Handbook) and sections VIII (Outcomes) and XVI (College Honor Board Hearing Procedures) of the [Student Code of Conduct](http://college.lclark.edu/live/files/12481-code-of-conduct-2012pdf). Yes, it's boring, but it's only a few pages, and it could save you from throwing away your college career.
@@ -13,19 +26,6 @@ Academic dishonesty in any form will not be tolerated. **_If you plagiarize or o
 An unskilled computer programmer is just as dangerous as an unskilled bridge designer. [Innocent people have been killed by buggy programs.](https://en.wikipedia.org/wiki/Therac-25) If you can't honestly earn good grades in computer science, do something less dangerous for a living.
 
 ## Assignments
-
-### COVID-19 Details
-
-* For fall 2020, CS 383 Algorithm Design and Analysis will be taught online. CORE 121-06 Numbers: Measuring Up will be taught in person (except for the first two days).
-* Read [LC's Health and Safety Expectations for All Community Members](https://www.lclark.edu/news/2020-plans/health-and-safety/). TLDR: masks, social distancing, constant handwashing. The danger is real and everyone's actions matter. Behave like you're on an infected cruise ship.
-* I will take attendance, both to see if anyone is falling through the cracks and for contact tracing. It does not directly count as part of your grade, although of course students with better attendance tend to do better. **Do not come to a physical class if you are sick or self-isolating.**
-* When communicating online:
-  * Unless you are talking (or have been instructed otherwise), mute your microphone.
-  * If it is reasonable to do so, have your video on. I realize that people may be unable to do this at various times, but if you are comfortable sharing video, it makes it easier for us to feel like a class of scholars learning together rather than a bunch of individuals watching a video independently. Seeing people's faces can also clarify meaning (Are you angry? Are you joking?) and help you make friends.
-  * Remember that the text chat window is available.
-  * Be present and attentive. I do a lot of "active learning" and small group work; having the class "playing" on your phone while you do something else isn't going to work.
-  * Have paper and pencil with you while you are "in class". This lets you take notes without using up precious screen space. If you need to communicate with me, a TA, or other students in diagram form, you can draw on paper and hold it up to the camera.
-* I'm here for you! The best way to make sure I see a message is to send me email.
 
 ### Late Policy
 I have several goals in setting a late policy:
