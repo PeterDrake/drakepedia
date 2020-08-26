@@ -44,7 +44,7 @@ There are several ways to do this:
 - Hit `ctrl-R` (Mac) / `shift-F10` (Windows), with the same caveat.
 - Use the `Run` menu at the top of the screen.
 ### Installing [stdlib](../libraries/stdlib.md)
-1. Download the file stdlib.jar from [Sedgewick & Wayne's website](https://introcs.cs.princeton.edu/java/stdlib/). (The link is right under the table.)
+1. Download the file stdlib.jar from [Sedgewick & Wayne's website](https://introcs.cs.princeton.edu/java/stdlib/). (The link is right under the table. If you are in CS 383 Algorithm Design and Analysis, you will instead want the file algs4.jar, linked at the bottom of that page.)
 1. Drag and drop the file into your project. You'll want to drop into onto the project folder, just below the word Project
 at the upper left of the IntelliJ window.
 1. Right click on the file and select `Add as library`.
