@@ -1,6 +1,6 @@
 # Policies
 
-## COVID-19 Details
+## COVID-19
 
 * For fall 2020, CS 383 Algorithm Design and Analysis will be taught online. CORE 121-06 Numbers: Measuring Up will be taught in person (except for the first two days).
 * Read [LC's Health and Safety Expectations for All Community Members](https://www.lclark.edu/news/2020-plans/health-and-safety/). TLDR: masks, social distancing, constant handwashing. The danger is real and everyone's actions matter. Behave like you're on an infected cruise ship.
