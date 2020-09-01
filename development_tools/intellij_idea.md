@@ -84,6 +84,10 @@ The tool windows you're likely to use most often are:
 - Run, which shows the console output (if any) for the current program.
 - Structure, which shows the methods in your current class in alphabetical order. No more scrolling through the code!
 ## Resources
+- Installation videos by Alain Kägi
+  - [Linux](https://www.loom.com/share/0cb734dbbc6e4022bb178e14532716d3)
+  - [Mac](https://www.loom.com/share/17dc776b62f44a61ad0638de9ed64d2b)
+  - Windows (coming soon)
 - You can get a list of hotkeys from the `Help` menu (`Keymap Reference`). Weirdly, one of the most useful hotkeys (`F1` to get documentation on the method or class under the cursor) isn't on this list. 
 - If you installed the Features Trainer, there is a `Learn` option on the left side of the IntelliJ window; this links to several tutorials. (If you missed that during installation, go to `IntelliJ IDEA` | `Preferences` | `Plugins` and install `IDE Features Trainer`.)
 - [JetBrains tutorials](https://www.jetbrains.com/idea/documentation/)
