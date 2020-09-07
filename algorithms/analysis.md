@@ -117,7 +117,7 @@ Since lower order terms don't matter, this in the same order as
 
 which is in ![order n](https://latex.codecogs.com/svg.latex?\Theta(n)).
 
-This technique works, but with practice we can often simply find the step that, taking into account how many times it runs, is the most expensive. All other steps are in the same order or lower orders, so they don't matter.
+This technique works, but with practice we can often simply find the step that runs most frequently. All other steps are in the same order or lower orders, so they don't matter.
 
 One subtlety to watch out for: one line of code may involve multiple steps, especially if it includes a method call.
 
