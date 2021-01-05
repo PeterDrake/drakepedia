@@ -76,7 +76,7 @@ The customer now plays with the system. In Trello, move the iteration separator 
 - [The Agile Manifesto](https://agilemanifesto.org/)
 - [Extreme Programming: Values, Principles, and Practices](https://www.altexsoft.com/blog/business/extreme-programming-values-principles-and-practices/)
 - [GitHub guides](https://guides.github.com/)
-- [GitHub Issues Can be Agile if You To it Right](https://zube.io/blog/agile-project-management-workflow-for-github-issues/)
+- [GitHub Issues Can be Agile if You Do it Right](https://zube.io/blog/agile-project-management-workflow-for-github-issues/)
 - Christensen, *Flexible, Reliable Software Using Patterns and Agile Development*, Chapter 1
 - Steinberg and Palmer, *Extreme Software Engineering: A Hands-On Approach*
 ## Questions
