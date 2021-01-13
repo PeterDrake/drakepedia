@@ -11,7 +11,7 @@ What if the type is an array type or a class? In this case, the box for the vari
 
 You can think of a reference as an arrow pointing to the object. For example, if you
 ```java
-int[] a = {6, 2, 5};
+int[] x = {6, 2, 5};
 ```
 then you have:
 
