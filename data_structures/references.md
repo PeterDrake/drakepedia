@@ -7,7 +7,7 @@ Recall that a variable holds *exactly one thing*. So if you have
 int x = 5;
 ```
 
-we can visualize this variable definition as follows:
+you can visualize this variable definition as follows:
 
 ![x next to a box containing 5](x5.svg)
 
