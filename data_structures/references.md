@@ -1,7 +1,13 @@
 # References
 ## Overview
 
-Recall that a variable holds *exactly one thing*:
+Recall that a variable holds *exactly one thing*. So if you have
+
+```java
+int x = 5;
+```
+
+we can visualize this variable definition as follows:
 
 ![x next to a box containing 5](x5.svg)
 
