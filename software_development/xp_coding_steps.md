@@ -27,12 +27,12 @@ Don't spend hours in any one step. Keep moving so that commits and merges are fr
     1. [Get the latest version of your team's work](#4i-get-the-latest-version-of-your-teams-work)
     1. [Issue a pull request](#4ii-issue-a-pull-request)
     1. [Review code](#4iii-review-code)
-    1. [Indicate your progress on Trello](#4iv-indicate-your-progress-on-trello)
+    1. [Move on to Next Task or Merge](#4iv-indicate-your-progress-on-trello)
     1. [If it's not the end of the session, go back to (1)](#4v-if-its-not-the-end-of-the-session-go-back-to-1)
 
 ## 1 Choose a task
 ### 1.i Choose a story
-On Trello, you and your partner should be attached to a card in the In Progress column. If you're here because you just finished a story, pick a new one from the current iteration in the Iterations column; if there aren't any, pick a story from the next iteration. Don't skip ahead to a story that looks easy or interesting; respect the customer's priorities about what to work on next.
+On Trello, you and your partner should be attached to *one* card in the `In Progress` column. If not (e.g., because you just finished a story), pick a new one from the current iteration in the `Iterations` column; if there aren't any, pick a story from the next iteration. Don't skip ahead to a story that looks easy or interesting; respect the customer's priorities about what to work on next.
 ### 1.ii Choose a task
 If the story has a checklist of tasks in it, pick the next task in the list.
 
@@ -214,24 +214,30 @@ Go to the GitHub website for your project. Choose the branch you're on (using th
 
 This tells your team, "Our branch has some new functionality. Let's merge it into master."
 
+Move your story to the `Completed in Branch` column on Trello.
+
 ### 4.iii Review code
 
 Find another pair in your team to review your code. You may have to wait a few minutes for them to make their next commit so that they can give you their full attention.
 
 Working with this other pair on GitHub, review the changes you made. Some things to consider:
+
 - Does the new code compile, run, and perform as advertised?
 - Are there thorough unit tests?
 - Do the tests pass?
 - Is the code clean and well-documented?
 - Is there any way the code could be improved?
 
-If not everyone is satisfied, go back (3.ii) if you need a new test or (3.iv) otherwise. The pull request remains open.
+If not everyone is satisfied, go back (3.ii) if you need a new test or (3.iv) otherwise. Close the pull request rather than approving it. You will create a new
+one after you resolve the issue.
 
-When everyone is happy, have someone from the other pair enter a review and click on `Merge pull request`. Now your new features have been incorporated into the `master`.
+If everyone is happy, move the story to `Tested` on Trello.
 
-### 4.iv Indicate your progress on Trello
+### 4.iv Move on to Next Task or Merge
 
-Check off the task. If the story is complete, move it to the Done column.
+If the story has more unfinished tasks, move it back to `In Progress` and go back to (1.ii).
+
+If this was the last task, click on `Merge Pull Request` on GitHub and conform. Resolve any issue with the merge; there usually won't be any. Move the card to `Merged` on Trello.
 
 ### 4.v If it's not the end of the session, go back to (1)
 
