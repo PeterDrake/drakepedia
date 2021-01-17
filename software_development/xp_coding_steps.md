@@ -27,7 +27,7 @@ Don't spend hours in any one step. Keep moving so that commits and merges are fr
     1. [Get the latest version of your team's work](#4i-get-the-latest-version-of-your-teams-work)
     1. [Issue a pull request](#4ii-issue-a-pull-request)
     1. [Review code](#4iii-review-code)
-    1. [Move on to Next Task or Merge](#4iv-indicate-your-progress-on-trello)
+    1. [Move on to next task or merge](#4iv-indicate-your-progress-on-trello)
     1. [If it's not the end of the session, go back to (1)](#4v-if-its-not-the-end-of-the-session-go-back-to-1)
 
 ## 1 Choose a task
@@ -233,7 +233,7 @@ one after you resolve the issue.
 
 If everyone is happy, move the story to `Tested` on Trello.
 
-### 4.iv Move on to Next Task or Merge
+### 4.iv Move on to next task or merge
 
 If the story has more unfinished tasks, move it back to `In Progress` and go back to (1.ii).
 
