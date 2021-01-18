@@ -2,7 +2,6 @@
 
 ## COVID-19
 
-* For fall 2020, CS 383 Algorithm Design and Analysis will be taught online. CORE 121-06 Numbers: Measuring Up will be taught in person (except for the first two days).
 * Read [LC's Health and Safety Expectations for All Community Members](https://www.lclark.edu/news/2020-plans/health-and-safety/). TLDR: masks, social distancing, constant handwashing. The danger is real and everyone's actions matter. Behave like you're on an infected cruise ship.
 * I will take attendance, both to see if anyone is falling through the cracks and for contact tracing. It does not directly count as part of your grade, although of course students with better attendance tend to do better. **Do not come to a physical class if you are sick or self-isolating.**
 * When communicating online:
@@ -27,36 +26,6 @@ An unskilled computer programmer is just as dangerous as an unskilled bridge des
 
 ## Assignments
 
-### Late Policy
-I have several goals in setting a late policy:
-
-* Encourage you to do the work, because practice is where the learning really happens.
-* Help you manage your time and prevent you from getting catastrophically behind.
-* Minimize the amount of stress you experience when you do run up against a deadline. I understand that illnesses, athletic events, technical difficulties, and so on sometimes lead to handing in things late.
-* Be able to grade everyone's submission to a given assignment at the same time, for efficiency and fairness. 
-* Avoid having to waste my time looking at handin dates, listening to requests for extensions, etc.
-* Have a reasonable point after which I can discuss the assignment in class without giving away the answer to people who haven't done it yet.
-
-Each assignment therefore has a due date (when you should turn it in) and a **_one-week grace period_**. Outside of *extreme* circumstances, you can't turn things in after the grace period.
-
-Some time (hopefully a couple of days) after the due date, I (or a teaching assistant) will grade the assignment. If you still have time before the grace period, you may hand in a revised version. After the grace period ends, we will grade again.
-
-| Your Excuse for Missing the Grace Period Deadline | What I'll Say |
-| --- | --- |
-| I was sick for a couple of days. | Sorry, but it's already a week late. |
-| My laptop died. | Sorry, but it's already a week late. |
-| I had to participate in an athletic event or concert. | Sorry, but it's already a week late. |
-| I had to drive my roommate to the hospital. | Sorry, but it's already a week late. |
-| I neglected to set my Canvas account to Pacific time, so the due date was off by one. | Sorry, but it's already a week late. |
-| My cat died. | I'm very sorry, but it's already a week late. |
-| I have special accommodations from Student Support Services. | If the one-week grace period is not sufficient, come talk to me *before* the due date. |
-| I was attacked by a llama and I've been in the hospital for a week. | Come talk to me. |
-| I was attacked by two llamas and I've been in the hospital for two months. | You should probably withdraw for the semester. |
-
-Do not misinterpret the grace period as the "real" deadline. The deadline is the deadline; the grace period is for emergencies.
-
-**_The last day of class at 11:59 PM (my clock, not yours) is an absolute final deadline after which no assignments will be accepted._**
-
 ### Handing In Assignments
 
 Hand in assignments through Canvas. If you have trouble with the handin system, talk to me or a teaching assistant as soon as possible to get things straightened out.
@@ -64,7 +33,7 @@ Hand in assignments through Canvas. If you have trouble with the handin system, 
 ### Programming Assignments
 
 A program should:
-- Compile and run. **_A program that does not compile and run will score zero points._**
+- Compile and run.
 - Use exactly the names specified for classes, methods, etc. This both makes my grading easier and is good practice for the inevitable day when you’re working on a large project with many other programmers.
 - Behave as specified (e.g., pass all tests).
 - Use appropriate data structures and algorithms.
@@ -94,25 +63,6 @@ A mathematical paper should:
 - Be correct.
 - Be clearly explained, using appropriate notation, prose, and diagrams.
 - Address special and boundary cases.
-
-## Exams
-Each test will strongly emphasize material presented since the previous test, although earlier material is fair game.
-
-Exams are typical pencil-and-paper exams. They are closed-book, but you may bring one 3x5 inch index card full of notes. You may write on both sides.
-
-You may not access electronic devices (including music players) during exams.
-
-You may not leave the room and come back during an exam. If this is problematic for you, speak to me well in advance of the exam.
-
-An exam answer should:
-- Provide the requested information.
-- Be clear. Use complete sentences where appropriate.
-- Be neatly written. 
-
-If a question seems ambiguous, make and state a reasonable assumption. If, in a proof question, you need some secondary result, state the result and use it; if there is time later, go back and prove it.
-
-## Grades
-You can see your current status at any time within Canvas. **_If there is a problem with your grade, it is your responsibility to address it immediately._** I will not offer ad hoc extra credit to improve your grade after the course is over.
 
 ## Disabilities
 If you have a disability that may impact your academic performance, you may request accommodations by submitting documentation to [Student Support Services](https://www.lclark.edu/offices/student_support_services/). After you have submitted documentation and filled out paperwork for the current semester requesting accommodations, staff in that office will notify me of the accommodations for which you are eligible.
