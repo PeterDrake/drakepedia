@@ -136,8 +136,11 @@ This serves two purposes:
 1. :star::star: Where is a local repository stored?
 1. :star::star: Does saving all of these copies of files use up a lot of disk space?
 1. :star::star: Why would you ever have files in a directory that are not under version control?
+1. :star::star::star: How can I avoid entering my GitHub username and password every time I push?
+
 ## Answers
 1. Often -- several times an hour. Part of the point of git is to allow you to go back to a previous commit if you make a mistake, so you want to have many options as to how far to go back.
 1. In a hidden directory called `.git` inside the directory where you ran `git init`.
 1. No. Git is clever enough to store only the differences between commits.
 1. There is no reason to store compiled code, as it can be generated from the source code. Huge, unchanging data files that are available elsewhere are also often left out of version control.
+1. [Cache your GitHub credentials.](https://docs.github.com/en/github/getting-started-with-github/caching-your-github-credentials-in-git)
