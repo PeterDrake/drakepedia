@@ -132,6 +132,7 @@ This serves two purposes:
 - [IntelliJ Documentation on Git](https://www.jetbrains.com/help/idea/using-git-integration.html) (see the table of contents on the left side of this page)
 - [Untrack files already added to git repository based on .gitignore](http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/)
 - [Cache your GitHub credentials so you don't have to type your password every time you push](https://docs.github.com/en/github/getting-started-with-github/caching-your-github-credentials-in-git)
+- [Dangit, Git!?!](https://dangitgit.com/en) (These are somewhat advanced disaster recovery tricks that you shouldn't use unless you understand them.)
 
 ## Questions
 1. :star::star: How often should you commit?
