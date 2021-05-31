@@ -14,7 +14,6 @@ It's a good idea to run the commands below (with "your name" replaced appropriat
 git config --global user.name "Your Name"
 git config --global user.email yourname@yourdomain.edu
 git config --global core.editor emacs
-git config --global color.ui true
 ```
 ### Creating a Repository
 A *repository* (or *repo*) is a set of snapshots of your files.
