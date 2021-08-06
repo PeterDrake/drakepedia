@@ -4,7 +4,7 @@
 
 You are encouraged to study and discuss topics together. For most assignments you are expected to do the actual coding, math, or writing on your own; for others (which will be clearly identified) you will work as part of a team. When in doubt, mention any people or other sources who helped you.
 
-Remember that *the point of assignments is to help you learn*. This practice and the feedback you receive are vital for you to learn to solve problems in and communicate about the subject. The assignments are not there to supply the instructor with an additional copy of the answers. Turning in plagiarized work is a waste of everyone's time.
+Remember that *the point of assignments is to help you learn*. This practice and the feedback you receive are vital for you to learn to solve problems in and communicate about the subject; you will need these skills in later courses and in life after college. The assignments are not there to supply the instructor with an additional copy of the answers. Turning in plagiarized work is a waste of everyone's time.
 
 You can find detailed policies in the College's Statement on Academic Integrity (the first two pages of the [Policies and Procedures section](https://www.lclark.edu/live/files/6190-cas-catalogpolicies-and-procedurespdf) of the Handbook) and sections VIII (Outcomes) and XVI (College Honor Board Hearing Procedures) of the [Student Code of Conduct](http://college.lclark.edu/live/files/12481-code-of-conduct-2012pdf).
 
