@@ -30,6 +30,37 @@ An unskilled computer programmer is just as dangerous as an unskilled bridge des
 
 Hand in assignments through Canvas. If you have trouble with the handin system, talk to me or a teaching assistant as soon as possible to get things straightened out.
 
+### Late Policy
+
+I have several goals in setting a late policy:
+
+* Encourage you to do the work, because practice is where the learning really happens. Earlier assignments prepare you for later ones.
+* Help you manage your time and prevent you from getting catastrophically behind.
+* Minimize the amount of stress you experience when you do run up against a deadline. I understand that illnesses, athletic events, technical difficulties, and so on sometimes lead to handing in things late.
+* Be able to grade everyone's submission to a given assignment at the same time, for efficiency and fairness. 
+* Avoid having to waste my time looking at handin dates, listening to requests for extensions, etc.
+* Have a reasonable point after which I can discuss the assignment in class without giving away the answer to people who haven't done it yet.
+
+Each assignment therefore has a due date (when you should turn it in) and a **_one-week grace period_**. Outside of *extreme* circumstances, you can't turn things in after the grace period.
+
+Some time (hopefully a couple of days) after the due date, I (or a teaching assistant) will grade the assignment. If you still have time before the grace period, you may hand in a revised version. After the grace period ends, we will grade again.
+
+| Your Excuse for Missing the Grace Period Deadline | What I'll Say |
+| --- | --- |
+| I was sick for a couple of days. | Sorry, but it's already a week late. |
+| My laptop died. | Sorry, but it's already a week late. |
+| I had to participate in an athletic event or concert. | Sorry, but it's already a week late. |
+| I had to drive my roommate to the hospital. | Sorry, but it's already a week late. |
+| My cat died. | I'm very sorry, but it's already a week late. |
+| I have special accommodations from Student Support Services. | If the one-week grace period is not sufficient, come talk to me *before* the due date. |
+| I was attacked by a llama and I've been in the hospital for a week. | Come talk to me. |
+| I was attacked by two llamas and I've been in the hospital for two months. | You should probably withdraw for the semester. |
+
+Do not misinterpret the grace period as the "real" deadline. The deadline is the deadline; the grace period is for emergencies.
+
+**_The last day of regular class (*not* the final exam period) at 11:59 PM (my clock, not yours) is an absolute final deadline after which no assignments will be accepted._**
+
+
 ### Programming Assignments
 
 A program should:
