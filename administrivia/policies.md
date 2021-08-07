@@ -21,13 +21,13 @@ I have several goals in setting a late policy:
 * Encourage you to do the work, because practice is where the learning really happens. Earlier assignments prepare you for later ones.
 * Help you manage your time and prevent you from getting catastrophically behind.
 * Minimize the amount of stress you experience when you do run up against a deadline. I understand that illnesses, athletic events, technical difficulties, and so on sometimes lead to handing in things late.
-* Be able to grade everyone's submission to a given assignment at the same time, for efficiency and fairness. 
+* Be able to give feedback on everyone's submission to a given assignment at the same time, for efficiency and consistency. 
 * Avoid having to waste my time looking at handin dates, listening to requests for extensions, etc.
 * Have a reasonable point after which I can discuss the assignment in class without giving away the answer to people who haven't done it yet.
 
 Each assignment therefore has a due date (when you should turn it in) and a **_one-week grace period_**. Outside of *extreme* circumstances, you can't turn things in after the grace period.
 
-Some time (hopefully a couple of days) after the due date, I (or a teaching assistant) will grade the assignment. If you still have time before the grace period, you may hand in a revised version. After the grace period ends, we will grade again.
+Some time (hopefully a couple of days) after the due date, I (or a teaching assistant) will give feedback on the assignment. If you still have time before the grace period, you may hand in a revised version. After the grace period ends, we will give feedback again. If you want to talk about additional revisions, or an assignment that you came back to much later, come by lab/office hours.
 
 | Your Excuse for Missing the Grace Period Deadline | What I'll Say |
 | --- | --- |
