@@ -18,7 +18,7 @@ to jump through this extra hoop.
 When the installer presents the option, it wouldn't hurt to install the IDE Features Trainer.
 ### Creating a Project
 1. Open IntelliJ and click `Create New Project`.
-1. Verify that the Project SDK is version 11 (ask for help if it isn't) and click `Next`.
+1. Select JDK version 16 and install it if necessary, then click `Next`.
 1. Check `Create project from template` and click `Next`.
 1. Give the project a simple name, like "CS2". Make sure the `Base package` field is empty. Click `Finish`.
 1. For testing purposes, modify the program that was created to look exactly like this:
