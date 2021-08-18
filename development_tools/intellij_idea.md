@@ -11,8 +11,6 @@ I've chosen this IDE (which I'll just call IntelliJ henceforth) because it is:
 - nearly identical in design to PyCharm (for Python), Android Studio (for Android applications), and Rider (for C#, which is used with the Unity game development engine) so learning any of these should easy for someone who knows their way around IntelliJ.
 ## Setup
 ### Downloading
-You'll have to install the [Java Development Kit](command_line.md) first.
-
 You can download the [Community Edition](https://www.jetbrains.com/idea/download/) of IntelliJ for free. You can also get the Ultimate
 Edition for free as a student by [filling out a form](https://www.jetbrains.com/student/), but there's no good reason
 to jump through this extra hoop.
