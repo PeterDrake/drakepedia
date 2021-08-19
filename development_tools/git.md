@@ -13,8 +13,11 @@ It's a good idea to run the commands below (with "your name" replaced appropriat
 ```
 git config --global user.name "Your Name"
 git config --global user.email yourname@yourdomain.edu
-git config --global core.editor emacs
+git config --global core.editor nano
 ```
+
+(The last one determined what text editor Git will use. `nano` is built in on Macs, but you'll have to install it on a Windows machine. If you don't specify an editor, you'll get `vim`, which is [notoriously user-surly](https://qz.com/990214/a-million-people-have-visited-this-web-page-explaining-how-to-close-vim-a-notoriously-difficult-text-editing-program/).)
+
 ### Creating a Repository
 A *repository* (or *repo*) is a set of snapshots of your files.
 
