@@ -137,7 +137,7 @@ static int fibo(int n) {
 
 ### Separate control from data
 
-This method find the sum of the four elements adjacent to element `r`, `c` in a two-dimensional array:
+This method finds the sum of the four elements adjacent to element `r`, `c` in a two-dimensional array:
 
 ```java
 static int neighborSum(int[][] grid, int r, int c) {
