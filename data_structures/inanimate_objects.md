@@ -61,5 +61,5 @@ This page is intended as a very gentle introduction to objects; for simplicity, 
 1. Yes. It's even possible (and sometimes useful) to use a class as the type of an instance variable in the *same* class.
 1. Yes. In fact, the ability to pass in one object rather than several separate arguments is one of the main reasons for defining classes of objects.
 1. Yes. Since a method can only return one value, returning an object is one of the best ways for a method to return complex information.
-1. 0, which is the default value of `x`.
+1. 0.0, which is the default value of `x`.
 1. The program does not compile. You have to ask for the value of `x` for a particular Point. Otherwise, since there may be many Points, Java doesn't know which one to look in for an `x` value.
