@@ -227,6 +227,7 @@ static int neighborSum(int[][] grid, int r, int c) {
     ```java
     static String toString(int n) {
         String[] colors = {"red", "orange", "yellow", "green", "blue", "indigo", "violet"};
+        if (n < 0 || n >= colors.length) n = colors.length - 1
         return colors[n];
     }
     ```
