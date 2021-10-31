@@ -231,3 +231,11 @@ static int neighborSum(int[][] grid, int r, int c) {
     }
     ```
     It would be even better to declare `COLORS` as a constant so that it doesn't have to be created each time `toString` is called.
+    
+    Strictly speaking, this code is not *precisely* equivalent to the original code, as it doesn't behave the same way if `n` not a valid index
+    into `colors`. This could be remedied by adding the following between the two lines in the method above:
+    ```java
+    if (n < 0 || n >= colors.length) {
+        n = colors.length - 1;
+    }
+    ```
