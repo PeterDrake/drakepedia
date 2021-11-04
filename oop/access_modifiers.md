@@ -75,7 +75,7 @@ Most IDEs can automatically generate getters and setters.
 - Horstmann, *Core Java, Volume I: Fundamentals, 11th Edition*, Chapters 4-5
 
 ## Questions
-1. :star: In another class, I have created `p`, an instance of class `Person`. When I try to print `p.height`, Java tells me that I don't have access to the private instance variable `height`. What is the proper object-oriented way to to get the value of this variable?
+1. :star: In another class, I have created `p`, an instance of class `Person`. When I try to print `p.height`, Java tells me that I don't have access to the private instance variable `height`. What is the proper object-oriented way to get the value of this variable?
 1. :star::star: If I want to set an instance variable of another object of the same class, do I have to use a setter?
 1. :star::star: Suppose I have an object `airplane` that has an instance variable `speed`. How can I increase `speed` by 3.2 from another class? Because `speed` is private, I can't just say `airplane.speed += 3.2;`.
 1. :star::star: If I have a boolean instance variable `onFire`, what is the associated getter called?
