@@ -127,7 +127,7 @@ Pulling both fetches the remote versions of all branches and tries to merge them
 #### Command line
 
 ```
-git pull -all
+git pull --all
 ```
 
 #### IntelliJ IDEA
