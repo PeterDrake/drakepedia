@@ -4,7 +4,7 @@
 
 You are encouraged to study and discuss topics together. For most assignments you are expected to do the actual coding, math, or writing on your own; for others (which will be clearly identified) you will work as part of a team. When in doubt, mention any people or other sources who helped you.
 
-Remember that *the point of assignments is to help you learn*. This practice and the feedback you receive are vital for you to learn to solve problems in and communicate about the subject; you will need these skills in later courses and in life after college. The assignments are not there to supply the instructor with an additional copy of the answers. Turning in plagiarized work is a waste of everyone's time.
+Remember that *the point of assignments is to help you learn*. This practice and the feedback you receive are vital for you to learn to solve problems in, and communicate about, the subject; you will need these skills in later courses and in life after college. The assignments are not there to supply the instructor with an additional copy of the answers. Turning in plagiarized work is a waste of everyone's time.
 
 You can find detailed policies in the College's Statement on Academic Integrity (the first two pages of the [Policies and Procedures section](https://www.lclark.edu/live/files/6190-cas-catalogpolicies-and-procedurespdf) of the Handbook) and sections VIII (Outcomes) and XVI (College Honor Board Hearing Procedures) of the [Student Code of Conduct](http://college.lclark.edu/live/files/12481-code-of-conduct-2012pdf).
 
@@ -30,9 +30,9 @@ The book *[Ungrading](https://wvupressonline.com/ungrading)*, edited by Susan Bl
 
 In light of this, I have joined the growing movement of faculty who do not rely on grades. Instead, I will give you extensive feedback on your work. You can focus on learning rather than on jumping through hoops.
 
-I do still have to submit grades at the end of the semester. To that end (and, more importantly, to increase communication), I will meet with you individually three times over the course of the semester. In these conferences, you will tell me (among other things) what grade you deserve. I reserve the right to override you if you are being far too easy or (more likely) far too hard on yourself, but this is uncommon.
+I do still have to submit grades at the end of the semester. To that end (and, more importantly, to increase communication), we will discuss your progress (in person or in writing) several times over the course of the semester. In these conferences and self-assessments, you will tell me (among other things) what grade you deserve. I reserve the right to override you if you are being far too easy or (more likely) far too hard on yourself, but this is uncommon.
 
-It is also vital that you do the work. If you fall behind, you won't be ready for more challenging material later in the course, in your college career, and in life. I cannot in good conscience allow you to pass a class in which you have barely participated. To ensure that you are keeping up, you must turn in (on time, as per the late policy described below) at least half of the course assignments to earn a D. Students who cannot meet this very low threshold are almost certainly struggling with external issues such as physical or mental health; it's important for them to get help before the problem becomes catastrophic. 
+It is also vital that you do the work. If you fall behind, you won't be ready for more challenging material later in the course, in your college career, and in life. I cannot in good conscience allow you to pass a class in which you have barely participated. To ensure that you are keeping up, you must turn in (on time, as per the late policy described below) at least half of the course assignments to earn a D. Students who cannot meet this very low threshold are almost certainly struggling with external issues such as physical or mental health; it's important for such students to get help before their problems becomes catastrophic. 
 
 ### Late Policy
 
