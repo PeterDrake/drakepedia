@@ -65,7 +65,7 @@ It is good style, though not required, to add `@Override` before your definition
 1. :star::star: What does the default version of `toString` do?
 1. :star::star: Why provide a `toString` method instead of a `print` method?
 1. :star::star: Isn't it bad style in the generated `equals` method to have a variable named `o` and omit the curly braces in the if statements?
-1. :star::star: Would this work an an `equals` method for any class?
+1. :star::star: Would this work as an `equals` method for any class?
     ```java
     @Override
     public boolean equals(Object obj) {
