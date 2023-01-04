@@ -131,10 +131,11 @@ This serves two purposes:
 - [A Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
 - [git](https://git-scm.com/)
 - [GitHub](https://github.com/)
-- [IntelliJ Documentation on Git](https://www.jetbrains.com/help/idea/using-git-integration.html) (see the table of contents on the left side of this page)
+- [IntelliJ Documentation on Git](https://www.jetbrains.com/help/idea/using-git-integration.html) (See the table of contents on the left side of this page.)
 - [Untrack files already added to git repository based on .gitignore](http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/)
 - [Cache your GitHub credentials so you don't have to type your password every time you push](https://docs.github.com/en/github/getting-started-with-github/caching-your-github-credentials-in-git)
 - [Dangit, Git!?!](https://dangitgit.com/en) (These are somewhat advanced disaster recovery tricks that you shouldn't use unless you understand them.)
+- [Version Control (Git)](https://missing.csail.mit.edu/2020/version-control/) (A video lecture with notes. Part of [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) from MIT.)
 
 ## Questions
 1. :star::star: How often should you commit?
