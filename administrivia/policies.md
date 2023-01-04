@@ -30,9 +30,18 @@ The book *[Ungrading](https://wvupressonline.com/ungrading)*, edited by Susan Bl
 
 In light of this, I have joined the growing movement of faculty who do not rely on grades. Instead, I will give you extensive feedback on your work. You can focus on learning rather than on jumping through hoops.
 
-I do still have to submit grades at the end of the semester. To that end (and, more importantly, to increase communication), we will discuss your progress (in person or in writing) several times over the course of the semester. In these conferences and self-assessments, you will tell me (among other things) what grade you deserve. I reserve the right to override you if you are being far too easy or (more likely) far too hard on yourself, but this is uncommon.
+I do still have to submit grades at the end of the semester. To that end (and, more importantly, to increase communication), we will discuss your progress (in person or in writing) several times over the course of the semester. In these conferences and self-assessments, you will tell me (among other things) [what grade you deserve](https://docs.google.com/document/d/1xXvmiHJB66jHNd4ZFUIw1FyP-7K8a1wr882bVuA3naM/edit?usp=sharing). I reserve the right to override you if you are being far too easy or (more likely) far too hard on yourself, but this is uncommon.
 
 It is also vital that you do the work. If you fall behind, you won't be ready for more challenging material later in the course, in your college career, and in life. I cannot in good conscience allow you to pass a class in which you have barely participated. To ensure that you are keeping up, you must turn in (on time, as per the late policy described below) at least half of the course assignments to earn a D. Students who cannot meet this very low threshold are almost certainly struggling with external issues such as physical or mental health; it's important for such students to get help before their problems becomes catastrophic. 
+
+In order to give both you and me a quick glimpse of how things are going, you will receive a numbered "grade" on each assignment.  Here's what these numbers mean:
+
+0. You didn't turn in the assignment (or turned in a blank document).
+1. You turned in some work, but it's significantly incomplete.
+2. You turned in a complete assignment. You answers don't all have to be "correct", but you made an honest effort. For programming assignments where I provide unit tests, your code must pass all the tests. *This is by far the most common number.*
+3. You went above and beyond. You did an optional challenge problem, wrote a particularly insightful essay, or produced unusually elegant code.
+
+You shouldn't obsess about perfection here. More importantly, you shouldn't imagine that there is some formula that will convert these numbers into a final grade. That said, if you're starting to rack up 0s and 1s, there's a problem we need to address. If you want to argue for an A, you'll need some evidence that you're doing outstanding work; having several 3s is a good piece of evidence.
 
 ### Late Policy
 
