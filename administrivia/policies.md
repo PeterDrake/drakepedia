@@ -34,15 +34,6 @@ I do still have to submit grades at the end of the semester. To that end (and, m
 
 It is also vital that you do the work. If you fall behind, you won't be ready for more challenging material later in the course, in your college career, and in life. I cannot in good conscience allow you to pass a class in which you have barely participated. To ensure that you are keeping up, you must turn in (on time, as per the late policy described below) at least half of the course assignments to earn a D. Students who cannot meet this very low threshold are almost certainly struggling with external issues such as physical or mental health; it's important for such students to get help before their problems becomes catastrophic. 
 
-In order to give both you and me a quick glimpse of how things are going, you will receive a numbered "grade" on each assignment.  Here's what these numbers mean:
-
-0. You didn't turn in the assignment (or turned in a blank document).
-1. You turned in some work, but it's significantly incomplete.
-2. You turned in a complete assignment. You answers don't all have to be "correct", but you made an honest effort. For programming assignments where I provide unit tests, your code must pass all the tests. *This is by far the most common number.*
-3. You went above and beyond. You did an optional challenge problem, wrote a particularly insightful essay, or produced unusually elegant code.
-
-You shouldn't obsess about perfection here. More importantly, you shouldn't imagine that there is some formula that will convert these numbers into a final grade. That said, if you're starting to rack up 0s and 1s, there's a problem we need to address. If you want to argue for an A, you'll need some evidence that you're doing outstanding work; having several 3s is a good piece of evidence.
-
 ### Late Policy
 
 I have several goals in setting a late policy:
