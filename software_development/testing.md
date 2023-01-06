@@ -28,7 +28,10 @@ The process for test-driven development is:
 1. Pass the test. (If the test doesn't pass, go back and edit the code.)
 ## Resources
 - [JUnit 5](https://junit.org/junit5/)
-- Christensen, *Flexible, Reliable Software Using Patterns and Agile Development*, Chapters 2, 5, 8, 12, and 34
+- Christensen, *Flexible, Reliable Software Using Patterns and Agile Development*, chapters 2, 5, 8, 12, and 34
+- Martin, *Clean Code*, chapter 9
+- Masella, [Automated Testing of Gameplay Features in 'Sea of Thieves'](https://www.youtube.com/watch?v=X673tOi8pU8)
+
 ## Questions
 1. :star: Describe at least one advantage of test-driven development.
 1. :star: What annotation has to appear before each test method in a JUnit test class?
