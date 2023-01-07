@@ -31,7 +31,7 @@ To see the status of the repository, use this command:
 ```
 git status
 ```
-The output tells you that you are on the master branch (more about branches later), you haven't made any *commits* (snapshots), and your file is still untracked. You have to explicitly tell git which files to keep track of.
+The output tells you that you are on the main branch (more about branches later), you haven't made any *commits* (snapshots), and your file is still untracked. You have to explicitly tell git which files to keep track of.
 
 To add a file to version control:
 ```
@@ -65,11 +65,11 @@ You can view the history of your repository with this command:
 ```
 git log --pretty=oneline --graph --all
 ```
-Each line represents one commit. It shows the hash (a number that identifies the state of the files) and the commit message. Some additional information like `HEAD -> master` tells you which one is the current commit.
+Each line represents one commit. It shows the hash (a number that identifies the state of the files) and the commit message. Some additional information like `HEAD -> main` tells you which one is the current commit.
 
 For a example to work with, suppose the output of the log command looks like this:
 ```
-* b3615564012377ecab73e0b693aa7542f84e39df (HEAD -> master) My poem is now twice as long
+* b3615564012377ecab73e0b693aa7542f84e39df (HEAD -> main) My poem is now twice as long
 * 456b316a09a835b22b8822c0f1fd0906c12ae2a5 Initial project version
 ```
 If you want to go back to the previous version, do something like this:
@@ -82,11 +82,11 @@ The newer commit (b36155...) is still in the repository. Once something is in th
 
 To go back to the newer commit, you could use a similar `checkout` command. A much better idea is to use
 ```
-git checkout master
+git checkout main
 ```
-to reattach `HEAD` to the front of the `master` branch. **Never make commits in a detached HEAD state; it could cause you to lose work.**
+to reattach `HEAD` to the front of the `main` branch. **Never make commits in a detached HEAD state; it could cause you to lose work.**
 ### Branches
-Sometimes you want to do some experimental work on your program without putting it into the `master` branch. This is the time to create another branch. (You should be in a clean state before doing this, but it's okay if you're in a detached HEAD state.) Here's the command:
+Sometimes you want to do some experimental work on your program without putting it into the `main` branch. This is the time to create another branch. (You should be in a clean state before doing this, but it's okay if you're in a detached HEAD state.) Here's the command:
 ```
 git checkout -b experiment
 ```
@@ -94,11 +94,11 @@ In this example, `experiment` is the name of your new branch. Now that you're on
 ```
 git checkout branchname
 ```
-where `branchname` is the name of the branch you want to switch to (e.g., `master`).
+where `branchname` is the name of the branch you want to switch to (e.g., `main`).
 
-Now suppose your experiment went well and you want to merge the two branches. If you're currently on the `experiment` branch, you can merge any changes from `master` with:
+Now suppose your experiment went well and you want to merge the two branches. If you're currently on the `experiment` branch, you can merge any changes from `main` with:
 ```
-git merge master
+git merge main
 ```
 If you commit and merge often, and are a little lucky, merging will succeed automatically. Git is quite clever about this; if the changes on two branches are to different files, or even to different methods within the same file, git can figure out how to keep both sets of changes.
 
@@ -106,16 +106,16 @@ Occasionally, though, it won't be obvious to git how to combine the changes. Thi
 ### Remote Repositories
 Everything above has been about a local repository on your own machine. This is useful, but the real power of git lies in collaborating with others, using a remote repository stored at someplace like [GitHub](https://github.com/).
 
-Once you have cloned a remote repository to get a local one, you can work along in your local repository. You should avoid working on the `master` branch, but stable code will be merged into it.
+Once you have cloned a remote repository to get a local one, you can work along in your local repository. You should avoid working on the `main` branch, but stable code will be merged into it.
 
-Occasionally, you'll want to incorporate the latest changes from the remote `master` branch into the branch you're working on (e.g., `experiment`). First make sure you are in a clean state, then:
+Occasionally, you'll want to incorporate the latest changes from the remote `main` branch into the branch you're working on (e.g., `experiment`). First make sure you are in a clean state, then:
 ```
-git checkout master
+git checkout main
 git pull
 git checkout experiment
-git merge master
+git merge main
 ```
-The `pull` command brought all the changes from the remote `master` branch into your local `master` branch. You then merged these into your `experiment` branch.
+The `pull` command brought all the changes from the remote `main` branch into your local `main` branch. You then merged these into your `experiment` branch.
 
 You can now push your branch to the remote branch:
 ```
@@ -123,7 +123,7 @@ git push origin experiment
 ```
 This serves two purposes:
 - It stores a remote copy, so you won't lose your work even if your computer is destroyed.
-- Once you're confident that your code is woring properly, it enables you to make a *pull request*, asking that your branch be merged into the remote `master` branch.
+- Once you're confident that your code is woring properly, it enables you to make a *pull request*, asking that your branch be merged into the remote `main` branch.
 ## Resources
 
 - [Pro Git](https://git-scm.com/book/en/v2)
