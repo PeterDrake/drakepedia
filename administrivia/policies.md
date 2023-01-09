@@ -60,7 +60,7 @@ Some time (hopefully a couple of days) after the due date, I (or a teaching assi
 | I was attacked by a llama and I've been in the hospital for a week. | Come talk to me. |
 | I was attacked by two llamas and I've been in the hospital for two months. | You should probably withdraw for the semester. |
 
-Do not misinterpret the grace period as the "real" deadline. The deadline is the deadline; the grace period is for emergencies.
+Do not misinterpret the grace period as the "real" deadline. The deadline is the deadline; the grace period is for unusual circumstances.
 
 **_The last day of regular class (*not* the final exam period) at 11:59 PM (my clock, not yours) is an absolute final deadline after which no assignments will be accepted._**
 
