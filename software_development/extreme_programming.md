@@ -66,9 +66,9 @@ Since we have received extensive training in this highly technical job, many stu
 
 There are a number of technical steps for working with git here. A step-by-step process is provided in [a separate document](xp_coding_steps.md).
 #### Delivery
-When time for the iteration runs out, it is time to deliver. We must resist the temptation to squeeze in one more feature that is "almost done". The last hour of each iteration is reserved for this stage.
+When time for the iteration runs out, it is time to deliver. Resist the temptation to squeeze in one more feature that is "almost done". The last hour of each iteration is reserved for this stage.
 
-A working version of the system is presumably in the GitHub repository on the `master` branch. It need only be checked out and put into a format the customer can use (e.g., a .jar file) along with any necessary instructions and delivered.
+A working version of the system is presumably in the GitHub repository on the `main` branch. It need only be checked out and put into a format the customer can use (e.g., a .jar file) along with any necessary instructions and delivered.
 
 The customer now plays with the system. In Trello, move the iteration separator to the `Approved` column. Each story in the `Merged` column should either be moved to the `Approved` column or back to the `Iterations` column; in the latter case, the customer should include comments in the card explaining why it was rejected. This also gives the customer the opportunity to discover bugs that the developers missed and think about what's important for the next iteration. Crucially, the customer agrees or disagrees with any claims the developers have made about completing stories.
 ## Resources
