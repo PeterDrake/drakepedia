@@ -58,8 +58,8 @@ Optionally, set up a test directory and a sample class and test.
 1. Clicking on `Define remote`.
 1. Paste https URL.
 1. `Push`.
-## Protect the master Branch
-On GitHub, in `Settings` | `Branches`, add a rule to the `master` branch that requires a pull request before merging. This prevents anyone from accidentally pushing to `master`.
+## Protect the main Branch
+On GitHub, in `Settings` | `Branches`, add a rule to the `main` branch that requires a pull request before merging. This prevents anyone from accidentally pushing to `main`.
 ## Add other team members as collaborators
 On the GitHub website, from the repository: `Settings` | `Collaborators`.
 ## References
