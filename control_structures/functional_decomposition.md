@@ -73,7 +73,7 @@ When your `main` method calls a method, your program pauses, runs the other meth
 
 Of course, a method called by `main` may in turn call another method. The *call stack* contains one call frame for the currently running method and one for each of the paused methods. Every time you call a method, a new call frame is pushed onto the top of the stack. Every time a method returns, a call frame is popped off the top of the stack and the next method down resumes. When the bottom call frame (for `main`) is popped off, the program ends.
 ## Resources
-- Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 2.1](https://introcs.cs.princeton.edu/java/13function/)
+- Sedgewick and Wayne, *Introduction to Programming in Java*, [Section 2.1](https://introcs.cs.princeton.edu/java/21function/)
 
 ## Questions
 1. :star: How do you call a method that doesn't take any arguments?

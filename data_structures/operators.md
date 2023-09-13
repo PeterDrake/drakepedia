@@ -10,9 +10,9 @@ Category|Operators|Notes
 -|-|-
 Arithmetic|`+ - * / %`|`%` is the remainder operator, sometimes called the modulo operator.<br>`-` can be used for negation (prefix) or subtraction (infix).
 Comparison|`< <= == >= > !=`|These have boolean values.<br>`!=` means "is not equal to".
-Assignment|`= ++ -- += -= *= /= %= <<= >>= &= ^= \|=`|Assignments are also statements.<br>`++` and `--` can be prefix or postfix.<br>`x++` roughly means `x = x + 1`.<br>`x += 5` roughly means `x = x + 5`.
+Assignment|`= ++ -- += -= *= /= %= <<= >>= >>>= &= ^= \|=`|Assignments are also statements.<br>`++` and `--` can be prefix or postfix.<br>`x++` roughly means `x = x + 1`.<br>`x += 5` roughly means `x = x + 5`.
 Logical|`&& \|\| !`|These take boolean operands and produce boolean values.<br>`&&` and `\|\|` are short-circuited.<br>`!` is prefix.
-Bitwise|`& \| ~ ^ << >> >>>`|These operate on integer types.<br>`~` and `^` are prefix.
+Bitwise|`& \| ~ ^ << >> >>>`|These operate on integer types.<br>`~` is prefix.
 Conditional|`?:`|`a ? b : c` has the value of `b` if `a` is true, `c` otherwise.
 
 ## Operator Precedence
@@ -46,7 +46,6 @@ Like almost all modern languages, Java has an elaborate [operator precedence hie
 1. :star::star::star: What is the difference between `>>` and `>>>`?
 1. :star::star::star: What is the value of `-32 % 10`?
 1. :star::star::star: If `a` and `b` are boolean expressions, what is the difference between `a && b` and `a & b`?
-1. :star::star::star: Suppose the binary representation of `a` is `1100` and the binary representation of `b` is `1010`. What is the binary representation of `a ^ b`?
 ## Answers
 1. -1, because multiplication has higher operator precedence than subtraction.
 1. 3, because when 83 is divided by 10 the remainder is 3.
