@@ -10,11 +10,11 @@ You can find detailed policies in the College's Statement on Academic Integrity 
 
 ### Generative AI
 
-Large language models like ChatGPT and Copilot are surprising effective as solving *easy* programming problems, as they have been trained on many solutions to such problems. They fail on more challenging problems, because they don't have an internal model of the domain; they are simply, in the words of Rumman Chowdhury, "spicy autocorrect".
+Large language models like ChatGPT and Copilot are surprisingly effective at solving *easy* programming problems, as they have been trained on many solutions to such problems. They fail on more challenging problems, because they don't have an internal model of what they're talking about; they are simply, in the words of Rumman Chowdhury, "spicy autocorrect".
 
-It is therefore essential that you don't use an LLM to solve your assignments. Without practicing the skills these assignments are meant to teach, you will eventually reach problems that neither the LLM nor you can solve; worse, you will reach problems for which the LLM produces code that is subtly incorrect, inefficient, or insecure, and you don't have sufficient understanding to notice or fix the problem.
+It is therefore essential that you don't use an LLM to solve your assignments. Without practicing the skills these assignments are meant to teach, you will eventually reach problems that neither the LLM nor you can solve; worse, you will reach problems for which the LLM produces code that is subtly incorrect, inefficient, or insecure, and you won't have sufficient understanding to notice or fix the problem.
 
-All of that said, LLMs are used widely by professional programmers. They are quite handy when you understand the relevant concepts but just don't know the syntax or which library functions to call. It may be that having a computer write the boilerplate code can free you up to think about overall system design, testing, and other higher-level issues. I will experiment with this in some upper-level course, but **you may not use an LLM to generate code except where it is explicitly allowed**.
+All of that said, LLMs are used widely by professional programmers. They are quite handy when you understand the relevant concepts but just don't know the syntax or which library functions to call. It may be that having a computer write the boilerplate code can free you up to think about overall system design, testing, and other higher-level issues. I will experiment with this in some upper-level courses, but **you may not use an LLM to generate code except where it is explicitly allowed**.
 
 I remain wary that LLMs use vastly more energy than traditional web searches, have often been trained on data that were arguably stolen, and are [unlkely to remain free once we've become dependent on them](https://pluralistic.net/2023/01/21/potemkin-ai/#hey-guys).
 
