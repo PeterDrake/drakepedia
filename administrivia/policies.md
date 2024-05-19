@@ -6,7 +6,7 @@ You are encouraged to study and discuss topics together. For most assignments yo
 
 Remember that *the point of assignments is to help you learn*. This practice and the feedback you receive are vital for you to learn to solve problems in, and communicate about, the subject; you will need these skills in later courses and in life after college. The assignments are not there to supply the instructor with an additional copy of the answers. Turning in plagiarized work is a waste of everyone's time.
 
-You can find detailed policies in the College's [Statement on Academic Integrity](https://docs.lclark.edu/undergraduate/policiesprocedures/academicintegrity/) and sections VIII (Outcomes) and XVII (College Honor Board Hearing Procedures) of the [Student Code of Conduct](https://college.lclark.edu/student_life/-our-departments-/student-rights-responsibilities/student-code-of-conduct/).
+You can find detailed policies in the College's [Statement on Academic Integrity](https://docs.lclark.edu/undergraduate/policiesprocedures/academicintegrity/) and sections [VIII (Outcomes)](https://college.lclark.edu/student_life/-our-departments-/student-rights-responsibilities/student-code-of-conduct/#VIII) and [XVII (College Honor Board Hearing Procedures)](https://college.lclark.edu/student_life/-our-departments-/student-rights-responsibilities/student-code-of-conduct/#XVII) of the Student Code of Conduct.
 
 ### Generative AI
 
