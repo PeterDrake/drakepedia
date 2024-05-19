@@ -96,7 +96,7 @@ Except where specified, you do not need to do error-checking in programs. For ex
 In general, a paper should:
 - Use complete sentences and be devoid of spelling, grammatical, and typographical errors.
 - Be well-organized. Similar thoughts should be grouped together. The document should have a purpose; every element should support this purpose.
-- Provide evidence for claims. In a research paper, this evidence should include proper citations. Just about any citation format is acceptable, as long as it is consistent; a good choice for computer science is [IEEE style](http://www.ijssst.info/info/IEEE-Citation-StyleGuide.pdf). Tools like [Zotero](https://www.zotero.org/) can make citing sources vastly less tedious.
+- Provide evidence for claims. In a research paper, this evidence should include proper citations. Just about any citation format is acceptable, as long as it is consistent; a good choice for computer science is [IEEE style](https://ieeeauthorcenter.ieee.org/wp-content/uploads/IEEE-Reference-Guide.pdf). Tools like [Zotero](https://www.zotero.org/) can make citing sources vastly less tedious.
 - Have something important to say. The very best papers change the reader's thinking about the topic.
 - Omit needless words. Language should communicate rather than getting in the way.
 - Be single-spaced. Other instructors' preferences may vary, but I believe double-spacing is a relic of the days when feedback was written on paper.
