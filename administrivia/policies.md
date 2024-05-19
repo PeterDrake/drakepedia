@@ -103,7 +103,7 @@ In general, a paper should:
 
 ### Mathematical Assignments
 
-Mathematical assignments (both exercises and proofs) are very similar to writing assignments. Acceptable formats include Word (.docx) and PDF; ask in advance if you want to use something more exotic. You must learn to use LaTeX or the equation editor in your word processor.
+Mathematical assignments (both exercises and proofs) are very similar to writing assignments. Acceptable formats include OpenDocument (.odt), Word (.docx), and PDF; ask in advance if you want to use something more exotic. You must learn to use LaTeX or the equation editor in your word processor.
 
 A mathematical paper should:
 
