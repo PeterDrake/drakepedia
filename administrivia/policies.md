@@ -16,7 +16,7 @@ It is therefore essential that you don't use an LLM to solve your assignments. W
 
 All of that said, LLMs are used widely by professional programmers. They are quite handy when you understand the relevant concepts but just don't know the syntax or which library functions to call. It may be that having a computer write the boilerplate code can free you up to think about overall system design, testing, and other higher-level issues. I will experiment with this in some upper-level courses, but **you may not use an LLM to generate code except where it is explicitly allowed**.
 
-I remain wary that LLMs use vastly more energy than traditional web searches, have often been trained on data that were arguably stolen, and are [unlkely to remain free once we've become dependent on them](https://pluralistic.net/2023/01/21/potemkin-ai/#hey-guys).
+I remain wary that LLMs use vastly more energy than traditional web searches, have often been trained on data that were arguably stolen, and are [unlkely to remain free once we've become dependent on them](https://en.wikipedia.org/wiki/Enshittification).
 
 ## Assignments
 
