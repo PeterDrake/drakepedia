@@ -1,3 +1,5 @@
+**NOTE: As we shift from Java to Python, this site is gradually being supplanted by [Pythonorama](https://github.com/alainkaegi/pythonorama/blob/main/README.md), created with Alain Kägi. The Java content here is no longer being maintained. My students will have use for pages in the [administrivia](administrivia) section.**
+
 # Drakepedia
 This repository holds topic summaries and questions for [Peter Drake](https://sites.google.com/a/lclark.edu/drake/)'s
 computer science courses.
@@ -10,8 +12,6 @@ provided, but there should be so many questions that memorizing all of the answe
 
 I list additional online and print resources where applicable, trying to list the most valuable ones first. In general, print
 resources go into more depth or provide a more gentle explanation.
-
-Some of the resources listed are online, others in books. If you are a member of the Association for Computing Machinery (ACM), you have electronic access to many of these books through the [O'Reilly Learning Platform](https://github.com/PeterDrake/drakepedia/blob/master/administrivia/textbooks.md).
 
 Questions are rated according to their difficulty:
 - :star: By the end of the course in question, you should be able to answer these questions immediately off the top of your
