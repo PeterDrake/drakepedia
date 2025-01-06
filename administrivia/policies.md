@@ -16,15 +16,13 @@ It is therefore essential that you don't use an LLM to solve your assignments. W
 
 All of that said, LLMs are used widely by professional programmers. They are quite handy when you understand the relevant concepts but just don't know the syntax or which library functions to call. It may be that having a computer write the boilerplate code can free you up to think about overall system design, testing, and other higher-level issues. I will experiment with this in some upper-level courses, but **you may not use an LLM to generate code except where it is explicitly allowed**.
 
-I remain wary that LLMs use vastly more energy than traditional web searches, have often been trained on data that were arguably stolen, and are [unlkely to remain free once we've become dependent on them](https://en.wikipedia.org/wiki/Enshittification).
+I remain wary that LLMs use vastly more energy than traditional web searches, have often been trained on data that were arguably stolen, and are [unlikely to remain free once we've become dependent on them](https://en.wikipedia.org/wiki/Enshittification).
 
 ## Assignments
 
 ### Handing In Assignments
 
-I will create a Google Drive directory for you with a subdirectory for each assignment. To hand in your assignment, simply copy your files into that subdirectory.
-
-If you have trouble with the handin system, talk to me or a teaching assistant as soon as possible to get things straightened out.
+Assignments are handed in through Google Classroom. If you have trouble with the handin system, talk to me or a teaching assistant as soon as possible to get things straightened out.
 
 ### Ungrading
 
@@ -41,6 +39,14 @@ The book *[Ungrading](https://wvupressonline.com/ungrading)*, edited by Susan Bl
 * Grades are not a good predictor of future success.
 
 In light of this, I have joined the growing movement of faculty who do not rely on grades. Instead, I will give you extensive feedback on your work. You can focus on learning rather than on jumping through hoops.
+
+Your feedback for each assignment will include one of the following emoji:
+
+⭐️	Above and beyond; did optional challenge problems, code is particularly clean, etc.  
+✅	Complete, passes all tests; this should be the most common "grade"  
+👣	Started; made some nontrivial effort and handed something in  
+⏱️	Late beyond the one-week grace period described below  
+❌	Nothing handed in
 
 I do still have to submit grades at the end of the semester. To that end (and, more importantly, to increase communication), we will discuss your progress (in person or in writing) several times over the course of the semester. In these conferences and self-assessments, you will tell me (among other things) [what grade you deserve](https://docs.google.com/document/d/1xXvmiHJB66jHNd4ZFUIw1FyP-7K8a1wr882bVuA3naM/edit?usp=sharing). I reserve the right to override you if you are being far too easy or (more likely) far too hard on yourself, but this is uncommon.
 
