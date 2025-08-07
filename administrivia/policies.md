@@ -45,12 +45,11 @@ Your feedback for each assignment will include one of the following emoji:
 ⭐️	Above and beyond; did optional challenge problems, code is particularly clean, etc.  
 ✅	Complete, passes all tests; this should be the most common "grade"  
 👣	Started; made some nontrivial effort and handed something in  
-⏱️	Late beyond the one-week grace period described below  
 ❌	Nothing handed in
 
 I do still have to submit grades at the end of the semester. To that end (and, more importantly, to increase communication), we will discuss your progress (in person or in writing) several times over the course of the semester. In these conferences and self-assessments, you will tell me (among other things) [what grade you deserve](https://docs.google.com/document/d/1xXvmiHJB66jHNd4ZFUIw1FyP-7K8a1wr882bVuA3naM/edit?usp=sharing). I reserve the right to override you if you are being far too easy or (more likely) far too hard on yourself, but this is uncommon.
 
-It is also vital that you do the work. If you fall behind, you won't be ready for more challenging material later in the course, in your college career, and in life. I cannot in good conscience allow you to pass a class in which you have barely participated. To ensure that you are keeping up, you must turn in (on time, as per the late policy described below) at least half of the course assignments to earn a D. Students who cannot meet this very low threshold are almost certainly struggling with external issues such as physical or mental health; if you are in such a situtation, it is vital for you to get help before the problem becomes catastrophic. 
+It is also vital that you do the work. If you fall behind, you won't be ready for more challenging material later in the course, in your college career, and in life. I cannot in good conscience allow you to pass a class in which you have barely participated. To ensure that you are keeping up, you must turn in (on time, with the slack given by the late policy described below) at least half of the course assignments to earn a D. Students who cannot meet this very low threshold are almost certainly struggling with external issues such as physical or mental health; if you are in such a situtation, it is vital for you to get help before the problem becomes catastrophic. 
 
 ### Late Policy
 
