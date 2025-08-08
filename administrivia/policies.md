@@ -117,7 +117,7 @@ A mathematical paper should:
 - Address special and boundary cases.
 
 ## Disabilities
-If you have a disability that may impact your academic performance, you may request accommodations by submitting documentation to the [Office of Student Accesibility](https://www.lclark.edu/offices/student-accessibility/). After you have submitted documentation and filled out paperwork for the current semester requesting accommodations, staff in that office will notify me of the accommodations for which you are eligible.
+If you have a disability that may impact your academic performance, you may request accommodations by meeting with the Office of Student Accessibility staff and submitting documentation on the [Office of Student Accesibility](https://www.lclark.edu/offices/student-accessibility/). Email [access@lclark.edu](mailto:access@lclark.edu) with any additional questions or concerns.
 
 ## Sexual Misconduct
 
