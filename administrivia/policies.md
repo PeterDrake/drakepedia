@@ -40,6 +40,9 @@ The book *[Ungrading](https://wvupressonline.com/ungrading)*, edited by Susan Bl
 
 In light of this, I have joined the growing movement of faculty who do not rely on grades. Instead, I will give you extensive feedback on your work. You can focus on learning rather than on jumping through hoops.
 
+> [!IMPORTANT]
+> When you open a written assignment in Google Classroom, it won't show you line-specific comments I've left! Be sure to open the document in another tab to see this feedback. This isn't an issue for code (like .py files), which doesn't support line-specific comments.
+
 Your feedback for each assignment will include one of the following emoji:
 
 ⭐️	Above and beyond; did optional challenge problems, code is particularly clean, etc.  
@@ -79,8 +82,8 @@ Some time (hopefully a couple of days) after the due date, I (or a teaching assi
 
 Do not misinterpret the grace period as the "real" deadline. The deadline is the deadline; the grace period is for unusual circumstances.
 
-**_The last day of regular class (*not* the final exam period) at 11:59 PM (my clock, not yours) is an absolute final deadline after which no assignments will be accepted._**
-
+>[!IMPORTANT]
+>The last day of regular class (*not* the final exam period) at 11:59 PM (my clock, not yours) is an absolute final deadline after which no assignments will be accepted.
 
 ### Programming Assignments
 
