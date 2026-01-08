@@ -4,7 +4,7 @@
 
 A good life is one in which you enjoy yourself and make the world a better place. Your time at Lewis & Clark is meant to prepare you for such a life. Learning is intrinsically pleasurable and puts you in a better position to participate in and help build the world to come. While you have other important things to do while you're here (social activities, a job, volunteering, etc.), you are in courses to learn.
 
-You are not here to prove that you already know everything. **_Ask questions._** The point is not to test you but to expand your skills and understanding. It is crucial to have a [growth mindset](https://www.mindsetworks.com/science/): to realize that abilities (math, writing, etc.) are not fixed and innate but can be improved through effort and practice.
+You are not here to prove that you already know everything. **_Ask questions._** The point is not to test you but to expand your skills and understanding. It is crucial to have a [growth mindset](https://www.psychologytoday.com/us/blog/click-here-for-happiness/201904/15-ways-to-build-a-growth-mindset): to realize that abilities (math, writing, etc.) are not fixed and innate but can be improved through effort and practice.
 
 ## You Are Not Alone
 
