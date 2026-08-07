@@ -10,7 +10,7 @@ You can find detailed policies in the College's [Statement on Academic Integrity
 
 ### Generative AI
 
-Large language models like ChatGPT and Copilot are surprisingly effective at solving *easy* programming problems, as they have been trained on many solutions to such problems. They fail on more challenging problems, because they don't have an internal model of what they're talking about; they are simply, in the words of Rumman Chowdhury, "spicy autocorrect".
+Large language models like ChatGPT and Copilot are surprisingly effective at solving *easy* programming problems, as they have been trained on many solutions to such problems. They fail on more challenging problems, because they don't have internal models of what they're talking about; they are simply, in the words of Rumman Chowdhury, "spicy autocorrect".
 
 It is therefore essential that you don't use an LLM to solve your assignments. Without practicing the skills these assignments are meant to teach, you will eventually reach problems that neither the LLM nor you can solve; worse, you will reach problems for which the LLM produces code that is subtly incorrect, inefficient, or insecure, and you won't have sufficient understanding to notice or fix the problem.
 
